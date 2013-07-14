@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"></meta>
+  
+  <title>daOMA - Members</title>
+  <link href='css/reset.css' media='screen' rel='stylesheet' type='text/css'>
+  <link href='css/layout.css' media='screen' rel='stylesheet' type='text/css'>
+  <link href='type/stylesheet.css' media='screen' rel='stylesheet' type='text/css'>
+  <link href='type/light/stylesheet.css' media='screen' rel='stylesheet' type='text/css'>
+  <link href='css/mediaqueries.css' media='screen' rel='stylesheet' type='text/css'>
+  <link href='css/hidden_menu.css' media='screen' rel='stylesheet' type='text/css'>
+  <link href='css/parallax.css' media='screen' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<nav class='group'>
+  <a href='index.html'><img class='top_logo' src="img/daoma_logo_white.svg"></img></a>
+  
+  <!--regular nav-->  
+  <div class='link'>
+  <a href="about.html">About</a>
+  <a href="partners.html">Partners</a>
+  <a href="members.html">Members</a>
+  <a href="join.html">Join</a>
+  </div>
+  
+ <!--hidden nav-->  
+  <input type="checkbox" id="toggle">
+    <label for="toggle">☰</label>
+
+    <div class='hidden_nav'>
+      <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="sponsors.html">Partners</a></li>
+      <li><a href="members.html">Members</a></li>
+      <li><a href="join.html">Join</a></li>
+      </ul>
+    </div>
+  </input>
+</nav>
+
+<header>
+<div class="sponsors-1" data-type="background" data-speed="5"></div>
+</header>
+
+<section class='interior'>
+<div class='wrapper group'>
+  <div class='leftcolumn'><h2>Members</div>
+  <div class='rightcolumn'>
+  <p>daOMA is an open forum for everyone non-professionals and professionals alike. Rooted in the intellectual and social foundations of design culture, daOMA’s primary mission is to expand and grow design appreciation and awareness. Central to this mission is the organizations core programs of public lectures and presentations featuring local, regional, and world renowned designers, critics, historians and patrons. Members are granted free admission to this lecture series and other daOMA&nbsp;events.</p>
+
+  <p>daOMA is an independent 501(c)3 non-profit organization and works in direct partnerships with local business, academic institutions and professional organizations to serve as an extension of their public outreach programs that champion design education and appreciation for our&nbsp;community.</p>
+  <h6>Bryce Bridges</h6>
+  <h6>Drew Davies</h6>
+  <h6>Jeff Day</h6>
+  <h6>Ellen Fitzsimmons</h6>
+  <h6>Brian Kelley</h6>
+  <h6>Justin Kemerling</h6>
+  <h6>Hesse McGraw</h6>
+  <h6>James Menard</h6>
+  <h6>Tom Trenelone</h6>
+  <h6>Anne Trumble</h6>
+  <h6>Sabrina Weiss</h6>
+  <h6>Jake Welchert</h6>
+  <h6>John Doe</h6>
+  <h6>Jane Doe</h6>
+  <h6>John Doe</h6>
+  <h6>Jane Doe</h6>
+  <h6>John Doe</h6>
+  <h6>Jane Doe</h6>
+  <h6>John Doe</h6>
+  <h6>Jane Doe</h6>
+  <h6>John Doe</h6>
+  <h6>Jane Doe</h6>
+  <h6>John Doe</h6>
+  <h6>Jane Doe</h6>
+  </div>
+</section> 
+
+<section class='group'>
+<img class='shape_footer' src="img/shape_footer.svg"></img>  
+</section>
+
+<footer>
+  <img class='logo_footer' src="img/daOMA_logo_magenta_w-shdw.svg"></img>
+  <div class='social_footer'>
+    <a href="join.html"><img src="img/arrow_icon.svg"></img></a>
+    <a href="https://www.facebook.com/pages/daOMA-design-alliance-OMAha-Inc/304226363724?fref=ts"><img src="img/facebook_icon.svg"></img></a>
+    <a href=""><img src="img/twitter_icon.svg"></img></a>  
+  </div>
+</footer>
+
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  $objWindow = $(window);
+  $('div[data-type="background"]').each(function(){
+    var $bgObj = $(this);
+    $(window).scroll(function() {
+      var yPos = -($objWindow.scrollTop() / $bgObj.data('speed')); 
+           
+      var coords = '100% '+ yPos + 'px';
+            // Animate the background
+       $bgObj.css({ backgroundPosition: coords });    
+    });
+  });
+});
+</script>
+
+</html>
