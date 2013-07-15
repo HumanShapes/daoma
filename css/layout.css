@@ -17,16 +17,11 @@ CLEAR FIX - Add class of 'GROUP' to clear floats
 /**********************/
 
 body {
-    /*background: url('../img/wood_backdrop_white2.jpg') no-repeat center center fixed;*/
 }
 
 img {
     width: 100%;
     display: block;
-}
-
-high {
-    height: 100%;
 }
 
 a {
@@ -49,254 +44,6 @@ text-decoration: none;
 
 a:hover {
 color: #ec008c;
-}
-
-
-/* 
-==========================================================================
-TYPOGRAPHY
-========================================================================== 
-*/
-::selection {
-	background: #ae9c75; /* Safari */
-	}
-::-moz-selection {
-	background: #ae9c75; /* Firefox */
-}
-
-p {
-color: #888;
-font-family: 'intro_lightregular';
-font-size: 20px;
-letter-spacing: 1px;
-line-height: 1.65;
-margin: 0;
-}
-
-h1 {
-color: #333;
-font-family: 'intro_regularregular';
-font-size: 70px;
-letter-spacing: 5px;
-margin: 0;
-}
-
-h2 {
-font-family: 'intro_regularregular';
-letter-spacing: 1.5px;
-font-size: 26px;
-line-height: 1.3;
-text-transform: uppercase;
-color: #ec008c;
-margin: 0;
-
-}
-
-h3 {
-font-family: 'intro_regularregular';
-letter-spacing: 2px;
-font-size: 22px;
-line-height: 1.6;
-text-transform: uppercase;
-color: #ec008c;
-margin: 0;
-
-}
-
-h4 {
-letter-spacing: 1px;
-font-size: 20px;
-font-family: 'intro_lightregular';
-line-height: 1.4;
-}
-
-h5 {
-letter-spacing: 1px;
-font-size: 37px;
-font-family: 'intro_lightregular';
-line-height: 1.4;
-color: #ec008c;
-margin: 0;
-}
-
-h6 {
-color: #888;
-font-family: 'intro_lightregular';
-font-size: 35px;
-letter-spacing: 1px;
-line-height: 0;
-}
-/**********************/
-
-.partners_sub_head p{
-    color: #fff;
-}
-
-.txt-pink {
-    color: #ec008c;
-}
-
-.txt-white {
-    color: #fff;
-}
-
-.txt-gray {
-    color: #888;
-}
-
-/* 
-==========================================================================
-GRID
-========================================================================== 
-*/
-
-.wrapper {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 5% 4%;
-}
-
-.interior_header {
-    padding: 7% 3%;
-}
-
-.pad_bottom {
-    padding-bottom: 3%;
-}
-
-.pad_top {
-    padding-top: 3%;
-}
-
-.pad_top-5 {
-    padding-top: 5%;
-}
-
-.intro {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 8% 5%;
-    text-align: center;
-}
-
-.intro p {
-    color: white;
-    line-height: 1.8;
-    padding-top: 3%
-}
-
-.intro h1 {
-    color: white;
-}
-
-.leftcolumn {
-    width: 100%;
-    float: left;
-}
-
-.header_leftcolumn {
-    width: 40%;
-    float: left;
-}
-
-.leftcolumn h1 {
-    color: #eee;
-    font-size: 300px;
-    line-height: 0;
-}
-
-.rightcolumn {
-    width: 100%;
-    float: left;
-}
-
-.header_rightcolumn {
-    width: 60%;
-    padding: 8% 0 10% 0;
-    float: left;
-}
-
-.header_rightcolumn p {
-    max-width: 684px;
-    padding-right: 5%;
-}
-
-.two-column {
--moz-column-count: 2; /* Firefox */
--webkit-column-count: 2; /* Safari and Chrome */
-column-count: 2;
- 
--moz-column-gap:40px; /* Firefox */
--webkit-column-gap:40px; /* Safari and Chrome */
-column-gap:40px;
-}
-
-.partners_rightcolumn {
-    width: 100%;
-}
-
-.brdr_bt_pink {
-    border-bottom: 10px solid #ec008c;
-    width: 60%;
-    float: right;
-    margin-top: -5px;
-    background-color: rgba(250, 250, 250, .0);
-}
-
-.spacer_pink {
-    border-bottom: 5px solid #ec008c;
-    width: 20%;
-    margin: 0 auto;
-    margin-top: 5%;
-}
-
-.txt_flt-left {
-    float: left;
-}
-
-.CC_smallheader {
-    font-size: 20px;
-}
-
-/**********************/
-nav {
-    min-height: auto;
-    background-color: #333;
-}
-
-.top_logo {
--webkit-transition-property: color;
-       -moz-transition-property: all;
-         -o-transition-property: all;
-            transition-property: all;
-    -webkit-transition-duration: .25s;
-       -moz-transition-duration: .25s;
-         -o-transition-duration: .25s;
-            transition-duration: .25s;
-    -webkit-transition-timing-function: linear;
-       -moz-transition-timing-function: linear;
-         -o-transition-timing-function: linear;
-            transition-timing-function: linear;
-    width: 200px;
-    float: left;
-}
-
-.top_logo:hover {
-    opacity: .5;
-}
-
-nav a:hover {
-}
-
-nav .link a:hover {
-    background-color: #313131;
-     -moz-box-shadow:    inset 0 0 7px rgba(0,0,0,.2);
-    -webkit-box-shadow: inset 0 0 7px rgba(0,0,0,.2);
-   box-shadow:         inset 0 0 7px rgba(0,0,0,.2);
-}
-
-.link {
-    float: right;
 }
 
 .btn {
@@ -327,7 +74,176 @@ nav .link a:hover {
     -webkit-box-shadow: inset 0 0 7px rgba(0,0,0,.2);
     box-shadow:         inset 0 0 7px rgba(0,0,0,.2);
 }
+/* 
+==========================================================================
+TYPOGRAPHY
+========================================================================== 
+*/
+::selection {
+	background: #ec008c; /* Safari */
+	}
+::-moz-selection {
+	background: #ec008c; /* Firefox */
+}
 
+p {
+color: #888;
+font-family: 'intro_lightregular';
+font-size: 20px;
+letter-spacing: 1px;
+line-height: 1.65;
+margin: 0;
+}
+
+h1 {
+    color: #333;
+    font-family: 'intro_regularregular';
+    font-size: 70px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'intro_regularregular';
+    letter-spacing: 1.5px;
+    font-size: 26px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: #ec008c;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'intro_regularregular';
+    letter-spacing: 2px;
+    font-size: 22px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: #ec008c;
+    margin: 0;
+
+}
+
+h4 {
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'intro_lightregular';
+    line-height: 1.4;
+}
+
+h5 {
+    letter-spacing: 1px;
+    font-size: 37px;
+    font-family: 'intro_lightregular';
+    line-height: 1.4;
+    color: #ec008c;
+    margin: 0;
+}
+
+h6 {
+    color: #888;
+    font-family: 'intro_lightregular';
+    font-size: 35px;
+    letter-spacing: 1px;
+    line-height: 0;
+}
+
+/***********Color Overright***********/
+.txt-pink {
+    color: #ec008c;
+}
+
+.txt-white {
+    color: #fff;
+}
+
+.txt-gray {
+    color: #888;
+}
+
+
+/* 
+==========================================================================
+STRUCTURE
+========================================================================== 
+*/
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 5% 4%;
+}
+
+.leftcolumn {
+    width: 100%;
+    float: left;
+}
+
+.header_leftcolumn {
+    width: 40%;
+    float: left;
+}
+
+.rightcolumn {
+    width: 100%;
+    float: left;
+}
+
+.header_rightcolumn {
+    width: 60%;
+    padding: 8% 0 10% 0;
+    float: left;
+}
+
+.header_rightcolumn p {
+    max-width: 684px;
+    padding-right: 5%;
+}
+
+.txt_flt-left {
+    float: left;
+}
+
+
+/*********** NAV ***********/
+nav {
+    min-height: auto;
+    background-color: #333;
+}
+
+.top_logo {
+-webkit-transition-property: color;
+       -moz-transition-property: all;
+         -o-transition-property: all;
+            transition-property: all;
+    -webkit-transition-duration: .25s;
+       -moz-transition-duration: .25s;
+         -o-transition-duration: .25s;
+            transition-duration: .25s;
+    -webkit-transition-timing-function: linear;
+       -moz-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+    width: 200px;
+    float: left;
+}
+
+.top_logo:hover {
+    opacity: .5;
+}
+
+.link {
+    float: right;
+}
+
+nav .link a:hover {
+    background-color: #313131;
+       -moz-box-shadow: inset 0 0 7px rgba(0,0,0,.2);
+    -webkit-box-shadow: inset 0 0 7px rgba(0,0,0,.2);
+            box-shadow: inset 0 0 7px rgba(0,0,0,.2);
+}
+
+
+/*********** HEADER ***********/
 header {
 }
 
@@ -339,48 +255,42 @@ header {
     background-color: #f5f5f5;
 }
 
-.sponsors_header {
-    background: url('../img/oma_map.png') no-repeat center center fixed;*/
--moz-background-size: cover;
--webkit-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-min-height: 500px;
-}
-
-.shape_header {
-    width: 35%;
-    margin-top: -3.6%;
-    position: absolute;
-}
-
-.pink {
-    background-color: #f30291;
-}
-
-.gray {
+.gray_bkgnd {
     background-color: #555;
 }
 
-.white {
-    color: #fff;
-}
 
-/*section styles*/
+/************ SECTION STYLES **********/
 section {
 }
 
 .interior {
     background-color: rgba(249, 249, 249, 1);
 }
-/*section styles*/
+
+.border-btm-gray {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.border-top-gray {
+    border-top: 1px solid #d9d9d9;
+}
+
+.border-btm-lt-gray {
+    border-bottom: 2px solid #f9f9f9;
+}
+
+.imagebreak {
+    position: relative;
+    z-index: -1;
+}
 
 
 
+/************ CREATIVE CLASS HOMEPAGE **********/
 .bighover {
     position: relative;
 }
-
 
 .large_link-mouseon {
 -webkit-transition-property: color;
@@ -441,31 +351,7 @@ section {
 
 
 
-.border-btm-gray {
-    border-bottom: 1px solid #d9d9d9;
-}
-
-.border-top-gray {
-    border-top: 1px solid #d9d9d9;
-}
-
-.border-btm-lt-gray {
-    border-bottom: 2px solid #f9f9f9;
-}
-
-.imagebreak {
-    position: relative;
-    z-index: -1;
-}
-
-.zero_pad_top {
-padding-top: 0;
-}
-
-.address_pad_top {
-    padding-top: 3%;
-}
-
+/*********** LIST STYLES ***********/
 ul {
     list-style: none;
     padding-left: 0px;
@@ -491,6 +377,14 @@ letter-spacing: 1px;
 line-height: 1.6;
 }
 
+.zero_pad_top {
+padding-top: 0;
+}
+
+.address_pad_top {
+    padding-top: 3%;
+}
+
 .join_sub_border {
 border-top: 1px solid #d9d9d9;
 padding: 6% 0 3% 0;
@@ -513,6 +407,8 @@ font-size: 22px;
 border-bottom: none;
 }
 
+
+/*********** Board of Directors LIST STYLES ***********/
 .board {
     list-style: none outside none;
     padding-bottom: 4%;
@@ -536,34 +432,6 @@ border-bottom: none;
     line-height: 1.8;
     padding-right: 6%;
 }
-
-/*.board {
-    list-style: none outside none;
-    margin: 0px 0px 0px -10px;
-}
-
-.board li {
-    float: left;
-    margin: 0px 2% 5%;
-    width: 29%;
-}
-
-.board li img {
-    border-radius: 50% 50% 50% 50%;
-    display: block;
-    margin: 0 auto;
-    width: 75%;
-}
-
-.board li h3 {
-    font-size: 20px;
-    padding-top: 20px;
-}
-
-.board li p {
-    font-size: 15px;
-    line-height: 1.5;
-}*/
 
 
 
@@ -608,10 +476,3 @@ footer a:hover {
     bottom: 0;
     right: 0;
 }
-
- .icon {
-        fill: green;
- }
-
-
-
