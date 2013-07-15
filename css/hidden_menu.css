@@ -43,13 +43,3 @@ input:checked ~ .hidden_nav {
   margin: 0 auto;
   text-align: center;
 }
-
-@media all and (min-width: 830px) {
-label {
-  display: none;
-}
-
-.hidden_nav {
-  display: none;
-}
-}

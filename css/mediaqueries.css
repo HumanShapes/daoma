@@ -1,81 +1,81 @@
 @media all and (max-width: 500px) {
-.link {
-    display: none;
-}
+  .link {
+      display: none;
+  }
 
-header {
-    display: none;
-}
+  header {
+      display: none;
+  }
 
-.hidden_nav ul li {
-    font-size: 20px;
-    list-style: none outside none;
-    text-align: center;
-    width: 100%;
-}
+  .hidden_nav ul li {
+      font-size: 20px;
+      list-style: none outside none;
+      text-align: center;
+      width: 100%;
+  }
 
-nav a {
-    width: 100%;
-}
+  nav a {
+      width: 100%;
+  }
 
-label {
-    margin: 0 auto;
-    background: #333;
-    cursor: pointer;
-    padding: 40px 30px;
-    float: right;
-    transition: all .2s linear;
-    color: #fff;
-    font-size: 25px;
-}
+  label {
+      margin: 0 auto;
+      background: #333;
+      cursor: pointer;
+      padding: 40px 30px;
+      float: right;
+      transition: all .2s linear;
+      color: #fff;
+      font-size: 25px;
+  }
 
-.top_logo {
-    margin-top: 30px;
-    margin-left: 20px;
-    width: 120px;
-    float: left;
-}
+  .top_logo {
+      margin-top: 30px;
+      margin-left: 20px;
+      width: 120px;
+      float: left;
+  }
 
-.number,
-.large_link-mouseon,
-.shape_footer,
-.social_footer {
-    display: none;
-}
+  .number,
+  .large_link-mouseon,
+  .shape_footer,
+  .social_footer {
+      display: none;
+  }
 
-.logo_footer {
+  .logo_footer {
     position: absolute;
     left: 30px;
     bottom: 30px;
     width: 120px;
     z-index: 100;
+  }
+
+  .board img {
+    float: left;
+    width: 30%;
+  }
+
+  .board p {
+    padding-bottom: 6%;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  footer {
+      min-height: 125px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
-.board img {
-  float: left;
-  width: 30%;
-}
-
-.board p {
-  padding-bottom: 6%;
-  border-bottom: 1px solid #d9d9d9;
-}
-
-footer {
-    min-height: 125px;
-}
-
-p {
-font-size: 16px;
-line-height: 1.5;
-}
-}
 
 
 
 
-
-@media all and (min-width: 500px) and (max-width: 830px){
+@media all and (min-width: 500px) and (max-width: 830px) {
 nav .link a {
     float: left;
     padding: 20px 30px;
@@ -105,13 +105,13 @@ header,
 }
 
 label {
-  background: #333;
-  cursor: pointer;
-  padding: 40px 50px;
-  float: right;
-  transition: all .2s linear;
-  color: #fff;
-  font-size: 25px;
+    background: #333;
+    cursor: pointer;
+    padding: 40px 50px;
+    float: right;
+    transition: all .2s linear;
+    color: #fff;
+    font-size: 25px;
 }
 
 .hidden_nav ul li {
@@ -202,6 +202,14 @@ label {
 .members_mobile_head,
 .join_mobile_head {
  display: none; 
+}
+
+label {
+  display: none;
+}
+
+.hidden_nav {
+  display: none;
 }
 }
 
