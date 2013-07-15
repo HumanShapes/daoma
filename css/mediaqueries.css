@@ -197,8 +197,18 @@ label {
 .logo_footer {
   position: absolute;
 }
+
+.partners_mobile_head,
+.members_mobile_head,
+.join_mobile_head {
+ display: none; 
+}
 }
 
 
 @media all and (min-width: 1200px) {
+/*.partners_rightcolumn {
+    width: 60%;
+    float: right;
+}*/
 }

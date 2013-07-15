@@ -1,26 +1,24 @@
-.partners_header {
-background: url('../img/shape_partners.svg') no-repeat center center;*/
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position:100% 0; 
-	min-height: 100px;
-}
-
-
-.sponsors-1 { 
-	background: url("../img/oma_map.png");
-	background-attachment: fixed;
-	background-origin: initial;
+.about-1 {
+	background: url("../img/oma.png");
+/*	background-attachment: fixed;
+*/	background-origin: initial;
 	background-clip: initial;
 	background-size: cover;
-	background-repeat:no-repeat;
-	background-position:100% 0; 
+	background-repeat: no-repeat;
 	position:relative;
-	height:550px;
+	height: 500px;
+	margin-top: -500px;
 }
- 
-.sponsors-2 {
+
+.about_triangle1 {
+	background: url("../img/arrow3.png");
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+	height: 500px;
+}
+
+
+.about-2 {
 	background: url("../img/pkn2.png");
 /*	background-attachment: fixed;
 */	background-origin: initial;
@@ -32,56 +30,7 @@ background: url('../img/shape_partners.svg') no-repeat center center;*/
 	margin-top: -550px;
 }
 
-.sponsors_triangle {
-	background: url("../img/arrow.png");
-	background-attachment: fixed;
-	background-repeat:no-repeat;
-	height: 550px;
-}
-
-.partners-2 {
-	background: url("../img/flyover2.png");
-/*	background-attachment: fixed;
-*/	background-origin: initial;
-	background-clip: initial;
-	background-size: 100%;
-	background-repeat:repeat;
-	position:relative;
-	height: 400px;
-	margin-top: -400px;
-}
-
-.partners_triangle {
-	background: url("../img/arrow3.png");
-	background-attachment: fixed;
-	background-repeat:no-repeat;
-	height: 400px;
-}
-
-
-
- 
-.about-1 {
-	background: url("../img/oma.png");
-/*	background-attachment: fixed;
-*/	background-origin: initial;
-	background-clip: initial;
-	background-size: 100%;
-	background-repeat:repeat;
-	position:relative;
-	height: 600px;
-	margin-top: -600px;
-}
-
-.about_triangle {
-	background: url("../img/arrow.png");
-	background-attachment: fixed;
-	background-repeat:no-repeat;
-	height: 600px;
-	padding-right: 200px;
-}
-
-.about-2 { 
+/*.about-2 { 
 	background: url("../img/oma.png");
 	background-attachment: fixed;
 	background-origin: initial;
@@ -91,7 +40,88 @@ background: url('../img/shape_partners.svg') no-repeat center center;*/
 	background-position:100% 0; 
 	position:relative;
 	height: 550px;
+}*/
+
+
+.about_triangle2 {
+	background: url("../img/arrow.png");
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+	height: 550px;
 }
+
+.members_header {
+	background: url('../img/shape_about.svg') no-repeat center center;*/
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:100% 0; 
+	min-height: 100px;
+}
+
+
+.partners_header {
+	background: url('../img/shape_partners.svg') no-repeat center center;*/
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:100% 0; 
+	min-height: 100px;
+}
+
+.partners_1 {
+	background: url('../img/flyoverpink.jpg') no-repeat center center;*/
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:100% 0; 
+	min-height: 300px;
+	margin-top: -300px;
+}
+
+.partners_triangle {
+	background: url("../img/arrow3.png");
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+	height: 300px;
+}
+
+.about_header {
+	background: url('../img/shape_about.svg') no-repeat center center;*/
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:100% 0; 
+	min-height: 100px;
+}
+
+.join_header {
+	background: url('../img/header_join.svg') no-repeat center center;*/
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:100% 0; 
+	min-height: 100px;
+}
+
+.join_1 {
+	background: url('../img/flyovergray.jpg') no-repeat center center;*/
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:100% 0; 
+	min-height: 300px;
+	margin-top: -300px;
+}
+
+.airport {
+	background: url("../img/airportcodes.svg");
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+	height: 550px;
+}
+
+
 
 
 
