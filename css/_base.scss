@@ -1,0 +1,101 @@
+/* Site specific mixins, colors, and fonts.
+   Core element styles.
+   Vendor files. (Plugins, custom widgets, etc.) */
+
+/* #Colors
+===================== */
+
+$primary: #0156b9;
+$secondary: #cc0000;
+
+$white: #ffffff;
+$black: #000000;
+
+
+/* #Fonts
+===================== */
+
+// $font-sans: "proxima-nova", sans-serif;
+// $font-display: "kulturista-web", Georgia, serif;
+
+.font-sans{
+
+  font-style: normal;
+  .wf-loading & { visibility: hidden; }
+  .wf-active & { visibility: visible; }
+}
+.font-display {
+
+  font-style: normal;
+  .wf-loading & { visibility: hidden; }
+  .wf-active & { visibility: visible; }
+}
+
+/* #Typography
+===================== */
+
+h1, h2, h3, h4{
+  @extend .font-display;
+}
+h1{ font-size: em(30); }
+h2{ font-size: em(24); }
+h3{ font-size: em(16); }
+
+a{
+  color: $primary;
+  text-decoration: none;
+}
+
+strong, b{
+  font-weight: 600;
+}
+
+/* #Buttons
+===================== */
+
+.btn{
+  &:hover{
+    background-color: darken($primary, 10%);
+  }
+}
+
+
+
+
+/* #Structure
+===================== */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+::-moz-selection { background: $primary; color: #fff; text-shadow: none; }
+::selection { background: $primary; color: #fff; text-shadow: none; }
+
+/*
+==========================================================================
+CLEAR FIX - Add class of 'GROUP' to clear floats
+==========================================================================
+*/
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+    }
+.group:after {
+    clear: both;
+    }
+.group {
+    *zoom: 1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
