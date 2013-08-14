@@ -2,6 +2,9 @@
    Core element styles.
    Vendor files. (Plugins, custom widgets, etc.) */
 
+@import "type"; //Import type first
+
+
 /* #Colors
 ===================== */
 $white    : #ffffff;
@@ -26,16 +29,15 @@ $grey7: #313131;
 .font-sans{ font-family: 'intro_lightregular', sans-serif; }
 .font-display{ font-family: 'intro_regularregular', sans-serif; }
 .font-bold{ font-family: 'intro_boldregular'; }
+.font-thin{ font-family: 'intro_thinregular'; }
+.font-book{ font-family: 'intro_bookregular'; }
 
 /* #Typography
 ===================== */
 
-h1, h2, h3{
-  @extend .font-display;
-  margin: 0;
-}
-h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6{
   @extend .font-sans;
+  font-weight: normal;
   color: $primary;
   margin: 0;
 }
@@ -49,14 +51,12 @@ h2{
   letter-spacing: 1.5px;
   line-height: 1.3;
   text-transform: uppercase;
-  color: $primary;
 }
 h3{
   letter-spacing: 2px;
   font-size: em(22);
   line-height: 1.6;
   text-transform: uppercase;
-  color: $primary;
 }
 
 h4{
@@ -91,7 +91,7 @@ a{
   &:hover{ color: #ec008c; }
 }
 ul { list-style: none; padding-left: 0px; }
-
+strong{ @extend .font-display; font-weight: normal; }
 /* #Buttons
 ===================== */
 

@@ -84,7 +84,8 @@ module.exports = function(grunt) {
           {expand: true, cwd: '../icons/', src: ['png/**'], dest: '../dev/css/'},
           // {expand: true, flatten: true, cwd: '../', src: ['favicons/*'], dest: '../dev/'},
           {expand: true, cwd: '../', src: ['img/**/*'], dest: '../dev/'},
-          {expand: true, cwd: '../', src: ['js/vendor/modernizr.js'], dest: '../dev/'}
+          {expand: true, cwd: '../', src: ['js/vendor/modernizr.js'], dest: '../dev/'},
+          {expand: true, cwd: '../', src: ['type/*'], dest: '../dev/'},
         ]
       }
     },
