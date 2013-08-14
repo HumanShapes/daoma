@@ -36,7 +36,9 @@ module.exports = function(grunt) {
         files: {
           '../dev/css/compiled.data.svg.css': ['../css/compile.svg.scss'],
           '../dev/css/compiled.data.png.css': ['../css/compile.png.scss'],
-          '../dev/css/compiled.fallback.css': ['../css/compile.fallback.scss']
+          '../dev/css/compiled.fallback.css': ['../css/compile.fallback.scss'],
+          '../dev/css/welcomefade.css': ['../css/welcomefade.scss'],
+          '../dev/css/mediaqueries.css': ['../css/mediaqueries.scss']
         }
       }
     },
@@ -46,7 +48,7 @@ module.exports = function(grunt) {
       },
       dist: {
         // Add any javascript files in the main JS directory or in the vendor directory to the compiled file
-        src: ['../js/vendor/*.js','../js/*.js','../js/vendor/!(modernizr).js','../js/vendor/!(placeholder_polyfill.min).js'],
+        src: ['../js/vendor/*.js','../js/*.js','../js/vendor/!(modernizr).js'],
         dest: '../dev/js/compiled.js'
       }
     },
@@ -81,7 +83,7 @@ module.exports = function(grunt) {
         files: [
           {expand: true, cwd: '../icons/', src: ['png/**'], dest: '../dev/css/'},
           // {expand: true, flatten: true, cwd: '../', src: ['favicons/*'], dest: '../dev/'},
-          {expand: true, cwd: '../', src: ['images/**/*'], dest: '../dev/'},
+          {expand: true, cwd: '../', src: ['img/**/*'], dest: '../dev/'},
           {expand: true, cwd: '../', src: ['js/vendor/modernizr.js'], dest: '../dev/'}
         ]
       }
