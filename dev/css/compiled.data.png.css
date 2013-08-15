@@ -462,6 +462,13 @@ svg:not(:root) {
   font-style: normal; }
 
 @font-face {
+  font-family: 'intro_lightregular';
+  src: url("../type/fontfabric_-_intro-light-webfont.eot");
+  src: url("../type/fontfabric_-_intro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../type/fontfabric_-_intro-light-webfont.woff") format("woff"), url("../type/fontfabric_-_intro-light-webfont.ttf") format("truetype"), url("../type/fontfabric_-_intro-light-webfont.svg#intro_lightregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'intro_regularregular';
   src: url("../type/fontfabric_-_intro-regular-webfont.eot");
   src: url("../type/fontfabric_-_intro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../type/fontfabric_-_intro-regular-webfont.woff") format("woff"), url("../type/fontfabric_-_intro-regular-webfont.ttf") format("truetype"), url("../type/fontfabric_-_intro-regular-webfont.svg#intro_regularregular") format("svg");
@@ -496,16 +503,16 @@ svg:not(:root) {
 .font-sans, h1, h2, h3, h4, h5, h6, body {
   font-family: 'intro_lightregular', sans-serif; }
 
-.font-display, strong {
+.font-display, strong, .featured-event .info, .events .date, .events .content h3 {
   font-family: 'intro_regularregular', sans-serif; }
 
-.font-bold, ul li .emphasis {
+.font-bold, ul li .emphasis, .events .date span {
   font-family: 'intro_boldregular'; }
 
 .font-thin, .feature h1 {
   font-family: 'intro_thinregular'; }
 
-.font-book, .about p {
+.font-book, .about p, .featured-event .description, .events .content p {
   font-family: 'intro_bookregular'; }
 
 /* #Typography
@@ -1123,7 +1130,8 @@ input:checked ~ .hidden_nav {
     width: 35%;
     padding-right: 55px; }
     .featured-event .info p {
-      font-size: 1em; }
+      font-size: 1em;
+      line-height: 2; }
     .featured-event .info strong {
       color: #ec008c; }
     .featured-event .info .btn {
@@ -1138,3 +1146,44 @@ input:checked ~ .hidden_nav {
   .featured-event h2 {
     font-size: 7.75em;
     color: white; }
+
+.events {
+  display: table;
+  max-width: 1140px;
+  background: #ebebeb;
+  max-height: 150px;
+  margin-top: 20px; }
+  .events:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .events:first-child {
+    margin-top: 0; }
+  .events .date {
+    float: left;
+    width: 150px;
+    height: 100%;
+    vertical-align: middle;
+    background: #ec008c;
+    color: white;
+    font-size: 1.625em;
+    line-height: 1;
+    text-align: center; }
+    .events .date span {
+      font-size: 3.125em; }
+  .events .thumb {
+    float: left;
+    max-width: 440px; }
+  .events .content {
+    float: left;
+    max-width: 550px;
+    padding: 30px; }
+    .events .content h3 {
+      text-transform: none;
+      color: #333333;
+      font-size: 1.5em;
+      line-height: 1.5; }
+    .events .content p {
+      font-size: 1em;
+      line-height: 1.2;
+      letter-spacing: none; }

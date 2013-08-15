@@ -105,7 +105,7 @@ STRUCTURE
 
 /*********** HEADER ***********/
 .pink_bkgnd { background-color: #de1485; } // TODO: Change this over to a variable
-.offwhite_bkgnd { background-color: $grey1; }
+.offwhite_bkgnd { background-color: $grey; }
 .gray_bkgnd { background-color: $grey5; }
 
 /************ SECTION STYLES **********/
@@ -346,9 +346,6 @@ input:checked ~ .hidden_nav{
 
 .featured-event{
   padding: 60px 0;
-  // .wrapper{
-  //   @extend clearfix;
-  // }
   article > a{
     display: block;
     min-height: 460px;
@@ -364,9 +361,10 @@ input:checked ~ .hidden_nav{
     }
   }
   .info{
+    @extend .font-display;
     width: 35%;
     padding-right: 55px;
-    p{ font-size: em(16); }
+    p{ font-size: em(16); line-height: 2;}
     strong{ color: $primary; }
     .btn{
       width: 300px;
@@ -374,6 +372,7 @@ input:checked ~ .hidden_nav{
     }
   }
   .description{
+    @extend .font-book;
     width: 65%;
     p{ font-size: em(18); }
     strong{
@@ -386,6 +385,51 @@ input:checked ~ .hidden_nav{
   }
 }
 
+.events{
+  @include clearfix;
+  display: table;
+  max-width: 1140px;
+  background: $grey1;
+  max-height: 150px;
+  margin-top: 20px;
+  &:first-child{ margin-top: 0; }
+  .date{
+    @extend .font-display;
+    float: left;
+    width: 150px;
+    height: 100%;
+    vertical-align: middle;
+    // padding: 22px 40px;
+    background: $primary;
+    color: $white;
+    font-size: em(26);
+    line-height: 1;
+    text-align: center;
+    span{ @extend .font-bold; font-size: em(50); }
+  }
+  .thumb{
+    float: left;
+    max-width: 440px;
+  }
+  .content{
+    float: left;
+    max-width: 550px;
+    padding: 30px;
+    h3{
+      @extend .font-display;
+      text-transform: none;
+      color: $grey6;
+      font-size: em(24);
+      line-height: 1.5;
+    }
+    p{
+      @extend .font-book;
+      font-size: em(16);
+      line-height: 1.2;
+      letter-spacing: none;
+    }
+  }
+}
 
 
 
