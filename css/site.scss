@@ -22,7 +22,9 @@ html{
   padding: 0;
   margin: 0;
 }
-body{ @extend .font-sans; }
+body{
+  @extend .font-sans;
+}
 .margin_top { margin-top: 3%; }
 
 /*
@@ -47,29 +49,29 @@ STRUCTURE
   margin: 0 auto;
   // padding: 5% 4%; TODO: Add padding to mediaquery
 }
-.column{ float: left; }
-.leftcolumn{
-  width: 100%;
-  float: left;
-}
-.header_leftcolumn{
-  width: 40%;
-  float: left;
-}
-.rightcolumn{
-  width: 100%;
-  float: left;
-}
-.header_rightcolumn{
-  width: 60%;
-  padding: 8% 0 10% 0;
-  float: left;
-  p{
-    max-width: 684px;
-    padding-right: 5%;
-  }
-}
-.txt_flt-left{ float: left; }
+// .column{ float: left; }
+// .leftcolumn{
+//   width: 100%;
+//   float: left;
+// }
+// .header_leftcolumn{
+//   width: 40%;
+//   float: left;
+// }
+// .rightcolumn{
+//   width: 100%;
+//   float: left;
+// }
+// .header_rightcolumn{
+//   width: 60%;
+//   padding: 8% 0 10% 0;
+//   float: left;
+//   p{
+//     max-width: 684px;
+//     padding-right: 5%;
+//   }
+// }
+// .txt_flt-left{ float: left; }
 
 
 /*********** NAV ***********/
@@ -109,7 +111,22 @@ STRUCTURE
 .gray_bkgnd { background-color: $grey5; }
 
 /************ SECTION STYLES **********/
-.interior { background-color: rgba(249, 249, 249, 1); }
+.interior {
+  @include clearfix;
+  background-color: rgba($grey, .6);
+  padding: 80px 0;
+  border-bottom: 1px solid $grey2;
+  .column{
+    float: left;
+    width: 40%;
+    padding-right: 40px;
+    text-align: right;
+  }
+  .content{
+    float: left;
+    width: 60%;
+  }
+}
 .border-btm-gray { border-bottom: 1px solid #d9d9d9; }
 .border-top-gray { border-top: 1px solid #d9d9d9; }
 .border-btm-lt-gray{ border-bottom: 2px solid #f9f9f9; }
@@ -182,23 +199,50 @@ ul{
 }
 .no-border{ border-bottom: none; }
 
+/*********** ABOUT ***********/
+
+.about-interior{
+  @extend .interior;
+  @include clearfix;
+  padding: 80px 0;
+  h2{
+    float: left;
+    text-align: right;
+    width: 40%;
+    padding-right: 40px;
+  }
+  .content{
+    float: left;
+    width: 60%;
+  }
+}
 
 /*********** Board of Directors LIST STYLES ***********/
-.board{
+.board-directors{
+  background-color: rgba($grey, .6);
+}
+.director{
+  @extend .wrapper;
+  @include clearfix;
   list-style: none outside none;
-  padding-bottom: 4%;
-  img{
-    border-radius: 50% 50% 50% 50%;
-    margin: 0 auto;
-    width: 70%;
-    float: right;
+  padding: 40px 0;
+  &:first-child{
+    h5{ font-size: em(37); }
+    p{ font-size: em(20);}
   }
+  img{
+    float: left;
+    margin-left: 10%;
+    border-radius: 50%;
+    width: 24%;
+  }
+  .content{ margin-left: 40%}
   h3{
-    font-size: 20px;
+    font-size: em(20);
     padding-top: 20px;
   }
   p{
-    font-size: 15px;
+    font-size: em(15);
     line-height: 1.8;
     padding-right: 6%;
   }
@@ -234,6 +278,7 @@ FOOTER
 */
 
 footer{
+  margin-top: 306px;
   nav{ @include clearfix; }
   #ftr-logo{
     position: relative;
@@ -475,7 +520,7 @@ input:checked ~ .hidden_nav{
 }
 
 .classification{
-  background-color: rgba($grey, .9);
+  background-color: rgba($grey, .6);
   padding: 60px 0;
   border-bottom: 1px solid $grey2;
   h5{
@@ -487,7 +532,7 @@ input:checked ~ .hidden_nav{
 }
 .creative-class{
   @include transition(all .4s linear);
-  background-color: rgba($grey, .9);
+  background-color: rgba($grey, .6);
   padding: 60px 0;
   border-bottom: 1px solid $grey2;
   height: 360px;
@@ -577,6 +622,11 @@ input:checked ~ .hidden_nav{
 
 }
 
+.fadein_content{
+  @extend .icon-shape_footer;
+  background-position: left bottom;
+  background-size: 60%;
+}
 
 
 

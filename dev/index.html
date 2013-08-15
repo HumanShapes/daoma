@@ -19,37 +19,30 @@
 </head>
 
 <body>
-<!--
-<div class="fadein_opening">
-  <div class="fadeout_opening">
-    <img src="img/shape_intro.svg"></img>
-  </div>
-</div>
 
-TODO: Enable with jQuery and jQuery cookie -->
+  <div class="fadein_content">
 
-<div class="fadein_content">
+    <nav id="main-nav">
+      <h1 id="logo"><a href="index.html" title="Home">design alliance Omaha</a></h1>
+      <ul class="link">
+        <li><a href="about.html">About</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+      <input type="checkbox" id="toggle">
+        <label for="toggle">☰</label>
+        <div class="hidden_nav">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="join.html">Join</a></li>
+          </ul>
+        </div>
+      </input>
+    </nav>
 
-  <nav id="main-nav">
-    <h1 id="logo"><a href="index.html" title="Home">design alliance Omaha</a></h1>
-    <ul class="link">
-      <li><a href="about.html">About</a></li>
-      <li><a href="partners.html">Partners</a></li>
-      <li><a href="members.html">Members</a></li>
-      <li><a href="join.html">Join</a></li>
-    </ul>
-    <input type="checkbox" id="toggle">
-      <label for="toggle">☰</label>
-      <div class="hidden_nav">
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="partners.html">Partners</a></li>
-          <li><a href="members.html">Members</a></li>
-          <li><a href="join.html">Join</a></li>
-        </ul>
-      </div>
-    </input>
-  </nav>
 
   <section class="feature">
     <div class="slide">
@@ -67,26 +60,6 @@ TODO: Enable with jQuery and jQuery cookie -->
         design disciplines and their relationship to our cities, workplace, home and culture.</p>
     </div>
   </section>
-
-<!--   <section class="featured-event">
-    <article class="wrapper group">
-      <a href="#" title="Featured Event">
-        <h2><strong>PDX > OMA</strong><br>
-        Austin Howe</h2>
-        <img src="img/img-eventFeatured_sample.jpg" alt="Sample">
-      </a>
-      <div class="info column">
-        <p><strong>Creative Director and Writer for Design</strong><br>
-        25 October 2012 at 7 PM<br>
-        KANEKO Truss Bow<br>
-        This event is FREE</p>
-        <a href="#" class="btn">rsvp</a>
-      </div>
-      <div class="description column">
-        <p><strong>Austin Howe</strong> is a Portland-based creative director and writer who collaborates with firms like Ziba Design, Sandstrom Partners, Wieden+Kennedy, Co Projects and JDK to help companies find their authentic voice and historical significance (if any). He is the author of Designers Don't Read and Designers Don't Have Influences.</p>
-      </div>
-    </article>
-  </section> -->
   <section class="upcoming">
     <div class="wrapper">
       <h2>Upcoming Events</h2>
@@ -163,10 +136,11 @@ TODO: Enable with jQuery and jQuery cookie -->
       </ul>
     </div>
   </section>
+
   <!--parallax-->
   <div class="about_triangle1" data-type="background" data-speed="-10"></div>
-   <section class='imagebreak group'>
-    <img class="about-1" data-type="background" data-speed="-2"></div>
+  <section class='imagebreak group'>
+    <div class="about-1" data-type="background" data-speed="-2"></div>
   </section>
 
   <section class="classification">
@@ -193,6 +167,7 @@ TODO: Enable with jQuery and jQuery cookie -->
       </div>
     </div>
   </section>
+
   <section class="creative-class">
     <div class="wrapper">
       <h3 class="three">Tethered<br>Ex&ndash;Patriot</h3>
@@ -201,6 +176,7 @@ TODO: Enable with jQuery and jQuery cookie -->
       </div>
     </div>
   </section>
+
   <section class="creative-class">
     <div class="wrapper">
       <h3 class="four">Inquisitive<br>Import</h3>
@@ -210,32 +186,4 @@ TODO: Enable with jQuery and jQuery cookie -->
     </div>
   </section>
 
-  <footer>
-    <nav>
-      <h6 id="ftr-logo"><a href="/">design alliance Omaha</a></h6>
-      <ul>
-        <li class="next"><a href="partners.html">Partners</a></li>
-        <li class="facebook"><a href="https://www.facebook.com/pages/daOMA-design-alliance-OMAha-Inc/304226363724?fref=ts">Facebook</a></li>
-        <li class="twitter"><a href="">Twitter</a></li>
-      </ul>
-    </nav>
-  </footer>
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script type="text/javascript">
-  jQuery(document).ready(function(){
-    $objWindow = $(window);
-    $('div[data-type="background"]').each(function(){
-      var $bgObj = $(this);
-      $(window).scroll(function() {
-        var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
-
-        var coords = '100% '+ yPos + 'px';
-              // Animate the background
-         $bgObj.css({ backgroundPosition: coords });
-      });
-    });
-  });
-  </script>
-</body>
-</html>
+include "includes/footer-global.html";

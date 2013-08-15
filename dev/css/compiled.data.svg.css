@@ -66,8 +66,8 @@
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%221270px%22%20height%3D%221079.711px%22%20viewBox%3D%220%200%201270%201079.711%22%20enable-background%3D%22new%200%200%201270%201079.711%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23FAFAFA%22%20points%3D%22601.5%2C0%20399.5%2C184.5%201270%2C410.5%201269%2C0%20%22%2F%3E%3Cpolygon%20fill%3D%22%23EEEEEE%22%20points%3D%221270%2C1079.711%20399.5%2C184.5%201270%2C410.5%20%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-shape_footer {
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%22288px%22%20height%3D%22144px%22%20viewBox%3D%220%200%20288%20144%22%20enable-background%3D%22new%200%200%20288%20144%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23F3F4F4%22%20points%3D%220%2C144%20135.333%2C44%20203.168%2C0.028%200%2C66%20%22%2F%3E%3Cpolygon%20fill%3D%22%23F9F9FA%22%20points%3D%220%2C66%20203.168%2C0.028%200%2C0%20%22%2F%3E%3Cpolygon%20fill%3D%22%23F7F8F9%22%20points%3D%220%2C66%2080.75%2C84.333%20125.37%2C51.362%20%22%2F%3E%3C%2Fsvg%3E");
+.icon-shape_footer, .fadein_content {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%22288px%22%20height%3D%22144px%22%20viewBox%3D%220%200%20288%20144%22%20enable-background%3D%22new%200%200%20288%20144%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23F3F4F4%22%20points%3D%220%2C144%20135.333%2C44%20203.168%2C0.028%200%2C66%20%22%2F%3E%3Cpolygon%20fill%3D%22%23F9F9F9%22%20points%3D%220%2C66%20203.168%2C0.028%200%2C0%20%22%2F%3E%3Cpolygon%20fill%3D%22%23F7F8F9%22%20points%3D%220%2C66%2080.75%2C84.333%20125.37%2C51.362%20%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
 .icon-shape_intro {
@@ -76,6 +76,10 @@
 
 .icon-shape_partners {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%221270px%22%20height%3D%22880px%22%20viewBox%3D%220%200%201270%20880%22%20enable-background%3D%22new%200%200%201270%20880%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23EC008C%22%20points%3D%22-3.014%2C0%20701.5%2C0%20992.891%2C390.28%20-3.014%2C880%20%22%2F%3E%3Cpolygon%20opacity%3D%220.1%22%20enable-background%3D%22new%20%20%20%20%22%20points%3D%220%2C222.5%20992.891%2C390.28%20-3.014%2C880%20%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat; }
+
+.icon-triangle_shapes_grey {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%22314px%22%20height%3D%22230px%22%20viewBox%3D%220%200%20314%20230%22%20enable-background%3D%22new%200%200%20314%20230%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Cpolygon%20fill%3D%22%23F3F4F4%22%20points%3D%220%2C229.857%20166.168%2C117.185%20314%2C74.065%200%2C0.143%20%20%22%2F%3E%20%3Cpolygon%20fill%3D%22%23F7F8F9%22%20points%3D%220%2C94.062%20314%2C74.065%200%2C0.143%20%20%22%2F%3E%20%3Cpolygon%20fill%3D%22%23F0EFF0%22%20points%3D%220%2C94.062%20166.168%2C117.185%20237.673%2C78.926%20%20%22%2F%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
 .icon-twitter, footer ul li.twitter a {
@@ -501,10 +505,10 @@ svg:not(:root) {
 ===================== */
 /* #Fonts
 ===================== */
-.font-sans, h1, h2, h3, h4, h5, h6, body {
+.font-sans, h4, h5, body {
   font-family: 'intro_lightregular', sans-serif; }
 
-.font-display, strong, .featured-event .info, .upcoming h2, .events .date, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2, .past-speakers li p {
+.font-display, h1, h2, h3, h4, h5, h6, strong, .featured-event .info, .upcoming h2, .events .date, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2, .past-speakers li p {
   font-family: 'intro_regularregular', sans-serif; }
 
 .font-bold, ul li .emphasis, .events .date span {
@@ -814,35 +818,9 @@ TYPOGRAPHY
 STRUCTURE
 ==========================================================================
 */
-.wrapper, .feature h1 {
+.wrapper, .director, .feature h1 {
   max-width: 1140px;
   margin: 0 auto; }
-
-.column {
-  float: left; }
-
-.leftcolumn {
-  width: 100%;
-  float: left; }
-
-.header_leftcolumn {
-  width: 40%;
-  float: left; }
-
-.rightcolumn {
-  width: 100%;
-  float: left; }
-
-.header_rightcolumn {
-  width: 60%;
-  padding: 8% 0 10% 0;
-  float: left; }
-  .header_rightcolumn p {
-    max-width: 684px;
-    padding-right: 5%; }
-
-.txt_flt-left {
-  float: left; }
 
 /*********** NAV ***********/
 #main-nav {
@@ -887,8 +865,22 @@ STRUCTURE
   background-color: #555555; }
 
 /************ SECTION STYLES **********/
-.interior {
-  background-color: #f9f9f9; }
+.interior, .about-interior {
+  background-color: rgba(245, 245, 245, 0.6);
+  padding: 80px 0;
+  border-bottom: 1px solid #cccccc; }
+  .interior:after, .about-interior:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .interior .column, .about-interior .column {
+    float: left;
+    width: 40%;
+    padding-right: 40px;
+    text-align: right; }
+  .interior .content, .about-interior .content {
+    float: left;
+    width: 60%; }
 
 .border-btm-gray {
   border-bottom: 1px solid #d9d9d9; }
@@ -982,20 +974,49 @@ ul h4 {
 .no-border {
   border-bottom: none; }
 
+/*********** ABOUT ***********/
+.about-interior {
+  padding: 80px 0; }
+  .about-interior:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .about-interior h2 {
+    float: left;
+    text-align: right;
+    width: 40%;
+    padding-right: 40px; }
+  .about-interior .content {
+    float: left;
+    width: 60%; }
+
 /*********** Board of Directors LIST STYLES ***********/
-.board {
+.board-directors {
+  background-color: rgba(245, 245, 245, 0.6); }
+
+.director {
   list-style: none outside none;
-  padding-bottom: 4%; }
-  .board img {
-    border-radius: 50% 50% 50% 50%;
-    margin: 0 auto;
-    width: 70%;
-    float: right; }
-  .board h3 {
-    font-size: 20px;
+  padding: 40px 0; }
+  .director:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .director:first-child h5 {
+    font-size: 2.3125em; }
+  .director:first-child p {
+    font-size: 1.25em; }
+  .director img {
+    float: left;
+    margin-left: 10%;
+    border-radius: 50%;
+    width: 24%; }
+  .director .content {
+    margin-left: 40%; }
+  .director h3 {
+    font-size: 1.25em;
     padding-top: 20px; }
-  .board p {
-    font-size: 15px;
+  .director p {
+    font-size: 0.9375em;
     line-height: 1.8;
     padding-right: 6%; }
 
@@ -1023,42 +1044,44 @@ ul h4 {
 FOOTER
 ==========================================================================
 */
-footer nav:after {
-  content: "";
-  display: table;
-  clear: both; }
-footer #ftr-logo {
-  position: relative;
-  float: left;
-  margin-left: 30px;
-  margin-top: 40px; }
-  footer #ftr-logo a {
-    background-size: contain;
-    display: block;
-    width: 100px;
-    height: 50px;
-    text-indent: -9999em; }
-footer ul {
-  margin: 0;
-  padding: 0;
-  float: right;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
-  footer ul li {
-    float: right; }
-  footer ul a {
-    -webkit-transition: all 0.25s linear;
-    -moz-transition: all 0.25s linear;
-    transition: all 0.25s linear;
-    display: block;
-    height: 0;
-    width: 120px;
-    padding-top: 120px;
-    overflow: hidden;
-    background-position: center center; }
-    footer ul a:hover {
-      -webkit-box-shadow: inset 0 0 10px #f0f0f0;
-      box-shadow: inset 0 0 10px #f0f0f0; }
+footer {
+  margin-top: 306px; }
+  footer nav:after {
+    content: "";
+    display: table;
+    clear: both; }
+  footer #ftr-logo {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 40px; }
+    footer #ftr-logo a {
+      background-size: contain;
+      display: block;
+      width: 100px;
+      height: 50px;
+      text-indent: -9999em; }
+  footer ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+    footer ul li {
+      float: right; }
+    footer ul a {
+      -webkit-transition: all 0.25s linear;
+      -moz-transition: all 0.25s linear;
+      transition: all 0.25s linear;
+      display: block;
+      height: 0;
+      width: 120px;
+      padding-top: 120px;
+      overflow: hidden;
+      background-position: center center; }
+      footer ul a:hover {
+        -webkit-box-shadow: inset 0 0 10px #f0f0f0;
+        box-shadow: inset 0 0 10px #f0f0f0; }
 
 .shape_footer {
   float: left;
@@ -1226,7 +1249,7 @@ input:checked ~ .hidden_nav {
       letter-spacing: none; }
 
 .classification {
-  background-color: rgba(245, 245, 245, 0.9);
+  background-color: rgba(245, 245, 245, 0.6);
   padding: 60px 0;
   border-bottom: 1px solid #cccccc; }
   .classification h5 {
@@ -1240,7 +1263,7 @@ input:checked ~ .hidden_nav {
   -webkit-transition: all 0.4s linear;
   -moz-transition: all 0.4s linear;
   transition: all 0.4s linear;
-  background-color: rgba(245, 245, 245, 0.9);
+  background-color: rgba(245, 245, 245, 0.6);
   padding: 60px 0;
   border-bottom: 1px solid #cccccc;
   height: 360px; }
@@ -1250,9 +1273,9 @@ input:checked ~ .hidden_nav {
       opacity: 1; }
     .creative-class:hover h3 {
       opacity: 0; }
-  .creative-class .wrapper, .creative-class .feature h1, .feature .creative-class h1 {
+  .creative-class .wrapper, .creative-class .director, .creative-class .feature h1, .feature .creative-class h1 {
     position: relative; }
-    .creative-class .wrapper:after, .creative-class .feature h1:after, .feature .creative-class h1:after {
+    .creative-class .wrapper:after, .creative-class .director:after, .creative-class .feature h1:after, .feature .creative-class h1:after {
       content: "";
       display: table;
       clear: both; }
@@ -1279,12 +1302,12 @@ input:checked ~ .hidden_nav {
 
 .past-speakers {
   background-color: #333333; }
-  .past-speakers .wrapper, .past-speakers .feature h1, .feature .past-speakers h1 {
+  .past-speakers .wrapper, .past-speakers .director, .past-speakers .feature h1, .feature .past-speakers h1 {
     padding: 40px 0; }
-    .past-speakers .wrapper h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2 {
+    .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2 {
       font-size: 1.875em;
       text-transform: none; }
-    .past-speakers .wrapper p, .past-speakers .feature h1 p, .feature .past-speakers h1 p {
+    .past-speakers .wrapper p, .past-speakers .director p, .past-speakers .feature h1 p, .feature .past-speakers h1 p {
       color: white; }
   .past-speakers ul {
     padding: 0;
@@ -1324,3 +1347,7 @@ input:checked ~ .hidden_nav {
       color: #cccccc; }
       .past-speakers li p span {
         color: #ec008c; }
+
+.fadein_content {
+  background-position: left bottom;
+  background-size: 60%; }

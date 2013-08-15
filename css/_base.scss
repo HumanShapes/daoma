@@ -37,7 +37,7 @@ $grey7: #313131;
 ===================== */
 
 h1, h2, h3, h4, h5, h6{
-  @extend .font-sans;
+  @extend .font-display;
   font-weight: normal;
   color: $primary;
   margin: 0;
