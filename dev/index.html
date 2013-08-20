@@ -24,23 +24,13 @@
 
     <nav id="main-nav">
       <h1 id="logo"><a href="index.html" title="Home">design alliance Omaha</a></h1>
+      <span class="toggle">☰</span>
       <ul class="link">
         <li><a href="about.html">About</a></li>
         <li><a href="partners.html">Partners</a></li>
         <li><a href="members.html">Members</a></li>
         <li><a href="join.html">Join</a></li>
       </ul>
-      <input type="checkbox" id="toggle">
-        <label for="toggle">☰</label>
-        <div class="hidden_nav">
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="partners.html">Partners</a></li>
-            <li><a href="members.html">Members</a></li>
-            <li><a href="join.html">Join</a></li>
-          </ul>
-        </div>
-      </input>
     </nav>
 
 
@@ -186,4 +176,35 @@
     </div>
   </section>
 
-include "includes/footer-global.html";
+  <footer>
+    <nav>
+      <h6 id="ftr-logo"><a href="/">design alliance Omaha</a></h6>
+      <ul>
+        <li class="next"><a href="partners.html">Partners</a></li>
+        <li class="facebook"><a href="https://www.facebook.com/pages/daOMA-design-alliance-OMAha-Inc/304226363724?fref=ts">Facebook</a></li>
+        <li class="twitter"><a href="">Twitter</a></li>
+      </ul>
+    </nav>
+  </footer>
+<!-- fade in end-->
+</div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript">
+  jQuery(document).ready(function(){
+    $objWindow = $(window);
+    $('div[data-type="background"]').each(function(){
+      var $bgObj = $(this);
+      $(window).scroll(function() {
+        var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
+
+        var coords = '100% '+ yPos + 'px';
+              // Animate the background
+         $bgObj.css({ backgroundPosition: coords });
+      });
+    });
+  });
+  </script>
+</body>
+</html>
+
