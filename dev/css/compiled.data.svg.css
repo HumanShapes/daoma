@@ -50,7 +50,7 @@
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2216px%22%20height%3D%2230px%22%20viewBox%3D%2267%2060.207%2016%2030%22%20enable-background%3D%22new%2067%2060.207%2016%2030%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Cpath%20fill%3D%22%23C8C8C8%22%20d%3D%22M77.152%2C90.207V76.443h4.427l0.743-5.101h-5.17V67.33c0-1.453%2C0.743-2.282%2C2.213-2.282h3.32v-4.599%20%20c0%2C0-1.487-0.242-3.631-0.242c-4.859%2C0-7.314%2C2.696-7.314%2C6.726v4.41h-4.427v5.101h4.427v13.764H77.152L77.152%2C90.207z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-flightpath {
+.icon-flightpath, #partners > div > div {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%22400px%22%20height%3D%22400px%22%20viewBox%3D%220%200%20400%20400%22%20enable-background%3D%22new%200%200%20400%20400%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Cg%3E%20%20%3Cdefs%3E%20%20%20%3Cpolygon%20id%3D%22SVGID_1_%22%20points%3D%22-74.789%2C0%20356.521%2C40.031%20356.521%2C471.531%20-74.789%2C431.5%20%20%20%20%22%2F%3E%20%20%3C%2Fdefs%3E%20%20%3CclipPath%20id%3D%22SVGID_2_%22%3E%20%20%20%3Cuse%20xlink%3Ahref%3D%22%23SVGID_1_%22%20%20overflow%3D%22visible%22%2F%3E%20%20%3C%2FclipPath%3E%20%20%3Cpath%20clip-path%3D%22url(%23SVGID_2_)%22%20fill%3D%22none%22%20stroke%3D%22%23231F20%22%20d%3D%22M229.821%2C107.66c-0.64-0.104-1.278-0.214-1.919-0.325%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23231F20%22%20stroke-dasharray%3D%224.025%2C4.025%22%20d%3D%22M224.054%2C106.617%20%20%20c-31.815-6.265-62.454-20.742-88.579-43.672c-26.653-23.397-45.189-52.59-55.404-84.04%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpolygon%20fill%3D%22%23EC207A%22%20points%3D%22230.852%2C114.702%20229.562%2C112.507%20234.739%2C109.464%20231.699%2C104.287%20233.895%2C102.998%20%20%20%20238.226%2C110.374%20%20%20%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpolygon%20fill%3D%22%23FFFFFF%22%20stroke%3D%22%23FFFFFF%22%20points%3D%22230.852%2C114.116%20229.562%2C111.92%20234.739%2C108.879%20231.699%2C103.7%20233.895%2C102.412%20%20%20%20238.226%2C109.788%20%20%20%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23231F20%22%20d%3D%22M63.858%2C536.848c0.226%2C0.608%2C0.452%2C1.215%2C0.685%2C1.821%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpolygon%20fill%3D%22%23EC207A%22%20points%3D%22121.726%2C188.184%20119.872%2C189.934%20123.991%2C194.301%20119.624%2C198.421%20121.373%2C200.275%20%20%20%20127.593%2C194.405%20%20%20%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpolygon%20fill%3D%22%23FFFFFF%22%20stroke%3D%22%23FFFFFF%22%20points%3D%22121.726%2C188.184%20119.872%2C189.934%20123.991%2C194.301%20119.624%2C198.421%20%20%20%20121.373%2C200.275%20127.593%2C194.405%20%20%20%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpolygon%20fill%3D%22%23EC207A%22%20points%3D%2276.991%2C149.073%2075.138%2C150.822%2079.257%2C155.192%2074.891%2C159.312%2076.639%2C161.165%2082.861%2C155.296%20%20%20%20%20%20%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpolygon%20fill%3D%22%23FFFFFF%22%20stroke%3D%22%23FFFFFF%22%20points%3D%2276.991%2C149.073%2075.138%2C150.822%2079.257%2C155.192%2074.891%2C159.312%2076.639%2C161.165%20%20%20%2082.861%2C155.296%20%20%20%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23231F20%22%20stroke-dasharray%3D%224.008%2C4.008%22%20d%3D%22M-191.207%2C543.127%20%20%20c46.592-86.774%2C116.78-162.29%2C207.876-215.885c91.929-54.083%2C168.664-92.116%2C291.624-96.07%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23231F20%22%20d%3D%22M310.249%2C231.112c0.647-0.019%2C1.297-0.037%2C1.948-0.053%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpolygon%20fill%3D%22%23EC207A%22%20points%3D%22314.859%2C224.741%20313.008%2C226.489%20317.127%2C230.859%20312.759%2C234.979%20314.508%2C236.831%20%20%20%20320.729%2C230.964%20%20%20%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpolygon%20fill%3D%22%23FFFFFF%22%20stroke%3D%22%23FFFFFF%22%20points%3D%22314.859%2C224.741%20313.008%2C226.489%20317.127%2C230.859%20312.759%2C234.979%20%20%20%20314.508%2C236.831%20320.729%2C230.964%20%20%20%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23231F20%22%20stroke-dasharray%3D%224.013%2C4.013%22%20d%3D%22M-652.185%2C663.957%20%20%20c71.179-133.723%2C178.932-270.136%2C319.068-352.58c140.741-82.795%2C295.549-120.405%2C447.642-117.306%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23231F20%22%20d%3D%22M116.482%2C194.114c0.647%2C0.014%2C1.296%2C0.03%2C1.944%2C0.046%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23231F20%22%20stroke-dasharray%3D%224.013%2C4.013%22%20d%3D%22M-697.607-275.197%20%20%20C-626.43-141.474-518.675-45.089-378.54%2C37.354c140.744%2C82.793%2C295.549%2C120.403%2C447.641%2C117.305%22%2F%3E%20%3C%2Fg%3E%20%3Cg%3E%20%20%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23231F20%22%20d%3D%22M71.058%2C154.615c0.648-0.015%2C1.297-0.03%2C1.945-0.045%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
@@ -78,7 +78,7 @@
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%221270px%22%20height%3D%221225.398px%22%20viewBox%3D%220%200%201270%201225.398%22%20enable-background%3D%22new%200%200%201270%201225.398%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23FBFBFB%22%20points%3D%221270%2C0%20769.648%2C0%201270%2C880%20%22%2F%3E%3Cpolygon%20fill%3D%22%23F8F8F9%22%20points%3D%22769.648%2C0%20339.5%2C708.5%201036.245%2C466.073%20%22%2F%3E%3Cpolygon%20fill%3D%22%23F6F6F6%22%20points%3D%22917.5%2C880%20339.5%2C708.5%201036.245%2C466.073%20%22%2F%3E%3Cpolygon%20fill%3D%22%23F1F2F2%22%20points%3D%22917.5%2C880%201036.245%2C466.073%201270%2C880%20%22%2F%3E%3Cpolygon%20fill%3D%22%23F1F2F2%22%20points%3D%22339.5%2C708.5%200%2C1192.395%20917.5%2C880%20%22%2F%3E%3Cpolygon%20fill%3D%22%23FCFCFC%22%20points%3D%220%2C0%20339.5%2C708.5%20769.648%2C0%20%22%2F%3E%3Cpolygon%20fill%3D%22%23FEFEFE%22%20points%3D%220%2C0%20339.5%2C708.5%200%2C1192.395%20%22%2F%3E%3Cg%3E%20%3Cpath%20fill%3D%22%23E90C8B%22%20d%3D%22M591.276%2C318.687l-9.516%2C0.66c-4.729%2C0.329-8.085%2C1.649-8.085%2C5.886c0%2C5.719%2C5.775%2C6.379%2C9.186%2C6.379%20%20c5.609%2C0%2C13.034-2.529%2C13.034-9.24v-5.169h-0.109C595.181%2C317.86%2C593.696%2C318.521%2C591.276%2C318.687z%22%2F%3E%20%3Cpath%20fill%3D%22%23E90C8B%22%20d%3D%22M527%2C274.906v76.779h91.569L635%2C364.906l16.432-13.221H743v-76.779H527z%20M567.979%2C332.932h-2.529v-6.16%20%20h-0.11c-1.32%2C3.354-5.225%2C7.041-12.485%2C7.041c-9.899%2C0-15.015-7.041-15.015-15.018c0-8.965%2C6.436-14.903%2C15.015-14.903%20%20c6.931%2C0%2C10.836%2C3.795%2C12.485%2C6.875h0.11V293.66h2.529V332.932z%20M602.771%2C333.043c-0.771%2C0.273-1.815%2C0.439-3.08%2C0.439%20%20c-3.466%2C0-3.466-2.42-3.466-6.16h-0.109c-3.136%2C5.775-9.735%2C6.49-13.42%2C6.49c-2.42%2C0-11.55%2C0-11.55-8.58%20%20c0-5.777%2C4.895-7.757%2C10.614-8.087l9.845-0.66c2.915-0.219%2C4.29-0.549%2C4.29-4.014c0-3.796-2.145-6.382-10.449-6.382%20%20c-7.426%2C0-9.735%2C2.312-10.505%2C7.371h-2.53c0.935-7.096%2C4.564-9.569%2C13.09-9.569c8.195%2C0%2C12.925%2C1.925%2C12.925%2C8.25v15.786%20%20c0%2C2.091%2C0%2C3.354%2C1.87%2C3.354c0.825%2C0%2C1.65-0.164%2C2.475-0.438L602.771%2C333.043L602.771%2C333.043z%20M623.065%2C333.812%20%20c-15.95%2C0-20.846-12.816-20.846-20.518c0-7.698%2C4.896-20.515%2C20.846-20.515s20.845%2C12.815%2C20.845%2C20.515%20%20C643.91%2C320.996%2C639.016%2C333.812%2C623.065%2C333.812z%20M692.846%2C332.932h-2.528v-35.75h-0.11l-18.976%2C35.75h-2.53l-18.977-35.75h-0.108%20%20v35.75h-2.53V293.66h3.795l19.085%2C36.082l19.085-36.082h3.796L692.846%2C332.932L692.846%2C332.932z%20M729.971%2C332.932l-5.774-12.65%20%20h-21.67l-5.775%2C12.65h-2.859l18.041-39.271h2.858l18.04%2C39.271H729.971z%22%2F%3E%20%3Cpath%20fill%3D%22%23E90C8B%22%20d%3D%22M623.065%2C294.981c-11.825%2C0-18.315%2C8.91-18.315%2C18.313c0%2C9.406%2C6.49%2C18.316%2C18.315%2C18.316%20%20c11.824%2C0%2C18.314-8.91%2C18.314-18.316C641.38%2C303.892%2C634.89%2C294.981%2C623.065%2C294.981z%22%2F%3E%20%3Cpolygon%20fill%3D%22%23E90C8B%22%20points%3D%22703.516%2C318.08%20723.204%2C318.08%20713.359%2C296.521%20%20%22%2F%3E%20%3Cpath%20fill%3D%22%23E90C8B%22%20d%3D%22M552.908%2C306.09c-6.49%2C0-12.54%2C4.07-12.54%2C12.65c0%2C8.085%2C5.225%2C12.871%2C12.21%2C12.871%20%20c10.56%2C0%2C13.2-7.479%2C13.2-12.486C565.778%2C309.227%2C558.628%2C306.09%2C552.908%2C306.09z%22%2F%3E%3C%2Fg%3E%3Cellipse%20opacity%3D%220.03%22%20enable-background%3D%22new%20%20%20%20%22%20cx%3D%22636.417%22%20cy%3D%22396.59%22%20rx%3D%2297.083%22%20ry%3D%225.649%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-shape_partners {
+.icon-shape_partners, #partners > div {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%221270px%22%20height%3D%22880px%22%20viewBox%3D%220%200%201270%20880%22%20enable-background%3D%22new%200%200%201270%20880%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23EC008C%22%20points%3D%22-3.014%2C0%20701.5%2C0%20992.891%2C390.28%20-3.014%2C880%20%22%2F%3E%3Cpolygon%20opacity%3D%220.1%22%20enable-background%3D%22new%20%20%20%20%22%20points%3D%220%2C222.5%20992.891%2C390.28%20-3.014%2C880%20%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
@@ -91,9 +91,9 @@
   background-repeat: no-repeat; }
 
 /*
- * Specific layout styles.
- *
-*/
+ * Initial styles and design by Jake Welchert (jakewlechert.com)
+ * Styles converted to SCSS and extend upon by Christopher Kollars (christopherkollars.com)
+ */
 /* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -506,26 +506,26 @@ svg:not(:root) {
   font-style: normal; }
 
 /* #Colors
-===================== */
+=========================================================================== */
 /* #Fonts
-===================== */
-.font-sans, h4, h5, body, .members-list h6 {
+=========================================================================== */
+.font-sans, h4, h5, body, .classification h5, .members-list h6 {
   font-family: 'intro_lightregular', sans-serif; }
 
-.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, .featured-event .info, .upcoming h2, .events .date, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2, .past-speakers li p {
+.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, .upcoming h2, .events .date, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2, .past-speakers li p, #partners h1, #partners p {
   font-family: 'intro_regularregular', sans-serif; }
 
-.font-bold, ul li .emphasis, .events .date span, .memberships .btn {
+.font-bold, .emphasis, .events .date span, .memberships .btn {
   font-family: 'intro_boldregular'; }
 
 .font-thin, .feature h1 {
   font-family: 'intro_thinregular'; }
 
-.font-book, .about p, .featured-event .description, .events .content p {
+.font-book, .about p, .events .content p {
   font-family: 'intro_bookregular'; }
 
 /* #Typography
-===================== */
+=========================================================================== */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 1;
@@ -587,8 +587,12 @@ ul {
 strong {
   font-weight: normal; }
 
+.emphasis {
+  color: #ec008c;
+  font-size: 22px; }
+
 /* #Buttons
-===================== */
+===================================================================== */
 .btn {
   -webkit-transition: all 0.25s linear;
   -moz-transition: all 0.25s linear;
@@ -606,8 +610,7 @@ strong {
     box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.2); }
 
 /* #Structure
-==========================================================================
-*/
+========================================================================== */
 html {
   font-size: 100%;
   overflow-y: scroll;
@@ -627,22 +630,6 @@ html {
 img {
   width: 100%;
   display: block; }
-
-/*
-==========================================================================
-CLEAR FIX - Add class of 'GROUP' to clear floats
-==========================================================================
-*/
-.group:before,
-.group:after {
-  content: "";
-  display: table; }
-
-.group:after {
-  clear: both; }
-
-.group {
-  *zoom: 1; }
 
 /*********** ABOUT PAGE ***********/
 .about-1 {
@@ -789,39 +776,14 @@ CLEAR FIX - Add class of 'GROUP' to clear floats
 
   .about_triangle2 {
     height: 200px; } }
-/*
- * Initial styles and design by Jake Welchert (jakewlechert.com)
- * Styles converted to SCSS and extend upon by Christopher Kollars (christopherkollars.com)
- */
 html {
   color: #555555;
   line-height: 1.5;
   padding: 0;
   margin: 0; }
 
-.margin_top {
-  margin-top: 3%; }
-
-/*
-==========================================================================
-TYPOGRAPHY
-==========================================================================
-*/
-/***********Color Overright***********/
-.txt-pink {
-  color: #ec008c; }
-
-.txt-white {
-  color: white; }
-
-.txt-gray {
-  color: #555555; }
-
-/*
-==========================================================================
-STRUCTURE
-==========================================================================
-*/
+/* #STRUCTURE
+========================================================================== */
 .wrapper, .director, .feature h1 {
   max-width: 1140px;
   margin: 0 auto; }
@@ -834,14 +796,40 @@ STRUCTURE
       padding-left: 30px;
       padding-right: 30px; } }
 
-.content {
-  float: left;
-  width: 60%; }
+.interior {
+  background-color: rgba(245, 245, 245, 0.6);
+  padding: 80px 0; }
+  .interior:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .interior.border {
+    border-bottom: 1px solid #cccccc; }
+  .interior .column {
+    float: left;
+    width: 40%;
+    padding-right: 40px;
+    text-align: right; }
+    @media screen and (max-width: 51.875em) {
+      .interior .column {
+        float: none;
+        width: 100%;
+        text-align: left; } }
+  .interior .content {
+    float: left;
+    width: 60%; }
+    @media screen and (max-width: 51.875em) {
+      .interior .content {
+        float: none;
+        width: 100%; } }
+
+.single-column .content {
+  margin-left: 40%; }
 
 .mobile-head {
   display: none; }
 
-/*********** NAV ***********/
+/*********** MAIN NAV ***********/
 #main-nav {
   min-height: auto;
   background-color: #333333; }
@@ -913,93 +901,10 @@ STRUCTURE
   #logo a:hover {
     opacity: .5; }
 
-/************ SECTION STYLES **********/
-.interior {
-  background-color: rgba(245, 245, 245, 0.6);
-  padding: 80px 0; }
-  .interior:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .interior .column {
-    float: left;
-    width: 40%;
-    padding-right: 40px;
-    text-align: right; }
-    @media screen and (max-width: 51.875em) {
-      .interior .column {
-        float: none;
-        width: 100%;
-        text-align: left; } }
-  .interior .content {
-    float: left;
-    width: 60%; }
-    @media screen and (max-width: 51.875em) {
-      .interior .content {
-        float: none;
-        width: 100%; } }
-
-.border-btm-gray {
-  border-bottom: 1px solid #d9d9d9; }
-
-.border-top-gray {
-  border-top: 1px solid #d9d9d9; }
-
-.border-btm-lt-gray {
-  border-bottom: 2px solid #f9f9f9; }
-
-.imagebreak {
-  position: relative;
-  border-bottom: 10px solid #ec008c; }
-
-/************ CREATIVE CLASS HOMEPAGE **********/
-.bighover {
-  position: relative; }
-
-.large_link-mouseon {
-  -webkit-transition: all 0.4s linear;
-  -moz-transition: all 0.4s linear;
-  transition: all 0.4s linear;
-  position: absolute;
-  background-color: #f9f9f9;
-  z-index: 1001;
-  height: 100%;
-  width: 100%;
-  top: 0; }
-  .large_link-mouseon:hover {
-    opacity: 0; }
-  .large_link-mouseon h3 {
-    font-family: 'intro_regularregular';
-    font-size: 75px;
-    text-transform: none;
-    color: #ec008c;
-    text-align: left;
-    width: 60%;
-    line-height: 1; }
-
-.one {
-  margin-top: 6.5%; }
-
-.two {
-  margin-top: 2.5%; }
-
-.three {
-  margin-top: 3%; }
-
-.four {
-  margin-top: 1%; }
-
-.number {
-  width: 80%;
-  float: right; }
-
 /*********** LIST STYLES ***********/
 ul li {
   color: #333333;
   line-height: 1.6; }
-  ul li .emphasis {
-    color: #ec008c;
-    font-size: 22px; }
 ul h3 {
   padding-bottom: 1%;
   border-bottom: 1px solid #d9d9d9;
@@ -1009,11 +914,13 @@ ul h4 {
   line-height: 2px;
   letter-spacing: 1px; }
 
-/*********** ABOUT ***********/
-/*********** ABOUT PAGE ***********/
+/* #IMAGE BREAK
+====================================================================================*/
 .imagebreak {
+  position: relative;
   overflow: hidden;
-  max-height: 500px; }
+  max-height: 500px;
+  border-bottom: 10px solid #ec008c; }
   .imagebreak > div {
     position: absolute;
     background-attachment: fixed;
@@ -1099,11 +1006,8 @@ ul h4 {
     line-height: 1.6;
     color: #888888; }
 
-/*
-==========================================================================
-FOOTER
-==========================================================================
-*/
+/* #FOOTER
+========================================================================== */
 footer {
   margin-top: 306px; }
   footer nav:after {
@@ -1150,47 +1054,8 @@ footer {
         -webkit-box-shadow: inset 0 0 10px #f0f0f0;
         box-shadow: inset 0 0 10px #f0f0f0; }
 
-.shape_footer {
-  float: left;
-  width: 60%; }
-
-.logo_footer {
-  position: absolute;
-  left: 30px;
-  bottom: 30px;
-  width: 120px;
-  z-index: 100; }
-
-.social_footer {
-  position: absolute;
-  bottom: 0;
-  right: 0; }
-
-input {
-  display: none; }
-  input:checked + label {
-    background: #333;
-    color: #ec008c; }
-
-label {
-  background: #333;
-  cursor: pointer;
-  padding: 40px 50px;
-  float: right;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  color: #fff;
-  font-size: 25px; }
-  label:hover {
-    color: #ec008c; }
-
-/*
-==========================================================================
-  #HOME PAGE
-==========================================================================
-*/
-/*********** FEATURE ***********/
+/* #HOME PAGE
+========================================================================== */
 .feature .content {
   position: absolute;
   z-index: 1;
@@ -1209,40 +1074,15 @@ label {
     text-align: center;
     padding: 130px 0;
     font-size: 1.5em; }
-
-.featured-event {
-  padding: 60px 0; }
-  .featured-event article > a {
-    display: block;
-    min-height: 460px;
-    margin-bottom: 60px; }
-    .featured-event article > a h2 {
-      position: absolute;
-      z-index: 1;
-      text-transform: none;
-      height: inherit; }
-    .featured-event article > a strong {
-      text-transform: uppercase; }
-  .featured-event .info {
-    width: 35%;
-    padding-right: 55px; }
-    .featured-event .info p {
-      font-size: 1em;
-      line-height: 2; }
-    .featured-event .info strong {
-      color: #ec008c; }
-    .featured-event .info .btn {
-      width: 300px;
-      margin-top: 40px; }
-  .featured-event .description {
-    width: 65%; }
-    .featured-event .description p {
-      font-size: 1.125em; }
-    .featured-event .description strong {
-      color: #ec008c; }
-  .featured-event h2 {
-    font-size: 7.75em;
-    color: white; }
+    @media screen and (max-width: 51.875em) {
+      .about p {
+        padding: 40px 0;
+        font-size: 1.25em; }
+        .about p br {
+          display: none; } }
+    @media screen and (min-width: 20em) and (max-width: 40em) {
+      .about p {
+        font-size: 1em; } }
 
 .upcoming {
   background: whitesmoke;
@@ -1254,8 +1094,8 @@ label {
     margin-bottom: 30px; }
 
 .events {
-  display: table;
-  max-width: 1140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   background: #ebebeb;
   max-height: 150px;
   margin-top: 20px; }
@@ -1266,22 +1106,26 @@ label {
   .events:first-child {
     margin-top: 0; }
   .events .date {
-    display: table-cell;
-    width: 150px;
-    vertical-align: middle;
+    width: 14%;
+    float: left;
+    padding: 36px 0;
     background: #ec008c;
     color: white;
-    font-size: 1.625em;
+    font-size: 1.5625em;
     line-height: 1;
     text-align: center; }
     .events .date span {
-      font-size: 3.125em; }
+      font-size: 1.875em;
+      line-height: 1.3; }
   .events .thumb {
-    display: table-cell;
-    width: 440px; }
+    float: left;
+    width: 40%; }
   .events .content {
-    display: table-cell;
-    width: 550px; }
+    float: left;
+    width: 46%;
+    height: 95%;
+    padding: 0 34px;
+    margin: auto; }
     .events .content h3 {
       text-transform: none;
       color: #333333;
@@ -1300,8 +1144,16 @@ label {
     font-size: 2.3125em;
     line-height: 1.4;
     margin-left: 40%; }
+    @media screen and (max-width: 51.875em) {
+      .classification h5 {
+        margin-left: 0;
+        font-size: 1.875em; } }
   .classification p {
     margin-left: 40%; }
+    @media screen and (max-width: 51.875em) {
+      .classification p {
+        margin-left: 0;
+        font-size: 1em; } }
 
 .creative-class {
   -webkit-transition: all 0.4s linear;
@@ -1309,14 +1161,18 @@ label {
   transition: all 0.4s linear;
   background-color: rgba(245, 245, 245, 0.6);
   padding: 60px 0;
-  border-bottom: 1px solid #cccccc;
-  height: 360px; }
-  .creative-class:hover {
-    background-color: white; }
-    .creative-class:hover .content {
-      opacity: 1; }
-    .creative-class:hover h3 {
-      opacity: 0; }
+  border-top: 1px solid #cccccc; }
+  .creative-class:first-child {
+    border-top: 0; }
+  @media screen and (min-width: 51.875em) {
+    .creative-class {
+      height: 360px; }
+      .creative-class:hover {
+        background-color: white; }
+        .creative-class:hover .content {
+          opacity: 1; }
+        .creative-class:hover h3 {
+          opacity: 0; } }
   .creative-class .wrapper, .creative-class .director, .creative-class .feature h1, .feature .creative-class h1 {
     position: relative; }
     .creative-class .wrapper:after, .creative-class .director:after, .creative-class .feature h1:after, .feature .creative-class h1:after {
@@ -1324,35 +1180,72 @@ label {
       display: table;
       clear: both; }
   .creative-class h3 {
-    -webkit-transition: all 0.4s linear;
-    -moz-transition: all 0.4s linear;
-    transition: all 0.4s linear;
+    -webkit-transition: opacity 0.4s linear;
+    -moz-transition: opacity 0.4s linear;
+    transition: opacity 0.4s linear;
     position: absolute;
-    vertical-align: middle;
     text-transform: none;
     font-size: 4.6875em;
     line-height: 1;
     width: 100%;
     padding-left: 40%; }
+    @media screen and (max-width: 51.875em) {
+      .creative-class h3 {
+        padding-left: 0;
+        position: relative;
+        font-size: 1.375em;
+        line-height: 1.5;
+        text-transform: uppercase; }
+        .creative-class h3 br {
+          display: none; }
+        .creative-class h3.one ~ .content, .creative-class h3.two ~ .content, .creative-class h3.three ~ .content, .creative-class h3.four ~ .content {
+          background-image: none; } }
   .creative-class .content {
     -webkit-transition: all 0.4s linear;
     -moz-transition: all 0.4s linear;
     transition: all 0.4s linear;
-    background-position: 70px 0;
+    background-position: 2% 0;
     height: 230px;
-    opacity: 0; }
+    opacity: 0;
+    width: 100%;
+    float: none; }
+    @media screen and (max-width: 51.875em) {
+      .creative-class .content {
+        height: inherit;
+        opacity: 1;
+        background-image: none; } }
     .creative-class .content p {
       margin-left: 40%; }
+      @media screen and (max-width: 51.875em) {
+        .creative-class .content p {
+          margin-left: 0;
+          font-size: 1em; } }
+  @media screen and (min-width: 51.875em) {
+    .creative-class .one {
+      margin-top: 6.5%; }
+    .creative-class .two {
+      margin-top: 2.5%; }
+    .creative-class .three {
+      margin-top: 3%; }
+    .creative-class .four {
+      margin-top: 1%; } }
 
 .past-speakers {
   background-color: #333333; }
   .past-speakers .wrapper, .past-speakers .director, .past-speakers .feature h1, .feature .past-speakers h1 {
-    padding: 40px 0; }
+    padding-top: 40px;
+    padding-bottom: 40px; }
     .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2 {
       font-size: 1.875em;
       text-transform: none; }
+      @media screen and (min-width: 20em) and (max-width: 40em) {
+        .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2 {
+          font-size: 1.25em; } }
     .past-speakers .wrapper p, .past-speakers .director p, .past-speakers .feature h1 p, .feature .past-speakers h1 p {
       color: white; }
+      @media screen and (min-width: 20em) and (max-width: 40em) {
+        .past-speakers .wrapper p, .past-speakers .director p, .past-speakers .feature h1 p, .feature .past-speakers h1 p {
+          font-size: 1em; } }
   .past-speakers ul {
     padding: 0;
     margin: 0; }
@@ -1364,8 +1257,14 @@ label {
     position: relative;
     float: left;
     width: 33.33%;
-    padding: 2px;
+    padding: 1px;
     background: white; }
+    @media screen and (max-width: 40em) {
+      .past-speakers li {
+        width: 50%; } }
+    @media screen and (min-width: 20em) and (max-width: 29.99em) {
+      .past-speakers li {
+        width: 100%; } }
     .past-speakers li:hover img {
       opacity: 1; }
     .past-speakers li:hover p {
@@ -1389,6 +1288,9 @@ label {
       margin: auto;
       text-align: center;
       color: #cccccc; }
+      @media screen and (max-width: 55em) {
+        .past-speakers li p {
+          width: 60%; } }
       .past-speakers li p span {
         color: #ec008c; }
 
@@ -1400,7 +1302,7 @@ label {
   background-size: 40%;
   padding: 0; }
   #members > div {
-    background-position: center;
+    background-size: cover;
     min-height: 100px; }
     #members > div:after {
       content: "";
@@ -1409,6 +1311,22 @@ label {
     #members > div .content {
       margin-left: 40%;
       padding: 120px 0; }
+
+#partners {
+  background-color: #e20086; }
+  #partners h1 {
+    color: #313131; }
+  #partners p {
+    color: white; }
+  #partners > div {
+    background-position: left top;
+    background-size: cover; }
+    #partners > div > div {
+      background-position: left top;
+      background-size: 40%; }
+  #partners .content {
+    margin-left: 40%;
+    padding: 120px 0; }
 
 .members-list h6 {
   display: list-item;
@@ -1430,9 +1348,6 @@ label {
   margin-left: 40%;
   padding: 120px 0;
   font-size: 0.875em; }
-
-.single-column .content {
-  margin-left: 40%; }
 
 .memberships p:first-child {
   margin-bottom: 20px; }

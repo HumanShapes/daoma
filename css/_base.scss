@@ -6,7 +6,7 @@
 
 
 /* #Colors
-===================== */
+=========================================================================== */
 $white    : #ffffff;
 $black    : #000000;
 
@@ -25,7 +25,7 @@ $grey7: #313131;
 
 
 /* #Fonts
-===================== */
+=========================================================================== */
 
 .font-sans{ font-family: 'intro_lightregular', sans-serif; }
 .font-display{ font-family: 'intro_regularregular', sans-serif; }
@@ -34,7 +34,7 @@ $grey7: #313131;
 .font-book{ font-family: 'intro_bookregular'; }
 
 /* #Typography
-===================== */
+=========================================================================== */
 
 h1, h2, h3, h4, h5, h6{
   @extend .font-display;
@@ -46,7 +46,6 @@ h1, h2, h3, h4, h5, h6{
 h1{
   font-size: em(70);
   letter-spacing: 5px;
-  // color: $grey2;
 }
 h2{
   font-size: em(26); // TODO: Check orignial source to make sure this is rendering correct type face.
@@ -94,8 +93,14 @@ a{
 }
 ul { list-style: none; padding-left: 0px; }
 strong{ @extend .font-display; font-weight: normal; }
+.emphasis{
+  @extend .font-bold;
+  color: #ec008c;
+  font-size: 22px;
+}
+
 /* #Buttons
-===================== */
+===================================================================== */
 
 .btn {
   @include transition(all .25s linear);
@@ -114,41 +119,11 @@ strong{ @extend .font-display; font-weight: normal; }
 }
 
 /* #Structure
-==========================================================================
-*/
+========================================================================== */
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 ::-moz-selection { background: $primary; color: #fff; text-shadow: none; }
 ::selection { background: $primary; color: #fff; text-shadow: none; }
 img{ width: 100%; display: block; }
-
-/*
-==========================================================================
-CLEAR FIX - Add class of 'GROUP' to clear floats
-==========================================================================
-*/
-
-.group:before,
-.group:after{
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group{
-  *zoom: 1;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 

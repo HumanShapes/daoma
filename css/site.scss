@@ -1,7 +1,7 @@
 /*
- * Specific layout styles.
- *
-*/
+ * Initial styles and design by Jake Welchert (jakewlechert.com)
+ * Styles converted to SCSS and extend upon by Christopher Kollars (christopherkollars.com)
+ */
 
 @import "vendor/bourbon/bourbon";
 @import "normalize";
@@ -11,38 +11,17 @@
 @import "parallax";
 
 
-/*
- * Initial styles and design by Jake Welchert (jakewlechert.com)
- * Styles converted to SCSS and extend upon by Christopher Kollars (christopherkollars.com)
- */
-
 html{
   color: $grey5;
   line-height: 1.5;
   padding: 0;
   margin: 0;
 }
-body{
-  @extend .font-sans;
-}
-.margin_top { margin-top: 3%; }
+body{ @extend .font-sans; }
 
-/*
-==========================================================================
-TYPOGRAPHY
-==========================================================================
-*/
 
-/***********Color Overright***********/
-.txt-pink{ color: $primary; }
-.txt-white{ color: $white; }
-.txt-gray{ color: $grey5; }
-
-/*
-==========================================================================
-STRUCTURE
-==========================================================================
-*/
+/* #STRUCTURE
+========================================================================== */
 
 .wrapper{
   @include clearfix;
@@ -53,16 +32,41 @@ STRUCTURE
     padding-right: 30px;
   }
 }
-.content{
-  float: left;
-  width: 60%;
-  // margin-left: 40%;
+.interior {
+  @include clearfix;
+  background-color: rgba($grey, .6);
+  padding: 80px 0;
+  &.border{
+    border-bottom: 1px solid $grey2;
+  }
+  .column{
+    float: left;
+    width: 40%;
+    padding-right: 40px;
+    text-align: right;
+    @media screen and (max-width: 51.875em){
+      float: none;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  .content{
+    float: left;
+    width: 60%;
+    @media screen and (max-width: 51.875em){
+      float: none;
+      width: 100%;
+    }
+  }
 }
-.mobile-head{
+.single-column .content{
+  margin-left: 40%;
+}
+.mobile-head{ // NOTE: I'm unsure why this is here to show this content on mobile. Ask Jake.
   display: none;
 }
 
-/*********** NAV ***********/
+/*********** MAIN NAV ***********/
 #main-nav {
   @include clearfix;
   min-height: auto;
@@ -130,78 +134,12 @@ STRUCTURE
   &:hover{ opacity: .5; }
 }
 
-/************ SECTION STYLES **********/
-.interior {
-  @include clearfix;
-  background-color: rgba($grey, .6);
-  padding: 80px 0;
-  // border-bottom: 1px solid $grey2; TODO: Make this more usuable across the site. Sometimes there isn't a border but all else applies.
-  .column{
-    float: left;
-    width: 40%;
-    padding-right: 40px;
-    text-align: right;
-    @media screen and (max-width: 51.875em){
-      float: none;
-      width: 100%;
-      text-align: left;
-    }
-  }
-  .content{
-    float: left;
-    width: 60%;
-    @media screen and (max-width: 51.875em){
-      float: none;
-      width: 100%;
-    }
-  }
-}
-.border-btm-gray { border-bottom: 1px solid #d9d9d9; }
-.border-top-gray { border-top: 1px solid #d9d9d9; }
-.border-btm-lt-gray{ border-bottom: 2px solid #f9f9f9; }
-.imagebreak { position: relative; border-bottom: 10px solid $primary; }
-
-/************ CREATIVE CLASS HOMEPAGE **********/
-.bighover { position: relative; }
-.large_link-mouseon {
-  @include transition(all .4s linear);
-  position: absolute;
-  background-color: rgb(249,249,249);
-  z-index: 1001;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  &:hover { opacity: 0; }
-  h3 {
-    font-family: 'intro_regularregular'; // TODO: Check to see if I can use a variable for font-family.
-    font-size: 75px;
-    text-transform: none;
-    color: #ec008c;
-    text-align: left;
-    width: 60%;
-    line-height: 1;
-  }
-}
-.one{ margin-top: 6.5%; }
-.two{ margin-top: 2.5%; }
-.three{ margin-top: 3%; }
-.four{ margin-top: 1%; }
-.number{ width: 80%; float: right; }
-
 
 /*********** LIST STYLES ***********/
 ul{
   li{
     color: $grey6;
-    // font-family: 'intro_lightregular'; TODO: Make sure this renders the correct type face. If so then delete this line.
-    // font-size: em(20); TODO: Make sure this renders correctly across site.
-    // letter-spacing: 1px;
     line-height: 1.6;
-    .emphasis{
-      @extend .font-bold;
-      color: #ec008c;
-      font-size: 22px;
-    }
   }
   h3{
     padding-bottom: 1%;
@@ -215,28 +153,14 @@ ul{
   }
 }
 
-/*********** ABOUT ***********/
 
-// .about-interior{
-//   @extend .interior;
-//   @include clearfix;
-//   padding: 80px 0;
-//   h2{
-//     float: left;
-//     text-align: right;
-//     width: 40%;
-//     padding-right: 40px;
-//   }
-//   .content{
-//     float: left;
-//     width: 60%;
-//   }
-// }
-
-/*********** ABOUT PAGE ***********/
+/* #IMAGE BREAK
+====================================================================================*/
 .imagebreak{
+  position: relative;
   overflow: hidden;
   max-height: 500px;
+  border-bottom: 10px solid $primary;
   > div{
     @extend .icon-arrow_magenta;
     position: absolute;
@@ -258,44 +182,6 @@ ul{
   }
 }
 
-// .about-1 {
-//   background: url("../img/oma.png");
-// /*  background-attachment: fixed;
-// */  background-origin: initial;
-//   background-clip: initial;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   position:relative;
-//   height: 500px;
-//   margin-top: -500px;
-// }
-
-// .about_triangle1 {
-//   background: url("../img/arrow3.png");
-//   background-attachment: fixed;
-//   background-repeat:no-repeat;
-//   height: 500px;
-// }
-
-
-// .about-2 {
-//   background: url("../img/pkn2.png");
-// /*  background-attachment: fixed;
-// */  background-origin: initial;
-//   background-clip: initial;
-//   background-size: 100%;
-//   background-repeat:repeat;
-//   position:relative;
-//   height: 550px;
-//   margin-top: -550px;
-// }
-
-// .about_triangle2 {
-//   background: url("../img/arrow.png");
-//   background-attachment: fixed;
-//   background-repeat:no-repeat;
-//   height: 550px;
-// }
 
 /*********** Board of Directors LIST STYLES ***********/
 .board-directors{
@@ -345,13 +231,12 @@ ul{
   p{
     font-size: em(15);
     line-height: 1.8;
-    // padding-right: 6%;
     @media screen and (max-width: 40em){
-      // position: absolute;
       margin-top: 18%;
     }
   }
 }
+
 
 /*********** POST PAGE ***********/
 .post_pg_body{
@@ -376,12 +261,9 @@ ul{
   }
 }
 
-/*
-==========================================================================
-FOOTER
-==========================================================================
-*/
 
+/* #FOOTER
+========================================================================== */
 footer{
   margin-top: 306px;
   nav{ @include clearfix; }
@@ -430,49 +312,12 @@ footer{
     }
   }
 }
-.shape_footer{
-  float: left;
-  width: 60%;
-}
-.logo_footer{
-  position: absolute;
-  left: 30px;
-  bottom: 30px;
-  width: 120px;
-  z-index: 100;
-}
-.social_footer{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-input{
-  display: none;
-  &:checked + label {
-    background: #333;
-    color: #ec008c;
-  }
-}
-
-label{
-  background: #333;
-  cursor: pointer;
-  padding: 40px 50px;
-  float: right;
-  @include transition(all .2s linear);
-  color: #fff;
-  font-size: 25px;
-  &:hover { color: #ec008c; }
-}
 
 
-/*
-==========================================================================
-  #HOME PAGE
-==========================================================================
-*/
+/* #HOME PAGE
+========================================================================== */
 
-/*********** FEATURE ***********/
+// NOTE: This is the feature for when there isn't any speaker/event being showcased
 .feature{
   .content{
     position: absolute;
@@ -486,8 +331,6 @@ label{
     line-height: 1;
     font-size: em(130);
     text-transform: uppercase;
-    // width: 1140px;
-    // margin: 0 auto;
     padding-top: 28%;
   }
 }
@@ -500,49 +343,56 @@ label{
     text-align: center;
     padding: 130px 0;
     font-size: em(24);
+    @media screen and (max-width: 51.875em){
+      padding: 40px 0;
+      font-size: em(20);
+      br{ display: none; }
+    }
+    @media screen and (min-width: 20em) and (max-width: 40em){ font-size: em(16); }
   }
 }
 
-.featured-event{
-  padding: 60px 0;
-  article > a{
-    display: block;
-    min-height: 460px;
-    margin-bottom: 60px;
-    h2{
-      position: absolute;
-      z-index: 1;
-      text-transform: none;
-      height: inherit;
-    }
-    strong{
-      text-transform: uppercase;
-    }
-  }
-  .info{
-    @extend .font-display;
-    width: 35%;
-    padding-right: 55px;
-    p{ font-size: em(16); line-height: 2;}
-    strong{ color: $primary; }
-    .btn{
-      width: 300px;
-      margin-top: 40px;
-    }
-  }
-  .description{
-    @extend .font-book;
-    width: 65%;
-    p{ font-size: em(18); }
-    strong{
-      color: $primary;
-    }
-  }
-  h2{
-    font-size: em(124);
-    color: $white;
-  }
-}
+// NOTE: Featured event that was from the layout A. Not sure if this is going to be used elsewhere.
+// .featured-event{
+//   padding: 60px 0;
+//   article > a{
+//     display: block;
+//     min-height: 460px;
+//     margin-bottom: 60px;
+//     h2{
+//       position: absolute;
+//       z-index: 1;
+//       text-transform: none;
+//       height: inherit;
+//     }
+//     strong{
+//       text-transform: uppercase;
+//     }
+//   }
+//   .info{
+//     @extend .font-display;
+//     width: 35%;
+//     padding-right: 55px;
+//     p{ font-size: em(16); line-height: 2;}
+//     strong{ color: $primary; }
+//     .btn{
+//       width: 300px;
+//       margin-top: 40px;
+//     }
+//   }
+//   .description{
+//     @extend .font-book;
+//     width: 65%;
+//     p{ font-size: em(18); }
+//     strong{
+//       color: $primary;
+//     }
+//   }
+//   h2{
+//     font-size: em(124);
+//     color: $white;
+//   }
+// }
 .upcoming{
   background: $grey;
   padding: 60px 0;
@@ -554,10 +404,11 @@ label{
     margin-bottom: 30px;
   }
 }
+// TODO: Figure out a solution to float these items and center them vertically. Toying with display: table-cell
 .events{
   @include clearfix;
-  display: table;
-  max-width: 1140px;
+  overflow: hidden;
+  text-overflow:ellipsis;
   background: $grey1;
   max-height: 150px;
   margin-top: 20px;
@@ -566,29 +417,26 @@ label{
   }
   .date{
     @extend .font-display;
-    display: table-cell;
-    // float: left;
-    width: 150px;
-    // height: 100%;
-    vertical-align: middle;
-    // padding: 22px 40px;
+    width: 14%;
+    float: left;
+    padding: 36px 0;
     background: $primary;
     color: $white;
-    font-size: em(26);
+    font-size: em(25);
     line-height: 1;
     text-align: center;
-    span{ @extend .font-bold; font-size: em(50); }
+    span{ @extend .font-bold; font-size: em(30); line-height: 1.3; }
   }
   .thumb{
-    // float: left;
-    display: table-cell;
-    width: 440px;
+    float: left;
+    width: 40%;
   }
   .content{
-    // float: left;
-    display: table-cell;
-    width: 550px;
-    // padding: 30px;
+    float: left;
+    width: 46%;
+    height: 95%;
+    padding: 0 34px;
+    margin: auto;
     h3{
       @extend .font-display;
       text-transform: none;
@@ -604,28 +452,41 @@ label{
     }
   }
 }
-
 .classification{
   background-color: rgba($grey, .6);
   padding: 60px 0;
   border-bottom: 1px solid $grey2;
   h5{
+    @extend .font-sans;
     font-size: em(37);
     line-height: 1.4;
     margin-left: 40%;
+    @media screen and (max-width: 51.875em){
+      margin-left: 0;
+      font-size: em(30);
+    }
   }
-  p{ margin-left: 40%; }
+  p{
+    margin-left: 40%;
+    @media screen and (max-width: 51.875em){
+      margin-left: 0;
+      font-size: em(16);
+    }
+  }
 }
 .creative-class{
   @include transition(all .4s linear);
   background-color: rgba($grey, .6);
   padding: 60px 0;
-  border-bottom: 1px solid $grey2;
-  height: 360px;
-  &:hover{
-    background-color: $white;
-    .content{ opacity: 1; }
-    h3{ opacity: 0; }
+  border-top: 1px solid $grey2;
+  &:first-child{ border-top: 0;}
+  @media screen and (min-width: 51.875em){
+    height: 360px;
+    &:hover{
+      background-color: $white;
+      .content{ opacity: 1; }
+      h3{ opacity: 0; }
+    }
   }
   .wrapper{
     @include clearfix;
@@ -633,14 +494,22 @@ label{
   }
   h3{
     @extend .font-display;
-    @include transition(all .4s linear);
+    @include transition(opacity .4s linear);
     position: absolute;
-    vertical-align: middle;
     text-transform: none;
     font-size: em(75);
     line-height: 1;
     width: 100%;
     padding-left: 40%;
+    @media screen and (max-width: 51.875em){
+      padding-left: 0;
+      position: relative;
+      font-size: em(22);
+      line-height: 1.5;
+      text-transform: uppercase;
+      br{ display: none; }
+      &.one ~ .content, &.two ~ .content, &.three ~ .content, &.four ~ .content{ background-image: none; }
+    }
     &.one ~ .content{ @extend .icon-1; }
     &.two ~ .content{ @extend .icon-2; }
     &.three ~ .content{ @extend .icon-3; }
@@ -648,24 +517,46 @@ label{
   }
   .content{
     @include transition(all .4s linear);
-    background-position: 70px 0;
+    background-position: 2% 0;
     height: 230px;
     opacity: 0;
-    p{ margin-left: 40%; }
+    width: 100%;
+    float: none;
+    @media screen and (max-width: 51.875em){
+      height: inherit;
+      opacity: 1;
+      background-image: none;
+    }
+    p{
+      margin-left: 40%;
+      @media screen and (max-width: 51.875em){
+        margin-left: 0;
+        font-size: em(16);
+      }
+    }
+  }
+  @media screen and (min-width: 51.875em){
+    .one{ margin-top: 6.5%; }
+    .two{ margin-top: 2.5%; }
+    .three{ margin-top: 3%; }
+    .four{ margin-top: 1%; }
   }
 }
 
 .past-speakers{
   background-color: $grey6;
   .wrapper{
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
     h2{
       @extend .font-display;
       font-size: em(30);
       text-transform: none;
+      @media screen and (min-width: 20em) and (max-width: 40em){ font-size: em(20); }
     }
     p{
       color: $white;
+      @media screen and (min-width: 20em) and (max-width: 40em){ font-size: em(16); }
     }
   }
   ul{
@@ -677,8 +568,10 @@ label{
     position: relative;
     float: left;
     width: 33.33%;
-    padding: 2px;
+    padding: 1px;
     background: $white;
+    @media screen and (max-width: 40em){ width: 50%; }
+    @media screen and (min-width: 20em) and (max-width: 29.99em){ width: 100%; }
     &:hover{
       img{ opacity: 1; }
       p{ opacity: 0; }
@@ -699,9 +592,10 @@ label{
       height: 20%;
       margin: auto;
       text-align: center;
-      // width: 100%;
-      // height: 100%;
       color: $grey2;
+      @media screen and (max-width: 55em){
+        width: 60%;
+      }
       span{ color: $primary; }
     }
   }
@@ -722,12 +616,32 @@ label{
   > div{
     @extend .icon-shape_about;
     @include clearfix;
-    background-position: center;
+    // background-position: center;
+    background-size: cover;
     min-height: 100px;
     .content{
       margin-left: 40%;
       padding: 120px 0;
     }
+  }
+}
+#partners{
+  background-color: darken($primary, 2%);
+  h1{ @extend .font-display; color: $grey7; }
+  p{ @extend .font-display; color: $white; }
+  > div{
+    @extend .icon-shape_partners;
+    background-position: left top;
+    background-size: cover;
+    > div{
+      @extend .icon-flightpath;
+      background-position: left top;
+      background-size: 40%;
+    }
+  }
+  .content{
+    margin-left: 40%;
+    padding: 120px 0;
   }
 }
 .members-list {
@@ -740,7 +654,6 @@ label{
     margin: 20px 0;
   }
 }
-
 #join{
   > div{
     @extend .icon-header_join;
@@ -761,9 +674,6 @@ label{
     padding: 120px 0;
     font-size: em(14);
   }
-}
-.single-column .content{
-  margin-left: 40%;
 }
 .memberships{
   p:first-child{ margin-bottom: 20px; }
