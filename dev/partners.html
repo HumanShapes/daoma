@@ -11,8 +11,14 @@
 
   <meta name="viewport" content="width=device-width">
   <link href="/css/compiled.data.svg.css" media="all" rel="stylesheet" type="text/css">
+  <!--
   <link href="css/welcomefade.css" media="screen" rel="stylesheet" type="text/css">
+  TODO: Add the fade back into site wide functionality.
+  -->
+  <!--
   <link href="css/mediaqueries.css" media="screen" rel="stylesheet" type="text/css">
+  NOTO: This is disabled while I update all the media query stuff.
+  -->
   <link href="css/parallax.css" media="screen" rel="stylesheet" type="text/css">
 
   <script src="/js/vendor/modernizr.js"></script>
@@ -22,9 +28,9 @@
 
   <div class="fadein_content">
 
-    <nav id="main-nav">
+    <nav id="main-nav" role="navigation">
       <h1 id="logo"><a href="index.html" title="Home">design alliance Omaha</a></h1>
-      <span class="toggle">☰</span>
+      <span id="nav-icon" role="button" title="Navigate">☰</span>
       <ul class="link">
         <li><a href="about.html">About</a></li>
         <li><a href="partners.html">Partners</a></li>
@@ -148,6 +154,7 @@
     });
   });
   </script>
+  <script src="js/compiled.js"></script> <!-- TODO: Add the compiled.min.js once done developing -->
 </body>
 </html>
 

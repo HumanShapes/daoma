@@ -39,13 +39,14 @@ $grey7: #313131;
 h1, h2, h3, h4, h5, h6{
   @extend .font-display;
   font-weight: normal;
+  line-height: 1;
   color: $primary;
   margin: 0;
 }
 h1{
   font-size: em(70);
   letter-spacing: 5px;
-  color: $grey2;
+  // color: $grey2;
 }
 h2{
   font-size: em(26); // TODO: Check orignial source to make sure this is rendering correct type face.

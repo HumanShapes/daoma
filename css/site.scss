@@ -45,55 +45,77 @@ STRUCTURE
 */
 
 .wrapper{
+  @include clearfix;
   max-width: 1140px;
   margin: 0 auto;
-  // padding: 5% 4%; TODO: Add padding to mediaquery
+  @media screen and (max-width: 71.250em){
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
-// .column{ float: left; }
-// .leftcolumn{
-//   width: 100%;
-//   float: left;
-// }
-// .header_leftcolumn{
-//   width: 40%;
-//   float: left;
-// }
-// .rightcolumn{
-//   width: 100%;
-//   float: left;
-// }
-// .header_rightcolumn{
-//   width: 60%;
-//   padding: 8% 0 10% 0;
-//   float: left;
-//   p{
-//     max-width: 684px;
-//     padding-right: 5%;
-//   }
-// }
-// .txt_flt-left{ float: left; }
-
+.content{
+  float: left;
+  width: 60%;
+  // margin-left: 40%;
+}
+.mobile-head{
+  display: none;
+}
 
 /*********** NAV ***********/
 #main-nav {
   @include clearfix;
   min-height: auto;
   background-color: $grey6;
-  .link{
+  ul{
+    @extend .font-display;
+    display: block;
     float: right;
     margin: 0;
     padding: 0;
-    li{
-      float: left;
+    text-transform: uppercase;
+    @media screen and (max-width: 51.875em){
+      display: none;
+      float: none;
+      width: 100%;
+      font-size: em(35);
+      text-transform: none;
     }
-    a:hover{
-      background-color: $grey7;
-      -webkit-box-shadow: inset 0 0 7px rgba(0,0,0,.2);
-              box-shadow: inset 0 0 7px rgba(0,0,0,.2);
+    @media screen and (min-width: 51.875em){
+      li{ float: left; }
+    }
+    li{ font-size: em(16); }
+    a{
+      @include transition(all .25s);
+      display: block;
+      text-align: center;
+      padding: 50px 30px;
+      @media screen and (max-width: 51.875em){
+        padding: 10px;
+      }
+      &:hover{
+        @media screen and (min-width: 51.875em){
+          background-color: $grey7;
+          -webkit-box-shadow: inset 0 0 7px rgba(0,0,0,.2);
+                  box-shadow: inset 0 0 7px rgba(0,0,0,.2);
+        }
+        @media screen and (max-width: 51.875em){
+          color: $primary
+        }
+      }
     }
   }
-  .toggle{
-    display: none;
+  #nav-icon{
+    @include transition(color .25s);
+    font-size: em(24);
+    color: $white;
+    float: right;
+    padding: 40px 50px;
+    cursor: pointer;
+    @media screen and (min-width: 51.875em){ display: none; }
+    &:hover, &.active{
+      color: $primary;
+    }
   }
 }
 #logo a{
@@ -108,32 +130,36 @@ STRUCTURE
   &:hover{ opacity: .5; }
 }
 
-/*********** HEADER ***********/
-.pink_bkgnd { background-color: #de1485; } // TODO: Change this over to a variable
-.offwhite_bkgnd { background-color: $grey; }
-.gray_bkgnd { background-color: $grey5; }
-
 /************ SECTION STYLES **********/
 .interior {
   @include clearfix;
   background-color: rgba($grey, .6);
   padding: 80px 0;
-  border-bottom: 1px solid $grey2;
+  // border-bottom: 1px solid $grey2; TODO: Make this more usuable across the site. Sometimes there isn't a border but all else applies.
   .column{
     float: left;
     width: 40%;
     padding-right: 40px;
     text-align: right;
+    @media screen and (max-width: 51.875em){
+      float: none;
+      width: 100%;
+      text-align: left;
+    }
   }
   .content{
     float: left;
     width: 60%;
+    @media screen and (max-width: 51.875em){
+      float: none;
+      width: 100%;
+    }
   }
 }
 .border-btm-gray { border-bottom: 1px solid #d9d9d9; }
 .border-top-gray { border-top: 1px solid #d9d9d9; }
 .border-btm-lt-gray{ border-bottom: 2px solid #f9f9f9; }
-.imagebreak { position: relative; z-index: -1; border-bottom: 10px solid $primary; }
+.imagebreak { position: relative; border-bottom: 10px solid $primary; }
 
 /************ CREATIVE CLASS HOMEPAGE **********/
 .bighover { position: relative; }
@@ -168,8 +194,8 @@ ul{
   li{
     color: $grey6;
     // font-family: 'intro_lightregular'; TODO: Make sure this renders the correct type face. If so then delete this line.
-    font-size: em(20);
-    letter-spacing: 1px;
+    // font-size: em(20); TODO: Make sure this renders correctly across site.
+    // letter-spacing: 1px;
     line-height: 1.6;
     .emphasis{
       @extend .font-bold;
@@ -188,37 +214,88 @@ ul{
     letter-spacing: 1px;
   }
 }
-.zero_pad_top { padding-top: 0; }
-.address_pad_top { padding-top: 3%; }
-.join_sub_border {
-  border-top: 1px solid #d9d9d9; // TODO: Change tis to a grey variable #d9d9d9
-  padding: 6% 0 3% 0;
-  margin-top: 8%;
-}
-.join_sub_border-1 {
-    padding-top: 0;
-    margin-top: 0;
-    border-top: none;
-}
-.no-border{ border-bottom: none; }
 
 /*********** ABOUT ***********/
 
-.about-interior{
-  @extend .interior;
-  @include clearfix;
-  padding: 80px 0;
-  h2{
-    float: left;
-    text-align: right;
-    width: 40%;
-    padding-right: 40px;
+// .about-interior{
+//   @extend .interior;
+//   @include clearfix;
+//   padding: 80px 0;
+//   h2{
+//     float: left;
+//     text-align: right;
+//     width: 40%;
+//     padding-right: 40px;
+//   }
+//   .content{
+//     float: left;
+//     width: 60%;
+//   }
+// }
+
+/*********** ABOUT PAGE ***********/
+.imagebreak{
+  overflow: hidden;
+  max-height: 500px;
+  > div{
+    @extend .icon-arrow_magenta;
+    position: absolute;
+    background-attachment: fixed;
+    z-index: 1;
+    width: 100%;
+    opacity: .8;
+    &.about-triangle-sml{
+      background-size: 6%;
+      height: 500px;
+    }
+    &.about-triangle-lrg{
+      height: 500px;
+    }
   }
-  .content{
-    float: left;
-    width: 60%;
+  img{
+    position: relative;
+    z-index: -1;
   }
 }
+
+// .about-1 {
+//   background: url("../img/oma.png");
+// /*  background-attachment: fixed;
+// */  background-origin: initial;
+//   background-clip: initial;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   position:relative;
+//   height: 500px;
+//   margin-top: -500px;
+// }
+
+// .about_triangle1 {
+//   background: url("../img/arrow3.png");
+//   background-attachment: fixed;
+//   background-repeat:no-repeat;
+//   height: 500px;
+// }
+
+
+// .about-2 {
+//   background: url("../img/pkn2.png");
+// /*  background-attachment: fixed;
+// */  background-origin: initial;
+//   background-clip: initial;
+//   background-size: 100%;
+//   background-repeat:repeat;
+//   position:relative;
+//   height: 550px;
+//   margin-top: -550px;
+// }
+
+// .about_triangle2 {
+//   background: url("../img/arrow.png");
+//   background-attachment: fixed;
+//   background-repeat:no-repeat;
+//   height: 550px;
+// }
 
 /*********** Board of Directors LIST STYLES ***********/
 .board-directors{
@@ -228,7 +305,8 @@ ul{
   @extend .wrapper;
   @include clearfix;
   list-style: none outside none;
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
   &:first-child{
     h5{ font-size: em(37); }
     p{ font-size: em(20);}
@@ -238,16 +316,40 @@ ul{
     margin-left: 10%;
     border-radius: 50%;
     width: 24%;
+    @media screen and (max-width: 48em){
+      margin-left: 0;
+      width: 30%;
+    }
   }
-  .content{ margin-left: 40%}
+  .content{
+    margin-left: 40%;
+    float: none;
+    width: inherit;
+    @media screen and (max-width: 40em){
+      width: 100%;
+      margin-left: 0;
+    }
+  }
   h3{
     font-size: em(20);
     padding-top: 20px;
+    @media screen and (min-width: 20.01em) and (max-width: 40em){
+      padding-top: 10%;
+      margin-left: 36%;
+      font-size: em(28);
+    }
+    @media screen and (max-width: 20em){
+      font-size: em(18);
+    }
   }
   p{
     font-size: em(15);
     line-height: 1.8;
-    padding-right: 6%;
+    // padding-right: 6%;
+    @media screen and (max-width: 40em){
+      // position: absolute;
+      margin-top: 18%;
+    }
   }
 }
 
@@ -284,10 +386,12 @@ footer{
   margin-top: 306px;
   nav{ @include clearfix; }
   #ftr-logo{
-    position: relative;
-    float: left;
-    margin-left: 30px;
-    margin-top: 40px;
+    @media screen and (min-width: 51.875em){
+      position: relative;
+      float: left;
+      margin-left: 30px;
+      margin-top: 40px;
+    }
     a{
       @extend .icon-daoma_logo_magenta_w-shdw;
       background-size: contain;
@@ -295,6 +399,7 @@ footer{
       width: 100px;
       height: 50px;
       text-indent: -9999em;
+      @media screen and (max-width: 51.875em){ margin: 20px auto; }
     }
   }
   ul{
@@ -303,6 +408,7 @@ footer{
     float: right;
     text-transform: uppercase;
     letter-spacing: 2px;
+    @media screen and (max-width: 51.875em){ display: none; }
     li{
       float: right;
       &.twitter a{ @extend .icon-twitter;}
@@ -605,11 +711,68 @@ label{
 .fadein_content{
   @extend .icon-shape_footer;
   background-position: left bottom;
-  background-size: 60%;
+  // background-size: 60%; TODO: Size the background image so it scales down according to width.
 }
 
+#members{
+  @extend .icon-flightpath5;
+  background-color: $grey;
+  background-size: 40%;
+  padding: 0;
+  > div{
+    @extend .icon-shape_about;
+    @include clearfix;
+    background-position: center;
+    min-height: 100px;
+    .content{
+      margin-left: 40%;
+      padding: 120px 0;
+    }
+  }
+}
+.members-list {
+  h6{
+    @extend .font-sans;
+    display: list-item;
+    list-style: none;
+    color: $grey4;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+}
 
-
+#join{
+  > div{
+    @extend .icon-header_join;
+    background-position: left top;
+    background-size: cover;
+    background-color: $grey5;
+    > div{
+      @extend .icon-flightpath6;
+      background-position: left center;
+      background-size: 30%;
+    }
+  }
+  h1, p{
+    color: $white;
+  }
+  .content{
+    margin-left: 40%;
+    padding: 120px 0;
+    font-size: em(14);
+  }
+}
+.single-column .content{
+  margin-left: 40%;
+}
+.memberships{
+  p:first-child{ margin-bottom: 20px; }
+  .btn{
+    @extend .font-bold;
+    font-size: em(12);
+    line-height: 1;
+  }
+}
 
 
 

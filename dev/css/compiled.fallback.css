@@ -26,6 +26,10 @@
   background-image: url(png/arrow.png);
   background-repeat: no-repeat; }
 
+.icon-arrow_magenta, .imagebreak > div {
+  background-image: url(png/arrow_magenta.png);
+  background-repeat: no-repeat; }
+
 .icon-daoma_logo_black {
   background-image: url(png/daoma_logo_black.png);
   background-repeat: no-repeat; }
@@ -50,19 +54,19 @@
   background-image: url(png/flightpath.png);
   background-repeat: no-repeat; }
 
-.icon-flightpath5 {
+.icon-flightpath5, #members {
   background-image: url(png/flightpath5.png);
   background-repeat: no-repeat; }
 
-.icon-flightpath6 {
+.icon-flightpath6, #join > div > div {
   background-image: url(png/flightpath6.png);
   background-repeat: no-repeat; }
 
-.icon-header_join {
+.icon-header_join, #join > div {
   background-image: url(png/header_join.png);
   background-repeat: no-repeat; }
 
-.icon-shape_about {
+.icon-shape_about, #members > div {
   background-image: url(png/shape_about.png);
   background-repeat: no-repeat; }
 
@@ -505,13 +509,13 @@ svg:not(:root) {
 ===================== */
 /* #Fonts
 ===================== */
-.font-sans, h4, h5, body {
+.font-sans, h4, h5, body, .members-list h6 {
   font-family: 'intro_lightregular', sans-serif; }
 
-.font-display, h1, h2, h3, h4, h5, h6, strong, .featured-event .info, .upcoming h2, .events .date, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2, .past-speakers li p {
+.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, .featured-event .info, .upcoming h2, .events .date, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2, .past-speakers li p {
   font-family: 'intro_regularregular', sans-serif; }
 
-.font-bold, ul li .emphasis, .events .date span {
+.font-bold, ul li .emphasis, .events .date span, .memberships .btn {
   font-family: 'intro_boldregular'; }
 
 .font-thin, .feature h1 {
@@ -524,13 +528,13 @@ svg:not(:root) {
 ===================== */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+  line-height: 1;
   color: #ec008c;
   margin: 0; }
 
 h1 {
   font-size: 4.375em;
-  letter-spacing: 5px;
-  color: #cccccc; }
+  letter-spacing: 5px; }
 
 h2 {
   font-size: 1.625em;
@@ -821,6 +825,21 @@ STRUCTURE
 .wrapper, .director, .feature h1 {
   max-width: 1140px;
   margin: 0 auto; }
+  .wrapper:after, .director:after, .feature h1:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (max-width: 71.25em) {
+    .wrapper, .director, .feature h1 {
+      padding-left: 30px;
+      padding-right: 30px; } }
+
+.content {
+  float: left;
+  width: 60%; }
+
+.mobile-head {
+  display: none; }
 
 /*********** NAV ***********/
 #main-nav {
@@ -830,18 +849,56 @@ STRUCTURE
     content: "";
     display: table;
     clear: both; }
-  #main-nav .link {
+  #main-nav ul {
+    display: block;
     float: right;
     margin: 0;
-    padding: 0; }
-    #main-nav .link li {
-      float: left; }
-    #main-nav .link a:hover {
-      background-color: #313131;
-      -webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.2);
-      box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.2); }
-  #main-nav .toggle {
-    display: none; }
+    padding: 0;
+    text-transform: uppercase; }
+    @media screen and (max-width: 51.875em) {
+      #main-nav ul {
+        display: none;
+        float: none;
+        width: 100%;
+        font-size: 2.1875em;
+        text-transform: none; } }
+    @media screen and (min-width: 51.875em) {
+      #main-nav ul li {
+        float: left; } }
+    #main-nav ul li {
+      font-size: 1em; }
+    #main-nav ul a {
+      -webkit-transition: all 0.25s;
+      -moz-transition: all 0.25s;
+      transition: all 0.25s;
+      display: block;
+      text-align: center;
+      padding: 50px 30px; }
+      @media screen and (max-width: 51.875em) {
+        #main-nav ul a {
+          padding: 10px; } }
+      @media screen and (min-width: 51.875em) {
+        #main-nav ul a:hover {
+          background-color: #313131;
+          -webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.2); } }
+      @media screen and (max-width: 51.875em) {
+        #main-nav ul a:hover {
+          color: #ec008c; } }
+  #main-nav #nav-icon {
+    -webkit-transition: color 0.25s;
+    -moz-transition: color 0.25s;
+    transition: color 0.25s;
+    font-size: 1.5em;
+    color: white;
+    float: right;
+    padding: 40px 50px;
+    cursor: pointer; }
+    @media screen and (min-width: 51.875em) {
+      #main-nav #nav-icon {
+        display: none; } }
+    #main-nav #nav-icon:hover, #main-nav #nav-icon.active {
+      color: #ec008c; }
 
 #logo a {
   -webkit-transition: all 0.25s linear;
@@ -856,33 +913,31 @@ STRUCTURE
   #logo a:hover {
     opacity: .5; }
 
-/*********** HEADER ***********/
-.pink_bkgnd {
-  background-color: #de1485; }
-
-.offwhite_bkgnd {
-  background-color: whitesmoke; }
-
-.gray_bkgnd {
-  background-color: #555555; }
-
 /************ SECTION STYLES **********/
-.interior, .about-interior {
+.interior {
   background-color: rgba(245, 245, 245, 0.6);
-  padding: 80px 0;
-  border-bottom: 1px solid #cccccc; }
-  .interior:after, .about-interior:after {
+  padding: 80px 0; }
+  .interior:after {
     content: "";
     display: table;
     clear: both; }
-  .interior .column, .about-interior .column {
+  .interior .column {
     float: left;
     width: 40%;
     padding-right: 40px;
     text-align: right; }
-  .interior .content, .about-interior .content {
+    @media screen and (max-width: 51.875em) {
+      .interior .column {
+        float: none;
+        width: 100%;
+        text-align: left; } }
+  .interior .content {
     float: left;
     width: 60%; }
+    @media screen and (max-width: 51.875em) {
+      .interior .content {
+        float: none;
+        width: 100%; } }
 
 .border-btm-gray {
   border-bottom: 1px solid #d9d9d9; }
@@ -895,7 +950,6 @@ STRUCTURE
 
 .imagebreak {
   position: relative;
-  z-index: -1;
   border-bottom: 10px solid #ec008c; }
 
 /************ CREATIVE CLASS HOMEPAGE **********/
@@ -942,8 +996,6 @@ STRUCTURE
 /*********** LIST STYLES ***********/
 ul li {
   color: #333333;
-  font-size: 1.25em;
-  letter-spacing: 1px;
   line-height: 1.6; }
   ul li .emphasis {
     color: #ec008c;
@@ -957,40 +1009,25 @@ ul h4 {
   line-height: 2px;
   letter-spacing: 1px; }
 
-.zero_pad_top {
-  padding-top: 0; }
-
-.address_pad_top {
-  padding-top: 3%; }
-
-.join_sub_border {
-  border-top: 1px solid #d9d9d9;
-  padding: 6% 0 3% 0;
-  margin-top: 8%; }
-
-.join_sub_border-1 {
-  padding-top: 0;
-  margin-top: 0;
-  border-top: none; }
-
-.no-border {
-  border-bottom: none; }
-
 /*********** ABOUT ***********/
-.about-interior {
-  padding: 80px 0; }
-  .about-interior:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .about-interior h2 {
-    float: left;
-    text-align: right;
-    width: 40%;
-    padding-right: 40px; }
-  .about-interior .content {
-    float: left;
-    width: 60%; }
+/*********** ABOUT PAGE ***********/
+.imagebreak {
+  overflow: hidden;
+  max-height: 500px; }
+  .imagebreak > div {
+    position: absolute;
+    background-attachment: fixed;
+    z-index: 1;
+    width: 100%;
+    opacity: .8; }
+    .imagebreak > div.about-triangle-sml {
+      background-size: 6%;
+      height: 500px; }
+    .imagebreak > div.about-triangle-lrg {
+      height: 500px; }
+  .imagebreak img {
+    position: relative;
+    z-index: -1; }
 
 /*********** Board of Directors LIST STYLES ***********/
 .board-directors {
@@ -998,7 +1035,8 @@ ul h4 {
 
 .director {
   list-style: none outside none;
-  padding: 40px 0; }
+  padding-top: 40px;
+  padding-bottom: 40px; }
   .director:after {
     content: "";
     display: table;
@@ -1012,15 +1050,35 @@ ul h4 {
     margin-left: 10%;
     border-radius: 50%;
     width: 24%; }
+    @media screen and (max-width: 48em) {
+      .director img {
+        margin-left: 0;
+        width: 30%; } }
   .director .content {
-    margin-left: 40%; }
+    margin-left: 40%;
+    float: none;
+    width: inherit; }
+    @media screen and (max-width: 40em) {
+      .director .content {
+        width: 100%;
+        margin-left: 0; } }
   .director h3 {
     font-size: 1.25em;
     padding-top: 20px; }
+    @media screen and (min-width: 20.01em) and (max-width: 40em) {
+      .director h3 {
+        padding-top: 10%;
+        margin-left: 36%;
+        font-size: 1.75em; } }
+    @media screen and (max-width: 20em) {
+      .director h3 {
+        font-size: 1.125em; } }
   .director p {
     font-size: 0.9375em;
-    line-height: 1.8;
-    padding-right: 6%; }
+    line-height: 1.8; }
+    @media screen and (max-width: 40em) {
+      .director p {
+        margin-top: 18%; } }
 
 /*********** POST PAGE ***********/
 .post_pg_body {
@@ -1052,23 +1110,30 @@ footer {
     content: "";
     display: table;
     clear: both; }
-  footer #ftr-logo {
-    position: relative;
-    float: left;
-    margin-left: 30px;
-    margin-top: 40px; }
-    footer #ftr-logo a {
-      background-size: contain;
-      display: block;
-      width: 100px;
-      height: 50px;
-      text-indent: -9999em; }
+  @media screen and (min-width: 51.875em) {
+    footer #ftr-logo {
+      position: relative;
+      float: left;
+      margin-left: 30px;
+      margin-top: 40px; } }
+  footer #ftr-logo a {
+    background-size: contain;
+    display: block;
+    width: 100px;
+    height: 50px;
+    text-indent: -9999em; }
+    @media screen and (max-width: 51.875em) {
+      footer #ftr-logo a {
+        margin: 20px auto; } }
   footer ul {
     margin: 0;
     padding: 0;
     float: right;
     text-transform: uppercase;
     letter-spacing: 2px; }
+    @media screen and (max-width: 51.875em) {
+      footer ul {
+        display: none; } }
     footer ul li {
       float: right; }
     footer ul a {
@@ -1328,5 +1393,49 @@ label {
         color: #ec008c; }
 
 .fadein_content {
-  background-position: left bottom;
-  background-size: 60%; }
+  background-position: left bottom; }
+
+#members {
+  background-color: whitesmoke;
+  background-size: 40%;
+  padding: 0; }
+  #members > div {
+    background-position: center;
+    min-height: 100px; }
+    #members > div:after {
+      content: "";
+      display: table;
+      clear: both; }
+    #members > div .content {
+      margin-left: 40%;
+      padding: 120px 0; }
+
+.members-list h6 {
+  display: list-item;
+  list-style: none;
+  color: #888888;
+  line-height: 1.5;
+  margin: 20px 0; }
+
+#join > div {
+  background-position: left top;
+  background-size: cover;
+  background-color: #555555; }
+  #join > div > div {
+    background-position: left center;
+    background-size: 30%; }
+#join h1, #join p {
+  color: white; }
+#join .content {
+  margin-left: 40%;
+  padding: 120px 0;
+  font-size: 0.875em; }
+
+.single-column .content {
+  margin-left: 40%; }
+
+.memberships p:first-child {
+  margin-bottom: 20px; }
+.memberships .btn {
+  font-size: 0.75em;
+  line-height: 1; }

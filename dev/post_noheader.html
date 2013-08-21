@@ -1,53 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<!--[if IE 7]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="id ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8"></meta>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <title>daOMA - About</title>
-  <link href='css/reset.css' media='screen' rel='stylesheet' type='text/css'>
-  <link href='css/welcomefade.css' media='screen' rel='stylesheet' type='text/css'> 
-  <link href='css/layout.css' media='screen' rel='stylesheet' type='text/css'>
-  <link href='css/mediaqueries.css' media='screen' rel='stylesheet' type='text/css'>
-  <link href='css/hidden_menu.css' media='screen' rel='stylesheet' type='text/css'>
-  <link href='css/parallax.css' media='screen' rel='stylesheet' type='text/css'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <!-- TYPOGRAPHY -->
-  <link href='type/stylesheet.css' media='screen' rel='stylesheet' type='text/css'>
-  <link href='type/light/stylesheet.css' media='screen' rel='stylesheet' type='text/css'>
+  <title>design alliance OMAHA</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width">
+  <link href="/css/compiled.data.svg.css" media="all" rel="stylesheet" type="text/css">
+  <!--
+  <link href="css/welcomefade.css" media="screen" rel="stylesheet" type="text/css">
+  TODO: Add the fade back into site wide functionality.
+  -->
+  <!--
+  <link href="css/mediaqueries.css" media="screen" rel="stylesheet" type="text/css">
+  NOTO: This is disabled while I update all the media query stuff.
+  -->
+  <link href="css/parallax.css" media="screen" rel="stylesheet" type="text/css">
+
+  <script src="/js/vendor/modernizr.js"></script>
 </head>
 
 <body>
 
-<nav class='group'>
-  <a href='index.html'><img class='top_logo' src="img/daoma_logo_white.svg"></img></a>
-  
-  <!--regular nav-->  
-  <div class='link'>
-    <a href="about.html">About</a>
-    <a href="partners.html">Partners</a>
-    <a href="members.html">Members</a>
-    <a href="join.html">Join</a>
-  </div>
-  
- <!--hidden nav-->  
-  <input type="checkbox" id="toggle">
-    <label for="toggle">☰</label>
+  <div class="fadein_content">
 
-    <div class='hidden_nav'>
-      <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="partners.html">Partners</a></li>
-      <li><a href="members.html">Members</a></li>
-      <li><a href="join.html">Join</a></li>
+    <nav id="main-nav" role="navigation">
+      <h1 id="logo"><a href="index.html" title="Home">design alliance Omaha</a></h1>
+      <span id="nav-icon" role="button" title="Navigate">☰</span>
+      <ul class="link">
+        <li><a href="about.html">About</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="join.html">Join</a></li>
       </ul>
-    </div>
-  </input>
-</nav>
+    </nav>
 
-<!--content fades in--> 
-<div class='fadein_interior'>
 
 <header class='post_pg_header'>
 </header>
@@ -66,41 +57,38 @@
 
 <p>Urabitur sed diam ut ante volutpat ultricies. Vestibulum erat neque, gravida ut interdum at, sollicitudin in felis. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus pharetra eleifend. In a pellentesque nulla. Morbi ut est accumsan, interdum leo at, vehicula arcu. Quisque tempor vulputate mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a tellus congue, dapibus diam a, mattis leo. In mauris tortor, fringilla ut condimentum a, dictum accumsan erat. Etiam a velit eget dui posuere tempus. Phasellus semper, dui porta rhoncus tempor, lacus elit condimentum massa, vel condimentum quam elit eget orci. Etiam fermentum dignissim diam, tristique vehicula risus feugiat sed. Aenean eu dolor semper, tincidunt purus ut, vestibulum justo.</p>
 </div>
-</section> 
-
-<section class='group'>
-<img class='shape_footer' src="img/shape_footer.svg"></img>  
 </section>
 
-<footer>
-  <img class='logo_footer' src="img/daoma_logo_magenta_w-shdw.svg"></img>
-  <div class='social_footer'>
-    <a href="join.html"><img src="img/arrow_icon.svg"></img></a>
-    <a href="https://www.facebook.com/pages/daOMA-design-alliance-OMAha-Inc/304226363724?fref=ts"><img src="img/facebook_icon.svg"></img></a>
-    <a href=""><img src="img/twitter_icon.svg"></img></a>  
-  </div>
-</footer>
-
+  <footer>
+    <nav>
+      <h6 id="ftr-logo"><a href="/">design alliance Omaha</a></h6>
+      <ul>
+        <li class="next"><a href="partners.html">Partners</a></li>
+        <li class="facebook"><a href="https://www.facebook.com/pages/daOMA-design-alliance-OMAha-Inc/304226363724?fref=ts">Facebook</a></li>
+        <li class="twitter"><a href="">Twitter</a></li>
+      </ul>
+    </nav>
+  </footer>
 <!-- fade in end-->
 </div>
 
-</body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript">
+  jQuery(document).ready(function(){
+    $objWindow = $(window);
+    $('div[data-type="background"]').each(function(){
+      var $bgObj = $(this);
+      $(window).scroll(function() {
+        var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function(){
-  $objWindow = $(window);
-  $('div[data-type="background"]').each(function(){
-    var $bgObj = $(this);
-    $(window).scroll(function() {
-      var yPos = -($objWindow.scrollTop() / $bgObj.data('speed')); 
-           
-      var coords = '100% '+ yPos + 'px';
-            // Animate the background
-       $bgObj.css({ backgroundPosition: coords });    
+        var coords = '100% '+ yPos + 'px';
+              // Animate the background
+         $bgObj.css({ backgroundPosition: coords });
+      });
     });
   });
-});
-</script>
-
+  </script>
+  <script src="js/compiled.js"></script> <!-- TODO: Add the compiled.min.js once done developing -->
+</body>
 </html>
+

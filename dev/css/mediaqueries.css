@@ -57,7 +57,7 @@
   p {
     font-size: 16px;
     line-height: 1.5; } }
-@media all and (min-width: 500px) and (max-width: 830px) {
+@media all and (min-width: 500px) and (max-width: 51.875em) {
   nav .link a {
     float: left;
     padding: 20px 30px;

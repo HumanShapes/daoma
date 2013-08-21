@@ -11,8 +11,14 @@
 
   <meta name="viewport" content="width=device-width">
   <link href="/css/compiled.data.svg.css" media="all" rel="stylesheet" type="text/css">
+  <!--
   <link href="css/welcomefade.css" media="screen" rel="stylesheet" type="text/css">
+  TODO: Add the fade back into site wide functionality.
+  -->
+  <!--
   <link href="css/mediaqueries.css" media="screen" rel="stylesheet" type="text/css">
+  NOTO: This is disabled while I update all the media query stuff.
+  -->
   <link href="css/parallax.css" media="screen" rel="stylesheet" type="text/css">
 
   <script src="/js/vendor/modernizr.js"></script>
@@ -22,9 +28,9 @@
 
   <div class="fadein_content">
 
-    <nav id="main-nav">
+    <nav id="main-nav" role="navigation">
       <h1 id="logo"><a href="index.html" title="Home">design alliance Omaha</a></h1>
-      <span class="toggle">☰</span>
+      <span id="nav-icon" role="button" title="Navigate">☰</span>
       <ul class="link">
         <li><a href="about.html">About</a></li>
         <li><a href="partners.html">Partners</a></li>
@@ -33,41 +39,42 @@
       </ul>
     </nav>
 
-<header class="">
-  <div class="members_header group" data-type="background" data-speed="1">
-    <div class="column">
-      <img src="img/flightpath5.svg">
-    </div>
-    <div class="content">
-      <h1>daOMA<br>MEMBERS</h1>
-      <p>daOMA is an open forum for everyone non-professionals and professionals alike. Rooted in the intellectual and social foundations of design culture, daOMA’s primary mission is to expand and grow design appreciation and awareness. Central to this mission is the organizations core programs of public lectures and presentations featuring local, regional, and world renowned designers, critics, historians and patrons. Members are granted free admission to this lecture series and other daOMA&nbsp;events.</p>
+<header id="members">
+  <div data-type="background" data-speed="1">
+    <div class="wrapper">
+      <div class="content">
+        <h1>daOMA<br>MEMBERS</h1>
+        <p>daOMA is an open forum for everyone non-professionals and professionals alike. Rooted in the intellectual and social foundations of design culture, daOMA’s primary mission is to expand and grow design appreciation and awareness. Central to this mission is the organizations core programs of public lectures and presentations featuring local, regional, and world renowned designers, critics, historians and patrons. Members are granted free admission to this lecture series and other daOMA&nbsp;events.</p>
+      </div>
     </div>
   </div>
 </header>
 
-<section class="members_mobile_head">
+<section class="mobile-head">
   <div class="wrapper">
     <p>daOMA is an open forum for everyone non-professionals and professionals alike. Rooted in the intellectual and social foundations of design culture, daOMA’s primary mission is to expand and grow design appreciation and awareness. Central to this mission is the organizations core programs of public lectures and presentations featuring local, regional, and world renowned designers, critics, historians and patrons. Members are granted free admission to this lecture series and other daOMA&nbsp;events.</p>
   </div>
 </section>
 
-<section class="interior">
+<section class="interior" style="border-bottom: none;"> <!-- TODO: Remove and figure out style settings -->
   <div class="wrapper">
     <h2 class="column">Current Members</h2>
     <div class="content">
       <p>Thanks to our current members for listed below for the ongoing&nbsp;support of&nbsp;daOMA:</p>
-      <h6>Bryce Bridges</h6>
-      <h6>Drew Davies</h6>
-      <h6>Jeff Day</h6>
-      <h6>Ellen Fitzsimmons</h6>
-      <h6>Brian Kelley</h6>
-      <h6>Justin Kemerling</h6>
-      <h6>Hesse McGraw</h6>
-      <h6>James Menard</h6>
-      <h6>Tom Trenelone</h6>
-      <h6>Anne Trumble</h6>
-      <h6>Sabrina Weiss</h6>
-      <h6>Jake Welchert</h6>
+      <div class="members-list">
+        <h6>Bryce Bridges</h6>
+        <h6>Drew Davies</h6>
+        <h6>Jeff Day</h6>
+        <h6>Ellen Fitzsimmons</h6>
+        <h6>Brian Kelley</h6>
+        <h6>Justin Kemerling</h6>
+        <h6>Hesse McGraw</h6>
+        <h6>James Menard</h6>
+        <h6>Tom Trenelone</h6>
+        <h6>Anne Trumble</h6>
+        <h6>Sabrina Weiss</h6>
+        <h6>Jake Welchert</h6>
+      </div>
     </div>
   </div>
 </section>
@@ -101,6 +108,7 @@
     });
   });
   </script>
+  <script src="js/compiled.js"></script> <!-- TODO: Add the compiled.min.js once done developing -->
 </body>
 </html>
 
