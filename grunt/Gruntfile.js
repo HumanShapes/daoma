@@ -4,6 +4,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     // Metadata.
+    // aws: grunt.file.readJSON('~/_toolbox/grunt-aws.json'),
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
       '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
@@ -96,6 +97,46 @@ module.exports = function(grunt) {
         }
       }
     }
+    // ,
+    // s3: {
+    //   options: {
+    //     key: '<%= aws.key %>',
+    //     secret: '<%= aws.secret %>',
+    //     bucket: '<%= aws.bucket %>',
+    //     access: 'public-read',
+    //     headers: {
+    //     // Two Year cache policy (1000 * 60 * 60 * 24 * 730)
+    //     "Cache-Control": "max-age=630720000, public",
+    //     "Expires": new Date(Date.now() + 63072000000).toUTCString()
+    //   }
+    //   },
+    //   live: {
+    //     upload: [
+    //       {
+    //         src: '../dev/css/*.css',
+    //         dest: '/css/',
+    //         gzip: true
+    //       },
+    //       {
+    //         src: '../dev/*.js',
+    //         dest: '/js/',
+    //         gzip: true
+    //       },
+    //       {
+    //         src: '../dev/*.html',
+    //         dest: '/'
+    //       },
+    //       {
+    //         src: '../dev/img/*',
+    //         dest: '/img/'
+    //       },
+    //       {
+    //         src: '../dev/css/png/*',
+    //         dest: '/css/png'
+    //       }
+    //     ]
+    //   }
+    // }
   });
 
   // These plugins provide necessary tasks.
@@ -103,7 +144,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-includes');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  // grunt.loadNpmTasks('grunt-s3');
+  grunt.loadNpmTasks('grunt-s3');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');

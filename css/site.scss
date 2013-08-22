@@ -336,7 +336,9 @@ footer{
 // }
 
 .feature{
-  > div{
+  @include clearfix;
+  background-color: $grey;
+  > div:first-child{
     @extend .icon-event-circles_lines;
     background-size: 100%;
   }
@@ -353,6 +355,12 @@ footer{
     position: absolute;
     z-index: 1;
     width: 100%;
+    p{
+      @extend .font-display;
+      line-height: 1.5;
+      color: $white;
+      font-size: 30px;
+    }
   }
   h1{
     @extend .font-sans;
@@ -360,33 +368,65 @@ footer{
     color: $white;
     line-height: 1;
     font-size: em(120);
-    padding-top: 30%;
+    padding-top: 34%;
     strong{ text-transform: uppercase; }
   }
   h3{ text-transform: none; font-size: em(30); }
-  p{
-    @extend .font-display;
-    line-height: 1.5;
-    color: $white;
-    font-size: 30px;
+  .sub-content{
+    img{
+      width: 50%;
+      float: left;
+    }
+  }
+  .info{
+    display: table;
+    padding: 60px 0;
+    p{
+      // float: left;
+      display: table-cell;
+      padding: 0;
+      margin: 0;
+      cell-padding: 0;
+      width: 30%;
+      vertical-align: middle;
+      &:first-child{
+        @extend .font-book;
+        font-size: em(22);
+        width: 70%;
+
+        a{ color: $primary; }
+      }
+      .btn{
+        @extend .font-bold;
+        float: right;
+        font-size: em(18);
+        letter-spacing: 1px;
+        line-height: 1;
+        padding: 20px 100px;
+      }
+    }
   }
 }
-
-
 .about{
-  background: $primary;
+  @extend .icon-shape_grey-triangles;
+  background-position: right -80px;
+  background-color: $white;
+  h1{
+    @extend .font-sans;
+    text-transform: uppercase;
+    font-size: em(52);
+    line-height: 1.5;
+    padding-bottom: 20px;
+    color: $grey7;
+    width: 70%;
+    border-bottom: 1px solid $grey1;
+  }
   p{
     @extend .font-book;
-    color: $white;
-    text-align: center;
-    padding: 130px 0;
-    font-size: em(24);
-    @media screen and (max-width: 51.875em){
-      padding: 40px 0;
-      font-size: em(20);
-      br{ display: none; }
-    }
-    @media screen and (min-width: 20em) and (max-width: 40em){ font-size: em(16); }
+    padding-top: 30px;
+    width: 70%;
+    color: $primary;
+    font-size: em(17);
   }
 }
 
@@ -432,8 +472,8 @@ footer{
 //   }
 // }
 .upcoming{
-  background: $grey;
-  padding: 60px 0;
+  // background: $grey;
+  // padding: 60px 0;
   h2{
     @extend .font-display;
     color: $grey6;
@@ -593,7 +633,9 @@ footer{
       @media screen and (min-width: 20em) and (max-width: 40em){ font-size: em(20); }
     }
     p{
+      @extend .font-book;
       color: $white;
+      width: 70%;
       @media screen and (min-width: 20em) and (max-width: 40em){ font-size: em(16); }
     }
   }
