@@ -318,22 +318,60 @@ footer{
 ========================================================================== */
 
 // NOTE: This is the feature for when there isn't any speaker/event being showcased
+// .feature{
+//   .content{
+//     position: absolute;
+//     z-index: 1;
+//     width: 100%;
+//   }
+//   h1{
+//     @extend .font-thin;
+//     @extend .wrapper;
+//     color: $white;
+//     line-height: 1;
+//     font-size: em(130);
+//     text-transform: uppercase;
+//     padding-top: 28%;
+//   }
+// }
+
 .feature{
+  > div{
+    @extend .icon-event-circles_lines;
+    background-size: 100%;
+  }
+  // h1{ @extend .font-sans; }
+  .presentor{
+    position: absolute;
+    top: 22%;
+    right: 10%;
+    border-radius: 50%;
+    border: 1px solid $grey6;
+    width: 24%;
+  }
   .content{
     position: absolute;
     z-index: 1;
     width: 100%;
   }
   h1{
-    @extend .font-thin;
+    @extend .font-sans;
     @extend .wrapper;
     color: $white;
     line-height: 1;
-    font-size: em(130);
-    text-transform: uppercase;
-    padding-top: 28%;
+    font-size: em(120);
+    padding-top: 30%;
+    strong{ text-transform: uppercase; }
+  }
+  h3{ text-transform: none; font-size: em(30); }
+  p{
+    @extend .font-display;
+    line-height: 1.5;
+    color: $white;
+    font-size: 30px;
   }
 }
+
 
 .about{
   background: $primary;

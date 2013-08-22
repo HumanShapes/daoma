@@ -47,6 +47,11 @@
   background-image: url("data:image/png;base64,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");
   background-repeat: no-repeat; }
 
+/* Using an external URL reference because this image would have a data URI of 40120 characters, which is greater than the maximum of 32768 allowed by IE8. */
+.icon-event-circles_lines, .feature > div {
+  background-image: url(png/event-circles_lines.png);
+  background-repeat: no-repeat; }
+
 .icon-facebook, footer ul li.facebook a {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAeCAYAAAAl+Z4RAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAATZJREFUOI3tkr1OAlEQRs/Mblw6G4OJRoyF2tgpDbWxoLWAghex8QGMib0PYLHRJ9CECgLPoDZGtFOsDMneuRZqQpYrQSmw4JYn8535yRXGvGazGSdJUhORQ2BXRIpmlqjqAHgxs4v4p3C3290ysysR2RnmqgpQAFZUdSMoaLVaRefcjaqujZsQQENQRI4nCQOMTJCmaQQ0QsVm9gb0AP/V6GFEUCqVtoHFQPiy3+83qtXqYOwKIrIUHDWOT/LhoMA5txASZFn2GuLBI/7mzV4gnU7nHDgYYgVgOVDbA7Jh4L2vxWZWVNX1CZqt5kEURU/TrPBeLpcf/yzw3t+LiJ9mgluAWESOvPen31RE9oCzQMc6n4cEwDn3DCD5wna7va+q13luZpuVSuUuz2f/keaCueB/CD4ATblfNZzlXk4AAAAASUVORK5CYII=");
   background-repeat: no-repeat; }
@@ -512,16 +517,16 @@ svg:not(:root) {
 =========================================================================== */
 /* #Fonts
 =========================================================================== */
-.font-sans, h4, h5, body, .classification h5, .members-list h6 {
+.font-sans, h4, h5, body, .feature h1, .classification h5, .members-list h6 {
   font-family: 'intro_lightregular', sans-serif; }
 
-.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, .upcoming h2, .events .date, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2, .past-speakers li p, #partners h1, #partners p {
+.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, .feature p, .upcoming h2, .events .date, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2, .past-speakers li p, #partners h1, #partners p {
   font-family: 'intro_regularregular', sans-serif; }
 
 .font-bold, .emphasis, .events .date span, .memberships .btn {
   font-family: 'intro_boldregular'; }
 
-.font-thin, .feature h1 {
+.font-thin {
   font-family: 'intro_thinregular'; }
 
 .font-book, .about p, .events .content p {
@@ -1059,6 +1064,15 @@ footer {
 
 /* #HOME PAGE
 ========================================================================== */
+.feature > div {
+  background-size: 100%; }
+.feature .presentor {
+  position: absolute;
+  top: 22%;
+  right: 10%;
+  border-radius: 50%;
+  border: 1px solid #333333;
+  width: 24%; }
 .feature .content {
   position: absolute;
   z-index: 1;
@@ -1066,9 +1080,17 @@ footer {
 .feature h1 {
   color: white;
   line-height: 1;
-  font-size: 8.125em;
-  text-transform: uppercase;
-  padding-top: 28%; }
+  font-size: 7.5em;
+  padding-top: 30%; }
+  .feature h1 strong {
+    text-transform: uppercase; }
+.feature h3 {
+  text-transform: none;
+  font-size: 1.875em; }
+.feature p {
+  line-height: 1.5;
+  color: white;
+  font-size: 30px; }
 
 .about {
   background: #ec008c; }

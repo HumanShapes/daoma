@@ -46,6 +46,10 @@
   background-image: url(png/daoma_logo_white.png);
   background-repeat: no-repeat; }
 
+.icon-event-circles_lines, .feature > div {
+  background-image: url(png/event-circles_lines.png);
+  background-repeat: no-repeat; }
+
 .icon-facebook, footer ul li.facebook a {
   background-image: url(png/facebook.png);
   background-repeat: no-repeat; }
@@ -509,16 +513,16 @@ svg:not(:root) {
 =========================================================================== */
 /* #Fonts
 =========================================================================== */
-.font-sans, h4, h5, body, .classification h5, .members-list h6 {
+.font-sans, h4, h5, body, .feature h1, .classification h5, .members-list h6 {
   font-family: 'intro_lightregular', sans-serif; }
 
-.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, .upcoming h2, .events .date, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2, .past-speakers li p, #partners h1, #partners p {
+.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, .feature p, .upcoming h2, .events .date, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2, .past-speakers li p, #partners h1, #partners p {
   font-family: 'intro_regularregular', sans-serif; }
 
 .font-bold, .emphasis, .events .date span, .memberships .btn {
   font-family: 'intro_boldregular'; }
 
-.font-thin, .feature h1 {
+.font-thin {
   font-family: 'intro_thinregular'; }
 
 .font-book, .about p, .events .content p {
@@ -1056,6 +1060,15 @@ footer {
 
 /* #HOME PAGE
 ========================================================================== */
+.feature > div {
+  background-size: 100%; }
+.feature .presentor {
+  position: absolute;
+  top: 22%;
+  right: 10%;
+  border-radius: 50%;
+  border: 1px solid #333333;
+  width: 24%; }
 .feature .content {
   position: absolute;
   z-index: 1;
@@ -1063,9 +1076,17 @@ footer {
 .feature h1 {
   color: white;
   line-height: 1;
-  font-size: 8.125em;
-  text-transform: uppercase;
-  padding-top: 28%; }
+  font-size: 7.5em;
+  padding-top: 30%; }
+  .feature h1 strong {
+    text-transform: uppercase; }
+.feature h3 {
+  text-transform: none;
+  font-size: 1.875em; }
+.feature p {
+  line-height: 1.5;
+  color: white;
+  font-size: 30px; }
 
 .about {
   background: #ec008c; }
