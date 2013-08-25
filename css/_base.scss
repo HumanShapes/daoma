@@ -46,6 +46,12 @@ h1, h2, h3, h4, h5, h6{
 h1{
   font-size: em(70);
   letter-spacing: 5px;
+  @media screen and (min-width: 30em) and (max-width: 40em){
+    font-size: em(48);
+  }
+  @media screen and (min-width:20em) and (max-width: 29.999em){
+    font-size: em(36);
+  }
 }
 h2{
   font-size: em(26); // TODO: Check orignial source to make sure this is rendering correct type face.
@@ -71,12 +77,18 @@ h5{
   letter-spacing: 1px;
   font-size: em(37);
   line-height: 1.4;
+  @media screen and (max-width: 40em){
+    font-size: em(29);
+  }
 }
 h6{
   color: $grey2;
   font-size: em(35);
   letter-spacing: 1px;
   line-height: 0;
+  @media screen and (max-width: 40em){
+    font-size: em(27);
+  }
 }
 p{
   color: $grey5;
@@ -84,6 +96,9 @@ p{
   letter-spacing: 1px;
   line-height: 1.65;
   margin: 0;
+  @media screen and (max-width: 40em){
+    font-size: em(16);
+  }
 }
 a{
   @include transition(color .25s linear);
@@ -93,11 +108,15 @@ a{
 }
 ul { list-style: none; padding-left: 0px; }
 strong{ @extend .font-display; font-weight: normal; }
-.emphasis{
-  @extend .font-bold;
-  color: #ec008c;
-  font-size: 22px;
-}
+em{
+    @extend .font-bold;
+    color: #ec008c;
+    font-size: 22px;
+    font-style: normal;
+    @media screen and (max-width: 20em){
+      display: block;
+    }
+  }
 
 /* #Buttons
 ===================================================================== */

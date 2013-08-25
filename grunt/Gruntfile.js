@@ -78,6 +78,14 @@ module.exports = function(grunt) {
         files: ['../js/*.js','../js/vendor/*.js', '../js/vendor/!(modernizr).js'],
         tasks: ['concat','uglify']
       }
+      // icons: {
+      //   options: {
+      //     interrupt: true,
+      //     livereload: true
+      //   },
+      //   files: ['../svgs/*'],
+      //   tasks: ['grunticon']
+      // }
     },
     copy: {
       dev: {

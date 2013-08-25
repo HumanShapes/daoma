@@ -19,7 +19,7 @@
   <link href="css/mediaqueries.css" media="screen" rel="stylesheet" type="text/css">
   NOTE: This is disabled while I update all the media query stuff.
   -->
-  <link href="css/parallax.css" media="screen" rel="stylesheet" type="text/css">
+  <!-- <link href="css/parallax.css" media="screen" rel="stylesheet" type="text/css"> -->
 
   <script src="/js/vendor/modernizr.js"></script>
 </head>
@@ -234,19 +234,19 @@
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script type="text/javascript">
-  jQuery(document).ready(function(){
-    $objWindow = $(window);
-    $('div[data-type="background"]').each(function(){
-      var $bgObj = $(this);
-      $(window).scroll(function() {
-        var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
+  // jQuery(document).ready(function(){
+  //   $objWindow = $(window);
+  //   $('div[data-type="background"]').each(function(){
+  //     var $bgObj = $(this);
+  //     $(window).scroll(function() {
+  //       var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
 
-        var coords = '100% '+ yPos + 'px';
-              // Animate the background
-         $bgObj.css({ backgroundPosition: coords });
-      });
-    });
-  });
+  //       var coords = '50% '+ yPos + 'px';
+  //             // Animate the background
+  //        $bgObj.css({ backgroundPosition: coords });
+  //     });
+  //   });
+  // });
   </script>
   <script src="js/compiled.js"></script> <!-- TODO: Add the compiled.min.js once done developing -->
 </body>

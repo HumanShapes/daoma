@@ -23,6 +23,9 @@ var DAOMA = {
   init: function(){
 
     DAOMA.toggleMainNav();
+    DAOMA.parallax();
+    // DAOMA.bgParallax();
+    // DAOMA.objParallax();
 
     // Mobile functions
     if(hasTouch) { DAOMA.initTouchEvents(); }
@@ -45,7 +48,70 @@ var DAOMA = {
           });
 
     });
+  },
+
+  // bgParallax: function(){
+
+  //   $objWindow = $(window);
+  //   $('div[data-type="background"]').each(function(){
+  //     var $bgObj = $(this);
+  //     $(window).scroll(function() {
+  //       var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
+
+  //       var coords = '50% '+ yPos + 'px';
+  //             // Animate the background
+  //        $bgObj.css({ backgroundPosition: coords });
+  //     });
+  //   });
+  // },
+
+  // objParallax: function(){
+
+  //   $objWindow = $(window);
+  //   $('div[data-type="object"]').each(function(){
+  //     var $obj = $(this);
+  //     $(window).scroll(function() {
+  //       var yPos = -($objWindow.scrollTop() / $obj.data('speed'));
+  //       var objPos = $obj.position();
+
+  //       var coords = objPos.left + 'px ' + yPos + 'px';
+  //             // Animate the background
+  //        $obj.css({ left: objPos.left + 'px', top: yPos + 'px' });
+  //        DAOMA.log( 'left: ' + objPos.left + ' top: ' + yPos);
+  //     });
+  //   });
+  // },
+  parallax: function(){
+    $objWindow = $(window);
+
+    $('div[data-type="background"]').each(function(){
+      var $bgObj = $(this);
+      $(window).scroll(function() {
+        var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
+
+        var coords = '50% '+ yPos + 'px';
+              // Animate the background
+         $bgObj.css({ backgroundPosition: coords });
+      });
+    });
+
+    $('img[data-type="image"]').each(function(){
+      var $imgObj = $(this);
+      var $imgObj_yPos = $imgObj.position().top;
+      DAOMA.log($imgObj_yPos);
+      $(window).scroll(function() {
+        var yPos = -($objWindow.scrollTop() / $imgObj.data('speed')) + $imgObj_yPos;
+        var objPos = $imgObj.position();
+
+        var coords = objPos.left + 'px ' + yPos + 'px';
+
+        $imgObj.css({ left: objPos.left + 'px', top: yPos + 'px' });
+        DAOMA.log( 'left: ' + objPos.left + ' top: ' + (yPos + $imgObj_yPos));
+      });
+    });
+
   }
+
 
 };
 
