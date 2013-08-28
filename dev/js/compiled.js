@@ -24,8 +24,6 @@ var DAOMA = {
 
     DAOMA.toggleMainNav();
     DAOMA.parallax();
-    // DAOMA.bgParallax();
-    // DAOMA.objParallax();
 
     // Mobile functions
     if(hasTouch) { DAOMA.initTouchEvents(); }
@@ -88,26 +86,24 @@ var DAOMA = {
       var $bgObj = $(this);
       $(window).scroll(function() {
         var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
+        var coords = '0 '+ yPos + 'px';
 
-        var coords = '50% '+ yPos + 'px';
-              // Animate the background
-         $bgObj.css({ backgroundPosition: coords });
+        $bgObj.css({ backgroundPosition: coords });
       });
     });
 
-    $('img[data-type="image"]').each(function(){
+    // TODO: convert this to a better running script for parallax images.
+    $('[data-type="image"]').each(function(){
       var $imgObj = $(this);
       var $imgObj_yPos = $imgObj.position().top;
-      DAOMA.log($imgObj_yPos);
-      $(window).scroll(function() {
+      $(window).scroll( function(){
         var yPos = -($objWindow.scrollTop() / $imgObj.data('speed')) + $imgObj_yPos;
         var objPos = $imgObj.position();
-
         var coords = objPos.left + 'px ' + yPos + 'px';
 
-        $imgObj.css({ left: objPos.left + 'px', top: yPos + 'px' });
-        DAOMA.log( 'left: ' + objPos.left + ' top: ' + (yPos + $imgObj_yPos));
+        $imgObj.css({ left: 'auto', top: yPos + 'px' });
       });
+
     });
 
   }

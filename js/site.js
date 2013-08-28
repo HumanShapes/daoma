@@ -21,8 +21,6 @@ var DAOMA = {
 
     DAOMA.toggleMainNav();
     DAOMA.parallax();
-    // DAOMA.bgParallax();
-    // DAOMA.objParallax();
 
     // Mobile functions
     if(hasTouch) { DAOMA.initTouchEvents(); }
@@ -85,38 +83,22 @@ var DAOMA = {
       var $bgObj = $(this);
       $(window).scroll(function() {
         var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
-        var coords = '50% '+ yPos + 'px';
+        var coords = '0 '+ yPos + 'px';
 
         $bgObj.css({ backgroundPosition: coords });
       });
     });
 
     // TODO: convert this to a better running script for parallax images.
-    $('img[data-type="image"]').each(function(){
+    $('[data-type="image"]').each(function(){
       var $imgObj = $(this);
       var $imgObj_yPos = $imgObj.position().top;
-      // $(window).on({
-      //   resize: function(){
-      //     var yPos = -($objWindow.scrollTop() / $imgObj.data('speed')) + $imgObj_yPos;
-      //     var objPos = $imgObj.position();
-      //     var coords = objPos.left + 'px ' + yPos + 'px';
-
-      //     $imgObj.css({ left: objPos.left + 'px', top: yPos + 'px' });
-      //   },
-      //   scroll: function(){
-      //     var yPos = -($objWindow.scrollTop() / $imgObj.data('speed')) + $imgObj_yPos;
-      //     var objPos = $imgObj.position();
-      //     var coords = objPos.left + 'px ' + yPos + 'px';
-
-      //     $imgObj.css({ left: objPos.left + 'px', top: yPos + 'px' });
-      //   }
-      // });
       $(window).scroll( function(){
         var yPos = -($objWindow.scrollTop() / $imgObj.data('speed')) + $imgObj_yPos;
         var objPos = $imgObj.position();
         var coords = objPos.left + 'px ' + yPos + 'px';
 
-        $imgObj.css({ left: objPos.left + 'px', top: yPos + 'px' });
+        $imgObj.css({ left: 'auto', top: yPos + 'px' });
       });
 
     });

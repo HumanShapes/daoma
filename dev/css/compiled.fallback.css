@@ -50,7 +50,7 @@
   background-image: url(png/daoma_logo_white.png);
   background-repeat: no-repeat; }
 
-.icon-event-circles_lines, .feature .content {
+.icon-event-circles_lines {
   background-image: url(png/event-circles_lines.png);
   background-repeat: no-repeat; }
 
@@ -72,6 +72,14 @@
 
 .icon-header_join, #join > div {
   background-image: url(png/header_join.png);
+  background-repeat: no-repeat; }
+
+.icon-hero-circles_lineshape, #hero .shape-circles {
+  background-image: url(png/hero-circles_lineshape.png);
+  background-repeat: no-repeat; }
+
+.icon-hero-presentor_lineshape, #hero .presentor {
+  background-image: url(png/hero-presentor_lineshape.png);
   background-repeat: no-repeat; }
 
 .icon-shape_about, #members > div {
@@ -521,19 +529,19 @@ svg:not(:root) {
 =========================================================================== */
 /* #Fonts
 =========================================================================== */
-.font-sans, h4, h5, body, .feature h1, .about h1, .classification h5, .members-list h6 {
+.font-sans, h4, h5, body, #hero h1, .about h1, .classification h5, .members-list h6 {
   font-family: 'intro_lightregular', sans-serif; }
 
-.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, .feature .content p, .upcoming h2, .events .date, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2, .past-speakers li p, #partners h1, #partners p {
+.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, #hero .content p, .upcoming h2, .events .date, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers .feature h1 h2, .feature .past-speakers h1 h2, .past-speakers li p, #partners h1, #partners p {
   font-family: 'intro_regularregular', sans-serif; }
 
-.font-bold, em, .feature .info p .btn, .events .date span, .memberships .btn {
+.font-bold, em, #hero .info p .btn, .events .date span, .memberships .btn {
   font-family: 'intro_boldregular'; }
 
-.font-thin {
+.font-thin, .feature h1 {
   font-family: 'intro_thinregular'; }
 
-.font-book, .feature .info p:first-child, .about p, .events .content p, .past-speakers .wrapper p, .past-speakers .director p, .past-speakers .feature h1 p, .feature .past-speakers h1 p {
+.font-book, #hero .info p:first-child, .about p, .events .content p, .past-speakers .wrapper p, .past-speakers .director p, .past-speakers .feature h1 p, .feature .past-speakers h1 p {
   font-family: 'intro_bookregular'; }
 
 /* #Typography
@@ -1088,61 +1096,108 @@ footer {
 
 /* #HOME PAGE
 ========================================================================== */
-.feature {
+.feature .content {
+  position: absolute;
+  z-index: 1;
+  width: 100%; }
+.feature h1 {
+  color: white;
+  line-height: 1;
+  font-size: 8.125em;
+  text-transform: uppercase;
+  padding-top: 28%; }
+
+#hero {
+  position: relative;
   background-color: #f8f8f8; }
-  .feature:after {
+  #hero:after {
     content: "";
     display: table;
     clear: both; }
-  .feature > div:first-child {
-    position: relative; }
-  .feature .presentor {
+  #hero .presentor {
     position: absolute;
-    top: 22%;
     right: 10%;
-    border-radius: 50%;
-    border: 1px solid #333333;
-    width: 24%; }
-  .feature .content {
+    top: 0;
+    width: 250px;
+    height: 300px; }
+    #hero .presentor img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 80%;
+      border-radius: 50%;
+      border: 1px solid #333333; }
+  #hero .content-wrap {
     position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 1; }
+  #hero .shape-circles {
+    position: absolute;
+    background-size: auto;
+    z-index: 0;
+    height: 700px;
     width: 100%; }
-    .feature .content p {
+    @media screen and (max-width: 51.875em) {
+      #hero .shape-circles {
+        display: none; } }
+  #hero .content {
+    position: relative;
+    width: 100%;
+    max-height: 700px;
+    overflow: hidden; }
+    #hero .content p {
       line-height: 1.5;
       color: white;
       font-size: 30px; }
-  .feature h1 {
+  #hero .details {
+    position: absolute;
+    padding-top: 280px; }
+  #hero h1 {
     color: white;
     line-height: 1;
-    font-size: 7.5em;
-    padding-top: 34%; }
-    .feature h1 strong {
+    font-size: 7.5em; }
+    #hero h1 strong {
       text-transform: uppercase; }
-  .feature h3 {
+    @media screen and (min-width: 30em) and (max-width: 51.875em) {
+      #hero h1 {
+        font-size: 4.375em; } }
+    @media screen and (min-width: 20em) and (max-width: 29.999em) {
+      #hero h1 {
+        font-size: 1.5em; } }
+  #hero h3 {
     text-transform: none;
     font-size: 1.875em; }
-  .feature .sub-content img {
+    @media screen and (min-width: 30em) and (max-width: 51.875em) {
+      #hero h3 {
+        font-size: 1.5em; } }
+    @media screen and (min-width: 20em) and (max-width: 29.999em) {
+      #hero h3 {
+        font-size: 1em; } }
+  #hero .sub-content img {
     width: 50%;
     float: left; }
-  .feature .info {
+  #hero .info {
     display: table;
     padding-top: 60px;
     padding-bottom: 60px; }
-    .feature .info p {
+    #hero .info p {
       display: table-cell;
       padding: 0;
       margin: 0;
       cell-padding: 0;
       width: 30%;
       vertical-align: middle; }
-      .feature .info p:first-child {
+      #hero .info p:first-child {
         font-size: 1.375em;
         width: 70%; }
-        .feature .info p:first-child a {
+        @media screen and (max-width: 51.875em) {
+          #hero .info p:first-child {
+            font-size: 1em; } }
+        #hero .info p:first-child a {
           color: #ec008c; }
-      .feature .info p .btn {
+      #hero .info p .btn {
         float: right;
         font-size: 1.125em;
         letter-spacing: 1px;

@@ -46,12 +46,8 @@ h1, h2, h3, h4, h5, h6{
 h1{
   font-size: em(70);
   letter-spacing: 5px;
-  @media screen and (min-width: 30em) and (max-width: 40em){
-    font-size: em(48);
-  }
-  @media screen and (min-width:20em) and (max-width: 29.999em){
-    font-size: em(36);
-  }
+  @media screen and (min-width: 30em) and (max-width: 40em){ font-size: em(48); }
+  @media screen and (min-width:20em) and (max-width: 29.999em){ font-size: em(36); }
 }
 h2{
   font-size: em(26); // TODO: Check orignial source to make sure this is rendering correct type face.

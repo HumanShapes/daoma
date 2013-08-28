@@ -331,45 +331,68 @@ footer{
 ========================================================================== */
 
 // NOTE: This is the feature for when there isn't any speaker/event being showcased
-// .feature{
-//   .content{
-//     position: absolute;
-//     z-index: 1;
-//     width: 100%;
-//   }
-//   h1{
-//     @extend .font-thin;
-//     @extend .wrapper;
-//     color: $white;
-//     line-height: 1;
-//     font-size: em(130);
-//     text-transform: uppercase;
-//     padding-top: 28%;
-//   }
-// }
-
 .feature{
-  @include clearfix;
-  background-color: $grey;
-  > div:first-child{
-    position: relative;
-  }
-  // h1{ @extend .font-sans; }
-  .presentor{
-    position: absolute;
-    top: 22%;
-    right: 10%;
-    border-radius: 50%;
-    border: 1px solid $grey6;
-    width: 24%;
-  }
   .content{
-    @extend .icon-event-circles_lines;
     position: absolute;
+    z-index: 1;
+    width: 100%;
+  }
+  h1{
+    @extend .font-thin;
+    @extend .wrapper;
+    color: $white;
+    line-height: 1;
+    font-size: em(130);
+    text-transform: uppercase;
+    padding-top: 28%;
+  }
+}
+
+// NOTE: This is the feature for when there is showcasing an event.
+#hero{
+  @include clearfix;
+  position: relative;
+  background-color: $grey;
+  // > div:first-child{
+  //   position: relative;
+  // }
+  .presentor{
+    @extend .icon-hero-presentor_lineshape;
+    position: absolute;
+    right: 10%;
+    top: 0;
+    width: 250px;
+    height: 300px;
+    img{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 80%;
+      border-radius: 50%;
+      border: 1px solid $grey6;
+    }
+  }
+  .content-wrap{
+    position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
+  }
+  .shape-circles{
+    @extend .icon-hero-circles_lineshape;
+    position: absolute;
+    background-size: auto;
+    z-index: 0;
+    height: 700px;
     width: 100%;
+    @media screen and (max-width: 51.875em){ display: none; }
+  }
+  .content{
+    position: relative;
+    width: 100%;
+    max-height: 700px;
+    overflow: hidden;
     p{
       @extend .font-display;
       line-height: 1.5;
@@ -377,16 +400,26 @@ footer{
       font-size: 30px;
     }
   }
+  .details{
+    position: absolute;
+    padding-top: 280px;
+  }
   h1{
     @extend .font-sans;
-    @extend .wrapper;
     color: $white;
     line-height: 1;
     font-size: em(120);
-    padding-top: 34%;
+
     strong{ text-transform: uppercase; }
+    @media screen and (min-width: 30em) and (max-width: 51.875em){ font-size: em(70); }
+    @media screen and (min-width:20em) and (max-width: 29.999em){ font-size: em(24); }
   }
-  h3{ text-transform: none; font-size: em(30); }
+  h3{
+    text-transform: none;
+    font-size: em(30);
+    @media screen and (min-width: 30em) and (max-width: 51.875em){ font-size: em(24); }
+    @media screen and (min-width:20em) and (max-width: 29.999em){ font-size: em(16); }
+  }
   .sub-content{
     img{
       width: 50%;
@@ -398,7 +431,6 @@ footer{
     padding-top: 60px;
     padding-bottom: 60px;
     p{
-      // float: left;
       display: table-cell;
       padding: 0;
       margin: 0;
@@ -409,7 +441,7 @@ footer{
         @extend .font-book;
         font-size: em(22);
         width: 70%;
-
+        @media screen and (max-width: 51.875em){ font-size: em(16); }
         a{ color: $primary; }
       }
       .btn{
