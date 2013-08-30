@@ -1,4 +1,5 @@
 var hasTouch = false;
+$.cookie('newUser', 1);
 
 if (("ontouchstart" in document.documentElement)) {
     document.documentElement.className += " touch";
@@ -45,37 +46,6 @@ var DAOMA = {
     });
   },
 
-  // bgParallax: function(){
-
-  //   $objWindow = $(window);
-  //   $('div[data-type="background"]').each(function(){
-  //     var $bgObj = $(this);
-  //     $(window).scroll(function() {
-  //       var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
-
-  //       var coords = '50% '+ yPos + 'px';
-  //             // Animate the background
-  //        $bgObj.css({ backgroundPosition: coords });
-  //     });
-  //   });
-  // },
-
-  // objParallax: function(){
-
-  //   $objWindow = $(window);
-  //   $('div[data-type="object"]').each(function(){
-  //     var $obj = $(this);
-  //     $(window).scroll(function() {
-  //       var yPos = -($objWindow.scrollTop() / $obj.data('speed'));
-  //       var objPos = $obj.position();
-
-  //       var coords = objPos.left + 'px ' + yPos + 'px';
-  //             // Animate the background
-  //        $obj.css({ left: objPos.left + 'px', top: yPos + 'px' });
-  //        DAOMA.log( 'left: ' + objPos.left + ' top: ' + yPos);
-  //     });
-  //   });
-  // },
   parallax: function(){
     $objWindow = $(window);
 

@@ -11,10 +11,10 @@
 
   <meta name="viewport" content="width=device-width">
   <link href="/css/compiled.data.svg.css" media="all" rel="stylesheet" type="text/css">
-  <!--
+
   <link href="css/welcomefade.css" media="screen" rel="stylesheet" type="text/css">
-  TODO: Add the fade back into site wide functionality.
-  -->
+  <!-- TODO: Add the fade back into site wide functionality. -->
+
   <!--
   <link href="css/mediaqueries.css" media="screen" rel="stylesheet" type="text/css">
   NOTE: This is disabled while I update all the media query stuff.
@@ -25,7 +25,11 @@
 </head>
 
 <body>
+  <div class='fadein_opening'>
+    <div class='fadeout_opening'>
 
+    </div>
+  </div>
   <div class="fadein_content">
 
     <nav id="main-nav" role="navigation">
@@ -52,15 +56,6 @@
         </div>
       </div>
     </header>
-
-    <!--MOBILE SUBHEAD-->
-    <section class="mobile-head">
-      <div class="wrapper">
-        <div class="content">
-          <p>daOMA is an independent 501(c)3 non-profit organization and works in direct partnerships with local business, academic institutions and professional organizations to serve as an extension of their public outreach programs that champion design&nbsp;education and appreciation for our&nbsp;community.</p>
-        </div>
-      </div>
-    </section>
 
     <section class="interior">
       <div class="wrapper">
@@ -96,7 +91,7 @@
 
     <!--parallax-->
     <section class="imagebreak">
-      <div class="about-triangle-sml" data-type="background" data-speed="-10"></div>
+      <div class="triangle1-med" data-type="background" data-speed="-10"></div>
       <img src="img/flyoverpink.jpg" alt="Flyover">
     </section>
 
@@ -143,21 +138,6 @@
 </div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script type="text/javascript">
-  // jQuery(document).ready(function(){
-  //   $objWindow = $(window);
-  //   $('div[data-type="background"]').each(function(){
-  //     var $bgObj = $(this);
-  //     $(window).scroll(function() {
-  //       var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
-
-  //       var coords = '50% '+ yPos + 'px';
-  //             // Animate the background
-  //        $bgObj.css({ backgroundPosition: coords });
-  //     });
-  //   });
-  // });
-  </script>
   <script src="js/compiled.js"></script> <!-- TODO: Add the compiled.min.js once done developing -->
 </body>
 </html>

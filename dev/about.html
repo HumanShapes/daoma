@@ -11,10 +11,10 @@
 
   <meta name="viewport" content="width=device-width">
   <link href="/css/compiled.data.svg.css" media="all" rel="stylesheet" type="text/css">
-  <!--
+
   <link href="css/welcomefade.css" media="screen" rel="stylesheet" type="text/css">
-  TODO: Add the fade back into site wide functionality.
-  -->
+  <!-- TODO: Add the fade back into site wide functionality. -->
+
   <!--
   <link href="css/mediaqueries.css" media="screen" rel="stylesheet" type="text/css">
   NOTE: This is disabled while I update all the media query stuff.
@@ -25,7 +25,11 @@
 </head>
 
 <body>
+  <div class='fadein_opening'>
+    <div class='fadeout_opening'>
 
+    </div>
+  </div>
   <div class="fadein_content">
 
     <nav id="main-nav" role="navigation">
@@ -51,7 +55,7 @@
 
     <!--parallax-->
     <section class="imagebreak">
-      <div class="about-triangle-sml" data-type="background" data-speed="-10"></div>
+      <div class="triangle1-med" data-type="background" data-speed="-10"></div>
       <img src="img/oma.png" alt="Omaha, NE">
     </section>
 
@@ -95,7 +99,7 @@
 
     <!--parallax-->
     <section class="imagebreak">
-      <div class="about-triangle-lrg" data-type="background" data-speed="-10"></div>
+      <div class="triangle1-lrg" data-type="background" data-speed="-10"></div>
       <img src="img/pkn2.png" alt="Pecha Kucha">
     </section>
     <section class="board-directors">
@@ -233,21 +237,6 @@
 </div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script type="text/javascript">
-  // jQuery(document).ready(function(){
-  //   $objWindow = $(window);
-  //   $('div[data-type="background"]').each(function(){
-  //     var $bgObj = $(this);
-  //     $(window).scroll(function() {
-  //       var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
-
-  //       var coords = '50% '+ yPos + 'px';
-  //             // Animate the background
-  //        $bgObj.css({ backgroundPosition: coords });
-  //     });
-  //   });
-  // });
-  </script>
   <script src="js/compiled.js"></script> <!-- TODO: Add the compiled.min.js once done developing -->
 </body>
 </html>

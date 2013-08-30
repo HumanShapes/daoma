@@ -18,11 +18,11 @@
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2216px%22%20height%3D%2230px%22%20viewBox%3D%2267.482%2060%2016%2030%22%20enable-background%3D%22new%2067.482%2060%2016%2030%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23D1D3D4%22%20points%3D%2268.986%2C90%2067.894%2C88.976%2081.016%2C75%2067.895%2C61.025%2068.985%2C60%2083.071%2C75%20%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-arrow1_lrg {
+.icon-arrow1_lrg, .imagebreak > div.triangle1-lrg {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%221140px%22%20height%3D%22400px%22%20viewBox%3D%22-408%20-60%201140%20400%22%20enable-background%3D%22new%20-408%20-60%201140%20400%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23EA0B8C%22%20points%3D%22566%2C31.5%20442%2C248.5%20318%2C31.5%20%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-arrow1_med, .imagebreak > div.triangle1-med, .imagebreak > div.triangle1-lrg {
+.icon-arrow1_med, .imagebreak > div.triangle1-med {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%221140px%22%20height%3D%22400px%22%20viewBox%3D%22-408%20-60%201140%20400%22%20enable-background%3D%22new%20-408%20-60%201140%20400%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23EA0B8C%22%20points%3D%22572%2C96.25%20522%2C183.75%20472%2C96.25%20%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
@@ -102,7 +102,7 @@
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%22450px%22%20height%3D%22210px%22%20viewBox%3D%22219.292%20141.107%20450%20210%22%20enable-background%3D%22new%20219.292%20141.107%20450%20210%22%20%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Cpolygon%20fill%3D%22%23303030%22%20points%3D%22612.548%2C141.107%20324.651%2C233.571%20669.293%2C351.107%20669.293%2C141.107%20%20%22%2F%3E%20%3Cpolygon%20fill%3D%22%232E2E2E%22%20points%3D%22248.688%2C141.107%20489.979%2C180.748%20613.408%2C141.107%20%20%22%2F%3E%20%3Cpolygon%20fill%3D%22%232F2F2F%22%20points%3D%22249.191%2C141.107%20219.292%2C141.107%20325.244%2C233.656%20491.253%2C180.33%20%20%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-shape_intro {
+.icon-shape_intro, .fadeout_opening {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%221270px%22%20height%3D%221225.398px%22%20viewBox%3D%220%200%201270%201225.398%22%20enable-background%3D%22new%200%200%201270%201225.398%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23FBFBFB%22%20points%3D%221270%2C0%20769.648%2C0%201270%2C880%20%22%2F%3E%3Cpolygon%20fill%3D%22%23F8F8F9%22%20points%3D%22769.648%2C0%20339.5%2C708.5%201036.245%2C466.073%20%22%2F%3E%3Cpolygon%20fill%3D%22%23F6F6F6%22%20points%3D%22917.5%2C880%20339.5%2C708.5%201036.245%2C466.073%20%22%2F%3E%3Cpolygon%20fill%3D%22%23F1F2F2%22%20points%3D%22917.5%2C880%201036.245%2C466.073%201270%2C880%20%22%2F%3E%3Cpolygon%20fill%3D%22%23F1F2F2%22%20points%3D%22339.5%2C708.5%200%2C1192.395%20917.5%2C880%20%22%2F%3E%3Cpolygon%20fill%3D%22%23FCFCFC%22%20points%3D%220%2C0%20339.5%2C708.5%20769.648%2C0%20%22%2F%3E%3Cpolygon%20fill%3D%22%23FEFEFE%22%20points%3D%220%2C0%20339.5%2C708.5%200%2C1192.395%20%22%2F%3E%3Cg%3E%20%3Cpath%20fill%3D%22%23E90C8B%22%20d%3D%22M591.276%2C318.687l-9.516%2C0.66c-4.729%2C0.329-8.085%2C1.649-8.085%2C5.886c0%2C5.719%2C5.775%2C6.379%2C9.186%2C6.379%20%20c5.609%2C0%2C13.034-2.529%2C13.034-9.24v-5.169h-0.109C595.181%2C317.86%2C593.696%2C318.521%2C591.276%2C318.687z%22%2F%3E%20%3Cpath%20fill%3D%22%23E90C8B%22%20d%3D%22M527%2C274.906v76.779h91.569L635%2C364.906l16.432-13.221H743v-76.779H527z%20M567.979%2C332.932h-2.529v-6.16%20%20h-0.11c-1.32%2C3.354-5.225%2C7.041-12.485%2C7.041c-9.899%2C0-15.015-7.041-15.015-15.018c0-8.965%2C6.436-14.903%2C15.015-14.903%20%20c6.931%2C0%2C10.836%2C3.795%2C12.485%2C6.875h0.11V293.66h2.529V332.932z%20M602.771%2C333.043c-0.771%2C0.273-1.815%2C0.439-3.08%2C0.439%20%20c-3.466%2C0-3.466-2.42-3.466-6.16h-0.109c-3.136%2C5.775-9.735%2C6.49-13.42%2C6.49c-2.42%2C0-11.55%2C0-11.55-8.58%20%20c0-5.777%2C4.895-7.757%2C10.614-8.087l9.845-0.66c2.915-0.219%2C4.29-0.549%2C4.29-4.014c0-3.796-2.145-6.382-10.449-6.382%20%20c-7.426%2C0-9.735%2C2.312-10.505%2C7.371h-2.53c0.935-7.096%2C4.564-9.569%2C13.09-9.569c8.195%2C0%2C12.925%2C1.925%2C12.925%2C8.25v15.786%20%20c0%2C2.091%2C0%2C3.354%2C1.87%2C3.354c0.825%2C0%2C1.65-0.164%2C2.475-0.438L602.771%2C333.043L602.771%2C333.043z%20M623.065%2C333.812%20%20c-15.95%2C0-20.846-12.816-20.846-20.518c0-7.698%2C4.896-20.515%2C20.846-20.515s20.845%2C12.815%2C20.845%2C20.515%20%20C643.91%2C320.996%2C639.016%2C333.812%2C623.065%2C333.812z%20M692.846%2C332.932h-2.528v-35.75h-0.11l-18.976%2C35.75h-2.53l-18.977-35.75h-0.108%20%20v35.75h-2.53V293.66h3.795l19.085%2C36.082l19.085-36.082h3.796L692.846%2C332.932L692.846%2C332.932z%20M729.971%2C332.932l-5.774-12.65%20%20h-21.67l-5.775%2C12.65h-2.859l18.041-39.271h2.858l18.04%2C39.271H729.971z%22%2F%3E%20%3Cpath%20fill%3D%22%23E90C8B%22%20d%3D%22M623.065%2C294.981c-11.825%2C0-18.315%2C8.91-18.315%2C18.313c0%2C9.406%2C6.49%2C18.316%2C18.315%2C18.316%20%20c11.824%2C0%2C18.314-8.91%2C18.314-18.316C641.38%2C303.892%2C634.89%2C294.981%2C623.065%2C294.981z%22%2F%3E%20%3Cpolygon%20fill%3D%22%23E90C8B%22%20points%3D%22703.516%2C318.08%20723.204%2C318.08%20713.359%2C296.521%20%20%22%2F%3E%20%3Cpath%20fill%3D%22%23E90C8B%22%20d%3D%22M552.908%2C306.09c-6.49%2C0-12.54%2C4.07-12.54%2C12.65c0%2C8.085%2C5.225%2C12.871%2C12.21%2C12.871%20%20c10.56%2C0%2C13.2-7.479%2C13.2-12.486C565.778%2C309.227%2C558.628%2C306.09%2C552.908%2C306.09z%22%2F%3E%3C%2Fg%3E%3Cellipse%20opacity%3D%220.03%22%20enable-background%3D%22new%20%20%20%20%22%20cx%3D%22636.417%22%20cy%3D%22396.59%22%20rx%3D%2297.083%22%20ry%3D%225.649%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
@@ -533,7 +533,7 @@ svg:not(:root) {
 =========================================================================== */
 /* #Fonts
 =========================================================================== */
-.font-sans, h4, h5, body, #hero h1, #about h1, .featured-event h1, .classification h5 {
+.font-sans, h4, h5, body, .post h3, .post h4, #hero h1, #about h1, .featured-event h1, .classification h5 {
   font-family: 'intro_lightregular', sans-serif; }
 
 .font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, #hero .content p, .featured-event .info, .featured-event h1 strong, .upcoming h2, .events .date p, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers li p, #partners h1, #partners p {
@@ -825,6 +825,12 @@ html {
   padding: 0;
   margin: 0; }
 
+/* #Fadeins and outs
+========================================================================== */
+.fadeout_opening {
+  width: 100%;
+  height: 100%; }
+
 /* #STRUCTURE
 ========================================================================== */
 .wrapper, .director {
@@ -837,7 +843,8 @@ html {
   @media screen and (max-width: 71.25em) {
     .wrapper, .director {
       padding-left: 30px;
-      padding-right: 30px; } }
+      padding-right: 30px;
+      max-width: inherit; } }
 
 .interior {
   background-color: rgba(248, 248, 248, 0.6);
@@ -1036,23 +1043,25 @@ ul h4 {
         margin-bottom: 20px; } }
 
 /*********** POST PAGE ***********/
-.post_pg_body {
+.post {
   max-width: 900px; }
-  .post_pg_body p {
-    padding-top: 3%; }
-  .post_pg_body h2 {
+  .post h1 {
     font-size: 3.4375em;
-    padding-top: 3%; }
-  .post_pg_body h3 {
+    text-transform: uppercase; }
+  .post h3 {
     letter-spacing: 2px;
     font-size: 1.5625em;
-    line-height: 1.6;
+    margin: 10px 0 20px 0;
     text-transform: uppercase;
     color: #333333; }
-  .post_pg_body h4 {
+  .post h4 {
     font-size: 1.375em;
     line-height: 1.6;
     color: #888888; }
+  .post img {
+    margin: 30px 0; }
+  .post p {
+    margin-top: 30px; }
 
 /* #FOOTER
 ========================================================================== */
@@ -1201,14 +1210,14 @@ footer {
   display: table;
   padding-top: 60px;
   padding-bottom: 60px; }
+  @media screen and (min-width: 71.25em) {
+    #hero .info {
+      width: 1140px; } }
   @media screen and (max-width: 40em) {
     #hero .info {
       display: block; } }
   #hero .info p {
     display: table-cell;
-    padding: 0;
-    margin: 0;
-    cell-padding: 0;
     width: 30%;
     vertical-align: middle; }
     @media screen and (max-width: 40em) {

@@ -19,6 +19,14 @@ html{
 }
 body{ @extend .font-sans; }
 
+/* #Fadeins and outs
+========================================================================== */
+.fadeout_opening{
+  @extend .icon-shape_intro;
+  width: 100%;
+  height: 100%;
+}
+
 
 /* #STRUCTURE
 ========================================================================== */
@@ -30,6 +38,7 @@ body{ @extend .font-sans; }
   @media screen and (max-width: 71.250em){
     padding-left: 30px;
     padding-right: 30px;
+    max-width: inherit;
   }
 }
 .interior {
@@ -180,7 +189,7 @@ ul{
       @extend .icon-arrow1_med;
     }
     &.triangle1-lrg{
-      @extend .icon-arrow1_med;
+      @extend .icon-arrow1_lrg;
     }
     &.triangle3{
       @extend .icon-arrow3;
@@ -250,25 +259,31 @@ ul{
 
 
 /*********** POST PAGE ***********/
-.post_pg_body{
+.post{
   max-width: 900px;
-  p { padding-top: 3%; }
-  h2{
+  h1{
     font-size: em(55);
-    padding-top: 3%;
+    text-transform: uppercase;
   }
   h3{
-    // font-family: 'intro_lightregular'; TODO: Check type face form original files.
+    @extend .font-sans;
     letter-spacing: 2px;
     font-size: em(25);
-    line-height: 1.6;
+    margin: 10px 0 20px 0;
     text-transform: uppercase;
     color: $grey6;
   }
   h4{
+    @extend .font-sans;
     font-size: em(22);
     line-height: 1.6;
     color: $grey4;
+  }
+  img{
+    margin: 30px 0;
+  }
+  p{
+    margin-top: 30px;
   }
 }
 
@@ -392,7 +407,6 @@ footer{
     color: $white;
     line-height: 1;
     font-size: em(120);
-
     strong{ text-transform: uppercase; }
     @media screen and (min-width: 30em) and (max-width: 51.875em){ font-size: em(70); }
     @media screen and (min-width:20em) and (max-width: 29.999em){ font-size: em(24); }
@@ -419,14 +433,11 @@ footer{
   display: table;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (max-width: 40em){
-    display: block;
-  }
+  // NOTE: This fixes the left right margin and width in safari when display table.
+  @media screen and (min-width: 71.250em){ width: 1140px; }
+  @media screen and (max-width: 40em){ display: block; }
   p{
     display: table-cell;
-    padding: 0;
-    margin: 0;
-    cell-padding: 0;
     width: 30%;
     vertical-align: middle;
     @media screen and (max-width: 40em){
@@ -438,7 +449,10 @@ footer{
       @extend .font-book;
       font-size: em(22);
       width: 70%;
-      @media screen and (max-width: 51.875em){ font-size: em(16); text-align: left; }
+      @media screen and (max-width: 51.875em){
+        font-size: em(16);
+        text-align: left;
+      }
       @media screen and (max-width: 40em){
         display: block;
         width: 100%;

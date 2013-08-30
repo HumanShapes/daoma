@@ -18,11 +18,11 @@
   background-image: url(png/arrow.png);
   background-repeat: no-repeat; }
 
-.icon-arrow1_lrg {
+.icon-arrow1_lrg, .imagebreak > div.triangle1-lrg {
   background-image: url(png/arrow1_lrg.png);
   background-repeat: no-repeat; }
 
-.icon-arrow1_med, .imagebreak > div.triangle1-med, .imagebreak > div.triangle1-lrg {
+.icon-arrow1_med, .imagebreak > div.triangle1-med {
   background-image: url(png/arrow1_med.png);
   background-repeat: no-repeat; }
 
@@ -102,7 +102,7 @@
   background-image: url(png/shape_grey-triangles2.png);
   background-repeat: no-repeat; }
 
-.icon-shape_intro {
+.icon-shape_intro, .fadeout_opening {
   background-image: url(png/shape_intro.png);
   background-repeat: no-repeat; }
 
@@ -533,7 +533,7 @@ svg:not(:root) {
 =========================================================================== */
 /* #Fonts
 =========================================================================== */
-.font-sans, h4, h5, body, #hero h1, #about h1, .featured-event h1, .classification h5 {
+.font-sans, h4, h5, body, .post h3, .post h4, #hero h1, #about h1, .featured-event h1, .classification h5 {
   font-family: 'intro_lightregular', sans-serif; }
 
 .font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, #hero .content p, .featured-event .info, .featured-event h1 strong, .upcoming h2, .events .date p, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers li p, #partners h1, #partners p {
@@ -825,6 +825,12 @@ html {
   padding: 0;
   margin: 0; }
 
+/* #Fadeins and outs
+========================================================================== */
+.fadeout_opening {
+  width: 100%;
+  height: 100%; }
+
 /* #STRUCTURE
 ========================================================================== */
 .wrapper, .director {
@@ -837,7 +843,8 @@ html {
   @media screen and (max-width: 71.25em) {
     .wrapper, .director {
       padding-left: 30px;
-      padding-right: 30px; } }
+      padding-right: 30px;
+      max-width: inherit; } }
 
 .interior {
   background-color: rgba(248, 248, 248, 0.6);
@@ -1036,23 +1043,25 @@ ul h4 {
         margin-bottom: 20px; } }
 
 /*********** POST PAGE ***********/
-.post_pg_body {
+.post {
   max-width: 900px; }
-  .post_pg_body p {
-    padding-top: 3%; }
-  .post_pg_body h2 {
+  .post h1 {
     font-size: 3.4375em;
-    padding-top: 3%; }
-  .post_pg_body h3 {
+    text-transform: uppercase; }
+  .post h3 {
     letter-spacing: 2px;
     font-size: 1.5625em;
-    line-height: 1.6;
+    margin: 10px 0 20px 0;
     text-transform: uppercase;
     color: #333333; }
-  .post_pg_body h4 {
+  .post h4 {
     font-size: 1.375em;
     line-height: 1.6;
     color: #888888; }
+  .post img {
+    margin: 30px 0; }
+  .post p {
+    margin-top: 30px; }
 
 /* #FOOTER
 ========================================================================== */
@@ -1201,14 +1210,14 @@ footer {
   display: table;
   padding-top: 60px;
   padding-bottom: 60px; }
+  @media screen and (min-width: 71.25em) {
+    #hero .info {
+      width: 1140px; } }
   @media screen and (max-width: 40em) {
     #hero .info {
       display: block; } }
   #hero .info p {
     display: table-cell;
-    padding: 0;
-    margin: 0;
-    cell-padding: 0;
     width: 30%;
     vertical-align: middle; }
     @media screen and (max-width: 40em) {
