@@ -88,6 +88,7 @@ body{ @extend .font-sans; }
       font-size: em(35);
       text-transform: none;
     }
+    @media screen and (max-width: 40em){ font-size: em(28); }
     @media screen and (min-width: 51.875em){
       li{ float: left; }
     }
@@ -167,6 +168,7 @@ ul{
   > div{
     position: absolute;
     background-attachment: fixed;
+    background-size: 100%;
     z-index: 1;
     width: 100%;
     height: 400px;
@@ -212,40 +214,36 @@ ul{
   }
   img{
     float: left;
-    margin-left: 10%;
+    margin-left: 18%;
     border-radius: 50%;
-    width: 24%;
-    @media screen and (max-width: 48em){
-      margin-left: 0;
-      width: 30%;
+    width: 18%;
+    @media screen and (max-width: 50em){
+      width: 22%;
+      margin: 0 24px 0 0;
+    }
+    @media screen and (max-width: 40em){ width: 28%; }
+    @media screen and (min-width: 20em) and (max-width: 24em){
+      width: 50%;
+      float: none;
+      margin: 0 auto;
     }
   }
   .content{
     margin-left: 40%;
     float: none;
     width: inherit;
+    @media screen and (max-width: 50em){ margin-left: 26%; }
     @media screen and (max-width: 40em){
       width: 100%;
       margin-left: 0;
     }
+
   }
   h3{
-    font-size: em(20);
-    padding-top: 20px;
-    @media screen and (min-width: 20.01em) and (max-width: 40em){
-      padding-top: 10%;
-      margin-left: 36%;
-      font-size: em(28);
-    }
-    @media screen and (max-width: 20em){
-      font-size: em(18);
-    }
-  }
-  p{
-    font-size: em(15);
-    line-height: 1.8;
-    @media screen and (max-width: 40em){
-      margin-top: 18%;
+    font-size: em(24);
+    @media screen and (min-width: 20em) and (max-width: 23.999em){
+      text-align: center;
+      margin-bottom: 20px;
     }
   }
 }
@@ -278,7 +276,13 @@ ul{
 /* #FOOTER
 ========================================================================== */
 footer{
-  margin-top: 306px;
+  margin-top: 305px;
+  // NOTE: This is to size the background triangle image. Currently works well for iPhones.
+  // TOD: Need to address other sizes of screens.
+  @media screen and (max-width: 51.875em){ margin-top: 40.5%; }
+  @media screen and (max-width: 20em){ margin-top: 111px; }
+  @media screen and (max-width: 30em){ margin-top: 134px; }
+  @media screen and (max-width: 35.5em){ margin-top: 171px; }
   nav{ @include clearfix; }
   #ftr-logo{
     @media screen and (min-width: 51.875em){
@@ -330,32 +334,11 @@ footer{
 /* #HOME PAGE
 ========================================================================== */
 
-// NOTE: This is the feature for when there isn't any speaker/event being showcased
-.feature{
-  .content{
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-  }
-  h1{
-    @extend .font-thin;
-    @extend .wrapper;
-    color: $white;
-    line-height: 1;
-    font-size: em(130);
-    text-transform: uppercase;
-    padding-top: 28%;
-  }
-}
-
 // NOTE: This is the feature for when there is showcasing an event.
 #hero{
   @include clearfix;
   position: relative;
   background-color: $grey;
-  // > div:first-child{
-  //   position: relative;
-  // }
   .presentor{
     @extend .icon-hero-presentor_lineshape;
     position: absolute;
@@ -380,13 +363,13 @@ footer{
     z-index: 1;
   }
   .shape-circles{
-    @extend .icon-hero-circles_lineshape;
+    @extend .icon-hero-circles_lineshape-up;
     position: absolute;
     background-size: auto;
     z-index: 0;
     height: 700px;
     width: 100%;
-    @media screen and (max-width: 51.875em){ display: none; }
+    @media screen and (max-width: 30em){ display: none; }
   }
   .content{
     position: relative;
@@ -420,42 +403,62 @@ footer{
     @media screen and (min-width: 30em) and (max-width: 51.875em){ font-size: em(24); }
     @media screen and (min-width:20em) and (max-width: 29.999em){ font-size: em(16); }
   }
-  .sub-content{
-    img{
-      width: 50%;
-      float: left;
-    }
-  }
-  .info{
-    display: table;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    p{
-      display: table-cell;
-      padding: 0;
-      margin: 0;
-      cell-padding: 0;
-      width: 30%;
-      vertical-align: middle;
-      &:first-child{
-        @extend .font-book;
-        font-size: em(22);
-        width: 70%;
-        @media screen and (max-width: 51.875em){ font-size: em(16); }
-        a{ color: $primary; }
-      }
-      .btn{
-        @extend .font-bold;
-        float: right;
-        font-size: em(18);
-        letter-spacing: 1px;
-        line-height: 1;
-        padding: 20px 100px;
-      }
+}
+.sub-content{
+  @include clearfix;
+  img{
+    width: 50%;
+    float: left;
+    @media screen and (max-width: 30em){
+      float: none;
+      width: 100%;
     }
   }
 }
-.about{
+#hero .info{
+  display: table;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (max-width: 40em){
+    display: block;
+  }
+  p{
+    display: table-cell;
+    padding: 0;
+    margin: 0;
+    cell-padding: 0;
+    width: 30%;
+    vertical-align: middle;
+    @media screen and (max-width: 40em){
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    &:first-child{
+      @extend .font-book;
+      font-size: em(22);
+      width: 70%;
+      @media screen and (max-width: 51.875em){ font-size: em(16); text-align: left; }
+      @media screen and (max-width: 40em){
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      a{ color: $primary; }
+    }
+    .btn{
+      @extend .font-bold;
+      float: right;
+      font-size: em(18);
+      letter-spacing: 1px;
+      line-height: 1;
+      padding: 20px 100px;
+      @media screen and (max-width: 40em){ float: none; }
+    }
+  }
+}
+
+#about{
   @extend .icon-shape_grey-triangles;
   background-position: right -80px;
   background-color: $white;
@@ -468,7 +471,8 @@ footer{
     color: $grey7;
     width: 70%;
     border-bottom: 1px solid $grey1;
-    @media screen and (max-width: 51.875em){ font-size: em(28); width: 100%; }
+    @media screen and (max-width: 51.875em){ font-size: em(36); width: 100%; }
+    @media screen and (max-width: 40em){ font-size: em(28);}
   }
   p{
     @extend .font-book;
@@ -479,97 +483,170 @@ footer{
   }
 }
 
+#about-feature{
+  background: $primary;
+  .content{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+  }
+  .shape-circles-up{
+    @extend .icon-hero-circles_lineshape-down;
+    background-size: auto;
+    position: absolute;
+    width: 100%;
+    height: 850px;
+  }
+  .shape-circles-down{
+    @extend .icon-hero-circles_lineshape-up;
+    background-size: auto;
+    position: absolute;
+    width: 100%;
+    height: 850px;
+  }
+  h1{
+    @extend .font-thin;
+    font-size: em(124);
+    text-transform: uppercase;
+    color: $white;
+    padding-top: 300px;
+  }
+  .interior{
+    background: none;
+    text-align: center;
+  }
+  p{
+    @extend .font-book;
+    font-size: em(22);
+    color: $white;
+  }
+}
+
 // NOTE: Featured event that was from the layout A. Not sure if this is going to be used elsewhere.
-// .featured-event{
-//   padding: 60px 0;
-//   article > a{
-//     display: block;
-//     min-height: 460px;
-//     margin-bottom: 60px;
-//     h2{
-//       position: absolute;
-//       z-index: 1;
-//       text-transform: none;
-//       height: inherit;
-//     }
-//     strong{
-//       text-transform: uppercase;
-//     }
-//   }
-//   .info{
-//     @extend .font-display;
-//     width: 35%;
-//     padding-right: 55px;
-//     p{ font-size: em(16); line-height: 2;}
-//     strong{ color: $primary; }
-//     .btn{
-//       width: 300px;
-//       margin-top: 40px;
-//     }
-//   }
-//   .description{
-//     @extend .font-book;
-//     width: 65%;
-//     p{ font-size: em(18); }
-//     strong{
-//       color: $primary;
-//     }
-//   }
-//   h2{
-//     font-size: em(124);
-//     color: $white;
-//   }
-// }
+.featured-event{
+  padding: 60px 0;
+  &.interior{ background-color: $white; }
+  .content-wrap{ @include clearfix; }
+  .info{
+    @extend .font-display;
+    width: 38%;
+    padding-right: 100px;
+    text-align: left;
+    p{
+      font-size: em(15);
+      line-height: 2;
+    }
+    strong{ color: $primary; }
+    .btn{
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .description{
+    @extend .font-book;
+    width: 62%;
+    a{ color: $primary; }
+    p{ font-size: em(18); }
+    strong{ color: $primary; }
+  }
+  .hero{
+    position: relative;
+    margin-bottom: 50px;
+  }
+  h1{
+    @extend .font-sans;
+    font-size: em(110);
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 60px;
+    color: $white;
+    strong{
+      @extend .font-display;
+    }
+  }
+}
+
 .upcoming{
-  // background: $grey;
-  // padding: 60px 0;
   h2{
     @extend .font-display;
     color: $grey6;
     font-size: em(30);
     text-transform: none;
     margin-bottom: 30px;
+    @media screen and (max-width: 28.750em){
+      font-size: em(24);
+      margin-bottom: 20px;
+    }
   }
 }
 // TODO: Figure out a solution to float these items and center them vertically. Toying with display: table-cell
 .events{
   @include clearfix;
   overflow: hidden;
-  text-overflow:ellipsis;
   background: $grey1;
   max-height: 150px;
   margin-top: 20px;
-  &:first-child{
-    margin-top: 0;
-  }
+  @media screen and (max-width: 51.875em){ max-height: 380px; }
+  &:first-child{ margin-top: 0; }
   .date{
-    @extend .font-display;
     width: 14%;
+    height: 150px;
     float: left;
-    padding: 36px 0;
+    padding-top: 36px;
     background: $primary;
-    color: $white;
-    font-size: em(25);
-    line-height: 1;
-    text-align: center;
-    span{ @extend .font-bold; font-size: em(30); line-height: 1.3; }
+    @media screen and (max-width: 51.875em){ width: 30%; }
+    @media screen and (max-width: 28.750em){
+      padding-top: 18px;
+      height: 90px;
+    }
+    p{
+      @extend .font-display;
+      font-size: em(25);
+      line-height: 1;
+      text-align: center;
+      color: $white;
+      @media screen and (max-width: 28.750em){
+        font-size: em(18);
+      }
+      span{
+        @extend .font-bold;
+        font-size: em(30);
+        line-height: 1.3;
+      }
+    }
   }
   .thumb{
     float: left;
+    overflow: hidden;
     width: 40%;
+    height: 150px;
+    @media screen and (max-width: 51.875em){
+      width: 70%;
+    }
+    @media screen and (max-width: 28.750em){
+      height: 90px;
+    }
   }
   .content{
     float: left;
+    overflow: hidden;
     width: 46%;
-    height: 95%;
-    padding: 0 34px;
-    margin: auto;
+    height: 150px;
+    padding: 20px;
+    @media screen and (max-width: 51.875em){
+      width: 100%;
+      height: auto;
+    }
     h3{
       @extend .font-display;
       text-transform: none;
       color: $grey6;
       font-size: em(24);
       line-height: 1.5;
+      @media screen and (max-width: 60em){
+        font-size: em(19);
+      }
     }
     p{
       @extend .font-book;
@@ -671,8 +748,6 @@ footer{
 }
 
 .past-speakers{
-  // @extend .triangle1-sml;
-  // @extend .icon-arrow1_sml;
   @extend .icon-shape_grey-triangles2;
   background-position: right 0;
   background-color: $grey6;
@@ -698,7 +773,8 @@ footer{
     p{
       @extend .font-book;
       color: $white;
-      @media screen and (min-width: 51.875em){ width: 70%; }
+      @media screen and (min-width: 51.875em){ width: 85%; }
+      @media screen and (min-width: 62.500em){ width: 70%; }
       @media screen and (min-width: 20em) and (max-width: 40em){ font-size: em(16); }
     }
   }
@@ -735,22 +811,25 @@ footer{
       height: 20%;
       margin: auto;
       text-align: center;
-      color: $grey2;
+      color: $primary;
       @media screen and (max-width: 55em){
         width: 60%;
       }
-      span{ color: $primary; }
     }
   }
 
 }
-
 .fadein_content{
   @extend .icon-shape_footer;
   background-position: left bottom;
-  // background-size: 60%; TODO: Size the background image so it scales down according to width.
+  background-size: auto; //TODO: Size the background image so it scales down according to width.
+  @media screen and (max-width: 51.875em){
+    background-size: 60%;
+  }
+  @media screen and (max-width: 20em){
+    background-size: 80%;
+  }
 }
-
 #members{
   @extend .icon-flightpath5;
   background-color: $grey;
@@ -801,16 +880,7 @@ footer{
     }
   }
 }
-.members-list {
-  h6{
-    @extend .font-sans;
-    display: list-item;
-    list-style: none;
-    color: $grey4;
-    line-height: 1.5;
-    margin: 20px 0;
-  }
-}
+
 #join{
   > div{
     @extend .icon-header_join;
