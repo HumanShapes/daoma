@@ -876,12 +876,9 @@ html {
         float: none;
         width: 100%; } }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 51.875em) {
   .single-column .content {
     margin-left: 40%; } }
-
-.mobile-head {
-  display: none; }
 
 /*********** MAIN NAV ***********/
 #main-nav {
