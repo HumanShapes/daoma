@@ -101,7 +101,6 @@
 $.cookie('newUser', 1);
 
 if (("ontouchstart" in document.documentElement)) {
-    document.documentElement.className += " touch";
     hasTouch = true;
 }
 
@@ -115,6 +114,7 @@ var DAOMA = {
 
   construct: function(){
     DAOMA.$_primaryWrapper = $('.fadein_content');
+    DAOMA.$_navWrapper = $('#main-nav');
   },
 
   init: function(){
@@ -122,19 +122,16 @@ var DAOMA = {
     DAOMA.toggleMainNav();
     DAOMA.parallax();
 
-    // Mobile functions
-    if(hasTouch) { DAOMA.initTouchEvents(); }
-
   },
 
   initTouchEvents: function(){
-    DAOMA.$_primaryWrapper.on('touchstart touchend', ".btn", DAOMA.toggleMainNav());
+    DAOMA.$_navWrapper.on('touchstart', ".btn", DAOMA.toggleMainNav());
   },
 
   toggleMainNav: function(){
     var $_mainNav = $('#main-nav');
     var $_mainNavBTN = $('#nav-icon');
-    DAOMA.$_primaryWrapper.on('click', '#nav-icon', function(){
+    DAOMA.$_navWrapper.on('click', '#nav-icon', function(){
       $_mainNavBTN.next('ul')
           .slideToggle(300, function(){
             if($_mainNavBTN.hasClass('active')){
@@ -172,9 +169,17 @@ var DAOMA = {
 
     });
 
+  },
+
+  dropdownMenu: function(){
+    $(window).resize(function(){
+      var $w = $(window).width();
+      if( $w >= '830'){
+        $('#main-nav ul').css("display", "");
+        DAOMA.log('resize');
+      }
+    });
   }
-
-
 };
 
 
@@ -189,5 +194,5 @@ $(document).ready(function() {
 
 // Functions that can be delayed after the whole page has been downloaded
 $(window).load(function() {
-
+  DAOMA.dropdownMenu();
 });
