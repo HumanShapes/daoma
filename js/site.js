@@ -50,8 +50,12 @@ var DAOMA = {
       var $bgObj = $(this);
       $(window).scroll(function() {
         var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
-        var coords = '0 '+ yPos + 'px';
-
+        var coords;
+        if($bgObj.hasClass('right')){
+          coords = '100% '+ yPos + 'px';
+        }else{
+          coords = '0 '+ yPos + 'px';
+        }
         $bgObj.css({ backgroundPosition: coords });
       });
     });

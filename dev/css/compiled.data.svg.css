@@ -550,7 +550,7 @@ svg:not(:root) {
 .font-bold, em, #hero .info p .btn, .events .date p span, .memberships .btn {
   font-family: 'intro_boldregular'; }
 
-.font-thin, #about-feature h1 {
+.font-thin, #about-feature .content h1 {
   font-family: 'intro_thinregular'; }
 
 .font-book, #hero .info p:first-child, #about p, #about-feature p, .featured-event .description, .events .content p, .past-speakers .wrapper p, .past-speakers .director p {
@@ -856,11 +856,16 @@ html {
 
 .interior {
   background-color: rgba(248, 248, 248, 0.6);
-  padding: 80px 0; }
+  padding-top: 80px;
+  padding-bottom: 80px; }
   .interior:after {
     content: "";
     display: table;
     clear: both; }
+  @media screen and (min-width: 20em) and (max-width: 39.999em) {
+    .interior {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
   .interior.border {
     border-bottom: 1px solid #cccccc; }
   .interior .column {
@@ -1196,18 +1201,22 @@ footer {
     @media screen and (min-width: 51.875em) {
       #hero .details {
         padding-top: 280px; } }
+    @media screen and (max-width: 35.5em) {
+      #hero .details {
+        padding-bottom: 40px;
+        padding-top: 40px; } }
   #hero h1 {
     color: white;
     line-height: 1;
     font-size: 7.5em; }
     #hero h1 strong {
       text-transform: uppercase; }
-    @media screen and (min-width: 30em) and (max-width: 51.875em) {
+    @media screen and (min-width: 40em) and (max-width: 51.875em) {
       #hero h1 {
         font-size: 3.75em; } }
-    @media screen and (min-width: 20em) and (max-width: 29.999em) {
+    @media screen and (min-width: 20em) and (max-width: 39.999em) {
       #hero h1 {
-        font-size: 2.5em; } }
+        font-size: 2.375em; } }
   #hero h3 {
     text-transform: none;
     font-size: 1.875em; }
@@ -1303,36 +1312,77 @@ footer {
 
 #about-feature {
   background: #ec008c; }
+  #about-feature .content-wrap {
+    position: relative;
+    background: url(../img/about-lrgCity.jpg) no-repeat;
+    background-size: cover;
+    max-height: 740px;
+    overflow: hidden; }
   #about-feature .content {
-    position: absolute;
-    z-index: 1;
+    position: relative;
     width: 100%; }
+    #about-feature .content h1 {
+      font-size: 3.78125em;
+      text-transform: uppercase;
+      color: white;
+      padding-top: 80px;
+      padding-bottom: 80px; }
+      @media screen and (min-width: 71.25em) {
+        #about-feature .content h1 {
+          padding-top: 288px;
+          font-size: 7.75em; } }
+      @media screen and (min-width: 61.25em) and (max-width: 71.249em) {
+        #about-feature .content h1 {
+          padding-top: 200px;
+          font-size: 6.25em; } }
+      @media screen and (max-width: 40em) {
+        #about-feature .content h1 {
+          font-size: 3em; } }
+      @media screen and (min-width: 20em) and (max-width: 30.999em) {
+        #about-feature .content h1 {
+          font-size: 2em;
+          padding-top: 40px;
+          padding-bottom: 40px; } }
   #about-feature .shape-circles-up {
     background-size: auto;
+    background-position: right 0;
     position: absolute;
     width: 100%;
-    height: 850px; }
+    height: 740px; }
+    @media screen and (max-width: 48em) {
+      #about-feature .shape-circles-up {
+        display: none; } }
   #about-feature .shape-circles-down {
     background-size: auto;
     position: absolute;
     width: 100%;
-    height: 850px; }
-  #about-feature h1 {
-    font-size: 7.75em;
-    text-transform: uppercase;
-    color: white;
-    padding-top: 300px; }
+    height: 740px; }
+    @media screen and (max-width: 48em) {
+      #about-feature .shape-circles-down {
+        display: none; } }
   #about-feature .interior {
     background: none;
     text-align: center; }
+    @media screen and (max-width: 20em) {
+      #about-feature .interior {
+        text-align: left; } }
   #about-feature p {
     font-size: 1.375em;
     color: white; }
+    @media screen and (min-width: 20em) and (max-width: 39.999em) {
+      #about-feature p {
+        font-size: 1em; } }
 
 .featured-event {
   padding: 60px 0; }
   .featured-event.interior {
     background-color: white; }
+    @media screen and (min-width: 40.001em) and (max-width: 51.874em) {
+      .featured-event.interior .column {
+        padding-right: 40px;
+        float: left; } }
+    .featured-event.interior .description {
+      float: left; }
   .featured-event .content-wrap:after {
     content: "";
     display: table;
@@ -1341,16 +1391,47 @@ footer {
     width: 38%;
     padding-right: 100px;
     text-align: left; }
+    @media screen and (max-width: 40em) {
+      .featured-event .info {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px; }
+        .featured-event .info:after {
+          content: "";
+          display: table;
+          clear: both; } }
     .featured-event .info p {
       font-size: 0.9375em;
-      line-height: 2; }
+      line-height: 2;
+      text-align: center; }
+      @media screen and (max-width: 40em) {
+        .featured-event .info p {
+          line-height: 1.5;
+          margin-top: 20px; } }
+      @media screen and (min-width: 30em) and (max-width: 40em) {
+        .featured-event .info p {
+          float: left;
+          width: 50%;
+          line-height: 1.5;
+          font-size: 0.875em; } }
+      .featured-event .info p:first-child {
+        text-align: left; }
+        @media screen and (min-width: 30em) and (max-width: 40em) {
+          .featured-event .info p:first-child {
+            padding-right: 30px; } }
     .featured-event .info strong {
       color: #ec008c; }
     .featured-event .info .btn {
       width: 100%;
       margin-top: 40px; }
+      @media screen and (max-width: 40em) {
+        .featured-event .info .btn {
+          margin-top: 24px; } }
   .featured-event .description {
     width: 62%; }
+    @media screen and (max-width: 40em) {
+      .featured-event .description {
+        width: 100%; } }
     .featured-event .description a {
       color: #ec008c; }
     .featured-event .description p {
@@ -1360,13 +1441,34 @@ footer {
   .featured-event .hero {
     position: relative;
     margin-bottom: 50px; }
+    @media screen and (max-width: 40em) {
+      .featured-event .hero {
+        margin-bottom: 0; } }
   .featured-event h1 {
-    font-size: 6.875em;
+    font-size: 4em;
     position: absolute;
     z-index: 1;
     top: 30%;
     left: 60px;
     color: white; }
+    @media screen and (min-width: 61.25em) {
+      .featured-event h1 {
+        font-size: 6.875em; } }
+    @media screen and (min-width: 51.875em) and (max-width: 61.249em) {
+      .featured-event h1 {
+        font-size: 5.375em; } }
+    @media screen and (min-width: 30em) and (max-width: 35.5em) {
+      .featured-event h1 {
+        font-size: 2.875em;
+        left: 30px; } }
+    @media screen and (min-width: 20em) and (max-width: 29.999em) {
+      .featured-event h1 {
+        font-size: 1.5em;
+        position: relative;
+        color: #313131;
+        top: 0;
+        left: 0;
+        margin-top: 20px; } }
 
 .upcoming h2 {
   color: #333333;
