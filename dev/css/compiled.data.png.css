@@ -839,9 +839,10 @@ html {
 /* #Fadeins and outs
 ========================================================================== */
 .fadeout_opening {
-  position: absolute;
+  display: none;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background-color: white; }
 
 /* #STRUCTURE
 ========================================================================== */

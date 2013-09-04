@@ -1,5 +1,5 @@
 var hasTouch = false;
-$.cookie('newUser', 1);
+
 
 if (("ontouchstart" in document.documentElement)) {
     hasTouch = true;
@@ -16,6 +16,7 @@ var DAOMA = {
   construct: function(){
     DAOMA.$_primaryWrapper = $('.fadein_content');
     DAOMA.$_navWrapper = $('#main-nav');
+    DAOMA.$_newUser = false;
   },
 
   init: function(){
@@ -81,10 +82,25 @@ var DAOMA = {
       var $w = $(window).width();
       if( $w >= '830'){
         $('#main-nav ul').css("display", "");
-        DAOMA.log('resize');
       }
     });
   }
+
+  // homeFadeIn: function(){
+  //   if($.cookie('newUser')){
+  //     DAOMA.log($.cookie('newUser') + " returning");
+  //   }else{
+  //     // $('.fadein_content').css({opacity: 0});
+  //     $('.fadein_content').hide();
+  //     $('.fadeout_opening').show();
+  //     $.cookie('newUser', '0', { expires: 7, path: '/' });
+  //     $('.fadeout_opening').fadeOut(2000, function(){
+  //       $(this).hide();
+  //     });
+  //     $('.fadein_content').fadeIn(1500);
+  //     DAOMA.log($.cookie('newUser') + " new");
+  //   }
+  // }
 };
 
 
