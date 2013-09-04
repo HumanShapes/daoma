@@ -1077,59 +1077,68 @@ address{
       font-size: em(68);
     }
     @media screen and (min-width: 20em) and (max-width: 35.499em){
-      font-size: em(40);
+      font-size: em(62);
     }
   }
   .content{
     display: table;
+    border-collapse:separate;
+    border-spacing: 5px;
     position: relative;
-    max-width: 640px;
+    width: 700px;
     float: none;
-    margin: 0 auto 40px auto;
-    @media screen and (min-width: 20em) and (max-width: 48em){
-      margin-bottom: 0;
+    margin: 0 auto 30px auto;
+    @media screen and (max-width: 48em){
+      display: block;
+      width: 400px;
     }
+    @media screen and (min-width: 20em) and (max-width: 35.499em){ width: inherit; }
     p{
       display: table-cell;
+      text-align: left;
+      font-size: em(27);
+      line-height: 1.2;
+      color: $grey6;
+      @media screen and (max-width: 48em){
+        display: inline-block;
+        text-align: center;
+      }
     }
   }
   .label{
+    @extend .font-book;
     @extend .icon-label-arrow;
-    font-size: em(26);
-    color: $grey6;
     background-position: right center;
-    padding: 10px 30px 10px 0;
-    border-spacing: 0 10px 0 0;
-    width: 60px;
+    padding: 10px 0;
+    width: 48%;
     text-align: left;
+    letter-spacing: none;
     @media screen and (max-width: 48em){
       font-size: em(22);
       background: none;
       padding-right: 10px;
+      width: 100%;
     }
-    @media screen and (min-width: 20em) and (max-width: 35.499em){
-      font-size: em(18);
-    }
+    @media screen and (min-width: 20em) and (max-width: 35.499em){ font-size: em(18); }
   }
   .city{
+    @extend .font-bold;
+    background-color: $white;
     border: 1px solid $grey2;
-    font-size: em(26);
-    padding: 10px 20px 10px 10px;
-    width: 40%;
-    text-align: left;
+    padding: 20px 10px;
+    width: 52%;
     @media screen and (max-width: 48em){
       font-size: em(22);
+      width: 100%;
     }
-    @media screen and (min-width: 20em) and (max-width: 35.499em){
-      font-size: em(18);
-    }
+    @media screen and (min-width: 20em) and (max-width: 35.499em){ font-size: em(18); }
   }
   button{
     @extend .icon-submit-shuffle;
-    // display: none;
+    display: none;
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 15px;
+    top: center;
     background-color: transparent;
     overflow: hidden;
     width: 32px;

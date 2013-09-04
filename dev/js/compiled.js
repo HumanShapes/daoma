@@ -122,6 +122,14 @@ var DAOMA = {
 
     DAOMA.toggleMainNav();
     DAOMA.parallax();
+    $('.city').on({
+      mouseenter: function(){
+        $('.refresh').toggle();
+      },
+      mouseleave: function(){
+        $('.refresh').toggle();
+      }
+    });
 
   },
 
