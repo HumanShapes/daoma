@@ -397,7 +397,6 @@ footer{
       line-height: 1.5;
       color: $white;
       @media screen and (min-width: 51.875em){ font-size: em(30px); }
-
     }
   }
   .shape-circles{
@@ -413,7 +412,7 @@ footer{
   .details{
     padding-bottom: 80px;
     padding-top: 80px;
-    @media screen and (min-width: 51.875em){ padding-top: 280px; }
+    @media screen and (min-width: 51.875em) and (min-height: 50em){ padding-top: 280px; }
     @media screen and (max-width: 35.5em){
       padding-bottom: 40px;
       padding-top: 40px;
@@ -468,6 +467,10 @@ footer{
       @extend .font-book;
       font-size: em(22);
       width: 70%;
+      padding-right: 40px;
+      @media screen and (min-width: 51.876em) and (max-width: 61.25em){
+        font-size: em(19);
+      }
       @media screen and (max-width: 51.875em){
         font-size: em(16);
         text-align: left;
@@ -784,7 +787,7 @@ footer{
   }
 }
 .creative-class{
-  @include transition(all .4s linear);
+  @include transition(opacity .4s linear);
   background-color: rgba($grey, .6);
   padding: 60px 0;
   border-top: 1px solid $grey2;
@@ -810,6 +813,9 @@ footer{
     line-height: 1;
     width: inherit;
     padding-left: 40%;
+    @media screen and (min-width: 51.876em) and (max-width: 61.250em){
+      padding-left: 33%;
+    }
     @media screen and (max-width: 51.875em){
       padding-left: 0;
       position: relative;
@@ -819,13 +825,16 @@ footer{
       br{ display: none; }
       &.one ~ .content, &.two ~ .content, &.three ~ .content, &.four ~ .content{ background-image: none; }
     }
+    @media screen and (min-width: 51.876em) and (max-width: 61.250em){
+      &.one ~ .content, &.two ~ .content, &.three ~ .content, &.four ~ .content{ background-size: 26%; }
+    }
     &.one ~ .content{ @extend .icon-1; }
     &.two ~ .content{ @extend .icon-2; }
     &.three ~ .content{ @extend .icon-3; }
     &.four ~ .content{ @extend .icon-4; }
   }
   .content{
-    @include transition(all .4s linear);
+    @include transition(opacity .4s linear);
     background-position: 2% 0;
     height: 230px;
     opacity: 0;
@@ -838,6 +847,10 @@ footer{
     }
     p{
       margin-left: 40%;
+      @media screen and (min-width: 51.876em) and (max-width: 61.250em){
+        margin-left: 33%;
+        font-size: em(18);
+      }
       @media screen and (max-width: 51.875em){
         margin-left: 0;
         font-size: em(16);
