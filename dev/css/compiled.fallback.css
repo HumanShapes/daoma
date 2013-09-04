@@ -86,7 +86,7 @@
   background-image: url(png/hero-presentor_lineshape.png);
   background-repeat: no-repeat; }
 
-.icon-label-arrow, .distance label {
+.icon-label-arrow, .distance .label {
   background-image: url(png/label-arrow.png);
   background-repeat: no-repeat; }
 
@@ -114,7 +114,7 @@
   background-image: url(png/shape_partners.png);
   background-repeat: no-repeat; }
 
-.icon-submit-shuffle, .distance input[type="submit"] {
+.icon-submit-shuffle, .distance button {
   background-image: url(png/submit-shuffle.png);
   background-repeat: no-repeat; }
 
@@ -1848,30 +1848,46 @@ address {
     @media screen and (min-width: 20em) and (max-width: 35.499em) {
       .distance strong {
         font-size: 2.5em; } }
-  .distance p {
-    font-size: 1.875em;
-    color: #888888;
-    text-align: center; }
-  .distance form {
+  .distance .content {
+    display: table;
     position: relative;
     max-width: 640px;
+    float: none;
     margin: 0 auto 40px auto; }
     @media screen and (min-width: 20em) and (max-width: 48em) {
-      .distance form {
+      .distance .content {
         margin-bottom: 0; } }
-  .distance input[type="text"] {
+    .distance .content p {
+      display: table-cell; }
+  .distance .label {
+    font-size: 1.625em;
+    color: #333333;
+    background-position: right center;
+    padding: 10px 30px 10px 0;
+    border-spacing: 0 10px 0 0;
+    width: 60px;
+    text-align: left; }
+    @media screen and (max-width: 48em) {
+      .distance .label {
+        font-size: 1.375em;
+        background: none;
+        padding-right: 10px; } }
+    @media screen and (min-width: 20em) and (max-width: 35.499em) {
+      .distance .label {
+        font-size: 1.125em; } }
+  .distance .city {
     border: 1px solid #cccccc;
     font-size: 1.625em;
     padding: 10px 20px 10px 10px;
-    margin-left: 4px; }
+    width: 40%;
+    text-align: left; }
     @media screen and (max-width: 48em) {
-      .distance input[type="text"] {
+      .distance .city {
         font-size: 1.375em; } }
     @media screen and (min-width: 20em) and (max-width: 35.499em) {
-      .distance input[type="text"] {
+      .distance .city {
         font-size: 1.125em; } }
-  .distance input[type="submit"] {
-    display: none;
+  .distance button {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -1881,16 +1897,7 @@ address {
     height: 0;
     padding-top: 32px;
     border: none; }
-  .distance label {
-    font-size: 1.625em;
-    color: #333333;
-    background-position: right center;
-    padding: 10px 40px 10px 0; }
-    @media screen and (max-width: 48em) {
-      .distance label {
-        font-size: 1.375em;
-        background: none;
-        padding-right: 10px; } }
-    @media screen and (min-width: 20em) and (max-width: 35.499em) {
-      .distance label {
-        font-size: 1.125em; } }
+  .distance p {
+    font-size: 1.875em;
+    color: #888888;
+    text-align: center; }

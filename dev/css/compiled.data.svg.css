@@ -86,7 +86,7 @@
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%22207px%22%20height%3D%22207px%22%20viewBox%3D%220%200%20207%20207%22%20enable-background%3D%22new%200%200%20207%20207%22%20xml%3Aspace%3D%22preserve%22%3E%3Cline%20fill%3D%22none%22%20stroke%3D%22%23E8168C%22%20stroke-miterlimit%3D%2210%22%20x1%3D%22206.767%22%20y1%3D%22207%22%20x2%3D%220.233%22%20y2%3D%220%22%2F%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-label-arrow, .distance label {
+.icon-label-arrow, .distance .label {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2223px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2023%2020%22%20enable-background%3D%22new%200%200%2023%2020%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23333333%22%20d%3D%22M7.787%2C0l7.775%2C8H0v4h15.562l-7.775%2C8h5.492L23%2C10L13.279%2C0H7.787z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
@@ -114,7 +114,7 @@
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%221270px%22%20height%3D%22880px%22%20viewBox%3D%220%200%201270%20880%22%20enable-background%3D%22new%200%200%201270%20880%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23EC008C%22%20points%3D%22-3.014%2C0%20701.5%2C0%20992.891%2C390.28%20-3.014%2C880%20%22%2F%3E%3Cpolygon%20opacity%3D%220.1%22%20enable-background%3D%22new%20%20%20%20%22%20points%3D%220%2C222.5%20992.891%2C390.28%20-3.014%2C880%20%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-submit-shuffle, .distance input[type="submit"] {
+.icon-submit-shuffle, .distance button {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2232px%22%20height%3D%2232px%22%20viewBox%3D%220%200%2032%2032%22%20enable-background%3D%22new%200%200%2032%2032%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23EC008C%22%20d%3D%22M31.745%2C13.171c-1.563-8.696-9.88-14.478-18.576-12.915C4.474%2C1.819-1.308%2C10.135%2C0.255%2C18.83%20s9.879%2C14.479%2C18.574%2C12.915C27.525%2C30.184%2C33.309%2C21.867%2C31.745%2C13.171z%20M9.79%2C19.715l-2.248%2C1.471%20c-3.975-6.787%2C1.06-11.589%2C1.06-11.589c2.688-2.99%2C6.373-3.022%2C7.976-2.867l0.625-2.946l3.314%2C5.1l-5.101%2C3.315l0.604-2.846%20c-3.05-0.279-5.235%2C1.864-5.235%2C1.864C6.729%2C15.573%2C9.79%2C19.715%2C9.79%2C19.715z%20M23.395%2C22.409c-2.688%2C2.989-6.373%2C3.018-7.976%2C2.862%20l-0.626%2C2.947l-3.314-5.102l5.102-3.314l-0.605%2C2.85c3.049%2C0.279%2C5.235-1.863%2C5.235-1.863c4.061-4.358%2C1.001-8.501%2C1.001-8.501%20l2.249-1.467C28.434%2C17.607%2C23.395%2C22.409%2C23.395%2C22.409z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
@@ -1848,30 +1848,46 @@ address {
     @media screen and (min-width: 20em) and (max-width: 35.499em) {
       .distance strong {
         font-size: 2.5em; } }
-  .distance p {
-    font-size: 1.875em;
-    color: #888888;
-    text-align: center; }
-  .distance form {
+  .distance .content {
+    display: table;
     position: relative;
     max-width: 640px;
+    float: none;
     margin: 0 auto 40px auto; }
     @media screen and (min-width: 20em) and (max-width: 48em) {
-      .distance form {
+      .distance .content {
         margin-bottom: 0; } }
-  .distance input[type="text"] {
+    .distance .content p {
+      display: table-cell; }
+  .distance .label {
+    font-size: 1.625em;
+    color: #333333;
+    background-position: right center;
+    padding: 10px 30px 10px 0;
+    border-spacing: 0 10px 0 0;
+    width: 60px;
+    text-align: left; }
+    @media screen and (max-width: 48em) {
+      .distance .label {
+        font-size: 1.375em;
+        background: none;
+        padding-right: 10px; } }
+    @media screen and (min-width: 20em) and (max-width: 35.499em) {
+      .distance .label {
+        font-size: 1.125em; } }
+  .distance .city {
     border: 1px solid #cccccc;
     font-size: 1.625em;
     padding: 10px 20px 10px 10px;
-    margin-left: 4px; }
+    width: 40%;
+    text-align: left; }
     @media screen and (max-width: 48em) {
-      .distance input[type="text"] {
+      .distance .city {
         font-size: 1.375em; } }
     @media screen and (min-width: 20em) and (max-width: 35.499em) {
-      .distance input[type="text"] {
+      .distance .city {
         font-size: 1.125em; } }
-  .distance input[type="submit"] {
-    display: none;
+  .distance button {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -1881,16 +1897,7 @@ address {
     height: 0;
     padding-top: 32px;
     border: none; }
-  .distance label {
-    font-size: 1.625em;
-    color: #333333;
-    background-position: right center;
-    padding: 10px 40px 10px 0; }
-    @media screen and (max-width: 48em) {
-      .distance label {
-        font-size: 1.375em;
-        background: none;
-        padding-right: 10px; } }
-    @media screen and (min-width: 20em) and (max-width: 35.499em) {
-      .distance label {
-        font-size: 1.125em; } }
+  .distance p {
+    font-size: 1.875em;
+    color: #888888;
+    text-align: center; }

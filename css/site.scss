@@ -1080,26 +1080,43 @@ address{
       font-size: em(40);
     }
   }
-  p{
-    @extend .font-display;
-    font-size: em(30);
-    color: $grey4;
-    text-align: center;
-
-  }
-  form{
+  .content{
+    display: table;
     position: relative;
     max-width: 640px;
+    float: none;
     margin: 0 auto 40px auto;
     @media screen and (min-width: 20em) and (max-width: 48em){
       margin-bottom: 0;
     }
+    p{
+      display: table-cell;
+    }
   }
-  input[type="text"]{
+  .label{
+    @extend .icon-label-arrow;
+    font-size: em(26);
+    color: $grey6;
+    background-position: right center;
+    padding: 10px 30px 10px 0;
+    border-spacing: 0 10px 0 0;
+    width: 60px;
+    text-align: left;
+    @media screen and (max-width: 48em){
+      font-size: em(22);
+      background: none;
+      padding-right: 10px;
+    }
+    @media screen and (min-width: 20em) and (max-width: 35.499em){
+      font-size: em(18);
+    }
+  }
+  .city{
     border: 1px solid $grey2;
     font-size: em(26);
     padding: 10px 20px 10px 10px;
-    margin-left: 4px;
+    width: 40%;
+    text-align: left;
     @media screen and (max-width: 48em){
       font-size: em(22);
     }
@@ -1107,9 +1124,9 @@ address{
       font-size: em(18);
     }
   }
-  input[type="submit"]{
+  button{
     @extend .icon-submit-shuffle;
-    display: none;
+    // display: none;
     position: absolute;
     right: 10px;
     top: 10px;
@@ -1119,21 +1136,14 @@ address{
     height: 0;
     padding-top: 32px;
     border: none;
-
   }
-  label{
-    @extend .icon-label-arrow;
-    font-size: em(26);
-    color: $grey6;
-    background-position: right center;
-    padding: 10px 40px 10px 0;
-    @media screen and (max-width: 48em){
-      font-size: em(22);
-      background: none;
-      padding-right: 10px;
-    }
-    @media screen and (min-width: 20em) and (max-width: 35.499em){
-      font-size: em(18);
+  p{
+    @extend .font-display;
+    font-size: em(30);
+    color: $grey4;
+    text-align: center;
+    &.miles{
+
     }
   }
 }
