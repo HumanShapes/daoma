@@ -74,15 +74,15 @@
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%221010px%22%20height%3D%22378px%22%20viewBox%3D%22-0.202%20-0.246%201010%20378%22%20enable-background%3D%22new%20-0.202%20-0.246%201010%20378%22%20%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%20%3Cpolygon%20fill%3D%22%23464646%22%20points%3D%22497.902%2C-0.246%20354.49%2C377.754%201009.798%2C-0.246%20%20%22%2F%3E%20%3Cpolygon%20fill%3D%22%235A5A5A%22%20points%3D%22-0.202%2C-0.246%20-0.202%2C121.561%20354.49%2C377.754%20497.902%2C-0.246%20%20%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-hero-circles_lineshape-down, #about-feature .shape-circles-up {
+.icon-hero-circles_lineshape-down, .shape-circles-up {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%22673px%22%20height%3D%22687px%22%20viewBox%3D%220%200%20673%20687%22%20enable-background%3D%22new%200%200%20673%20687%22%20xml%3Aspace%3D%22preserve%22%3E%3Ccircle%20fill%3D%22none%22%20stroke%3D%22%233B3B3B%22%20stroke-miterlimit%3D%2210%22%20cx%3D%22505.191%22%20cy%3D%22519.498%22%20r%3D%22166.211%22%2F%3E%3Ccircle%20fill%3D%22none%22%20stroke%3D%22%233B3B3B%22%20stroke-miterlimit%3D%2210%22%20cx%3D%22505.191%22%20cy%3D%22519.498%22%20r%3D%22131.98%22%2F%3E%3Ccircle%20fill%3D%22%23EA0B8C%22%20cx%3D%22503.955%22%20cy%3D%22517.235%22%20r%3D%224.263%22%2F%3E%3Cline%20fill%3D%22none%22%20stroke%3D%22%23EA0B8C%22%20stroke-miterlimit%3D%2210%22%20x1%3D%22500.965%22%20y1%3D%22514.334%22%20x2%3D%220%22%20y2%3D%22-0.001%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-hero-circles_lineshape-up, #hero .shape-circles, #about-feature .shape-circles-down {
+.icon-hero-circles_lineshape-up, .shape-circles-down {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%22673px%22%20height%3D%22687px%22%20viewBox%3D%22-0.728%20-0.722%20673%20687%22%20enable-background%3D%22new%20-0.728%20-0.722%20673%20687%22%20%20xml%3Aspace%3D%22preserve%22%3E%3Ccircle%20fill%3D%22none%22%20stroke%3D%22%233B3B3B%22%20stroke-miterlimit%3D%2210%22%20cx%3D%22505.191%22%20cy%3D%22166.21%22%20r%3D%22166.211%22%2F%3E%3Ccircle%20fill%3D%22none%22%20stroke%3D%22%233B3B3B%22%20stroke-miterlimit%3D%2210%22%20cx%3D%22505.191%22%20cy%3D%22166.21%22%20r%3D%22131.981%22%2F%3E%3Ccircle%20fill%3D%22%23EA0B8C%22%20cx%3D%22503.955%22%20cy%3D%22168.473%22%20r%3D%224.263%22%2F%3E%3Cline%20fill%3D%22none%22%20stroke%3D%22%23EA0B8C%22%20stroke-miterlimit%3D%2210%22%20x1%3D%22500.965%22%20y1%3D%22171.374%22%20x2%3D%220%22%20y2%3D%22685.709%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-hero-presentor_lineshape, #hero .presentor {
+.icon-hero-presentor_lineshape {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%22207px%22%20height%3D%22207px%22%20viewBox%3D%220%200%20207%20207%22%20enable-background%3D%22new%200%200%20207%20207%22%20xml%3Aspace%3D%22preserve%22%3E%3Cline%20fill%3D%22none%22%20stroke%3D%22%23E8168C%22%20stroke-miterlimit%3D%2210%22%20x1%3D%22206.767%22%20y1%3D%22207%22%20x2%3D%220.233%22%20y2%3D%220%22%2F%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
@@ -553,7 +553,7 @@ svg:not(:root) {
 .font-thin, #about-feature .content h1 {
   font-family: 'intro_thinregular'; }
 
-.font-book, #hero .info p:first-child, #about p, #about-feature p, .featured-event .description, .events .content p, .past-speakers .wrapper p, .past-speakers .director p {
+.font-book, #hero .info p:first-child, #about-feature p, #about p, .featured-event .description, .events .content p, .past-speakers .wrapper p, .past-speakers .director p {
   font-family: 'intro_bookregular'; }
 
 /* #Typography
@@ -1147,32 +1147,6 @@ footer {
     content: "";
     display: table;
     clear: both; }
-  #hero .presentor {
-    position: absolute;
-    right: 10%;
-    top: 0;
-    width: 250px;
-    height: 300px; }
-    @media screen and (max-width: 51.875em) {
-      #hero .presentor {
-        background: none;
-        height: 200px; } }
-    @media screen and (max-width: 40em) {
-      #hero .presentor {
-        display: none; } }
-    #hero .presentor img {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 80%;
-      border-radius: 50%;
-      border: 1px solid #333333; }
-      @media screen and (max-width: 51.875em) {
-        #hero .presentor img {
-          width: 70%; } }
-      @media screen and (min-width: 20em) and (max-width: 29.999em) {
-        #hero .presentor img {
-          width: 60%; } }
   #hero .content {
     position: relative;
     background: url(../img/event-austinHowe_feature.jpg) no-repeat center center;
@@ -1186,23 +1160,11 @@ footer {
       @media screen and (min-width: 51.875em) {
         #hero .content p {
           font-size: 1.875em; } }
-  #hero .shape-circles {
-    position: absolute;
-    background-size: auto;
-    z-index: 0;
-    height: 800px;
-    width: 100%; }
-    @media screen and (max-width: 30em) {
-      #hero .shape-circles {
-        display: none; } }
   #hero .wrapper, #hero .director {
     position: relative; }
   #hero .details {
     padding-bottom: 80px;
     padding-top: 80px; }
-    @media screen and (min-width: 51.875em) and (min-height: 50em) {
-      #hero .details {
-        padding-top: 280px; } }
     @media screen and (max-width: 35.5em) {
       #hero .details {
         padding-bottom: 40px;
@@ -1290,31 +1252,24 @@ footer {
         #hero .info p .btn {
           float: none; } }
 
-#about {
-  background-position: right -80px;
-  background-color: white; }
-  #about h1 {
-    text-transform: uppercase;
-    font-size: 3.25em;
-    line-height: 1.5;
-    padding-bottom: 20px;
-    color: #313131;
-    width: 70%;
-    border-bottom: 1px solid #ebebeb; }
-    @media screen and (max-width: 51.875em) {
-      #about h1 {
-        font-size: 2.25em;
-        width: 100%; } }
-    @media screen and (max-width: 40em) {
-      #about h1 {
-        font-size: 1.75em; } }
-  #about p {
-    padding-top: 30px;
-    color: #ec008c;
-    font-size: 1.0625em; }
-    @media screen and (min-width: 51.88em) {
-      #about p {
-        width: 70%; } }
+.shape-circles-up {
+  background-size: auto;
+  background-position: right 0;
+  position: absolute;
+  width: 100%;
+  height: 740px; }
+  @media screen and (max-width: 48em) {
+    .shape-circles-up {
+      display: none; } }
+
+.shape-circles-down {
+  background-size: auto;
+  position: absolute;
+  width: 100%;
+  height: 740px; }
+  @media screen and (max-width: 48em) {
+    .shape-circles-down {
+      display: none; } }
 
 #about-feature {
   background: #ec008c; }
@@ -1349,23 +1304,6 @@ footer {
           font-size: 2em;
           padding-top: 40px;
           padding-bottom: 40px; } }
-  #about-feature .shape-circles-up {
-    background-size: auto;
-    background-position: right 0;
-    position: absolute;
-    width: 100%;
-    height: 740px; }
-    @media screen and (max-width: 48em) {
-      #about-feature .shape-circles-up {
-        display: none; } }
-  #about-feature .shape-circles-down {
-    background-size: auto;
-    position: absolute;
-    width: 100%;
-    height: 740px; }
-    @media screen and (max-width: 48em) {
-      #about-feature .shape-circles-down {
-        display: none; } }
   #about-feature .interior {
     background: none;
     text-align: center; }
@@ -1378,6 +1316,32 @@ footer {
     @media screen and (min-width: 20em) and (max-width: 39.999em) {
       #about-feature p {
         font-size: 1em; } }
+
+#about {
+  background-position: right -80px;
+  background-color: white; }
+  #about h1 {
+    text-transform: uppercase;
+    font-size: 3.25em;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    color: #313131;
+    width: 70%;
+    border-bottom: 1px solid #ebebeb; }
+    @media screen and (max-width: 51.875em) {
+      #about h1 {
+        font-size: 2.25em;
+        width: 100%; } }
+    @media screen and (max-width: 40em) {
+      #about h1 {
+        font-size: 1.75em; } }
+  #about p {
+    padding-top: 30px;
+    color: #ec008c;
+    font-size: 1.0625em; }
+    @media screen and (min-width: 51.88em) {
+      #about p {
+        width: 70%; } }
 
 .featured-event {
   padding: 60px 0; }

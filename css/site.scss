@@ -360,31 +360,6 @@ footer{
   @include clearfix;
   position: relative;
   background-color: $grey;
-  .presentor{
-    @extend .icon-hero-presentor_lineshape;
-    position: absolute;
-    right: 10%;
-    top: 0;
-    width: 250px;
-    height: 300px;
-    @media screen and (max-width:51.875em){
-      background: none;
-      height: 200px;
-    }
-    @media screen and (max-width: 40em){
-      display: none;
-    }
-    img{
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 80%;
-      border-radius: 50%;
-      border: 1px solid $grey6;
-      @media screen and (max-width:51.875em){ width: 70%; }
-      @media screen and (min-width:20em) and (max-width: 29.999em){ width: 60%; }
-    }
-  }
   .content{
     position: relative;
     background: url(../img/event-austinHowe_feature.jpg) no-repeat center center;
@@ -399,20 +374,11 @@ footer{
       @media screen and (min-width: 51.875em){ font-size: em(30px); }
     }
   }
-  .shape-circles{
-    @extend .icon-hero-circles_lineshape-up;
-    position: absolute;
-    background-size: auto;
-    z-index: 0;
-    height: 800px;
-    width: 100%;
-    @media screen and (max-width: 30em){ display: none; }
-  }
   .wrapper{ position: relative; }
   .details{
     padding-bottom: 80px;
     padding-top: 80px;
-    @media screen and (min-width: 51.875em) and (min-height: 50em){ padding-top: 280px; }
+    // @media screen and (min-width: 51.875em) and (min-height: 50em){ padding-top: 280px; }
     @media screen and (max-width: 35.5em){
       padding-bottom: 40px;
       padding-top: 40px;
@@ -491,32 +457,23 @@ footer{
     }
   }
 }
-
-#about{
-  @extend .icon-shape_grey-triangles;
-  background-position: right -80px;
-  background-color: $white;
-  h1{
-    @extend .font-sans;
-    text-transform: uppercase;
-    font-size: em(52);
-    line-height: 1.5;
-    padding-bottom: 20px;
-    color: $grey7;
-    width: 70%;
-    border-bottom: 1px solid $grey1;
-    @media screen and (max-width: 51.875em){ font-size: em(36); width: 100%; }
-    @media screen and (max-width: 40em){ font-size: em(28);}
-  }
-  p{
-    @extend .font-book;
-    padding-top: 30px;
-    color: $primary;
-    font-size: em(17);
-    @media screen and (min-width: 51.88em){ width: 70%; }
-  }
+.shape-circles-up{
+  @extend .icon-hero-circles_lineshape-down;
+  background-size: auto;
+  background-position: right 0;
+  position: absolute;
+  width: 100%;
+  height: 740px;
+  @media screen and (max-width: 48em){ display: none; }
 }
-
+.shape-circles-down{
+  @extend .icon-hero-circles_lineshape-up;
+  background-size: auto;
+  position: absolute;
+  width: 100%;
+  height: 740px;
+  @media screen and (max-width: 48em){ display: none; }
+}
 #about-feature{
   background: $primary;
   .content-wrap{
@@ -553,24 +510,6 @@ footer{
       }
     }
   }
-  .shape-circles-up{
-    @extend .icon-hero-circles_lineshape-down;
-    background-size: auto;
-    background-position: right 0;
-    position: absolute;
-    width: 100%;
-    height: 740px;
-    @media screen and (max-width: 48em){ display: none; }
-  }
-  .shape-circles-down{
-    @extend .icon-hero-circles_lineshape-up;
-    background-size: auto;
-    position: absolute;
-    width: 100%;
-    height: 740px;
-    @media screen and (max-width: 48em){ display: none; }
-  }
-
   .interior{
     background: none;
     text-align: center;
@@ -581,6 +520,31 @@ footer{
     font-size: em(22);
     color: $white;
     @media screen and (min-width: 20em) and (max-width: 39.999em){ font-size: em(16); }
+  }
+}
+
+#about{
+  @extend .icon-shape_grey-triangles;
+  background-position: right -80px;
+  background-color: $white;
+  h1{
+    @extend .font-sans;
+    text-transform: uppercase;
+    font-size: em(52);
+    line-height: 1.5;
+    padding-bottom: 20px;
+    color: $grey7;
+    width: 70%;
+    border-bottom: 1px solid $grey1;
+    @media screen and (max-width: 51.875em){ font-size: em(36); width: 100%; }
+    @media screen and (max-width: 40em){ font-size: em(28);}
+  }
+  p{
+    @extend .font-book;
+    padding-top: 30px;
+    color: $primary;
+    font-size: em(17);
+    @media screen and (min-width: 51.88em){ width: 70%; }
   }
 }
 
