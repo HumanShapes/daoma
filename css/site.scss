@@ -137,8 +137,8 @@ body{ @extend .font-sans; }
   }
 }
 #logo a{
-  @extend .icon-daoma_logo_white;
-  @include transition(all .25s linear);
+  @extend .icon-daoma_logo_magenta;
+  @include transition(opacity .25s linear);
   width: 96px;
   height: 0;
   overflow: hidden;

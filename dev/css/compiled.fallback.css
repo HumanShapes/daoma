@@ -38,7 +38,7 @@
   background-image: url(png/daoma_logo_black.png);
   background-repeat: no-repeat; }
 
-.icon-daoma_logo_magenta {
+.icon-daoma_logo_magenta, #logo a {
   background-image: url(png/daoma_logo_magenta.png);
   background-repeat: no-repeat; }
 
@@ -46,7 +46,7 @@
   background-image: url(png/daoma_logo_magenta_w-shdw.png);
   background-repeat: no-repeat; }
 
-.icon-daoma_logo_white, #logo a {
+.icon-daoma_logo_white {
   background-image: url(png/daoma_logo_white.png);
   background-repeat: no-repeat; }
 
@@ -956,9 +956,9 @@ html {
       color: #ec008c; }
 
 #logo a {
-  -webkit-transition: all 0.25s linear;
-  -moz-transition: all 0.25s linear;
-  transition: all 0.25s linear;
+  -webkit-transition: opacity 0.25s linear;
+  -moz-transition: opacity 0.25s linear;
+  transition: opacity 0.25s linear;
   width: 96px;
   height: 0;
   overflow: hidden;
