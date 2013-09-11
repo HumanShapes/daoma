@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="99.873px" viewBox="0 0 100 99.873" enable-background="new 0 0 100 99.873" xml:space="preserve">
+<g>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#0156B9" d="M6,99.873h88c3.312,0,6-2.686,6-6V6c0-3.314-2.688-6-6-6H6
+		C2.686,0,0,2.686,0,6v87.873C0,97.188,2.686,99.873,6,99.873z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M15,11.937h70.001c1.656,0,2.999,1.343,2.999,2.999v70.001
+		c0,1.656-1.343,3-2.999,3H15c-1.656,0-3-1.344-3-3V14.936C12,13.279,13.344,11.937,15,11.937z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#EDF1F2" d="M88,49.937v35c0,1.656-1.343,3-2.999,3H15c-1.656,0-3-1.344-3-3
+		v-35C19,49.937,81,49.937,88,49.937z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#2C4093" d="M85.001,87.937H15c-1.656,0-3-1.344-3-3v2c0,1.656,1.344,3,3,3
+		h70.001c1.656,0,2.999-1.344,2.999-3v-2C88,86.593,86.657,87.937,85.001,87.937z"/>
+	<rect x="12" y="48.937" fill="#2C4093" width="76" height="2"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#B3B3B3" d="M82,42.938c1.104,0,2,0.896,2,2v9.999c0,1.105-0.896,2-2,2
+		s-2-0.895-2-2v-9.999C80,43.833,80.896,42.938,82,42.938z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M82,44.937c0.553,0,1,0.895,1,2c0,1.104-0.447,1.999-1,1.999
+		s-1-0.895-1-1.999C81,45.831,81.447,44.937,82,44.937z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#B3B3B3" d="M18,42.938c1.104,0,2,0.896,2,2v9.999c0,1.105-0.896,2-2,2
+		s-2-0.895-2-2v-9.999C16,43.833,16.896,42.938,18,42.938z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M18,44.937c0.553,0,1,0.895,1,2c0,1.104-0.447,1.999-1,1.999
+		s-1-0.895-1-1.999C17,45.831,17.447,44.937,18,44.937z"/>
+	<path fill="#CC0000" d="M38.232,41.937v-6.005c2.803-0.125,4.766-0.312,5.888-0.562c1.787-0.395,3.24-1.187,4.361-2.373
+		c0.769-0.812,1.351-1.895,1.743-3.249c0.229-0.811,0.345-1.416,0.345-1.811H58v21h-9v-7H38.232z"/>
+	<rect x="49" y="50.937" fill="#CC0000" width="9" height="19"/>
+</g>
+</svg>

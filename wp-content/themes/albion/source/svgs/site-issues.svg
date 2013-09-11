@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="96px" height="100px" viewBox="0 0 96 100" enable-background="new 0 0 96 100" xml:space="preserve">
+<g>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#0156B9" d="M6,100h84c3.313,0,6-2.686,6-6V16c0-3.314-2.687-6-6-6H6
+		c-3.313,0-6,2.686-6,6v78C0,97.314,2.687,100,6,100z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M18,16h58C77.657,16,79,17.343,79,18.999V86
+		c0,1.656-1.343,3-2.999,3H18c-1.657,0-3-1.344-3-3V18.999C15,17.343,16.344,16,18,16z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#2C4093" d="M76.001,89H18c-1.657,0-3-1.344-3-3v2c0,1.656,1.343,3,3,3h58
+		C77.657,91,79,89.656,79,88v-2C79,87.656,77.657,89,76.001,89z"/>
+	<g>
+		<g>
+			<rect x="38" y="52" fill-rule="evenodd" clip-rule="evenodd" fill="#CC0000" width="32" height="3"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<rect x="38" y="41" fill-rule="evenodd" clip-rule="evenodd" fill="#CC0000" width="32" height="3"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<rect x="38" y="30" fill-rule="evenodd" clip-rule="evenodd" fill="#CC0000" width="32" height="3"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#CCCCCC" d="M38,63v3h32v-3H38z M38,77h32v-3H38V77z M25,68h7v-7h-7V68z
+				 M25,79h7v-7h-7V79z"/>
+		</g>
+	</g>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#2C4093" d="M70,20H26c-1.657,0-3-1.343-3-2.999v-7C23,8.344,24.343,7,26,7h15
+		c0-3.865,3.134-7,7-7s7,3.135,7,7h15c1.656,0,3,1.344,3,3.001v7C73,18.657,71.656,20,70,20z M48,4.001c-1.657,0-3,1.343-3,2.999
+		c0,1.657,1.343,3.001,3,3.001S51,8.657,51,7C51,5.344,49.656,4.001,48,4.001z"/>
+	<g>
+		<polygon fill="#CC0000" points="29,35.121 24.939,31.061 27.061,28.939 29,30.879 32.939,26.939 35.061,29.061 		"/>
+	</g>
+	<g>
+		<polygon fill="#CC0000" points="29,46.121 24.939,42.061 27.061,39.939 29,41.879 32.939,37.939 35.061,40.061 		"/>
+	</g>
+	<g>
+		<polygon fill="#CC0000" points="29,57.121 24.939,53.061 27.061,50.939 29,52.879 32.939,48.939 35.061,51.061 		"/>
+	</g>
+</g>
+</svg>

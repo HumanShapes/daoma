@@ -1,0 +1,190 @@
+/* Site specific mixins, colors, and fonts.
+   Core element styles.
+   Vendor files. (Plugins, custom widgets, etc.) */
+
+/* #Colors
+===================== */
+
+$primary: #0156b9;
+$secondary: #cc0000;
+
+$white: #ffffff;
+$black: #000000;
+$grey1: #f4f4f4; // light background
+$grey2: #DCDCDC; // borders
+$grey3: #afafaf; // section headlines
+$grey4: #999999; // article intros
+$grey5: #636363; // ex) author bios
+$grey6: #555555; // ex) news article byline greys
+$grey7: #484848; // ex) footer background
+$grey8: #333333; // ex) body copy
+
+/* #Fonts
+===================== */
+
+// $font-sans: "proxima-nova", sans-serif;
+// $font-display: "kulturista-web", Georgia, serif;
+
+.font-sans{
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  // .wf-loading & { visibility: hidden; }
+  // .wf-active & { visibility: visible; }
+}
+.font-display {
+  font-family: "kulturista-web", Georgia, Times, serif;
+  font-weight: 300;
+  font-style: normal;
+  // .wf-loading & { visibility: hidden; }
+  // .wf-active & { visibility: visible; }
+}
+
+/* #Typography
+===================== */
+
+h1, h2, h3, h4{
+  @extend .font-display;
+}
+h1{ font-size: em(30); }
+h2{ font-size: em(24); }
+h3{ font-size: em(16); }
+.section-headline{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a{
+  color: $primary;
+  text-decoration: none;
+}
+
+strong, b{
+  font-weight: 600;
+}
+
+/* #Buttons
+===================== */
+
+.btn{
+  @include transition(background-color 0.3s);
+  display: inline-block;
+  border-radius: 3px;
+  background-color: $primary;
+  color: $white;
+  padding: 12px 56px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  &:hover{
+    background-color: darken($primary, 10%);
+  }
+}
+.btn-large{
+  @extend .btn;
+  font-size: em(24);
+  padding: 18px 40px;
+  @media screen and (max-width: 48em){
+    font-size: em(19);
+    padding: 14px 20px;
+  }
+}
+.btn-large-grey{
+  @include transition(background-color 0.3s);
+  display: block;
+  text-align: center;
+  border-radius: 3px;
+  background-color: $grey2;
+  color: #fff;
+  padding: 16px 0;
+  max-width: 350px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: em(24);
+  &:hover{ background-color: darken($grey2, 10%); }
+}
+.btn-share{
+  @extend .btn;
+  @extend .icon-share;
+  background-position: 10px 7px;
+  text-align: right;
+  font-size: em(15);
+  line-height: 1.2;
+  &:hover{ cursor: pointer; }
+}
+.btn-comment{
+  @extend .btn;
+  @extend .icon-comment ;
+  background-position: 10px 7px;
+  font-size: em(15);
+  line-height: 1.2;
+  text-align: right;
+  &:hover{
+    cursor: pointer;
+  }
+}
+.btn-next,
+.btn-prev{
+  @extend .icon-next-arrow;
+  @include transition(opacity .3s);
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  padding-top: 24px;
+  width: 24px;
+  &:hover{
+    opacity: .6;
+  }
+}
+.btn-prev{
+  @extend .icon-prev-arrow;
+  // margin-left: 12px;
+}
+
+
+
+/* #Structure
+===================== */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+::-moz-selection { background: $primary; color: #fff; text-shadow: none; }
+::selection { background: $primary; color: #fff; text-shadow: none; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visually-hidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visually-hidden.focusable:active, .visually-hidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+figcaption{
+  background: $grey1;
+  font-size: em(13);
+  padding: 14px;
+  margin: 0;
+}
+blockquote{
+  margin: em(34) 0;
+  padding: 0 120px 0 25px;
+  border-left: 5px solid $grey2;
+  font-size: em(26);
+  line-height: 1.3;
+  color: $black;
+  p{
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

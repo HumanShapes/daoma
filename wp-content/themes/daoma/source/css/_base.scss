@@ -1,0 +1,144 @@
+/* Site specific mixins, colors, and fonts.
+   Core element styles.
+   Vendor files. (Plugins, custom widgets, etc.) */
+
+@import "type"; //Import type first
+
+
+/* #Colors
+=========================================================================== */
+$white    : #ffffff;
+$black    : #000000;
+
+$primary  : #ec008c; // cyan
+$secondary: $black;
+
+$grey: #f8f8f8;
+$grey1: #ebebeb;
+$grey2: #ccc; // Headlines
+$grey4: #888; // Body copy and main type color of site.
+$grey5: #555;
+$grey6: #333;
+$grey7: #313131;
+
+
+
+
+/* #Fonts
+=========================================================================== */
+
+.font-sans{ font-family: 'intro_lightregular', sans-serif; }
+.font-display{ font-family: 'intro_regularregular', sans-serif; }
+.font-bold{ font-family: 'intro_boldregular'; }
+.font-thin{ font-family: 'intro_thinregular'; }
+.font-book{ font-family: 'intro_bookregular'; }
+
+/* #Typography
+=========================================================================== */
+
+h1, h2, h3, h4, h5, h6{
+  @extend .font-display;
+  font-weight: normal;
+  line-height: 1;
+  color: $primary;
+  margin: 0;
+}
+h1{
+  font-size: em(70);
+  letter-spacing: 5px;
+  @media screen and (min-width: 30em) and (max-width: 40em){ font-size: em(48); }
+  @media screen and (min-width:20em) and (max-width: 29.999em){ font-size: em(36); }
+}
+h2{
+  font-size: em(26); // TODO: Check orignial source to make sure this is rendering correct type face.
+  letter-spacing: 1.5px;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+h3{
+  letter-spacing: 2px;
+  font-size: em(22);
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+h4{
+  @extend .font-sans;
+  letter-spacing: 1px;
+  font-size: em(20);
+  line-height: 1.4;
+}
+h5{
+  @extend .font-sans;
+  letter-spacing: 1px;
+  font-size: em(37);
+  line-height: 1.4;
+  @media screen and (max-width: 40em){
+    font-size: em(29);
+  }
+}
+h6{
+  color: $grey2;
+  font-size: em(35);
+  letter-spacing: 1px;
+  line-height: 0;
+  @media screen and (max-width: 40em){
+    font-size: em(27);
+  }
+}
+p{
+  color: $grey5;
+  font-size: em(20);
+  letter-spacing: 1px;
+  line-height: 1.65;
+  margin: 0;
+  @media screen and (max-width: 40em){
+    font-size: em(16);
+  }
+}
+a{
+  @include transition(color .25s linear);
+  color: $white;
+  text-decoration: none;
+  &:hover{ color: #ec008c; }
+}
+ul { list-style: none; padding-left: 0px; }
+strong{ @extend .font-display; font-weight: normal; }
+em{
+    @extend .font-bold;
+    color: #ec008c;
+    font-size: 22px;
+    font-style: normal;
+    @media screen and (max-width: 20em){
+      display: block;
+    }
+  }
+
+/* #Buttons
+===================================================================== */
+
+.btn {
+  @include transition(all .25s linear);
+  padding: 20px 60px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: #ec008c;
+  display: inline-block;
+  &:hover{
+    color: #fff;
+    background-color: #313131;
+    -webkit-box-shadow: inset 0 0 7px rgba(0,0,0,.2);
+    box-shadow: inset 0 0 7px rgba(0,0,0,.2);
+  }
+}
+
+/* #Structure
+========================================================================== */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+::-moz-selection { background: $primary; color: #fff; text-shadow: none; }
+::selection { background: $primary; color: #fff; text-shadow: none; }
+img{ width: 100%; display: block; }
+
+
