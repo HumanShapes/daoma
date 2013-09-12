@@ -1,7 +1,7 @@
 var hasTouch = false;
 
-
 if (("ontouchstart" in document.documentElement)) {
+    document.documentElement.className += " touch";
     hasTouch = true;
 }
 
@@ -25,10 +25,10 @@ var DAOMA = {
     DAOMA.parallax();
     $('.city').on({
       mouseenter: function(){
-        $('.refresh').toggle();
+        $('.refresh').show();
       },
       mouseleave: function(){
-        $('.refresh').toggle();
+        $('.refresh').hide();
       }
     });
 
@@ -92,23 +92,29 @@ var DAOMA = {
         $('#main-nav ul').css("display", "");
       }
     });
+  },
+
+  distanceCalc: function(){
+    var url = window.location.origin + "/js/cities.json";
+    var min = 0;
+    var cur_city = $('.city').text();
+    var new_city, miles, rand, max;
+
+    $.getJSON(url, function(json) {
+      max = json.length;
+
+      do {
+        rand = Math.floor(Math.random() * (max - min + 1)) + min;
+        new_city = json[rand];
+      } while (cur_city == new_city || typeof new_city === "undefined");
+
+      $('.city span').html(new_city['city']);
+      $('.miles strong').html(new_city['miles']);
+
+    });
+
   }
 
-  // homeFadeIn: function(){
-  //   if($.cookie('newUser')){
-  //     DAOMA.log($.cookie('newUser') + " returning");
-  //   }else{
-  //     // $('.fadein_content').css({opacity: 0});
-  //     $('.fadein_content').hide();
-  //     $('.fadeout_opening').show();
-  //     $.cookie('newUser', '0', { expires: 7, path: '/' });
-  //     $('.fadeout_opening').fadeOut(2000, function(){
-  //       $(this).hide();
-  //     });
-  //     $('.fadein_content').fadeIn(1500);
-  //     DAOMA.log($.cookie('newUser') + " new");
-  //   }
-  // }
 };
 
 
@@ -118,7 +124,7 @@ $(document).ready(function() {
   // Build daOMA object
   DAOMA.construct();
   DAOMA.init();
-
+  DAOMA.distanceCalc();
 });
 
 // Functions that can be delayed after the whole page has been downloaded
