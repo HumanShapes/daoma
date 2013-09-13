@@ -7,6 +7,8 @@ if (("ontouchstart" in document.documentElement)) {
 
 var DAOMA = {
 
+  Cities: null,
+
   log: function (data){
     if( typeof console !== 'undefined'){
        console.log(data);
@@ -31,6 +33,11 @@ var DAOMA = {
         $('.refresh').hide();
       }
     });
+
+    $('.refresh').on('click', function(){
+      DAOMA.distanceCalc();
+    });
+
 
   },
 
@@ -94,7 +101,7 @@ var DAOMA = {
     });
   },
 
-  distanceCalc: function(){
+  loadCities: function(){
     var url = window.location.origin + "/js/cities.json";
     var min = 0;
     var cur_city = $('.city').text();
@@ -102,17 +109,26 @@ var DAOMA = {
 
     $.getJSON(url, function(json) {
       max = json.length;
-
-      do {
-        rand = Math.floor(Math.random() * (max - min + 1)) + min;
-        new_city = json[rand];
-      } while (cur_city == new_city || typeof new_city === "undefined");
-
-      $('.city span').html(new_city['city']);
-      $('.miles strong').html(new_city['miles']);
+      Cities = json;
+      DAOMA.distanceCalc();
 
     });
 
+  },
+
+  distanceCalc: function(){
+    var min = 0;
+    var cur_city = $('.city span').text();
+    var new_city, miles, rand;
+    max = Cities.length;
+    // DAOMA.log(Cities[1]);
+    do {
+      rand = Math.floor(Math.random() * (max - min + 1)) + min;
+      new_city = Cities[rand];
+    } while (cur_city == new_city || typeof new_city === "undefined");
+
+    $('.city span').html(new_city['city']);
+    $('.miles strong').html(new_city['miles']);
   }
 
 };
@@ -124,7 +140,7 @@ $(document).ready(function() {
   // Build daOMA object
   DAOMA.construct();
   DAOMA.init();
-  DAOMA.distanceCalc();
+  DAOMA.loadCities();
 });
 
 // Functions that can be delayed after the whole page has been downloaded
