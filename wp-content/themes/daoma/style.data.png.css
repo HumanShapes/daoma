@@ -1070,6 +1070,7 @@ ul h4 {
     font-size: 1.5625em;
     margin: 10px 0 20px 0;
     text-transform: uppercase;
+    line-height: 1.4em;
     color: #333333; }
   .post h4 {
     font-size: 1.375em;
@@ -1079,6 +1080,11 @@ ul h4 {
     margin: 30px 0; }
   .post p {
     margin-top: 30px; }
+    .post p a {
+      color: #555555;
+      border-bottom: 1px dotted #ec008c; }
+      .post p a:hover {
+        color: #ec008c; }
 
 /* #FOOTER
 ========================================================================== */
@@ -1473,7 +1479,8 @@ footer {
     height: 150px;
     float: left;
     padding-top: 36px;
-    background: #ec008c; }
+    background: #ec008c;
+    text-transform: uppercase; }
     @media screen and (max-width: 51.875em) {
       .events .date {
         width: 30%; } }
@@ -1663,7 +1670,8 @@ footer {
           font-size: 1em; } }
   .past-speakers ul {
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    background: rgba(0, 0, 0, 0.3); }
     .past-speakers ul:after {
       content: "";
       display: table;

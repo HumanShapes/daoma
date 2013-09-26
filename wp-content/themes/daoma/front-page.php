@@ -1,73 +1,159 @@
 <?php get_header(); ?>
-  <section id="about-feature" class="">
-    <div class="content-wrap">
-      <div class="shape-circles-up right" data-type="background" data-speed="1"></div>
-      <div class="shape-circles-down" data-type="background" data-speed="-1"></div>
-      <div class="content">
-        <h1 class="wrapper">Design,<br>in the middle<br>of everywhere.</h1>
-      </div>
-    </div>
-    <div class="interior wrapper">
-      <p>daOMA is about design in all forms and the education and community that perpetuate it. This is accomplished by fostering a continuing and challenging public discourse on the design disciplines and their relationship to our cities, workplace, home and culture.</p>
-    </div>
-  </section>
+  
+  <?php
+    // The Loop
+    $args = array( 
+      'post_type' => 'events',
+      'hs_event_types' => 'Homepage Cover',
+      'posts_per_page' => 1
+    );
+    $eventFeature = new WP_Query( $args );
+    if ( $eventFeature->have_posts() ) : while ( $eventFeature->have_posts() ) : $eventFeature->the_post();
+      global $post;
+      $daomaEventDate = get_post_meta($post->ID, 'hs_daoma_event_date', true);
+      $daomaEventDatePretty = get_post_meta($post->ID, 'hs_daoma_event_date_pretty', true);
+      $daomaEventTime = get_post_meta($post->ID, 'hs_daoma_event_time', true);
+      $daomaEventLocation = get_post_meta($post->ID, 'hs_daoma_event_location', true);
+      $daomaEventPrice = get_post_meta($post->ID, 'hs_daoma_event_price', true);
+      $daomaTicketURL = get_post_meta($post->ID, 'hs_daoma_ticket_url', true);
+      $daomaEventLocation = get_post_meta($post->ID, 'hs_daoma_event_location', true);
+      $daomaSpeakerCity = get_post_meta($post->ID, 'hs_daoma_speaker_city', true);
+      $daomaSpeakerTitle = get_post_meta($post->ID, 'hs_daoma_speaker_title', true);
+      $daomaSpeakerBio = get_post_meta($post->ID, 'hs_daoma_speaker_bio', true);
+      $hasFeature = true;
+  ?>
 
-  <section class="featured-event interior">
-    <article class="wrapper">
-      <div class="hero">
-        <img src="<?php bloginfo('template_directory');?>/images/img-eventFeatured_sample.jpg" alt="">
-        <h1><strong>PDX > OMA</strong><br>Austin Howe</h1>
-      </div>
-      <div class="content-wrap">
-        <div class="column info">
-          <p><strong>Creative Director and Writer for Design</strong><br>
-          25 October 2012 at 7 PM<br>
-          KANEKO Truss Bow<br>
-          This event is FREE</p>
-          <p><a href="" class="btn">RSVP</a></p>
+    <section id="hero">
+      <div class="content">
+        <div class="shape-circles-up right" data-type="background" data-speed="1"></div>
+        <div class="shape-circles-down" data-type="background" data-speed="-1"></div>
+        <div class="wrapper">
+          <div class="details">
+            <h1>
+              <?php the_title(); ?><br>
+              <strong>
+                <?php if ($daomaSpeakerCity) { ?>
+                  <?php echo $daomaSpeakerCity; ?> <span>></span>
+                <?php } ?>
+                OMA
+              </strong>
+            </h1>
+            <?php if ($daomaSpeakerTitle) { ?>
+              <h3><?php echo $daomaSpeakerTitle; ?></h3>
+            <?php } ?>
+            <p>
+              <?php echo $daomaEventDatePretty; ?>
+              <?php if ( $daomaEventTime ) { ?>
+                at <?php echo $daomaEventTime; ?>
+              <?php } ?>
+              <br />
+              <?php echo $daomaEventLocation; ?>
+              <br />
+              <?php echo $daomaEventPrice; ?>
+            </p>
+          </div>
         </div>
-        <p class="content description">
-          <a href="">Austin Howe</a> is a Portland-based creative director and writer who collaborates with firms like Ziba Design, Sandstrom Partners, Wieden+Kennedy, Co Projects and JDK to help companies find their authentic voice and historical significance (if any). He is the author of Designers Don't Read and Designers Don't Have Influences.
-        </p>
       </div>
-    </article>
-  </section>
+      <!-- 
+        TODO: How would these work in WP? Is there a clean way to do this? Should we just grab the first two image attachements (that aren't the cover photo or speaker portrait)?   
+        <div class="sub-content">
+          <img src="img/event-austinHowe_book.jpg" alt="">
+          <img src="img/event-austinHowe_book.jpg" alt="">
+        </div>
+      -->
+      <div class="info wrapper">
+        <p><a href="<?php the_permalink(); ?>" title="View Event"><?php the_title(); ?></a> <?php echo $daomaSpeakerBio; ?></p>
+        <?php if ($daomaTicketURL) { ?>
+          <p><a class="btn" href="<?php echo $daomaTicketURL; ?>" tite="Register">RSVP</a></p>
+        <?php } ?>
+      </div>
+    </section>
+    <section id="about" class="interior">
+      <div class="wrapper">
+        <h1>Design, in the middle<br>of everywhere.</h1>
+        <p>daOMA is about design in all forms and the education and community that perpetuate it. This is accomplished by fostering a continuing and challenging public discourse on the design disciplines and their relationship to our cities, workplace, home and culture.</p>
+      </div>
+    </section>
+  <?php endwhile; else : ?>
+    <section id="about-feature" class="">
+      <div class="content-wrap">
+        <div class="shape-circles-up right" data-type="background" data-speed="1"></div>
+        <div class="shape-circles-down" data-type="background" data-speed="-1"></div>
+        <div class="content">
+          <h1 class="wrapper">Design,<br>in the middle<br>of everywhere.</h1>
+        </div>
+      </div>
+      <div class="interior wrapper">
+        <p>daOMA is about design in all forms and the education and community that perpetuate it. This is accomplished by fostering a continuing and challenging public discourse on the design disciplines and their relationship to our cities, workplace, home and culture.</p>
+      </div>
+    </section>
+  <?php endif; ?>
+
+  <?php
+    // Only highlight upcoming speaker if there isn't one featured
+    if (!$hasFeatureDISABLED) {
+      // The Loop
+      $args = array( 
+        'post_type' => 'events'
+      );
+      $events = new WP_Query( $args );
+      if ( $events->have_posts() ) : while ( $events->have_posts() ) : $events->the_post();
+        global $post;
+        $daomaEventDate = get_post_meta($post->ID, 'hs_daoma_event_date', true);
+        $daomaEventDatePretty = get_post_meta($post->ID, 'hs_daoma_event_date_pretty', true);
+        $daomaEventTime = get_post_meta($post->ID, 'hs_daoma_event_time', true);
+        $daomaEventLocation = get_post_meta($post->ID, 'hs_daoma_event_location', true);
+        $daomaEventPrice = get_post_meta($post->ID, 'hs_daoma_event_price', true);
+        $daomaTicketURL = get_post_meta($post->ID, 'hs_daoma_ticket_url', true);
+        $daomaEventLocation = get_post_meta($post->ID, 'hs_daoma_event_location', true);
+        $daomaSpeakerCity = get_post_meta($post->ID, 'hs_daoma_speaker_city', true);
+        $daomaSpeakerTitle = get_post_meta($post->ID, 'hs_daoma_speaker_title', true);
+        $daomaSpeakerBio = get_post_meta($post->ID, 'hs_daoma_speaker_bio', true);
+      ?>
+
+      <section class="featured-event interior">
+        <article class="wrapper">
+          <div class="hero">
+            <?php if ( has_post_thumbnail() ) { ?>
+              <?php the_post_thumbnail('fivebytwo'); ?>
+            <?php } ?>
+            <h1>
+              <strong>
+                <?php if ($daomaSpeakerCity) { ?>
+                  <?php echo $daomaSpeakerCity; ?> <span>></span>
+                <?php } ?>
+              OMA
+              </strong>
+              <br>Austin Howe
+            </h1>
+          </div>
+          <div class="content-wrap">
+            <div class="column info">
+              <p>
+                <?php if ($daomaSpeakerTitle) { ?>
+                  <strong><?php echo $daomaSpeakerTitle; ?></strong><br />
+                <?php } ?>
+                <?php echo $daomaEventDatePretty; ?>
+                <?php if ( $daomaEventTime ) { ?>
+                  at <?php echo $daomaEventTime; ?>
+                <?php } ?>
+                <br />
+                <?php echo $daomaEventLocation; ?>
+                <br />
+                <?php echo $daomaEventPrice; ?>
+              </p>
+              <p><a class="btn" href="<?php echo $daomaTicketURL; ?>" tite="Register">RSVP</a></p>
+            </div>
+            <p class="content description"><a href="<?php the_permalink(); ?>" title="View Event"><?php the_title(); ?></a> <?php echo $daomaSpeakerBio; ?></p>
+          </div>
+        </article>
+      </section>
+  <?php endwhile; endif; } ?>
 
   <section class="interior upcoming">
     <div class="wrapper">
       <h2>Upcoming Events</h2>
-      <article class="events">
-        <div class="date">
-          <p>APR<br><span>24</span></p>
-        </div>
-        <div class="thumb">
-          <img src="<?php bloginfo('template_directory');?>/images/img-event_sample.jpg" alt="">
-        </div>
-        <div class="content">
-          <h3>Omaha Pecha Kucha #19</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellent diam nibh, gravida a ultricies sed, ultricies congue. Donec adipiscing tincidunt sem, at vulputate erat interdum.</p>
-        </div>
-      </article>
-      <article class="events">
-        <div class="date">
-          <p>APR<br><span>24</span></p>
-        </div>
-        <div class="thumb"><img src="<?php bloginfo('template_directory');?>/images/img-event_sample.jpg" alt=""></div>
-        <div class="content">
-          <h3>Omaha Pecha Kucha #20</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellent diam nibh, gravida a ultricies sed, ultricies congue. Donec adipiscing tincidunt sem, at vulputate erat interdum.</p>
-        </div>
-      </article>
-      <article class="events">
-        <div class="date">
-          <p>APR<br><span>24</span></p>
-        </div>
-        <div class="thumb"><img src="<?php bloginfo('template_directory');?>/images/img-event_sample2.jpg" alt=""></div>
-        <div class="content">
-          <h3>Guest Lecture</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellent diam nibh, gravida a ultricies sed, ultricies congue. Donec adipiscing tincidunt sem, at vulputate erat interdum.</p>
-        </div>
-      </article>
+      <?php hs_daoma_events_calendar(); ?>
     </div>
   </section>
 
@@ -79,42 +165,32 @@
     </div>
     <div class="speaker-list">
       <ul>
+        <?php
+          // The Loop
+          $args = array( 
+            'post_type' => 'events'
+          );
+          $events = new WP_Query( $args );
+          if ( $events->have_posts() ) : while ( $events->have_posts() ) : $events->the_post();
+            global $post;
+            $daomaSpeakerCity = get_post_meta($post->ID, 'hs_daoma_speaker_city', true);
+        ?>
         <li>
-          <img src="<?php bloginfo('template_directory');?>/images/img-pastSpeaker_sample.jpg" alt="">
-          <p>SFO <span>></span> OMA</p>
+          <a href="<?php the_permalink(); ?>" title="View Speaker Info">
+            <?php
+              if (class_exists('MultiPostThumbnails')) : 
+                MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'speaker-portrait', null, 'fourbytwo');
+              endif;
+            ?>
+            <p>
+              <?php if ($daomaSpeakerCity) { ?>
+                <?php echo $daomaSpeakerCity; ?> <span>></span>
+              <?php } ?>
+              OMA
+            </p>
+          </a>
         </li>
-        <li>
-          <img src="<?php bloginfo('template_directory');?>/images/img-pastSpeaker_sample.jpg" alt="">
-          <p>SFO <span>></span> OMA</p>
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_directory');?>/images/img-pastSpeaker_sample.jpg" alt="">
-          <p>SFO <span>></span> OMA</p>
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_directory');?>/images/img-pastSpeaker_sample.jpg" alt="">
-          <p>SFO <span>></span> OMA</p>
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_directory');?>/images/img-pastSpeaker_sample.jpg" alt="">
-          <p>SFO <span>></span> OMA</p>
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_directory');?>/images/img-pastSpeaker_sample.jpg" alt="">
-          <p>SFO <span>></span> OMA</p>
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_directory');?>/images/img-pastSpeaker_sample.jpg" alt="">
-          <p>SFO <span>></span> OMA</p>
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_directory');?>/images/img-pastSpeaker_sample.jpg" alt="">
-          <p>SFO <span>></span> OMA</p>
-        </li>
-        <li>
-          <img src="<?php bloginfo('template_directory');?>/images/img-pastSpeaker_sample.jpg" alt="">
-          <p>SFO <span>></span> OMA</p>
-        </li>
+        <?php endwhile; endif; ?>
       </ul>
     </div>
   </section>
@@ -132,7 +208,6 @@
         <p>Each of these classes in and of themselves is strong, but it is their symbiosis that creates the fertile environment that positions the state and community to experience a renaissance of significance in the coming decade. The cooperative nature of a two-way support system that has been created and nurtured continues to grow allowing for a greater draw and retention of these types in our community and state.</p>
     </div>
   </section>
-
   <section class="creative-class">
     <div class="wrapper">
       <h3 class="one">Stalwart Native</h3>
@@ -141,7 +216,6 @@
       </div>
     </div>
   </section>
-
   <section class="creative-class">
     <div class="wrapper">
       <h3 class="two">Pioneer Traditionalist</h3>
@@ -150,7 +224,6 @@
       </div>
     </div>
   </section>
-
   <section class="creative-class">
     <div class="wrapper">
       <h3 class="three">Tethered<br>Ex&ndash;Patriot</h3>
@@ -159,7 +232,6 @@
       </div>
     </div>
   </section>
-
   <section class="creative-class">
     <div class="wrapper">
       <h3 class="four">Inquisitive<br>Import</h3>
@@ -168,6 +240,7 @@
       </div>
     </div>
   </section>
+
   <section class="interior distance">
     <div class="wrapper">
       <div class="content">
