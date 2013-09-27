@@ -246,7 +246,7 @@
       <div class="content">
         <p class="label">Middle of Everywhere</p>
         <p class="city">
-          Toronto
+          <span>Toronto</span>
           <button class="refresh" name="refresh">refresh</button>
         </p>
       </div>

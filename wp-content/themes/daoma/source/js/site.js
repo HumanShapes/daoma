@@ -2,10 +2,13 @@ var hasTouch = false;
 
 
 if (("ontouchstart" in document.documentElement)) {
-    hasTouch = true;
+  document.documentElement.className += " touch";
+  hasTouch = true;
 }
 
 var DAOMA = {
+
+  Cities: null,
 
   log: function (data){
     if( typeof console !== 'undefined'){
@@ -25,13 +28,15 @@ var DAOMA = {
     DAOMA.parallax();
     $('.city').on({
       mouseenter: function(){
-        $('.refresh').toggle();
+        $('.refresh').show();
       },
       mouseleave: function(){
-        $('.refresh').toggle();
+        $('.refresh').hide();
       }
     });
-
+    $('.refresh').on('click', function(){
+      DAOMA.distanceCalc();
+    });
   },
 
   initTouchEvents: function(){
@@ -80,9 +85,7 @@ var DAOMA = {
 
         $imgObj.css({ left: 'auto', top: yPos + 'px' });
       });
-
     });
-
   },
 
   dropdownMenu: function(){
@@ -92,33 +95,42 @@ var DAOMA = {
         $('#main-nav ul').css("display", "");
       }
     });
+  },
+
+  loadCities: function(){
+    var url = window.location.origin + "/wp-content/themes/daoma/cities.json";
+    var min = 0;
+    var cur_city = $('.city').text();
+    var new_city, miles, rand, max;
+    $.getJSON(url, function(json) {
+      max = json.length;
+      Cities = json;
+      DAOMA.distanceCalc();
+    });
+  },
+
+  distanceCalc: function(){
+    var min = 0;
+    var cur_city = $('.city span').text();
+    var new_city, miles, rand;
+    max = Cities.length;
+    // DAOMA.log(Cities[1]);
+    do {
+      rand = Math.floor(Math.random() * (max - min + 1)) + min;
+      new_city = Cities[rand];
+    } while (cur_city == new_city || typeof new_city === "undefined");
+
+    $('.city span').html(new_city['city']);
+    $('.miles strong').html(new_city['miles']);
   }
-
-  // homeFadeIn: function(){
-  //   if($.cookie('newUser')){
-  //     DAOMA.log($.cookie('newUser') + " returning");
-  //   }else{
-  //     // $('.fadein_content').css({opacity: 0});
-  //     $('.fadein_content').hide();
-  //     $('.fadeout_opening').show();
-  //     $.cookie('newUser', '0', { expires: 7, path: '/' });
-  //     $('.fadeout_opening').fadeOut(2000, function(){
-  //       $(this).hide();
-  //     });
-  //     $('.fadein_content').fadeIn(1500);
-  //     DAOMA.log($.cookie('newUser') + " new");
-  //   }
-  // }
 };
-
 
 // When DOM is ready
 $(document).ready(function() {
-
   // Build daOMA object
   DAOMA.construct();
   DAOMA.init();
-
+  DAOMA.loadCities();
 });
 
 // Functions that can be delayed after the whole page has been downloaded
