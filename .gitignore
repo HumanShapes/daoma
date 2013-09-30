@@ -1,0 +1,8 @@
+*node_modules/
+*.sass-cache/
+wp-config.php
+wp-content/upgrade/
+wp-content/uploads/
+readme.html
+license.txt
+.log
