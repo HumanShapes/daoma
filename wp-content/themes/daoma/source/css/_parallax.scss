@@ -1,0 +1,181 @@
+/*********** ABOUT PAGE ***********/
+.about-1 {
+	background: url("images/oma.png");
+/*	background-attachment: fixed;
+*/	background-origin: initial;
+	background-clip: initial;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position:relative;
+	height: 500px;
+	margin-top: -500px;
+}
+
+.about_triangle1 {
+	background: url("images/arrow3.png");
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+	height: 500px;
+}
+
+
+.about-2 {
+	background: url("images/pkn2.png");
+/*	background-attachment: fixed;
+*/	background-origin: initial;
+	background-clip: initial;
+	background-size: 100%;
+	background-repeat:repeat;
+	position:relative;
+	height: 550px;
+	margin-top: -550px;
+}
+
+.about_triangle2 {
+	background: url("images/arrow.png");
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+	height: 550px;
+}
+
+
+
+/*********** PARTNERS PAGE ***********/
+.partners_header {
+	background: url('images/shape_partners.svg') no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:100% 0;
+	min-height: 100px;
+}
+
+.partners_1 {
+	background: url('images/flyoverpink.jpg') no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:100% 0;
+	min-height: 300px;
+	margin-top: -300px;
+}
+
+.partners_triangle {
+	background: url("images/arrow3.png");
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+	height: 300px;
+}
+
+
+/*********** MEMBERS PAGE ***********/
+.members_header {
+	background: url('images/shape_about.svg') no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:100% 0;
+	min-height: 100px;
+}
+
+/*********** JOIN PAGE ***********/
+.join_header {
+	background: url('images/header_join.svg') no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:100% 0;
+	min-height: 100px;
+}
+
+.join_1 {
+	background: url('images/flyovergray.jpg') no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:100% 0;
+	min-height: 300px;
+	margin-top: -300px;
+}
+
+
+@media all and (max-width: 1200px) {
+	.about-1 {
+	height: 400px;
+	margin-top: -400px;
+	}
+
+	.about_triangle1 {
+	  height: 400px;
+	}
+
+	.about-2 {
+	height: 400px;
+	margin-top: -400px;
+	}
+
+	.about_triangle2 {
+	  height: 400px;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	.about-1 {
+	height: 350px;
+	margin-top: -350px;
+	}
+
+	.about_triangle1 {
+	  height: 350px;
+	}
+
+	.about-2 {
+	height: 350px;
+	margin-top: -350px;
+	}
+
+	.about_triangle2 {
+	  height: 350px;
+	}
+}
+
+@media all and (max-width: 800px) {
+	.about-1 {
+	height: 300px;
+	margin-top: -300px;
+	}
+
+	.about_triangle1 {
+	  height: 300px;
+	}
+
+	.about-2 {
+		height: 300px;
+		margin-top: -300px;
+	}
+
+	.about_triangle2 {
+		height: 300px;
+		background: url("images/arrow4.png");
+	}
+}
+
+@media all and (max-width: 600px) {
+.about-1 {
+	height: 200px;
+	margin-top: -200px;
+	}
+
+	.about_triangle1 {
+	  height: 200px;
+	}
+
+	.about-2 {
+		height: 200px;
+		margin-top: -200px;
+	}
+
+	.about_triangle2 {
+		height: 200px;
+	}
+}
