@@ -91,7 +91,7 @@
 
   <?php
     // Only highlight upcoming speaker if there isn't one featured
-    if (!$hasFeatureDISABLED) {
+    if (!$hasFeature) {
       // The Loop
       $args = array( 
         'post_type' => 'events'
@@ -124,7 +124,7 @@
                 <?php } ?>
               OMA
               </strong>
-              <br>Austin Howe
+              <br /><?php the_title(); ?>
             </h1>
           </div>
           <div class="content-wrap">
@@ -176,8 +176,8 @@
             $daomaSpeakerCity = get_post_meta($post->ID, 'hs_daoma_speaker_city', true);
         ?>
         <li>
-          <a href="<?php the_permalink(); ?>" title="View Speaker Info">
-            <?php
+          <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+            <?php 
               if (class_exists('MultiPostThumbnails')) : 
                 MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'speaker-portrait', null, 'fourbytwo');
               endif;

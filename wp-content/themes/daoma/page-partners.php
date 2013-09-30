@@ -47,7 +47,7 @@
 <!--parallax-->
 <section class="imagebreak">
   <div class="triangle1-med" data-type="background" data-speed="-10"></div>
-  <img src="img/flyoverpink.jpg" alt="Flyover">
+  <img src="<?php bloginfo( 'template_directory' ); ?>/images/flyoverpink.jpg" alt="Flyover">
 </section>
 
 <section class="interior border">

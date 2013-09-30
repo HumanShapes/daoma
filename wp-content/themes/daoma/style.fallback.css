@@ -1,3 +1,10 @@
+/*
+Theme Name: daOMA
+Author: Designed by Jake Welchert. Developed by Chris Kollars and Cody Peterson
+Author URI: http://codyjamespeterson.com/
+Description: 
+Version: 2.0
+*/
 .icon-1, .creative-class h3.one ~ .content {
   background-image: url(png/1.png);
   background-repeat: no-repeat; }
@@ -1500,7 +1507,9 @@ footer {
     float: left;
     overflow: hidden;
     width: 40%;
-    height: 150px; }
+    height: 150px;
+    background-size: cover;
+    background-position: center; }
     @media screen and (max-width: 51.875em) {
       .events .thumb {
         width: 70%; } }
@@ -1668,23 +1677,31 @@ footer {
   .past-speakers ul {
     padding: 0;
     margin: 0;
-    background: rgba(0, 0, 0, 0.3); }
+    background: rgba(255, 255, 255, 0.8); }
     .past-speakers ul:after {
       content: "";
       display: table;
       clear: both; }
   .past-speakers li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     position: relative;
     float: left;
-    width: 33.33%;
-    padding: 1px;
+    width: 33.3333%;
+    height: 0;
+    padding-bottom: 16.666%;
+    border: 1px solid white;
+    overflow: hidden;
     background: white; }
     @media screen and (max-width: 40em) {
       .past-speakers li {
-        width: 50%; } }
+        width: 50%;
+        padding-bottom: 25%; } }
     @media screen and (min-width: 20em) and (max-width: 29.99em) {
       .past-speakers li {
-        width: 100%; } }
+        width: 100%;
+        padding-bottom: 50%; } }
     .past-speakers li:hover img {
       opacity: 1; }
     .past-speakers li:hover p {
@@ -1693,24 +1710,21 @@ footer {
       -webkit-transition: all 0.4s linear;
       -moz-transition: all 0.4s linear;
       transition: all 0.4s linear;
-      opacity: .2; }
+      opacity: .2;
+      width: 100%;
+      height: auto; }
     .past-speakers li p {
       -webkit-transition: all 0.2s linear;
       -moz-transition: all 0.2s linear;
       transition: all 0.2s linear;
       position: absolute;
-      top: 0;
-      bottom: 0;
+      top: 50%;
       left: 0;
       right: 0;
-      width: 40%;
-      height: 20%;
-      margin: auto;
+      margin-top: -14px;
+      vertical-align: middle;
       text-align: center;
       color: #ec008c; }
-      @media screen and (max-width: 55em) {
-        .past-speakers li p {
-          width: 60%; } }
 
 .fadein_interior {
   background-position: left bottom;

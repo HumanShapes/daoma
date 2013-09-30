@@ -73,8 +73,8 @@ function hs_daoma_events_calendar() {
             <p><?php echo $month; ?><br><span><?php echo $day; ?></span></p>
           </div>
           <?php if ( has_post_thumbnail() ) { ?>
-            <div class="thumb">
-              <?php the_post_thumbnail(); ?>
+            <?php $postThumbURL = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' ); ?>
+            <div class="thumb" style="background-image: url(<?php echo $postThumbURL['0']; ?>);">
             </div>
           <?php } ?>
           <div class="content">

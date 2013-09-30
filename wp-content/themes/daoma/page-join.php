@@ -43,7 +43,7 @@
 <!--parallax-->
 <section class="imagebreak">
   <div class="triangle1-med" data-type="background" data-speed="-10"></div>
-  <img src="img/flyovergray.jpg" alt="">
+  <img src="<?php bloginfo( 'template_directory' ); ?>/images/flyovergray.jpg" alt="">
 </section>
 
 <section class="interior">
