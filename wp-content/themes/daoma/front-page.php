@@ -227,7 +227,7 @@
     <div data-type="background" data-speed="-10"></div>
     <div class="wrapper">
       <h2>Past Speakers</h2>
-      <p>daOMA consistently brings in top talent from around the United States. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellent diam nibh, gravida a ultricies sed, ultricies congue. Donec adipiscing tincidunt sem.</p>
+      <p>daOMA has established a world class lecture series that has brought many of the world’s best architects and designers to the city of Omaha and the state of Nebraska for the first time.</p>
     </div>
     <div class="speaker-list">
       <ul>
