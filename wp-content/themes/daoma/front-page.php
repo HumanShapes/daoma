@@ -93,22 +93,39 @@
     // Only highlight upcoming speaker if there isn't one featured
     if (!$hasFeature) {
       // The Loop
-      $args = array( 
-        'post_type' => 'events'
-      );
-      $events = new WP_Query( $args );
-      if ( $events->have_posts() ) : while ( $events->have_posts() ) : $events->the_post();
-        global $post;
-        $daomaEventDate = get_post_meta($post->ID, 'hs_daoma_event_date', true);
-        $daomaEventDatePretty = get_post_meta($post->ID, 'hs_daoma_event_date_pretty', true);
-        $daomaEventTime = get_post_meta($post->ID, 'hs_daoma_event_time', true);
-        $daomaEventLocation = get_post_meta($post->ID, 'hs_daoma_event_location', true);
-        $daomaEventPrice = get_post_meta($post->ID, 'hs_daoma_event_price', true);
-        $daomaTicketURL = get_post_meta($post->ID, 'hs_daoma_ticket_url', true);
-        $daomaEventLocation = get_post_meta($post->ID, 'hs_daoma_event_location', true);
-        $daomaSpeakerCity = get_post_meta($post->ID, 'hs_daoma_speaker_city', true);
-        $daomaSpeakerTitle = get_post_meta($post->ID, 'hs_daoma_speaker_title', true);
-        $daomaSpeakerBio = get_post_meta($post->ID, 'hs_daoma_speaker_bio', true);
+
+      $today = date(DATE_ATOM);
+      $endDate = date(DATE_ATOM, strtotime("+355 days"));
+                         
+      global $wpdb;
+      $querystr = "
+         SELECT wposts.* 
+         FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta
+         WHERE wposts.ID = wpostmeta.post_id 
+         AND wpostmeta.meta_key = 'hs_daoma_event_date' 
+         AND wpostmeta.meta_value >= '$today'
+         AND wpostmeta.meta_value < '$endDate'
+         AND wposts.post_status = 'publish' 
+         AND wposts.post_type = 'events'
+         ORDER BY wpostmeta.meta_value ASC
+      ";
+      $upcomingevents = $wpdb->get_results($querystr, OBJECT);
+      // Start Displaying the Calendar
+      $dates = array();
+      if ($upcomingevents) {
+          foreach ($upcomingevents as $post) { 
+          global $post;
+          if( has_term( 'speaker', 'hs_event_types' ) ) {
+            $daomaEventDate = get_post_meta($post->ID, 'hs_daoma_event_date', true);
+            $daomaEventDatePretty = get_post_meta($post->ID, 'hs_daoma_event_date_pretty', true);
+            $daomaEventTime = get_post_meta($post->ID, 'hs_daoma_event_time', true);
+            $daomaEventLocation = get_post_meta($post->ID, 'hs_daoma_event_location', true);
+            $daomaEventPrice = get_post_meta($post->ID, 'hs_daoma_event_price', true);
+            $daomaTicketURL = get_post_meta($post->ID, 'hs_daoma_ticket_url', true);
+            $daomaEventLocation = get_post_meta($post->ID, 'hs_daoma_event_location', true);
+            $daomaSpeakerCity = get_post_meta($post->ID, 'hs_daoma_speaker_city', true);
+            $daomaSpeakerTitle = get_post_meta($post->ID, 'hs_daoma_speaker_title', true);
+            $daomaSpeakerBio = get_post_meta($post->ID, 'hs_daoma_speaker_bio', true);
       ?>
 
       <section class="featured-event interior">
@@ -148,12 +165,12 @@
           </div>
         </article>
       </section>
-  <?php endwhile; endif; } ?>
+  <?php } } } } ?>
 
   <section class="interior upcoming">
     <div class="wrapper">
       <h2>Upcoming Events</h2>
-      <?php hs_daoma_events_calendar(); ?>
+      <?php hs_daoma_events_calendar($ignore); ?>
     </div>
   </section>
 

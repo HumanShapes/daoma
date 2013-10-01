@@ -56,15 +56,18 @@ function hs_daoma_events_calendar() {
   $pageposts = $wpdb->get_results($querystr, OBJECT);
   // Start Displaying the Calendar
   $dates = array();
+  $count = 0;
   if ($pageposts) : 
       global $post; 
       foreach ($pageposts as $post) { 
       setup_postdata($post);
-      $custom = get_post_custom($post->ID);
-      $event_date = $custom["hs_daoma_event_date"][0];
-      $weekday = date('N', strtotime($event_date)); // 1-7
-      $month = date('M', strtotime($event_date)); // JAN - DEC
-      $day = date('d', strtotime($event_date)); // 01-31
+      if( !has_term( 'speaker', 'hs_event_types' ) ) {
+        $count++;
+        $custom = get_post_custom($post->ID);
+        $event_date = $custom["hs_daoma_event_date"][0];
+        $weekday = date('N', strtotime($event_date)); // 1-7
+        $month = date('M', strtotime($event_date)); // JAN - DEC
+        $day = date('d', strtotime($event_date)); // 01-31
       ?>
 
       <article class="events event">
@@ -85,9 +88,10 @@ function hs_daoma_events_calendar() {
       </article>
 
       <?php 
-    }
-  else :
+    } }
+  endif;
+  if (!$count) {
     echo "<div class='day noEvents'><p>No Upcoming Events</p></div>";
-  endif; 
+  }
 }
 
