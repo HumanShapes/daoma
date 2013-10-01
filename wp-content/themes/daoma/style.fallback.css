@@ -1077,9 +1077,10 @@ ul h4 {
     line-height: 1.4em;
     color: #333333; }
   .post h4 {
-    font-size: 1.375em;
+    font-size: 1.3125em;
     line-height: 1.6;
-    color: #888888; }
+    color: #555555;
+    font-weight: bold; }
   .post img {
     margin: 30px 0; }
   .post p {

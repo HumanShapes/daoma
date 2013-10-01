@@ -282,9 +282,10 @@ ul{
   }
   h4{
     @extend .font-sans;
-    font-size: em(22);
+    font-size: em(21);
     line-height: 1.6;
-    color: $grey4;
+    color: $grey5;
+    font-weight: bold;
   }
   img{
     margin: 30px 0;
