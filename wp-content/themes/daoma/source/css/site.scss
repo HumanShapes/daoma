@@ -1180,8 +1180,17 @@ address{
   }
 }
 
-
-
+.page .interior {
+  a {
+    color: $grey5;
+    border-bottom: 1px dotted $primary;
+  }
+  img {
+    width: auto;
+    margin: 20px 0;
+    max-width: 100%;
+  }
+}
 
 
 

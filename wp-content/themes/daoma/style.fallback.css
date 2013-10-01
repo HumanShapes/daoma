@@ -1940,3 +1940,11 @@ address {
     font-size: 1.875em;
     color: #888888;
     text-align: center; }
+
+.page .interior a {
+  color: #555555;
+  border-bottom: 1px dotted #ec008c; }
+.page .interior img {
+  width: auto;
+  margin: 20px 0;
+  max-width: 100%; }
