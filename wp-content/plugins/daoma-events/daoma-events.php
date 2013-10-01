@@ -132,7 +132,7 @@ function hs_daoma_more_info_box_content( $post ) { ?>
       });
       jQuery( "#ui-datepicker-div" ).hide();});
     </script>
-    <label for="hs_daoma_event_date">Event Date:</label><br />
+    <label for="hs_daoma_event_date">Event Date <small>(Leave blank for TBD)</small>:</label><br />
     <input class="widefat" type="text" name="hs_daoma_event_date_pretty" id="hs_daoma_event_date_pretty" value="<?php echo esc_attr( get_post_meta( $post->ID, 'hs_daoma_event_date_pretty', true ) ); ?>" size="30" />
     <input class="widefat" type="hidden" name="hs_daoma_event_date" id="hs_daoma_event_date" value="<?php echo esc_attr( get_post_meta( $post->ID, 'hs_daoma_event_date', true ) ); ?>" size="30" />
   </p>

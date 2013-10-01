@@ -697,6 +697,9 @@ footer{
         @extend .font-bold;
         font-size: em(30);
         line-height: 1.3;
+        &.event-tbd {
+          line-height: 1.8;
+        }
       }
     }
   }

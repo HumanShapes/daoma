@@ -1506,6 +1506,8 @@ footer {
       .events .date p span {
         font-size: 1.875em;
         line-height: 1.3; }
+        .events .date p span.event-tbd {
+          line-height: 1.8; }
   .events .thumb {
     float: left;
     overflow: hidden;

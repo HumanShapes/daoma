@@ -170,7 +170,56 @@
   <section class="interior upcoming">
     <div class="wrapper">
       <h2>Upcoming Events</h2>
-      <?php hs_daoma_events_calendar($ignore); ?>
+      <?php
+        // First show upcoming events
+        $today = date(DATE_ATOM);
+        global $wpdb;
+        $querystr = "
+           SELECT wposts.* 
+           FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta
+           WHERE wposts.ID = wpostmeta.post_id 
+           AND wpostmeta.meta_key = 'hs_daoma_event_date' 
+           AND wpostmeta.meta_value >= '$today'
+           AND wposts.post_status = 'publish' 
+           AND wposts.post_type = 'events' 
+           ORDER BY wpostmeta.meta_value ASC
+        ";
+        $pageposts = $wpdb->get_results($querystr, OBJECT);
+        // Start Displaying the Calendar
+        $dates = array();
+        $count = 0;
+        if ($pageposts) : 
+          global $post; 
+          foreach ($pageposts as $post) {
+            $count++;
+            get_template_part( 'partials/event', 'calendar');
+          }
+        endif;
+        // Then show TBD events
+        global $wpdb;
+        $querystr = "
+           SELECT wposts.* 
+           FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta
+           WHERE wposts.ID = wpostmeta.post_id 
+           AND wpostmeta.meta_key = 'hs_daoma_event_date'
+           AND wpostmeta.meta_value = ''
+           AND wposts.post_status = 'publish'
+           AND wposts.post_type = 'events'
+           ORDER BY wpostmeta.meta_value ASC
+        ";
+        $pageposts = $wpdb->get_results($querystr, OBJECT);
+        $dates = array();
+        if ($pageposts) : 
+          global $post; 
+          foreach ($pageposts as $post) {
+            $count++;
+            get_template_part( 'partials/event', 'calendar');
+          }
+        endif;
+        if (!$count) {
+          echo "<div class='day noEvents'><p>No Upcoming Events</p></div>";
+        }
+      ?>
     </div>
   </section>
 
