@@ -232,31 +232,44 @@
     <div class="speaker-list">
       <ul>
         <?php
-          // The Loop
-          $args = array( 
-            'post_type' => 'events'
-          );
-          $events = new WP_Query( $args );
-          if ( $events->have_posts() ) : while ( $events->have_posts() ) : $events->the_post();
-            global $post;
+        $today = date(DATE_ATOM);
+        global $wpdb;
+        $querystr = "
+           SELECT wposts.* 
+           FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta
+           WHERE wposts.ID = wpostmeta.post_id 
+           AND wpostmeta.meta_key = 'hs_daoma_event_date' 
+           AND wpostmeta.meta_value < '$today'
+           AND wposts.post_status = 'publish' 
+           AND wposts.post_type = 'events' 
+           ORDER BY wpostmeta.meta_value ASC
+        ";
+        $pageposts = $wpdb->get_results($querystr, OBJECT);
+        // Start Displaying the Calendar
+        $dates = array();
+        $count = 0;
+        if ($pageposts) : 
+          foreach ($pageposts as $post) {
+            setup_postdata($post);
+            $daomaEventDate = get_post_meta($post->ID, 'hs_daoma_event_date', true);
             $daomaSpeakerCity = get_post_meta($post->ID, 'hs_daoma_speaker_city', true);
-        ?>
-        <li>
-          <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-            <?php 
-              if (class_exists('MultiPostThumbnails')) : 
-                MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'speaker-portrait', null, 'fourbytwo');
-              endif;
-            ?>
-            <p>
-              <?php if ($daomaSpeakerCity) { ?>
-                <?php echo $daomaSpeakerCity; ?> <span>></span>
-              <?php } ?>
-              OMA
-            </p>
-          </a>
-        </li>
-        <?php endwhile; endif; ?>
+            if ( (has_term( 'speaker', 'hs_event_types')) && ($daomaEventDate) ) { ?>
+              <li>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                  <?php 
+                    if (class_exists('MultiPostThumbnails')) : 
+                      MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'speaker-portrait', null, 'fourbytwo');
+                    endif;
+                  ?>
+                  <p>
+                    <?php if ($daomaSpeakerCity) { ?>
+                      <?php echo $daomaSpeakerCity; ?> <span>></span>
+                    <?php } ?>
+                    OMA
+                  </p>
+                </a>
+              </li>
+        <?php  } } endif; ?>
       </ul>
     </div>
   </section>
