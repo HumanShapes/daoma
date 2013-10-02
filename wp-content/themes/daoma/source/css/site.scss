@@ -300,6 +300,16 @@ ul{
       }
     }
   }
+  ul{
+    padding-left: 40px;
+    list-style-type: disc;
+    li{
+      margin-bottom: em(16);
+    }
+  }
+  ol li{
+    margin-bottom: em(16);
+  }
 }
 
 

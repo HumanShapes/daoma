@@ -1096,6 +1096,13 @@ ul h4 {
       border-bottom: 1px dotted #ec008c; }
       .post p a:hover {
         color: #ec008c; }
+  .post ul {
+    padding-left: 40px;
+    list-style-type: disc; }
+    .post ul li {
+      margin-bottom: 1em; }
+  .post ol li {
+    margin-bottom: 1em; }
 
 /* #FOOTER
 ========================================================================== */
