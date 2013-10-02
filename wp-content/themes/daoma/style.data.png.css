@@ -689,11 +689,10 @@ html {
   text-shadow: none; }
 
 img {
-  width: 100%;
-  display: block; }
-
-[class*="wp-post-image"] {
-  height: auto; }
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: top; }
 
 /*********** ABOUT PAGE ***********/
 .about-1 {
@@ -1558,6 +1557,8 @@ footer {
 .post_pg_header {
   max-height: 500px;
   overflow: hidden; }
+  .post_pg_header img {
+    width: 100%; }
 
 .classification {
   background-color: rgba(248, 248, 248, 0.6);

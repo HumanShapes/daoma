@@ -139,11 +139,11 @@ em{
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 ::-moz-selection { background: $primary; color: #fff; text-shadow: none; }
 ::selection { background: $primary; color: #fff; text-shadow: none; }
-img{ width: 100%; display: block; }
-
-// Override Wordpress height/width image attributes, for responsive images
-// http://css-tricks.com/snippets/wordpress/remove-width-and-height-attributes-from-inserted-images/
-[class*="wp-post-image"]{
-height: auto;
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
 }
+
 
