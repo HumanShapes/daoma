@@ -105,14 +105,14 @@ a{
 ul { list-style: none; padding-left: 0px; }
 strong{ @extend .font-display; font-weight: normal; }
 em{
-    @extend .font-bold;
-    color: #ec008c;
-    font-size: 22px;
-    font-style: normal;
-    @media screen and (max-width: 20em){
-      display: block;
-    }
+  @extend .font-bold;
+  color: #ec008c;
+  font-size: 22px;
+  font-style: normal;
+  @media screen and (max-width: 20em){
+    display: block;
   }
+}
 
 /* #Buttons
 ===================================================================== */
@@ -141,4 +141,9 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 ::selection { background: $primary; color: #fff; text-shadow: none; }
 img{ width: 100%; display: block; }
 
+// Override Wordpress height/width image attributes, for responsive images
+// http://css-tricks.com/snippets/wordpress/remove-width-and-height-attributes-from-inserted-images/
+[class*="wp-post-image"]{
+height: auto;
+}
 

@@ -311,7 +311,7 @@ footer{
     margin-top: 0;
   }
   // NOTE: This is to size the background triangle image. Currently works well for iPhones.
-  // TOD: Need to address other sizes of screens.
+  // TODO: Need to address other sizes of screens.
   @media screen and (max-width: 51.875em){ margin-top: 40.5%; }
   @media screen and (max-width: 20em){ margin-top: 111px; }
   @media screen and (max-width: 30em){ margin-top: 134px; }
@@ -664,7 +664,6 @@ footer{
     }
   }
 }
-// TODO: Figure out a solution to float these items and center them vertically. Toying with display: table-cell
 .events{
   @include clearfix;
   overflow: hidden;
@@ -746,6 +745,12 @@ footer{
     }
   }
 }
+// Single Events page
+.post_pg_header{
+  max-height: 500px;
+  overflow: hidden;
+}
+
 .classification{
   background-color: rgba($grey, .6);
   padding: 60px 0;
@@ -894,7 +899,7 @@ footer{
     border: 1px solid $white;
     overflow: hidden;
     background: $white;
-    @media screen and (max-width: 40em){ 
+    @media screen and (max-width: 40em){
       width: 50%;
       padding-bottom: 25%;
     }

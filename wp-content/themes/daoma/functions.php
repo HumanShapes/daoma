@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 register_nav_menus( array(
   'primary_nav' => 'Primary Navigation'
@@ -29,6 +29,6 @@ if (class_exists('MultiPostThumbnails')) {
       'label' => 'Speaker Portrait',
       'id' => 'speaker-portrait',
       'post_type' => 'events'
-    ) 
+    )
   );
 }
