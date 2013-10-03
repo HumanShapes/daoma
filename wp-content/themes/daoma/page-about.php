@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 <section  class="interior">
   <div class="wrapper">
-    <h2 class="column">Design, in the middle of everywhere.</h2>
+    <h2 class="column">Design, in the middle of&nbsp;everywhere.</h2>
     <div class="content">
-      <p>daOMA (design alliance OMAha, Inc.) is a non-profit dedicated to public education and appreciation of architecture and the design arts. daOMA is about design in all forms and the education and community that perpetuate it. This is accomplished by fostering a continuing and challenging public discourse on the design disciplines and their relationship to our cities, workplace, and home. Rooted in the intellectual and social foundations of design culture, daOMA’s primary mission is to expand and grow design appreciation and awareness. Central to this mission is the organizations core programs of public lectures and presentations featuring local, regional, and world renowned architects, designers, critics, historians and patrons.</p>
+      <p>daOMA (design alliance OMAha, Inc.) is a non-profit dedicated to public education and appreciation of architecture and the design arts. daOMA is about design in all forms and the education and community that perpetuate it. This is accomplished by fostering a continuing and challenging public discourse on the design disciplines and their relationship to our cities, workplace, and home. Rooted in the intellectual and social foundations of design culture, daOMA’s primary mission is to expand and grow design appreciation and awareness. Central to this mission is the organizations core programs of public lectures and presentations featuring local, regional, and world renowned architects, designers, critics, historians and&nbsp;patrons.</p>
     </div>
   </div>
 </section>
