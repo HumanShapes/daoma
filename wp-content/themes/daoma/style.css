@@ -663,7 +663,8 @@ em {
   text-align: center;
   letter-spacing: 2px;
   background-color: #ec008c;
-  display: inline-block; }
+  display: inline-block;
+  color: white; }
   .btn:hover {
     color: #fff;
     background-color: #313131;
@@ -1994,6 +1995,9 @@ address {
 .page .interior a {
   color: #555555;
   border-bottom: 1px dotted #ec008c; }
+  .page .interior a.btn {
+    border: none;
+    color: white; }
 .page .interior img {
   width: auto;
   margin: 20px 0;
