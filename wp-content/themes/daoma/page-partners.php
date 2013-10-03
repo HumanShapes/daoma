@@ -55,7 +55,9 @@
     <h2 class="column">SEASON<br>SPONSORS</h2>
     <div class="content">
       <p>Architectural Foundation of&nbsp;Nebraska<br>
-        Oxide Design&nbsp;Co.</p>
+        Oxide Design&nbsp;Co.<br>
+        Cody Peterson<br>
+        Christopher Kollars</p>
     </div>
   </div>
 </section>
