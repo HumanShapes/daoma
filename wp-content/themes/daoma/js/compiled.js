@@ -9649,7 +9649,8 @@ var DAOMA = {
     var $_mainNav = $('#main-nav');
     var $_mainNavBTN = $('#nav-icon');
     DAOMA.$_navWrapper.on('click', '#nav-icon', function(){
-      $_mainNavBTN.next('ul')
+      DAOMA.log('click');
+      $_mainNavBTN.next('nav').children('ul')
           .slideToggle(300, function(){
             if($_mainNavBTN.hasClass('active')){
               $_mainNavBTN.removeClass('active');
