@@ -914,6 +914,11 @@ html {
       .interior .content {
         float: none;
         width: 100%; } }
+    .interior .content p a {
+      color: #555555;
+      border-bottom: 1px dotted #ec008c; }
+      .interior .content p a:hover {
+        color: #ec008c; }
 
 @media screen and (min-width: 51.875em) {
   .single-column .content {
