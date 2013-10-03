@@ -2,7 +2,7 @@
   <div class="fadeout_opening"></div>
   <?php
     // The Loop
-    $args = array( 
+    $args = array(
       'post_type' => 'events',
       'hs_event_types' => 'Homepage Cover',
       'posts_per_page' => 1
@@ -60,8 +60,8 @@
           </a>
         </div>
       </div>
-      <!-- 
-        TODO: How would these work in WP? Is there a clean way to do this? Should we just grab the first two image attachements (that aren't the cover photo or speaker portrait)?   
+      <!--
+        TODO: How would these work in WP? Is there a clean way to do this? Should we just grab the first two image attachements (that aren't the cover photo or speaker portrait)?
         <div class="sub-content">
           <img src="img/event-austinHowe_book.jpg" alt="">
           <img src="img/event-austinHowe_book.jpg" alt="">
@@ -102,16 +102,16 @@
 
       $today = date(DATE_ATOM);
       $endDate = date(DATE_ATOM, strtotime("+355 days"));
-                         
+
       global $wpdb;
       $querystr = "
-         SELECT wposts.* 
+         SELECT wposts.*
          FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta
-         WHERE wposts.ID = wpostmeta.post_id 
-         AND wpostmeta.meta_key = 'hs_daoma_event_date' 
+         WHERE wposts.ID = wpostmeta.post_id
+         AND wpostmeta.meta_key = 'hs_daoma_event_date'
          AND wpostmeta.meta_value >= '$today'
          AND wpostmeta.meta_value < '$endDate'
-         AND wposts.post_status = 'publish' 
+         AND wposts.post_status = 'publish'
          AND wposts.post_type = 'events'
          ORDER BY wpostmeta.meta_value ASC
       ";
@@ -119,7 +119,7 @@
       // Start Displaying the Calendar
       $dates = array();
       if ($upcomingevents) {
-          foreach ($upcomingevents as $post) { 
+          foreach ($upcomingevents as $post) {
           global $post;
           if( has_term( 'speaker', 'hs_event_types' ) ) {
             $daomaEventDate = get_post_meta($post->ID, 'hs_daoma_event_date', true);
@@ -181,21 +181,21 @@
         $today = date(DATE_ATOM);
         global $wpdb;
         $querystr = "
-           SELECT wposts.* 
+           SELECT wposts.*
            FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta
-           WHERE wposts.ID = wpostmeta.post_id 
-           AND wpostmeta.meta_key = 'hs_daoma_event_date' 
+           WHERE wposts.ID = wpostmeta.post_id
+           AND wpostmeta.meta_key = 'hs_daoma_event_date'
            AND wpostmeta.meta_value >= '$today'
-           AND wposts.post_status = 'publish' 
-           AND wposts.post_type = 'events' 
+           AND wposts.post_status = 'publish'
+           AND wposts.post_type = 'events'
            ORDER BY wpostmeta.meta_value ASC
         ";
         $pageposts = $wpdb->get_results($querystr, OBJECT);
         // Start Displaying the Calendar
         $dates = array();
         $count = 0;
-        if ($pageposts) : 
-          global $post; 
+        if ($pageposts) :
+          global $post;
           foreach ($pageposts as $post) {
             $count++;
             get_template_part( 'partials/event', 'calendar');
@@ -204,9 +204,9 @@
         // Then show TBD events
         global $wpdb;
         $querystr = "
-           SELECT wposts.* 
+           SELECT wposts.*
            FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta
-           WHERE wposts.ID = wpostmeta.post_id 
+           WHERE wposts.ID = wpostmeta.post_id
            AND wpostmeta.meta_key = 'hs_daoma_event_date'
            AND wpostmeta.meta_value = ''
            AND wposts.post_status = 'publish'
@@ -215,8 +215,8 @@
         ";
         $pageposts = $wpdb->get_results($querystr, OBJECT);
         $dates = array();
-        if ($pageposts) : 
-          global $post; 
+        if ($pageposts) :
+          global $post;
           foreach ($pageposts as $post) {
             $count++;
             get_template_part( 'partials/event', 'calendar');
@@ -241,20 +241,20 @@
         $today = date(DATE_ATOM);
         global $wpdb;
         $querystr = "
-           SELECT wposts.* 
+           SELECT wposts.*
            FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta
-           WHERE wposts.ID = wpostmeta.post_id 
-           AND wpostmeta.meta_key = 'hs_daoma_event_date' 
+           WHERE wposts.ID = wpostmeta.post_id
+           AND wpostmeta.meta_key = 'hs_daoma_event_date'
            AND wpostmeta.meta_value < '$today'
-           AND wposts.post_status = 'publish' 
-           AND wposts.post_type = 'events' 
+           AND wposts.post_status = 'publish'
+           AND wposts.post_type = 'events'
            ORDER BY wpostmeta.meta_value DESC
         ";
         $pageposts = $wpdb->get_results($querystr, OBJECT);
         // Start Displaying the Calendar
         $dates = array();
         $count = 0;
-        if ($pageposts) : 
+        if ($pageposts) :
           foreach ($pageposts as $post) {
             setup_postdata($post);
             $daomaEventDate = get_post_meta($post->ID, 'hs_daoma_event_date', true);
@@ -262,8 +262,8 @@
             if ( (has_term( 'speaker', 'hs_event_types')) && ($daomaEventDate) ) { ?>
               <li>
                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                  <?php 
-                    if (class_exists('MultiPostThumbnails')) : 
+                  <?php
+                    if (class_exists('MultiPostThumbnails')) :
                       MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'speaker-portrait', null, 'fourbytwo');
                     endif;
                   ?>
@@ -284,7 +284,7 @@
   <section class='imagebreak border'>
     <!-- TODO: Make this with multiple small triangles -->
     <div class="triangle3" data-type="background" data-speed="-10"></div>
-    <img src="<?php bloginfo('template_directory');?>/images/img-omaha_greyscale.jpg" alt="Omaha, NE">
+    <img src="<?php bloginfo('template_directory');?>/images/oma.png" alt="Omaha, NE">
   </section>
 
   <section class="classification">
