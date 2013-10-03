@@ -133,7 +133,7 @@ Version: 2.0
  * Initial styles and design by Jake Welchert (jakewlechert.com)
  * Styles converted to SCSS and extend upon by Christopher Kollars (christopherkollars.com)
  */
-/* normalize.css v2.1.2 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -576,7 +576,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 4.375em;
-  letter-spacing: 5px; }
+  letter-spacing: 3px; }
   @media screen and (min-width: 30em) and (max-width: 40em) {
     h1 {
       font-size: 3em; } }
