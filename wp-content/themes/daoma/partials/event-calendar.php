@@ -21,8 +21,7 @@
     </div>
     <?php if ( has_post_thumbnail() ) { ?>
       <?php $postThumbURL = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' ); ?>
-      <div class="thumb" style="background-image: url(<?php echo $postThumbURL['0']; ?>);">
-      </div>
+      <div class="thumb" style="background-image: url(<?php echo $postThumbURL['0']; ?>);"></div>
     <?php } ?>
     <div class="content">
       <h3><?php echo get_the_title(); ?></h3>

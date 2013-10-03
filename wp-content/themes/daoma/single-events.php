@@ -10,13 +10,12 @@
     $daomaEventLocation = get_post_meta($post->ID, 'hs_daoma_event_location', true);
   ?>
   <?php if ( has_post_thumbnail() ) { ?>
-    <header class='post_pg_header'>
-      <?php the_post_thumbnail(); ?>
-    </header>
+    <?php $postThumbURL = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); ?>
+    <header class='post_pg_header' style="background-image: url(<?php echo $postThumbURL['0']; ?>);"></header>
   <?php } ?>
   <section class='interior'>
     <article class='wrapper post'>
-      <h1><?php the_title(); ?></h1>
+      <h1><?php the_title(); ?> <?php edit_post_link('Edit', '<small>', '</small>'); ?></h1>
       <h3>
         <?php 
           if ( $daomaEventDatePretty ) { ?>

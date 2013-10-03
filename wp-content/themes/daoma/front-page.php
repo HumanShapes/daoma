@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  
+  <div class="fadeout_opening"></div>
   <?php
     // The Loop
     $args = array( 
@@ -21,37 +21,43 @@
       $daomaSpeakerTitle = get_post_meta($post->ID, 'hs_daoma_speaker_title', true);
       $daomaSpeakerBio = get_post_meta($post->ID, 'hs_daoma_speaker_bio', true);
       $hasFeature = true;
-  ?>
-
+    ?>
     <section id="hero">
-      <div class="content">
+      <?php if ( has_post_thumbnail() ) { ?>
+        <?php $postThumbURL = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' ); ?>
+        <div class="content" style="background-image: url(<?php echo $postThumbURL['0']; ?>);">
+      <?php } else { ?>
+        <div class="content">
+      <?php } ?>
         <div class="shape-circles-up right" data-type="background" data-speed="1"></div>
         <div class="shape-circles-down" data-type="background" data-speed="-1"></div>
-        <div class="wrapper">
-          <div class="details">
-            <h1>
-              <?php the_title(); ?><br>
-              <strong>
-                <?php if ($daomaSpeakerCity) { ?>
-                  <?php echo $daomaSpeakerCity; ?> <span>></span>
-                <?php } ?>
-                OMA
-              </strong>
-            </h1>
-            <?php if ($daomaSpeakerTitle) { ?>
-              <h3><?php echo $daomaSpeakerTitle; ?></h3>
-            <?php } ?>
-            <p>
-              <?php echo $daomaEventDatePretty; ?>
-              <?php if ( $daomaEventTime ) { ?>
-                at <?php echo $daomaEventTime; ?>
+        <a href="<?php the_permalink(); ?>" title="View Event Details">
+          <div class="wrapper" id="hero-details">
+            <div class="details">
+              <h1>
+                <?php the_title(); ?><br>
+                <strong>
+                  <?php if ($daomaSpeakerCity) { ?>
+                    <?php echo $daomaSpeakerCity; ?> <span>></span>
+                  <?php } ?>
+                  OMA
+                </strong>
+              </h1>
+              <?php if ($daomaSpeakerTitle) { ?>
+                <h3><?php echo $daomaSpeakerTitle; ?></h3>
               <?php } ?>
-              <br />
-              <?php echo $daomaEventLocation; ?>
-              <br />
-              <?php echo $daomaEventPrice; ?>
-            </p>
-          </div>
+              <p>
+                <?php echo $daomaEventDatePretty; ?>
+                <?php if ( $daomaEventTime ) { ?>
+                  at <?php echo $daomaEventTime; ?>
+                <?php } ?>
+                <br />
+                <?php echo $daomaEventLocation; ?>
+                <br />
+                <?php echo $daomaEventPrice; ?>
+              </p>
+            </div>
+          </a>
         </div>
       </div>
       <!-- 
@@ -242,7 +248,7 @@
            AND wpostmeta.meta_value < '$today'
            AND wposts.post_status = 'publish' 
            AND wposts.post_type = 'events' 
-           ORDER BY wpostmeta.meta_value ASC
+           ORDER BY wpostmeta.meta_value DESC
         ";
         $pageposts = $wpdb->get_results($querystr, OBJECT);
         // Start Displaying the Calendar

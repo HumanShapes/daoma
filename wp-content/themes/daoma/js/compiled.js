@@ -9621,6 +9621,11 @@ var DAOMA = {
 
   init: function(){
 
+    $('.fadeout_opening').addClass('is-hidden');
+    window.setTimeout(function() {
+      $('.fadeout_opening').addClass('is-removed');
+    }, 800);
+
     DAOMA.toggleMainNav();
     DAOMA.parallax();
     $('.city').on({

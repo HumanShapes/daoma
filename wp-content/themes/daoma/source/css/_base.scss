@@ -27,11 +27,12 @@ $grey7: #313131;
 /* #Fonts
 =========================================================================== */
 
-.font-sans{ font-family: 'intro_lightregular', sans-serif; }
-.font-display{ font-family: 'intro_regularregular', sans-serif; }
-.font-bold{ font-family: 'intro_boldregular'; }
-.font-thin{ font-family: 'intro_thinregular'; }
-.font-book{ font-family: 'intro_bookregular'; }
+.font-sans{ font-family: 'intro_lightregular', 'futura', 'helvetica', sans-serif; }
+.font-display{ font-family: 'intro_regularregular', 'futura', 'helvetica', sans-serif; }
+.font-black{ font-family: 'intro_blackregular', 'futura', 'helvetica', sans-serif; }
+.font-bold{ font-family: 'intro_boldregular', 'futura', 'helvetica', sans-serif; }
+.font-thin{ font-family: 'intro_thinregular', 'futura', 'helvetica', sans-serif; }
+.font-book{ font-family: 'intro_bookregular', 'futura', 'helvetica', sans-serif; }
 
 /* #Typography
 =========================================================================== */
