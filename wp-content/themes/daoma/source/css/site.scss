@@ -1265,7 +1265,19 @@ address{
   }
 }
 
-
+.wp-caption{
+  margin: 30px 0;
+  padding: 0;
+  img{
+    margin: 0;
+    padding: 0;
+  }
+}
+p.wp-caption-text{
+  font-size: em(13);
+  margin-top: 0;
+  padding: 10px;
+}
 
 
 
