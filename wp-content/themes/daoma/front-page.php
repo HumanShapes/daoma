@@ -29,8 +29,6 @@
       <?php } else { ?>
         <div class="content">
       <?php } ?>
-        <div class="shape-circles-up right" data-type="background" data-speed="1"></div>
-        <div class="shape-circles-down" data-type="background" data-speed="-1"></div>
         <a href="<?php the_permalink(); ?>" title="View Event Details">
           <div class="wrapper" id="hero-details">
             <div class="details">

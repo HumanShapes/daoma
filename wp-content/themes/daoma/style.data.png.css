@@ -666,8 +666,7 @@ em {
   text-align: center;
   letter-spacing: 2px;
   background-color: #ec008c;
-  display: inline-block;
-  color: white; }
+  display: inline-block; }
   .btn:hover {
     color: #fff;
     background-color: #313131;
