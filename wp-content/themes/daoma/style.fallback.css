@@ -77,6 +77,10 @@ Version: 2.0
   background-image: url(png/flightpath6.png);
   background-repeat: no-repeat; }
 
+.icon-grey-triangle-updsidedown, #main-nav {
+  background-image: url(png/grey-triangle-updsidedown.png);
+  background-repeat: no-repeat; }
+
 .icon-header_join, #join > div {
   background-image: url(png/header_join.png);
   background-repeat: no-repeat; }
@@ -925,6 +929,7 @@ html {
 
 /*********** MAIN NAV ***********/
 #main-nav {
+  background-size: 28%;
   min-height: auto;
   background-color: #333333; }
   #main-nav:after {

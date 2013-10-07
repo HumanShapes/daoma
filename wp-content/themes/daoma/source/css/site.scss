@@ -103,6 +103,8 @@ body{ @extend .font-sans; }
 
 /*********** MAIN NAV ***********/
 #main-nav {
+  @extend .icon-grey-triangle-updsidedown;
+  background-size: 28%;
   @include clearfix;
   min-height: auto;
   background-color: $grey6;

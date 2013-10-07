@@ -4,7 +4,7 @@
 		<title>Icons Preview!</title>
 		<script>
 	/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
-window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!!t.document.createElementNS&&!!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect&&!!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"),A=function(A){var o=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];o.rel="stylesheet",o.href=e[A&&n?0:A?1:2],r.parentNode.insertBefore(o,r)},o=new t.Image;o.onerror=function(){A(!1)},o.onload=function(){A(1===o.width&&1===o.height)},o.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var r=t.document.createElement("link"),a=t.document.getElementsByTagName("script")[0];r.rel="stylesheet",r.href=e[o&&n?0:o?1:2],a.parentNode.insertBefore(r,a)},r=new t.Image;r.onerror=function(){o(!1)},r.onload=function(){o(1===r.width&&1===r.height)},r.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
 grunticon( [ "icons.data.svg.scss", "icons.data.png.scss", "icons.fallback.scss" ] );
 		</script>
 	<noscript><link href="icons.fallback.scss" rel="stylesheet"></noscript>
@@ -28,6 +28,7 @@ grunticon( [ "icons.data.svg.scss", "icons.data.png.scss", "icons.fallback.scss"
 	<pre><code>.icon-flightpath:</code></pre><div class="icon-flightpath" style="width: 400px; height: 400px"></div><hr/>
 	<pre><code>.icon-flightpath5:</code></pre><div class="icon-flightpath5" style="width: 400px; height: 400px"></div><hr/>
 	<pre><code>.icon-flightpath6:</code></pre><div class="icon-flightpath6" style="width: 400px; height: 400px"></div><hr/>
+	<pre><code>.icon-grey-triangle-updsidedown:</code></pre><div class="icon-grey-triangle-updsidedown" style="width: 450.001px; height: 210px"></div><hr/>
 	<pre><code>.icon-header_join:</code></pre><div class="icon-header_join" style="width: 1010px; height: 378px"></div><hr/>
 	<pre><code>.icon-hero-circles_lineshape-down:</code></pre><div class="icon-hero-circles_lineshape-down" style="width: 673px; height: 687px"></div><hr/>
 	<pre><code>.icon-hero-circles_lineshape-up:</code></pre><div class="icon-hero-circles_lineshape-up" style="width: 673px; height: 687px"></div><hr/>
