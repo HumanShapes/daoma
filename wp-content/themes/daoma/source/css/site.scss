@@ -341,23 +341,37 @@ ul{
 /* #FOOTER
 ========================================================================== */
 footer{
-  margin-top: 305px;
+  min-height: 305px;
+  position: relative;
+  @extend .icon-shape_footer;
+  background-position: left top;
+  background-size: 60% auto;
+  body.home & {
+    background: none;
+  }
   .home &{
     margin-top: 0;
   }
   // NOTE: This is to size the background triangle image. Currently works well for iPhones.
   // TODO: Need to address other sizes of screens.
-  @media screen and (max-width: 51.875em){ margin-top: 40.5%; }
-  @media screen and (max-width: 20em){ margin-top: 111px; }
-  @media screen and (max-width: 30em){ margin-top: 134px; }
-  @media screen and (max-width: 35.5em){ margin-top: 171px; }
-  nav{ @include clearfix; }
+  @media screen and (max-width: 20em){ min-height: 111px; }
+  @media screen and (max-width: 30em){ min-height: 134px; }
+  @media screen and (max-width: 35.5em){ min-height: 171px; }
+  nav{
+    @include clearfix; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
   #ftr-logo{
     position: relative;
-    @media screen and (min-width: 31.25em){
-      float: left;
-      margin-left: 30px;
-      margin-top: 40px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 40px;
+    @media screen and (max-width: 31.25em){
+      width: 115px;
+      float: none;
+      margin: 0 auto 20px;
     }
     a{
       @extend .icon-daoma_logo_footer;
@@ -368,7 +382,6 @@ footer{
       text-indent: -9999em;
       position: relative;
       @include transition(all 0.3s ease-in-out);
-      @media screen and (max-width: 31.25em){ margin: 20px auto; }
     }
     &:after {
       content: "";
@@ -1022,12 +1035,6 @@ footer{
 
 }
 .fadein_interior{
-  @extend .icon-shape_footer;
-  background-position: left bottom;
-  background-size: auto; //TODO: Size the background image so it scales down according to width.
-  .home &{
-    background: none;
-  }
   @media screen and (max-width: 51.875em){
     background-size: 60%;
   }

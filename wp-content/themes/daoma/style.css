@@ -113,7 +113,7 @@ Version: 2.0
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221270%22%20height%3D%221079.711%22%3E%3Cpolygon%20fill%3D%22%23FAFAFA%22%20points%3D%22601.5%2C0%20399.5%2C184.5%201270%2C410.5%201269%2C0%22%2F%3E%3Cpolygon%20fill%3D%22%23eee%22%20points%3D%221270%2C1079.711%20399.5%2C184.5%201270%2C410.5%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-shape_footer, .fadein_interior, .distance {
+.icon-shape_footer, footer, .distance {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22600%22%20height%3D%22425%22%20viewBox%3D%22-198.416%20-140.5%20600%20425%22%20enable-background%3D%22new%20-198.416%20-140.5%20600%20425%22%3E%3Cpolygon%20fill%3D%22%23F3F4F4%22%20points%3D%22-198.416%2C284.5%20201.252%2C-10.639%20401.584%2C-140.418%20-198.416%2C54.292%22%2F%3E%3Cpolygon%20fill%3D%22%23FAFAFA%22%20points%3D%22-198.416%2C54.292%20401.584%2C-140.418%20-198.416%2C-140.5%22%2F%3E%3Cpolygon%20fill%3D%22%23FAFAFA%22%20points%3D%22-198.416%2C54.292%2040.057%2C108.399%20171.83%2C11.088%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
@@ -1141,32 +1141,41 @@ ul h4 {
 /* #FOOTER
 ========================================================================== */
 footer {
-  margin-top: 305px; }
+  min-height: 305px;
+  position: relative;
+  background-position: left top;
+  background-size: 60% auto; }
+  body.home footer {
+    background: none; }
   .home footer {
     margin-top: 0; }
-  @media screen and (max-width: 51.875em) {
-    footer {
-      margin-top: 40.5%; } }
   @media screen and (max-width: 20em) {
     footer {
-      margin-top: 111px; } }
+      min-height: 111px; } }
   @media screen and (max-width: 30em) {
     footer {
-      margin-top: 134px; } }
+      min-height: 134px; } }
   @media screen and (max-width: 35.5em) {
     footer {
-      margin-top: 171px; } }
-  footer nav:after {
-    content: "";
-    display: table;
-    clear: both; }
+      min-height: 171px; } }
+  footer nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    footer nav:after {
+      content: "";
+      display: table;
+      clear: both; }
   footer #ftr-logo {
-    position: relative; }
-    @media screen and (min-width: 31.25em) {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 40px; }
+    @media screen and (max-width: 31.25em) {
       footer #ftr-logo {
-        float: left;
-        margin-left: 30px;
-        margin-top: 40px; } }
+        width: 115px;
+        float: none;
+        margin: 0 auto 20px; } }
     footer #ftr-logo a {
       background-size: 100%;
       display: block;
@@ -1177,9 +1186,6 @@ footer {
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
-      @media screen and (max-width: 31.25em) {
-        footer #ftr-logo a {
-          margin: 20px auto; } }
     footer #ftr-logo:after {
       content: "";
       width: 80%;
@@ -1826,17 +1832,12 @@ footer {
       text-align: center;
       color: #ec008c; }
 
-.fadein_interior {
-  background-position: left bottom;
-  background-size: auto; }
-  .home .fadein_interior {
-    background: none; }
-  @media screen and (max-width: 51.875em) {
-    .fadein_interior {
-      background-size: 60%; } }
-  @media screen and (max-width: 20em) {
-    .fadein_interior {
-      background-size: 80%; } }
+@media screen and (max-width: 51.875em) {
+  .fadein_interior {
+    background-size: 60%; } }
+@media screen and (max-width: 20em) {
+  .fadein_interior {
+    background-size: 80%; } }
 
 #partners {
   background-color: #e20086; }
