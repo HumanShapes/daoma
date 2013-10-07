@@ -84,7 +84,7 @@
         <div class="shape-circles-up right" data-type="background" data-speed="1"></div>
         <div class="shape-circles-down" data-type="background" data-speed="-1"></div>
         <div class="content">
-          <h1 class="wrapper">Design,<br>in the middle<br>of everywhere.</h1>
+          <h1 class="wrapper">Design,<br>in the middle<br>of&nbsp;everywhere.</h1>
         </div>
       </div>
       <div class="interior wrapper">
