@@ -99,10 +99,6 @@ function more_info_box_save( $post_id ) {
   } else {
     return;
   }
-  $hs_daoma_event_date = $_POST['hs_daoma_event_date'];
-  update_post_meta( $post_id, 'hs_daoma_event_date', $hs_daoma_event_date );
-  $hs_daoma_event_date_pretty = $_POST['hs_daoma_event_date_pretty'];
-  update_post_meta( $post_id, 'hs_daoma_event_date_pretty', $hs_daoma_event_date_pretty );
   $hs_daoma_event_time = $_POST['hs_daoma_event_time'];
   update_post_meta( $post_id, 'hs_daoma_event_time', $hs_daoma_event_time );
   $hs_daoma_event_location = $_POST['hs_daoma_event_location'];
@@ -117,6 +113,16 @@ function more_info_box_save( $post_id ) {
   update_post_meta( $post_id, 'hs_daoma_speaker_title', $hs_daoma_speaker_title );
   $hs_daoma_speaker_bio = $_POST['hs_daoma_speaker_bio'];
   update_post_meta( $post_id, 'hs_daoma_speaker_bio', $hs_daoma_speaker_bio );
+
+  $hs_daoma_event_date = $_POST['hs_daoma_event_date'];
+  $hs_daoma_event_date_pretty = $_POST['hs_daoma_event_date_pretty'];
+  update_post_meta( $post_id, 'hs_daoma_event_date_pretty', $hs_daoma_event_date_pretty );
+  if ($hs_daoma_event_date_pretty) {
+    update_post_meta( $post_id, 'hs_daoma_event_date', $hs_daoma_event_date );
+  } else {
+    update_post_meta( $post_id, 'hs_daoma_event_date', '');    
+  }
+
 }
 
 function hs_daoma_more_info_box_content( $post ) { ?>
