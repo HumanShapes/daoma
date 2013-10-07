@@ -1983,21 +1983,39 @@ address {
     @media screen and (min-width: 20em) and (max-width: 35.499em) {
       .distance .city {
         font-size: 1.125em; } }
+    .distance .city:hover {
+      cursor: pointer; }
+    .distance .city:hover .refresh {
+      cursor: pointer;
+      -webkit-animation: spin .8s linear infinite;
+      -moz-animation: spin .8s linear infinite;
+      animation: spin .8s linear infinite; }
   .distance button {
-    display: none;
     position: absolute;
     right: 15px;
-    top: center;
     background-color: transparent;
     overflow: hidden;
     width: 32px;
-    height: 0;
-    padding-top: 32px;
-    border: none; }
+    height: 32px;
+    border: none;
+    text-indent: -9999em; }
   .distance p {
     font-size: 1.875em;
     color: #888888;
     text-align: center; }
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 
 .page .interior a {
   color: #555555;

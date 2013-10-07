@@ -9628,16 +9628,11 @@ var DAOMA = {
 
     DAOMA.toggleMainNav();
     DAOMA.parallax();
-    $('.city').on({
-      mouseenter: function(){
-        $('.refresh').show();
-      },
-      mouseleave: function(){
-        $('.refresh').hide();
-      }
-    });
-    $('.refresh').on('click', function(){
-      DAOMA.distanceCalc();
+    $('.refresh, .city').on('click', function(){
+      $('.miles strong').fadeOut(200);
+      $('.city span').fadeOut(200, function(){
+        DAOMA.distanceCalc();
+      });
     });
   },
 
@@ -9723,8 +9718,8 @@ var DAOMA = {
       new_city = Cities[rand];
     } while (cur_city == new_city || typeof new_city === "undefined");
 
-    $('.city span').html(new_city['city']);
-    $('.miles strong').html(new_city['miles']);
+    $('.city span').html(new_city['city']).fadeIn();
+    $('.miles strong').html(new_city['miles']).fadeIn();
   }
 };
 
