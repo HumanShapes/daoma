@@ -15,7 +15,7 @@
 <div class="activities">
   <section class="interior">
     <div class="wrapper">
-      <h2 class="column"> Past Speakers</h2>
+      <h2 class="column">Past Speakers</h2>
       <div class="content">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <?php the_content(); ?>

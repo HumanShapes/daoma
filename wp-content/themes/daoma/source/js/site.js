@@ -6,9 +6,17 @@ if (("ontouchstart" in document.documentElement)) {
   hasTouch = true;
 }
 
-var DAOMA = {
+var Cities = [
+  ["New York","1,246.3"],
+  ["San Francisco","1,677.8"],
+  ["Portland","1,653.0"],
+  ["Los Angeles","1,548.9"],
+  ["Chicago","472.3"],
+  ["Brooklyn","1,253.6"],
+  ["Toronto","976.2"]
+];
 
-  Cities: null,
+var DAOMA = {
 
   log: function (data){
     if( typeof console !== 'undefined'){
@@ -32,6 +40,7 @@ var DAOMA = {
     DAOMA.toggleMainNav();
     DAOMA.parallax();
     $('.refresh, .city').on('click', function(){
+      $('.refresh').addClass('is-acting');
       $('.miles strong').fadeOut(200);
       $('.city span').fadeOut(200, function(){
         DAOMA.distanceCalc();
@@ -98,31 +107,20 @@ var DAOMA = {
     });
   },
 
-  loadCities: function(){
-    var url = window.location.origin + "/wp-content/themes/daoma/cities.json";
-    var min = 0;
-    var cur_city = $('.city').text();
-    var new_city, miles, rand, max;
-    $.getJSON(url, function(json) {
-      max = json.length;
-      Cities = json;
-      DAOMA.distanceCalc();
-    });
-  },
-
   distanceCalc: function(){
     var min = 0;
     var cur_city = $('.city span').text();
-    var new_city, miles, rand;
-    max = Cities.length;
-    // DAOMA.log(Cities[1]);
-    do {
-      rand = Math.floor(Math.random() * (max - min + 1)) + min;
-      new_city = Cities[rand];
-    } while (cur_city == new_city || typeof new_city === "undefined");
+    var new_city;
 
-    $('.city span').html(new_city['city']).fadeIn();
-    $('.miles strong').html(new_city['miles']).fadeIn();
+    new_city = Cities[0];
+
+    $('.city span').html(new_city[0]).fadeIn();
+    $('.miles strong').html(new_city[1]).fadeIn(200, function(){
+      $('.refresh').removeClass('is-acting');
+    });
+
+    Cities.shift();// Pull off first city
+    Cities.push(new_city); // put first city at end
   }
 };
 
@@ -131,7 +129,6 @@ $(document).ready(function() {
   // Build daOMA object
   DAOMA.construct();
   DAOMA.init();
-  DAOMA.loadCities();
 });
 
 // Functions that can be delayed after the whole page has been downloaded
