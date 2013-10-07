@@ -66,7 +66,7 @@
   </div>
 
   <div class="director">
-    <img alt="Bryce Bridges" src="<?php bloginfo( 'template_directory' ); ?>/images/board_bryce.jpg">
+    <img alt="Bryce Bridges" src="<?php bloginfo( 'template_directory' ); ?>/images/board_bryce.png">
     <div class="content">
       <h3>Bryce Bridges</h3>
       <p>Commercial and editorial portrait photographer Bryce Bridges works on projects with a wide variety of international magazines, agencies and clients, conceived and co-published the critically acclaimed medium magazine, served as Editor-in-Chief of Abode magazine in Doha, Qatar and is currently creative director of the culture incubator/media company FLYOVER.</p>
@@ -74,7 +74,7 @@
   </div>
 
   <div class="director">
-    <img alt="Drew Davies" src="<?php bloginfo( 'template_directory' ); ?>/images/board_drew.jpg">
+    <img alt="Drew Davies" src="<?php bloginfo( 'template_directory' ); ?>/images/board_drew.png">
     <div class="content">
       <h3>Drew Davies</h3>
       <p>Founder and design director of Oxide Design Co., a communications and information design firm established in 2001. Drew is the national co-president for AIGA, the professional association for design. He also serves as national design director for AIGA’s Design for Democracy program. DFD is currently involved in implementing nationwide ballot design standards for all elections.</p>
@@ -82,7 +82,7 @@
   </div>
 
   <div class="director">
-    <img alt="Jeffrey Day" src="<?php bloginfo( 'template_directory' ); ?>/images/board_jeff.jpg">
+    <img alt="Jeffrey Day" src="<?php bloginfo( 'template_directory' ); ?>/images/board_jeff.png">
     <div class="content">
       <h3>Jeffrey L. Day, AIA</h3>
       <p>Principal of Min | Day, an Omaha and San Francisco-based architecture and design company, professor of architecture and landscape architecture and director of the architecture program at the University of Nebraska–Lincoln. Jeff graduated magna cum laude from Harvard College with an BA in Visual and Environmental Studies in 1988 and received a Master of Architecture from U.C. Berkeley in 1995. At UNL, Jeff runs FACT (Fabrication And Construction Team), an award-winning, academic/professional collaborative design lab.</p>
@@ -90,7 +90,7 @@
   </div>
 
   <div class="director">
-    <img alt="Brian Kelly" src="<?php bloginfo( 'template_directory' ); ?>/images/board_brian.jpg">
+    <img alt="Brian Kelly" src="<?php bloginfo( 'template_directory' ); ?>/images/board_brian.png">
     <div class="content">
       <h3>Brian M. Kelly, RA</h3>
       <p>Brian is an architect and faculty member with the University of Nebraska — College of Architecture. His previous teaching experience includes Drury University’s Hammons School of Architecture in Springfield, MO and California Polytechnic State University at San Luis Obispo. Prior to joining the faculty at UNL, Brian served as lead designer in the office of Randy Brown Architects, designing several award-winning projects of various types and scales. In addition to teaching, he is owner of AToM, a design studio which focuses on smaller scale architectural projects, objects, and graphics.</p>
@@ -98,7 +98,7 @@
   </div>
 
   <div class="director">
-    <img alt="Justin Kemerling" src="<?php bloginfo( 'template_directory' ); ?>/images/board_justin.jpg">
+    <img alt="Justin Kemerling" src="<?php bloginfo( 'template_directory' ); ?>/images/board_justin.png">
     <div class="content">
       <h3>Justin Kemerling</h3>
       <p>Design director at JKDC and chief design officer for a technology startup called MindMixer. Justin is a collaborative designer focused on making it beautiful, moving people to action and getting good things done. His work is graphic design, as well as art, activism, citizenship, entrepreneurship, strategy, and very much Midwest.</p>
@@ -106,7 +106,7 @@
   </div>
 
   <div class="director">
-    <img alt="David C. Levy" src="<?php bloginfo( 'template_directory' ); ?>/images/board_justin.jpg">
+    <img alt="David C. Levy" src="<?php bloginfo( 'template_directory' ); ?>/images/board_david.png">
     <div class="content">
       <h3>David C. Levy</h3>
       <p>Chair of the Baird Holm, LLP Real Estate Section. David represents clients in zoning, land use, energy, environmental and general real estate matters. He taught at the University of San Francisco School Of Law and at Creighton University School of Law. Prior to returning to Nebraska, David practiced land use and environmental law with a firm in San Francisco. Before beginning his legal career, he worked for seven years as a city planner for the City and County of San Francisco.</p>
@@ -114,7 +114,7 @@
   </div>
 
   <div class="director">
-    <img alt="Amy Mather" src="<?php bloginfo( 'template_directory' ); ?>/images/board_amy.jpg">
+    <img alt="Amy Mather" src="<?php bloginfo( 'template_directory' ); ?>/images/board_amy.png">
     <div class="content">
       <h3>Amy Mather</h3>
       <p>Amy serves as the Adult Services & Programming Manager for Omaha Public Library. As part of her adult outreach initiatives, she was recognized along with a colleague as one of Library Journal’s Mover & Shakers in 2010. She currently serves on the daOMA (design alliance Omaha) board, Host and producer of Whatever Mathers, a podcast of cultural conversation and a graduate from Leadership Omaha, a 10 month program to develop community leaders.</p>
@@ -122,7 +122,7 @@
   </div>
 
   <div class="director">
-    <img alt="Hesse McGraw" src="<?php bloginfo( 'template_directory' ); ?>/images/board_hesse.jpg">
+    <img alt="Hesse McGraw" src="<?php bloginfo( 'template_directory' ); ?>/images/board_hesse.png">
     <div class="content">
       <h3>Hesse McGraw</h3>
       <p>Hesse McGraw directs the Walter and McBean Galleries and oversees SFAI’s public programs, visiting artists series, and community education programs for youths and adults. From 2008 to 2013 McGraw served as chief curator at the Bemis Center for Contemporary Arts in Omaha, Nebraska, where he developed an exhibition program focused on site-specific, immersive, cross-disciplinary, and socially engaged projects, including major projects with artists Theaster Gates and Michael Jones McKean. McGraw was formerly associate director of Max Protetch gallery in New York, and was the founding director and curator of Paragraph, which operated under the non-profit Charlotte Street Foundation in Kansas City, Missouri.</p>
@@ -130,7 +130,7 @@
   </div>
 
   <div class="director">
-    <img alt="James Menard" src="<?php bloginfo( 'template_directory' ); ?>/images/board_hesse.jpg">
+    <img alt="James Menard" src="<?php bloginfo( 'template_directory' ); ?>/images/board_james.png">
     <div class="content">
       <h3>James Menard</h3>
       <p>James Menard, CPA Jim is a Shareholder of Schroer & Associates, P.C. a public accounting firm in the Omaha Metro area. He graduated from Nebraska Wesleyan University in 2002 with a Bachelor of Science in Accounting. He has over ten years of experience in public accounting including auditing and consulting for various non-profit organizations.</p>
@@ -138,7 +138,7 @@
   </div>
 
   <div class="director">
-    <img alt="Alan Tipp" src="<?php bloginfo( 'template_directory' ); ?>/images/board_hesse.jpg">
+    <img alt="Alan Tipp" src="<?php bloginfo( 'template_directory' ); ?>/images/board_alan.png">
     <div class="content">
       <h3>Alan Tipp</h3>
       <p>Design Director at Eyeking, LLC (a New York based sunglass design studio, producer, and distributer of globally licensed eyewear brands). A native to Omaha, Tipp studied Industrial Design and graduated from the University of Kansas with his BFA and currently holds over 40 US & Foreign patents. He’s designed and developed products for The US Marine Corps, The Home Shopping Network, Dicks Sporting Goods, The Sports Authority, Lands End, The Sharper Image, & various other specialty retailers. Tipp now designs sunglass collections out of his Omaha based studio for Eyeking’s most notable licenses; Under Armour, Crocs, & Hobie.</p>
@@ -146,7 +146,7 @@
   </div>
 
   <div class="director">
-    <img alt="Anne Trumble, MLA, ASLA" src="<?php bloginfo( 'template_directory' ); ?>/images/board_anne.jpg">
+    <img alt="Anne Trumble, MLA, ASLA" src="<?php bloginfo( 'template_directory' ); ?>/images/board_anne.png">
     <div class="content">
       <h3>Anne Trumble, MLA, ASLA</h3>
       <p>Founder and director of the nonprofit research and design collaborative, Emerging Terrain. Originally trained as a landscape architect, Anne discovered a fascination with political and community process while designing and building public landscapes in New York City. Prior to that, she obtained her graduate degree in Vancouver, British Columbia. Although Anne grew up on a farm outside of Omaha, she has traveled, studied, and practiced landscape architecture around the world, but always finds the most interest in the landscapes of Nebraska.</p>
@@ -154,7 +154,7 @@
   </div>
 
   <div class="director">
-    <img alt="Thomas J. Trenolone, AIA" src="<?php bloginfo( 'template_directory' ); ?>/images/board_tom.jpg">
+    <img alt="Thomas J. Trenolone, AIA" src="<?php bloginfo( 'template_directory' ); ?>/images/board_tom.png">
     <div class="content">
       <h3>Thomas J. Trenolone, AIA</h3>
       <p>Architect, design enthusiast and wanna-be ad man. A graduate of the University of Nebraska–Lincoln with degrees in both advertising and architecture, Tom went on to receive his master’s degree in architecture at the University of Kansas, and is a Studio 804 alumnus (216 Alabama). He is a design principal and vice president with HDR Architecture, and a founding partner in the international design collaborative n:dL (nocturnal: design Lab). Tom established daOMA in 2006 with a mission to bring a greater awareness of progressive architecture and the design arts to Nebraska and western Iowa.</p>
@@ -162,7 +162,7 @@
   </div>
 
   <div class="director">
-      <img alt="Sabrina Weiss" src="<?php bloginfo( 'template_directory' ); ?>/images/board_sabrina.jpg">
+      <img alt="Sabrina Weiss" src="<?php bloginfo( 'template_directory' ); ?>/images/board_sabrina.png">
       <div class="content">
         <h3>Sabrina Weiss</h3>
         <p>Director of development and external affairs for Joslyn Art Museum. An Omaha native, Sabrina has over 12 years of experience working in the non-profit field in both the arts and education. She received a BS degree from Oklahoma City University while also performing with the American Spirit Dance Company. In 2007, Sabrina received her Masters of Public Administration degree with an emphasis in Non-Profit Arts Management from the University of Nebraska at Omaha.</p>
@@ -170,7 +170,7 @@
   </div>
 
   <div class="director">
-    <img alt="Jake Welchert" src="<?php bloginfo( 'template_directory' ); ?>/images/board_jake.jpg">
+    <img alt="Jake Welchert" src="<?php bloginfo( 'template_directory' ); ?>/images/board_jake.png">
     <div class="content">
       <h3>Jake Welchert</h3>
       <p>Independent designer and multidisciplinary creative that thrives on ideation, experimentation, and doing some good for those who deserve it. Jake has worked as a freelance designer for small startups, as well as full-time at companies including Ervin and Smith Advertising and Obama For America, the 2012 re-election campaign for Barack Obama. Beyond work, he serves as an Omaha Pecha Kucha co-coordinator and emcee.</p>
