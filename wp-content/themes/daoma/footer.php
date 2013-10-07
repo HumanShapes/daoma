@@ -2,9 +2,9 @@
       <nav>
         <h6 id="ftr-logo"><a href="/">design alliance Omaha</a></h6>
         <ul>
-          <li class="email"><a href="#">Email</a></li>
-          <li class="facebook"><a href="https://www.facebook.com/pages/daOMA-design-alliance-OMAha-Inc/304226363724?fref=ts">Facebook</a></li>
-          <li class="twitter"><a href="">Twitter</a></li>
+          <li class="email"><a href="mailto:info@daoma.org" title="Email daOMA">Email</a></li>
+          <li class="facebook"><a href="https://www.facebook.com/pages/daOMA-design-alliance-OMAha-Inc/304226363724?fref=ts" title="daOMA on Facebook">Facebook</a></li>
+          <li class="twitter"><a href="https://twitter.com/da_OMA" title="@da_OMA on Twitter">Twitter</a></li>
         </ul>
       </nav>
     </footer>
