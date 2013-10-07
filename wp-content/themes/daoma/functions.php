@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('America/Chicago');
 
 register_nav_menus( array(
   'primary_nav' => 'Primary Navigation'
