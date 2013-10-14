@@ -1141,7 +1141,7 @@ ul h4 {
 /* #FOOTER
 ========================================================================== */
 footer {
-  min-height: 205px;
+  min-height: 500px;
   position: relative;
   background-position: left top;
   background-size: 60% auto; }
