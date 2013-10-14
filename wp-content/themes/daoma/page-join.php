@@ -17,23 +17,19 @@
     <div class="content">
       <ul class="memberships">
         <li>
-          <p><em>Student or Senior </em>$20 a year<br>
-            Provides the member with admission to ONE lecture, PKN (Pecha Kucha Night) and&nbsp;panels.</p>
+          <p><em>Student or Senior </em>$20 a year</p>
           <p><a class="btn" href="#">Join</a></p>
         </li>
         <li>
-          <p><em>Member </em>$75 a year<br>
-            Provides the member with admission to ONE lecture, PKN (Pecha Kucha Night), panels and the receipt of regular&nbsp;e-mails.</p>
+          <p><em>Member </em>$75 a year</p>
           <p><a class="btn" href="#">Join</a></p>
         </li>
         <li>
-          <p><em>Friend </em>$150 a year<br>
-            Provides the member with admission to TWO lectures, PKN (Pecha Kucha Night), panels and the receipt of e-mails.</p>
+          <p><em>Friend </em>$150 a year</p>
           <p><a class="btn" href="#">Join</a></p>
         </li>
         <li>
-          <p><em>Supporter </em>$300 a year<br>
-            Provides the member with admission to FOUR lectures, PKN (Pecha Kucha Night), panels and the receipt of e-mails, plus an invitation to a private speaker receptions and local tours.</p>
+          <p><em>Supporter </em>$300 a year</p>
           <p><a class="btn" href="#">Join</a></p>
         </li>
       </ul>
