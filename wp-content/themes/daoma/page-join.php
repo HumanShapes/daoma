@@ -48,9 +48,9 @@
     <div class="content">
       <p>To guarantee that significant contributions (Patron level and above) are tax deductible except for the fair market value of membership benefits please make your check payable to “design alliance OMAha”, a 501 (c)(3) non-profit organization. To become a member at Patron, Sponsor, Season Sponsor, or Season Benefactor levels, please send your name, address, city/state/zip, phone number and e-mail, along with a check for the amount of your selected commitment level, to:</p>
       <address>
-        <h3>design alliance OMAHA</h3>
-        <h4>PO Box 541083</h4>
-        <h4>Omaha, NE 68154</h4>
+        <h3>daOMA (design alliance OMAha, Inc.)</h3>
+        <h4>17116 Burdette Street </h4>
+        <h4>Omaha, NE 68116</h4>
       </address>
       <ul class="price">
         <li><em>Patron</em> $600 a year</li>
