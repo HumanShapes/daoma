@@ -231,7 +231,7 @@
   </section>
   <section class="creative-class">
     <div class="wrapper">
-      <h3 class="three">Tethered<br>Ex&ndash;Patriot</h3>
+      <h3 class="three">Tethered <br>Ex&ndash;Patriot</h3>
       <div class="content">
         <p>Born, raised and influenced by Nebraska these outstanding talents have left to represent. Flexible but strong roots allow them to travel the world, but as far as they roam the world around us they maintain a connection to the state and their communities serving as cultural ambassadors, but also as conduits of the influence that allow us to keep pace and reduce the traditional lag from coast to plains.</p>
       </div>
@@ -239,7 +239,7 @@
   </section>
   <section class="creative-class">
     <div class="wrapper">
-      <h3 class="four">Inquisitive<br>Import</h3>
+      <h3 class="four">Inquisitive <br>Import</h3>
       <div class="content">
         <p>Something or someone convinced these talents to travel to the middle of the country. Here they found a new home and opportunity. What might have began as a 3 year experimental stay has turned into a decade(s) of contribution and service.</p>
       </div>
