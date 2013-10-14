@@ -1184,7 +1184,7 @@ address{
   }
   @media screen and (min-width: 20em) and (max-width: 48em){
     padding-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
   strong{
     @extend .font-sans;
@@ -1201,7 +1201,7 @@ address{
       font-size: em(68);
     }
     @media screen and (min-width: 20em) and (max-width: 35.499em){
-      font-size: em(62);
+      font-size: em(40);
     }
   }
   .content{
