@@ -1563,10 +1563,16 @@ footer {
       max-height: 380px; } }
   .events:first-child {
     margin-top: 0; }
-  .events:hover .date {
-    width: 16%; }
-  .events:hover .thumb {
-    width: 38%; }
+  @media screen and (min-width: 51.876em) {
+    .events:hover .date {
+      width: 16%; }
+    .events:hover .thumb {
+      width: 38%; } }
+  @media screen and (max-width: 51.875em) {
+    .events:hover .date {
+      width: 32%; }
+    .events:hover .thumb {
+      width: 68%; } }
   .events .date, .events .thumb {
     -webkit-transition: width 0.2s ease-in-out;
     -moz-transition: width 0.2s ease-in-out;

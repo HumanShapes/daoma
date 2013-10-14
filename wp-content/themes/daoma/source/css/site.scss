@@ -756,12 +756,24 @@ footer{
   margin-top: 20px;
   @media screen and (max-width: 51.875em){ max-height: 380px; }
   &:first-child{ margin-top: 0; }
-  &:hover {
-    .date {
-      width: 16%;
+  @media screen and (min-width: 51.876em){
+    &:hover {
+      .date {
+        width: 16%;
+      }
+      .thumb {
+        width: 38%;
+      }
     }
-    .thumb {
-      width: 38%;
+  }
+  @media screen and (max-width: 51.875em){
+    &:hover {
+      .date {
+        width: 32%;
+      }
+      .thumb {
+        width: 68%;
+      }
     }
   }
   .date, .thumb {
