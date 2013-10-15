@@ -177,4 +177,9 @@
     </div>
   </div>
 </section>
+<section class="interior">
+    <div class="wrapper">
+    <?php wp_nav_menu( array( 'container' => 'nav', 'container_id' => 'footer-nav', 'theme_location' => 'primary_nav' ) ); ?>
+  </div>
+</section>
 <?php get_footer(); ?>

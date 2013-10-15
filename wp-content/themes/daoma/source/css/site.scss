@@ -433,6 +433,32 @@ footer{
     }
   }
 }
+#footer-nav{
+  border-top: 2px solid $grey1;
+  border-bottom: 2px solid $grey1;
+  // margin: 100px 0;
+
+  ul{
+    margin: 0;
+    // padding: 24px 0;
+    text-align: center;
+  }
+  li{
+    display: inline-block;
+    margin: 22px 10px;
+  }
+  a{
+    @extend .font-display;
+    @include transition(all .25s);
+    border-bottom: none;
+    color: $primary;
+    font-size: em(18);
+    text-transform: uppercase;
+    &:hover{
+      color: $grey6;
+    }
+  }
+}
 
 
 /* #HOME PAGE
