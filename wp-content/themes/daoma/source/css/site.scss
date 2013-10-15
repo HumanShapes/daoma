@@ -341,11 +341,11 @@ ul{
 /* #FOOTER
 ========================================================================== */
 footer{
-  min-height: 500px;
+  min-height: 400px;
   position: relative;
   @extend .icon-shape_footer;
   background-position: left top;
-  background-size: 60% auto;
+  background-size: 40% auto;
   body.home & {
     background: none;
   }
@@ -436,16 +436,15 @@ footer{
 #footer-nav{
   border-top: 2px solid $grey1;
   border-bottom: 2px solid $grey1;
-  // margin: 100px 0;
 
   ul{
     margin: 0;
-    // padding: 24px 0;
+    padding: 24px 0;
     text-align: center;
   }
   li{
     display: inline-block;
-    margin: 22px 10px;
+    margin: 0 10px;
   }
   a{
     @extend .font-display;

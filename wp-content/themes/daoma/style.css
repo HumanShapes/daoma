@@ -1141,10 +1141,10 @@ ul h4 {
 /* #FOOTER
 ========================================================================== */
 footer {
-  min-height: 500px;
+  min-height: 400px;
   position: relative;
   background-position: left top;
-  background-size: 60% auto; }
+  background-size: 40% auto; }
   body.home footer {
     background: none; }
   .home footer {
@@ -1238,10 +1238,11 @@ footer {
   border-bottom: 2px solid #ebebeb; }
   #footer-nav ul {
     margin: 0;
+    padding: 24px 0;
     text-align: center; }
   #footer-nav li {
     display: inline-block;
-    margin: 22px 10px; }
+    margin: 0 10px; }
   #footer-nav a {
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
