@@ -15,6 +15,8 @@
 <section class="interior single-column">
   <div class="wrapper">
     <div class="content">
+      <p>It has always been our goal to provide lectures without ticketed admissions as a public service that advocates for the value of architecture and the design arts. We hope that you will embrace this philosophy, because without your support of our mission we would be unable to make such a bold move. We recognize the risk we assume, but it is a goal we have been working to achieve since daOMA was established in 2006. We hope that we can continue to count on the support of our members and patrons to make it happen again this season.</p>
+      <br><br>
       <ul class="memberships">
         <li>
           <p><em>Student or Senior </em>$20 a year</p>
