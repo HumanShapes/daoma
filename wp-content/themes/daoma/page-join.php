@@ -18,19 +18,47 @@
       <ul class="memberships">
         <li>
           <p><em>Student or Senior </em>$20 a year</p>
-          <p><a class="btn" href="#">Join</a></p>
+          <p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="2046082">
+              <input class="btn" type="submit" border="0" name="submit" value="Join">
+              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+        <!-- <a class="btn" href="#">Join</a> --></p>
         </li>
         <li>
           <p><em>Member </em>$75 a year</p>
-          <p><a class="btn" href="#">Join</a></p>
+          <p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="2046149">
+              <input type="submit" value="Join" class="btn" name="submit">
+              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+          </p>
         </li>
         <li>
           <p><em>Friend </em>$150 a year</p>
-          <p><a class="btn" href="#">Join</a></p>
+          <p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="2046159">
+              <input type="submit" value="Join" class="btn" name="submit" alt="">
+              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+          </p>
         </li>
         <li>
           <p><em>Supporter </em>$300 a year</p>
-          <p><a class="btn" href="#">Join</a></p>
+          <p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="2046722">
+              <input type="submit" value="Join" class="btn" name="submit" alt="">
+              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+          </p>
         </li>
       </ul>
   </div>

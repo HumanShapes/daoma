@@ -571,7 +571,7 @@ svg:not(:root) {
 .font-black, .post h4 {
   font-family: 'intro_blackregular', 'futura', 'helvetica', sans-serif; }
 
-.font-bold, em, #hero .info p .btn, .events .date p span, #partners h1, #members h1, #join h1, .memberships .btn, .distance .city {
+.font-bold, em, #hero .info p .btn, .events .date p span, #partners h1, #members h1, #join h1, .distance .city {
   font-family: 'intro_boldregular', 'futura', 'helvetica', sans-serif; }
 
 .font-thin, #about-feature .content h1 {
@@ -1922,9 +1922,13 @@ footer {
 
 .memberships p:first-child {
   margin-bottom: 20px; }
-.memberships .btn {
-  font-size: 0.75em;
-  line-height: 1; }
+.memberships input.btn {
+  font-size: 1em;
+  line-height: 1;
+  border: none;
+  color: white; }
+  .memberships input.btn:hover {
+    color: #ec008c; }
 .memberships li {
   padding: 60px 0;
   border-top: 1px solid #cccccc; }

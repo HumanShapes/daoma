@@ -1150,11 +1150,16 @@ footer{
 }
 .memberships{
   p:first-child{ margin-bottom: 20px; }
-  .btn{
-    @extend .font-bold;
-    font-size: em(12);
+  input.btn{
+    font-size: em(16);
     line-height: 1;
+    border: none;
+    color: $white;
+    &:hover{
+      color: $primary;
+    }
   }
+
   li{
     padding: 60px 0;
     border-top: 1px solid $grey2;
