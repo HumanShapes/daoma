@@ -85,6 +85,10 @@ Version: 2.0
   background-image: url(png/flightpath6.png);
   background-repeat: no-repeat; }
 
+.icon-googleplus {
+  background-image: url(png/googleplus.png);
+  background-repeat: no-repeat; }
+
 .icon-grey-triangle-updsidedown, #main-nav {
   background-image: url(png/grey-triangle-updsidedown.png);
   background-repeat: no-repeat; }
@@ -107,6 +111,10 @@ Version: 2.0
 
 .icon-label-arrow, .distance .label {
   background-image: url(png/label-arrow.png);
+  background-repeat: no-repeat; }
+
+.icon-link {
+  background-image: url(png/link.png);
   background-repeat: no-repeat; }
 
 .icon-shape_about, #members > div {
@@ -1247,6 +1255,7 @@ footer {
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
     transition: all 0.25s;
+    letter-spacing: 2px;
     border-bottom: none;
     color: #ec008c;
     font-size: 1.125em;

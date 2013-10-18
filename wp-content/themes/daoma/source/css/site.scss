@@ -449,6 +449,7 @@ footer{
   a{
     @extend .font-display;
     @include transition(all .25s);
+    letter-spacing: 2px;
     border-bottom: none;
     color: $primary;
     font-size: em(18);
