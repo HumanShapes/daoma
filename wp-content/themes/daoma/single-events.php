@@ -41,18 +41,15 @@
         $nextPostCity = get_post_meta($nextPostID, 'hs_daoma_speaker_city', true);
         ?>
       <nav class="event-nav" role="navigation">
-        <ul>
-          <li class="prev-post"><?php previous_post_link('%link', '< ' . $prevPostCity); ?></li>
-          <li class="social-share">
-            <a href="" class="copy-link">Copy URL</a>
-            <a href="" class="google-plus">Google+</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" class="facebook">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&via=da_OMA" class="twitter">Twitter</a>
-            <span>Share</span>
-          </li>
-          <li class="next-post"><?php next_post_link('%link', $nextPostCity . ' >'); ?></li>
+        <div class="prev-post"><?php previous_post_link('%link', '< ' . $prevPostCity); ?></div>
+        <div class="next-post"><?php next_post_link('%link', $nextPostCity . ' >'); ?></div>
+        <ul class="social-share">
+          <!-- <li><span>Share</span></li> -->
+          <li><a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&via=da_OMA" class="twitter">Twitter</a></li>
+          <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" class="facebook">Facebook</a></li>
+          <li><a href="" class="google-plus">Google+</a></li>
+          <li><a href="" class="copy-link">Copy URL</a></li>
         </ul>
-
       </nav>
     </article>
   </section>

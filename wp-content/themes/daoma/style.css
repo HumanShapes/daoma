@@ -69,7 +69,7 @@ Version: 2.0
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221240%22%20height%3D%22800%22%3E%3Cg%3E%3Ccircle%20stroke%3D%22%233B3B3B%22%20stroke-miterlimit%3D%2210%22%20cx%3D%22505.191%22%20cy%3D%22166.21%22%20r%3D%22166.211%22%20fill%3D%22none%22%2F%3E%3Ccircle%20stroke%3D%22%233B3B3B%22%20stroke-miterlimit%3D%2210%22%20cx%3D%22505.191%22%20cy%3D%22166.21%22%20r%3D%22131.981%22%20fill%3D%22none%22%2F%3E%3Ccircle%20fill%3D%22%23EA0B8C%22%20cx%3D%22503.955%22%20cy%3D%22168.473%22%20r%3D%224.263%22%2F%3E%3Cline%20stroke%3D%22%23EA0B8C%22%20stroke-miterlimit%3D%2210%22%20x1%3D%22500.965%22%20y1%3D%22171.374%22%20y2%3D%22685.709%22%20fill%3D%22none%22%2F%3E%3Cline%20stroke%3D%22%23EA0B8C%22%20stroke-miterlimit%3D%2210%22%20x1%3D%22893.714%22%20y1%3D%22210.309%22%20x2%3D%22687.18%22%20fill%3D%22none%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-facebook, footer ul li.facebook a, .post li.social-share .facebook {
+.icon-facebook, footer ul li.facebook a, .post .social-share .facebook {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2230%22%20viewBox%3D%2267%2060.207%2016%2030%22%20enable-background%3D%22new%2067%2060.207%2016%2030%22%3E%3Cpath%20fill%3D%22%23C8C8C8%22%20d%3D%22M77.152%2090.207v-13.764h4.427l.743-5.101h-5.17v-4.012c0-1.453.743-2.282%202.213-2.282h3.32v-4.599s-1.487-.242-3.631-.242c-4.859%200-7.314%202.696-7.314%206.726v4.41h-4.427v5.101h4.427v13.764h5.412v-.001z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
@@ -85,7 +85,7 @@ Version: 2.0
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%22400%22%20height%3D%22400%22%3E%3Cdefs%3E%3Crect%20id%3D%22a%22%20x%3D%22-71.594%22%20y%3D%2237.774%22%20width%3D%22443.111%22%20height%3D%22629.461%22%2F%3E%3C%2Fdefs%3E%3CclipPath%20id%3D%22b%22%3E%3Cuse%20xlink%3Ahref%3D%22%23a%22%20overflow%3D%22visible%22%2F%3E%3C%2FclipPath%3E%3Cpath%20clip-path%3D%22url(%23b)%22%20stroke%3D%22%23231F20%22%20d%3D%22M70.847%20518.162c.231.625.465%201.249.703%201.871%22%20fill%3D%22none%22%2F%3E%3Cpolygon%20clip-path%3D%22url(%23b)%22%20fill%3D%22%23EC207A%22%20points%3D%22208.385%2C144.637%20206.48%2C146.434%20210.713%2C150.922%20206.227%2C155.154%20208.021%2C157.059%20214.414%2C151.029%22%2F%3E%3Cpolygon%20clip-path%3D%22url(%23b)%22%20stroke%3D%22%23EC207A%22%20points%3D%22208.385%2C144.637%20206.48%2C146.434%20210.713%2C150.922%20206.227%2C155.154%20208.021%2C157.059%20214.414%2C151.029%22%20fill%3D%22none%22%2F%3E%3Cpath%20clip-path%3D%22url(%23b)%22%20stroke%3D%22%23231F20%22%20stroke-dasharray%3D%224.008%2C4.008%22%20d%3D%22M-191.199%20554.637c47.867-89.148%20119.976-166.73%20213.565-221.792%2094.444-55.562%20173.279-94.638%20299.604-98.699%22%20fill%3D%22none%22%2F%3E%3Cpath%20clip-path%3D%22url(%23b)%22%20stroke%3D%22%23231F20%22%20d%3D%22M323.979%20234.084l2-.055%22%20fill%3D%22none%22%2F%3E%3Cpolygon%20clip-path%3D%22url(%23b)%22%20fill%3D%22%23EC207A%22%20points%3D%22328.716%2C227.539%20326.813%2C229.334%20331.046%2C233.824%20326.558%2C238.057%20328.354%2C239.959%20334.747%2C233.932%22%2F%3E%3Cpolygon%20clip-path%3D%22url(%23b)%22%20stroke%3D%22%23EC207A%22%20points%3D%22328.716%2C227.539%20326.813%2C229.334%20331.046%2C233.824%20326.558%2C238.057%20328.354%2C239.959%20334.747%2C233.932%22%20fill%3D%22none%22%2F%3E%3Cpath%20clip-path%3D%22url(%23b)%22%20stroke%3D%22%23231F20%22%20stroke-dasharray%3D%224.013%2C4.013%22%20d%3D%22M-587.41-311.807c73.126%20137.382%20183.828%20256.967%20327.799%20341.666%20144.594%2085.059%20303.637%20123.699%20459.891%20120.515%22%20fill%3D%22none%22%2F%3E%3Cpath%20clip-path%3D%22url(%23b)%22%20stroke%3D%22%23231F20%22%20d%3D%22M202.289%20150.33l1.998-.047%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-googleplus, .post li.social-share .google-plus {
+.icon-googleplus, .post .social-share .google-plus {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2234.653%22%20height%3D%2230%22%20viewBox%3D%2283.205%2084.688%2034.653%2030%22%20enable-background%3D%22new%2083.205%2084.688%2034.653%2030%22%3E%3Cpath%20fill%3D%22%23C8C8C8%22%20d%3D%22M101.411%20108.156c0%203.283-3.164%206.531-8.934%206.531-5.025%200-9.272-2.047-9.272-5.33%200-3.333%203.892-6.548%208.9-6.548h1.574c-.694-.677-1.201-1.472-1.201-2.487%200-.592.152-1.201.44-1.709-.288.034-.575.034-.846.034-4.129%200-6.904-2.927-6.904-6.582%200-3.57%203.807-6.65%207.902-6.65h9.069l-2.048%201.472h-2.893c1.929.728%202.927%202.927%202.927%205.228%200%201.912-1.032%203.553-2.555%204.721-1.455%201.167-1.726%201.641-1.726%202.606%200%20.846%201.557%202.251%202.403%202.809%202.369%201.726%203.164%203.3%203.164%205.905zm-2.369.355c0-.321-.034-.609-.068-.93-.406-1.472-1.777-2.234-3.655-3.553-.677-.203-1.438-.321-2.25-.372-3.486%200-6.582%202.132-6.582%204.738%200%202.64%202.487%204.856%205.99%204.856%204.89-.001%206.565-2.099%206.565-4.739zm-2.166-16.209c-.389-3.08-2.606-5.533-4.974-5.601-2.318-.084-3.892%202.284-3.486%205.33.406%203.079%202.657%205.618%204.975%205.685%202.335.085%203.891-2.352%203.485-5.414zm20.981-.39h-5.769v5.77h-1.456v-5.77h-5.769v-1.455h5.769v-5.77h1.456v5.77h5.769v1.455z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
@@ -113,7 +113,7 @@ Version: 2.0
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2223%22%20height%3D%2220%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M7.787%200l7.775%208h-15.562v4h15.562l-7.775%208h5.492l9.721-10-9.721-10h-5.492z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-link, .post li.social-share .copy-link {
+.icon-link, .post .social-share .copy-link {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%2285%2084.999%2030%2030%22%20enable-background%3D%22new%2085%2084.999%2030%2030%22%3E%3Cpath%20fill%3D%22%23C8C8C8%22%20d%3D%22M98.864%20112.628c-3.162%203.162-8.301%203.162-11.492%200-3.162-3.191-3.162-8.33%200-11.492l4.275-4.26c-.146%201.596.059%203.191.615%204.684l-2.211%202.211c-1.698%201.713-1.698%204.479%200%206.178%201.698%201.698%204.465%201.698%206.178%200l4.641-4.641c1.742-1.699%201.742-4.48%200-6.178-.732-.732-.732-1.947%200-2.679s1.947-.732%202.679%200c3.147%203.191%203.147%208.33%200%2011.492l-4.685%204.685zm9.501-9.516c.146-1.596-.059-3.147-.615-4.64l2.211-2.255c1.698-1.713%201.698-4.479%200-6.178-1.699-1.698-4.465-1.698-6.178%200l-4.685%204.64c-1.698%201.742-1.698%204.48%200%206.222.776.717.776%201.903%200%202.635-.717.732-1.903.732-2.635%200-3.147-3.191-3.147-8.33%200-11.492l4.656-4.641c3.191-3.206%208.33-3.206%2011.477%200%203.206%203.147%203.206%208.286%200%2011.477l-4.231%204.232z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
@@ -145,7 +145,7 @@ Version: 2.0
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%3E%3Cpath%20fill%3D%22%23EC008C%22%20d%3D%22M31.745%2013.171c-1.563-8.696-9.88-14.478-18.576-12.915-8.695%201.563-14.477%209.879-12.914%2018.574s9.879%2014.479%2018.574%2012.915c8.696-1.561%2014.48-9.878%2012.916-18.574zm-21.955%206.544l-2.248%201.471c-3.975-6.787%201.06-11.589%201.06-11.589%202.688-2.99%206.373-3.022%207.976-2.867l.625-2.946%203.314%205.1-5.101%203.315.604-2.846c-3.05-.279-5.235%201.864-5.235%201.864-4.056%204.356-.995%208.498-.995%208.498zm13.605%202.694c-2.688%202.989-6.373%203.018-7.976%202.862l-.626%202.947-3.314-5.102%205.102-3.314-.605%202.85c3.049.279%205.235-1.863%205.235-1.863%204.061-4.358%201.001-8.501%201.001-8.501l2.249-1.467c3.973%206.786-1.066%2011.588-1.066%2011.588z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-.icon-twitter, footer ul li.twitter a, .post li.social-share .twitter {
+.icon-twitter, footer ul li.twitter a, .post .social-share .twitter {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2237%22%20height%3D%2230%22%20viewBox%3D%2256.498%2059.998%2037%2030%22%20enable-background%3D%22new%2056.498%2059.998%2037%2030%22%3E%3Cpath%20fill%3D%22%23C8C8C8%22%20d%3D%22M89.69%2067.464v.991c0%2010.005-7.607%2021.543-21.525%2021.543-4.273%200-8.293-.935-11.628-3.083.595.091%201.189.127%201.803.127%203.533%200%206.832-1.533%209.393-3.589-3.282-.035-6.111-2.271-7.049-5.263.469.091.938.145%201.406.145.686%200%201.37-.091%202.02-.272-3.462-.687-6.076-3.748-6.076-7.428v-.09c1.027.559%202.182.901%203.426.937-2.056-1.37-3.391-3.678-3.391-6.274%200-1.405.397-2.56%201.028-3.677%203.768%204.579%209.319%207.427%2015.594%207.769-.126-.54-.162-1.153-.162-1.748%200-4.182%203.371-7.553%207.554-7.553%202.182%200%204.146.937%205.571%202.38%201.694-.343%203.332-.974%204.776-1.839-.561%201.767-1.747%203.264-3.334%204.2%201.55-.181%202.992-.595%204.362-1.208-1.027%201.552-2.307%202.867-3.768%203.932z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
@@ -573,7 +573,7 @@ svg:not(:root) {
 .font-sans, h4, h5, body, .post h3, #hero h1, #about h1, .featured-event h1, .classification h5, .distance strong {
   font-family: 'intro_lightregular', 'futura', 'helvetica', sans-serif; }
 
-.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, #footer-nav a, #hero .content p, .featured-event .info, .featured-event h1 strong, .upcoming h2, .events .date p, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers li p, #partners p, .distance p, .post .event-nav a, .post li.social-share span {
+.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, #footer-nav a, #hero .content p, .featured-event .info, .featured-event h1 strong, .upcoming h2, .events .date p, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers li p, #partners p, .distance p, .event-nav a, .post .social-share span {
   font-family: 'intro_regularregular', 'futura', 'helvetica', sans-serif; }
 
 .font-black, .post h4 {
@@ -2132,48 +2132,64 @@ p.wp-caption-text {
   margin-top: 0;
   padding: 10px; }
 
-.post .event-nav {
+.event-nav {
   border-top: 2px solid #ebebeb;
   border-bottom: 2px solid #ebebeb;
   margin-top: 60px; }
-  .post .event-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; }
-    .post .event-nav ul:after {
-      content: "";
-      display: table;
-      clear: both; }
-  .post .event-nav li {
-    float: left;
-    width: 28%;
-    margin: 0; }
-  .post .event-nav a {
+  .event-nav:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .event-nav .next-post, .event-nav .prev-post {
+    width: 28%; }
+    @media screen and (max-width: 40em) {
+      .event-nav .next-post, .event-nav .prev-post {
+        width: 50%; } }
+  .event-nav .prev-post {
+    float: left; }
+    .event-nav .prev-post a {
+      padding: 20px; }
+  .event-nav .next-post {
+    float: right; }
+    .event-nav .next-post a {
+      text-align: right;
+      padding: 20px; }
+  .event-nav a {
     display: block;
     letter-spacing: 2px;
     line-height: 1;
     color: #ec008c; }
-    .post .event-nav a:hover {
+    .event-nav a:hover {
       -webkit-box-shadow: inset 0 0 10px #f0f0f0;
       box-shadow: inset 0 0 10px #f0f0f0; }
-  .post .event-nav .next-post a {
-    text-align: right;
-    padding: 20px; }
-  .post .event-nav .prev-post a {
-    padding: 20px; }
 
-.post li.social-share {
-  width: 44%; }
-  .post li.social-share a {
+.post .social-share {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none; }
+  .post .social-share:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (max-width: 40em) {
+    .post .social-share {
+      margin: 0 auto; } }
+  .post .social-share li {
+    float: left;
+    margin-bottom: 0;
+    width: 70px;
+    text-align: right; }
+  .post .social-share a {
     display: block;
-    float: right;
     padding: 20px 0;
     text-indent: -9999em;
-    width: 70px;
+    text-align: left;
+    width: 100%;
     background-position: center; }
-  .post li.social-share span {
+  .post .social-share span {
     color: #888888;
-    float: right;
+    display: block;
     padding: 20px 8px 20px 0;
     line-height: 1;
     font-size: 0.75em;
