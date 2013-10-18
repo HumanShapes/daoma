@@ -1939,7 +1939,8 @@ footer {
     #join > div {
       background-image: none; } }
   #join > div > div {
-    background-position: left 0; }
+    background-position: left 0;
+    background-size: 40% auto; }
     @media screen and (max-width: 51.875em) {
       #join > div > div {
         background: none; } }

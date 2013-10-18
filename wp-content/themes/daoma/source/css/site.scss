@@ -1160,6 +1160,7 @@ footer{
     > div{
       @extend .icon-flightpath6;
       background-position: left 0;
+      background-size: 40% auto;
       @media screen and (max-width: 51.875em){
         background: none;
       }
