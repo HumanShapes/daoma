@@ -69,7 +69,7 @@ Version: 2.0
   background-image: url(png/event-circles_lines.png);
   background-repeat: no-repeat; }
 
-.icon-facebook, footer ul li.facebook a {
+.icon-facebook, footer ul li.facebook a, .post li.social-share .facebook {
   background-image: url(png/facebook.png);
   background-repeat: no-repeat; }
 
@@ -85,7 +85,7 @@ Version: 2.0
   background-image: url(png/flightpath6.png);
   background-repeat: no-repeat; }
 
-.icon-googleplus {
+.icon-googleplus, .post li.social-share .google-plus {
   background-image: url(png/googleplus.png);
   background-repeat: no-repeat; }
 
@@ -113,7 +113,7 @@ Version: 2.0
   background-image: url(png/label-arrow.png);
   background-repeat: no-repeat; }
 
-.icon-link {
+.icon-link, .post li.social-share .copy-link {
   background-image: url(png/link.png);
   background-repeat: no-repeat; }
 
@@ -145,7 +145,7 @@ Version: 2.0
   background-image: url(png/submit-shuffle.png);
   background-repeat: no-repeat; }
 
-.icon-twitter, footer ul li.twitter a {
+.icon-twitter, footer ul li.twitter a, .post li.social-share .twitter {
   background-image: url(png/twitter.png);
   background-repeat: no-repeat; }
 
@@ -573,7 +573,7 @@ svg:not(:root) {
 .font-sans, h4, h5, body, .post h3, #hero h1, #about h1, .featured-event h1, .classification h5, .distance strong {
   font-family: 'intro_lightregular', 'futura', 'helvetica', sans-serif; }
 
-.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, #footer-nav a, #hero .content p, .featured-event .info, .featured-event h1 strong, .upcoming h2, .events .date p, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers li p, #partners p, .distance p {
+.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, #footer-nav a, #hero .content p, .featured-event .info, .featured-event h1 strong, .upcoming h2, .events .date p, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers li p, #partners p, .distance p, .post .event-nav a, .post li.social-share span {
   font-family: 'intro_regularregular', 'futura', 'helvetica', sans-serif; }
 
 .font-black, .post h4 {
@@ -1604,9 +1604,9 @@ footer {
     .events:hover .thumb {
       width: 68%; } }
   .events .date, .events .thumb {
-    -webkit-transition: width 0.2s ease-in-out;
-    -moz-transition: width 0.2s ease-in-out;
-    transition: width 0.2s ease-in-out; }
+    -webkit-transition: width 0.2s linear;
+    -moz-transition: width 0.2s linear;
+    transition: width 0.2s linear; }
   .events .date {
     width: 14%;
     height: 150px;
@@ -2120,3 +2120,50 @@ p.wp-caption-text {
   font-size: 0.8125em;
   margin-top: 0;
   padding: 10px; }
+
+.post .event-nav {
+  border-top: 2px solid #ebebeb;
+  border-bottom: 2px solid #ebebeb;
+  margin-top: 60px; }
+  .post .event-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .post .event-nav ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .post .event-nav li {
+    float: left;
+    width: 28%;
+    margin: 0; }
+  .post .event-nav a {
+    display: block;
+    letter-spacing: 2px;
+    line-height: 1;
+    color: #ec008c; }
+    .post .event-nav a:hover {
+      -webkit-box-shadow: inset 0 0 10px #f0f0f0;
+      box-shadow: inset 0 0 10px #f0f0f0; }
+  .post .event-nav .next-post a {
+    text-align: right;
+    padding: 20px; }
+  .post .event-nav .prev-post a {
+    padding: 20px; }
+
+.post li.social-share {
+  width: 44%; }
+  .post li.social-share a {
+    display: block;
+    float: right;
+    padding: 20px 0;
+    text-indent: -9999em;
+    width: 70px;
+    background-position: center; }
+  .post li.social-share span {
+    color: #888888;
+    float: right;
+    padding: 20px 8px 20px 0;
+    line-height: 1;
+    font-size: 0.75em;
+    text-transform: uppercase; }

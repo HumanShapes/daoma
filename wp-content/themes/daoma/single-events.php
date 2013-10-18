@@ -17,7 +17,7 @@
     <article class='wrapper post'>
       <h1><?php the_title(); ?> <?php edit_post_link('Edit', '<small>', '</small>'); ?></h1>
       <h3>
-        <?php 
+        <?php
           if ( $daomaEventDatePretty ) { ?>
           <span>
             <?php echo $daomaEventDatePretty; ?>
@@ -34,9 +34,29 @@
       <h4><?php echo get_the_excerpt(); ?></h4>
       <?php } ?>
       <?php the_content(); ?>
+      <?php
+        $prevPostID = $post->ID - 1;
+        $nextPostID = $post->ID + 1;
+        $prevPostCity = get_post_meta($prevPostID, 'hs_daoma_speaker_city', true);
+        $nextPostCity = get_post_meta($nextPostID, 'hs_daoma_speaker_city', true);
+        ?>
+      <nav class="event-nav" role="navigation">
+        <ul>
+          <li class="prev-post"><?php previous_post_link('%link', '< ' . $nextPostCity); ?></li>
+          <li class="social-share">
+            <a href="" class="copy-link">Copy URL</a>
+            <a href="" class="google-plus">Google+</a>
+            <a href="" class="facebook">Facebook</a>
+            <a href="" class="twitter">Twitter</a>
+            <span>Share</span>
+          </li>
+          <li class="next-post"><?php next_post_link('%link', $nextPostCity . ' >'); ?></li>
+        </ul>
+
+      </nav>
     </article>
   </section>
-<?php 
+<?php
   endwhile; endif;
-  get_footer(); 
+  get_footer();
 ?>
