@@ -150,15 +150,27 @@ body{ @extend .font-sans; }
     }
   }
   #nav-icon{
-    @include transition(color .25s);
-    font-size: em(24);
+
+    span{
+      @include transition(background .25s);
+      display: block;
+      height: 4px;
+      width: 24px;
+      background: $white;
+      margin: 4px 0;
+      &:first-child{
+        margin-top: 8px;
+      }
+    }
+    // font-size: em(24);
     color: $white;
     float: right;
     padding: 40px 50px;
+    height: 125px;
     cursor: pointer;
     @media screen and (min-width: 51.875em){ display: none; }
-    &:hover, &.active{
-      color: $primary;
+    &:hover span, &.active span{
+      background-color: $primary;
     }
   }
 }

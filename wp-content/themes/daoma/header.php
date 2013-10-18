@@ -31,7 +31,11 @@
   <body <?php body_class(); ?>>
     <nav id="main-nav" role="navigation">
       <h1 id="logo"><a href="/" title="Home">design alliance Omaha</a></h1>
-      <span id="nav-icon" role="button" title="Navigate">☰</span>
+      <div id="nav-icon" role="button" title="Navigate">
+        <span class="mobile-icon">&nbsp;</span>
+        <span class="mobile-icon">&nbsp;</span>
+        <span class="mobile-icon">&nbsp;</span>
+      </div>
       <?php wp_nav_menu( array( 'container' => 'nav', 'container_id' => 'main-nav', 'theme_location' => 'primary_nav' ) ); ?>
     </nav>
     <div class="fadein_interior">

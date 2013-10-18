@@ -998,19 +998,27 @@ html {
         #main-nav ul a:hover {
           color: #ec008c; } }
   #main-nav #nav-icon {
-    -webkit-transition: color 0.25s;
-    -moz-transition: color 0.25s;
-    transition: color 0.25s;
-    font-size: 1.5em;
     color: white;
     float: right;
     padding: 40px 50px;
+    height: 125px;
     cursor: pointer; }
+    #main-nav #nav-icon span {
+      -webkit-transition: background 0.25s;
+      -moz-transition: background 0.25s;
+      transition: background 0.25s;
+      display: block;
+      height: 4px;
+      width: 24px;
+      background: white;
+      margin: 4px 0; }
+      #main-nav #nav-icon span:first-child {
+        margin-top: 8px; }
     @media screen and (min-width: 51.875em) {
       #main-nav #nav-icon {
         display: none; } }
-    #main-nav #nav-icon:hover, #main-nav #nav-icon.active {
-      color: #ec008c; }
+    #main-nav #nav-icon:hover span, #main-nav #nav-icon.active span {
+      background-color: #ec008c; }
 
 #logo a {
   -webkit-transition: opacity 0.25s linear;
