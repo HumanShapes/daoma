@@ -42,12 +42,12 @@
         ?>
       <nav class="event-nav" role="navigation">
         <ul>
-          <li class="prev-post"><?php previous_post_link('%link', '< ' . $nextPostCity); ?></li>
+          <li class="prev-post"><?php previous_post_link('%link', '< ' . $prevPostCity); ?></li>
           <li class="social-share">
             <a href="" class="copy-link">Copy URL</a>
             <a href="" class="google-plus">Google+</a>
-            <a href="" class="facebook">Facebook</a>
-            <a href="" class="twitter">Twitter</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" class="facebook">Facebook</a>
+            <a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&via=da_OMA" class="twitter">Twitter</a>
             <span>Share</span>
           </li>
           <li class="next-post"><?php next_post_link('%link', $nextPostCity . ' >'); ?></li>
