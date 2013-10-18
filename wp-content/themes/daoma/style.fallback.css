@@ -1962,7 +1962,7 @@ footer {
   .memberships input.btn:hover {
     color: #ec008c; }
 .memberships li {
-  padding: 60px 0;
+  padding: 35px 0 10px 0;
   border-top: 1px solid #cccccc; }
   .memberships li:first-child {
     padding-top: 0;
