@@ -1421,11 +1421,13 @@ footer {
       padding-bottom: 80px; }
       @media screen and (min-width: 71.25em) {
         #about-feature .content h1 {
-          padding-top: 288px;
+          padding-top: 160px;
+          padding-bottom: 160px;
           font-size: 7.75em; } }
       @media screen and (min-width: 61.25em) and (max-width: 71.249em) {
         #about-feature .content h1 {
-          padding-top: 200px;
+          padding-top: 150px;
+          padding-bottom: 140px;
           font-size: 6.25em; } }
       @media screen and (max-width: 40em) {
         #about-feature .content h1 {
