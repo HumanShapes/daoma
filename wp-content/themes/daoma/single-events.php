@@ -47,8 +47,11 @@
           <!-- <li><span>Share</span></li> -->
           <li><a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&via=da_OMA" class="twitter">Twitter</a></li>
           <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" class="facebook">Facebook</a></li>
-          <li><a href="" class="google-plus">Google+</a></li>
-          <li><a href="" class="copy-link">Copy URL</a></li>
+          <li><a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" class="google-plus">Google+</a></li>
+          <li class="copy-link">
+            <a href="#">Copy URL</a>
+
+          </li>
         </ul>
       </nav>
     </article>

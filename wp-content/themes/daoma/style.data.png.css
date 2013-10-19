@@ -114,7 +114,7 @@ Version: 2.0
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAUCAYAAABmvqYOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAORJREFUSMdjYMADtLS02AwNDbcaGxv/R8ZAsZ0qKirsDJQCe3t7DqBhu9AtAOLNQMxKsQVAQ7iMjIwOYLFgHdByFootAAYRD9CCo1gsWBEaGspMsQVmZmZ8QAtOoVsAFFsElGai2AJdXV1BoGHnsVgwFyjNSI04EAEadgVLKprGQA1gbm4uDjTsBpY4mIDsiv/UxkBfddLMcKgFzUPPcHiwkAtMTU0lcERo/+BMingy0RyKMhEo+wMNOk317A8quIAGHaN6wQUqcoH4IBaD11JU5IIqC6C3d1O9ssBVzQHxDmKqOQCvoS0Tzr7wUAAAAABJRU5ErkJggg==");
   background-repeat: no-repeat; }
 
-.icon-link, .post .social-share .copy-link {
+.icon-link, .post .social-share .copy-link a {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAArZJREFUSMe1V0trE1EUjg+UFq34giLWV60IrhRxp6u6U6TSlQhd14VbCdaNBjfa6B/wsYnIKFoRolAhkOckhNLWUYha34gLUxBRq6kZvwN35HC4M7mTjAOHydx7z/nOOfe730xisQgu13WXFIvFwVKplML9vW3bi7AF/HZwH8f4QCzqq1wu9yLwYwC4AbaINRczmczySEARcDvsTQvQf4YO3OkYvFKp7EAV7zQA32A2QKZVy+V8oiNQtZeynWcw3uWty+fzmzB+W6xrYM3O0KAI1q8BbcCG/YiHhCzR8kuRgIJgQy24sBl+TeYzYwwKx3WwOZH5b9yPGfo/Y74/wjD4rgSFHQ3hP8V9Tc/qfkkkjB0JsUWrSVAY8JxptuMcGGQZ8+bS6fTKXC63toX/eZH49SAZXMocbbGvPWrfDuB3Xc1dJQZrunVCEIvsoBYUFW2DnWXAbxlwja27JToxKiodliKCNfd9QRXQDRbgOQP+5FVG+isI99Vre6FQ2KrON6/0RbVa3aDVXiaDkyyZhzwAgu5Vre7CXEVUdJrmLMtahud5NvcKitdnIoN1b58R7JTIPO84zgofxqdZwk8CQUlTNYLfQFu2qE70IKkvorJzniTi+TOvjAHf9AVVjpMawT8u2DkigK+xLXrJ9vkDG49rQVVWhyWon+ATmdTR+IhE9tAYkUmQqKw7krpgKQEcDxIDvMhXEXFYVQnRiaSpKvEz+h372m0qhQA5KcUBz/tMgXmbqiFB/4hqrTBvnZ8sW6ddUCIY9n19LETmTxlw05eFAaB4fk1KFeqrAoGuiHbd82NjZKBKU3drgk2QZntrQLg1GL+gIVJ7oKySpM93cA33WfUqdCMFpYt0F8EemX6Ykwx2DCrAL2vYKu1BNpvd+D/+C+1SnzozJCiwX1Qhfa5g7lBUOH8BYbcTqCl4lKsAAAAASUVORK5CYII=");
   background-repeat: no-repeat; }
 
@@ -575,7 +575,7 @@ svg:not(:root) {
 .font-sans, h4, h5, body, .post h3, #hero h1, #about h1, .featured-event h1, .classification h5, .distance strong {
   font-family: 'intro_lightregular', 'futura', 'helvetica', sans-serif; }
 
-.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, #footer-nav a, #hero .content p, .featured-event .info, .featured-event h1 strong, .upcoming h2, .events .date p, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers li p, #partners p, .distance p, .event-nav a, .post .social-share span {
+.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, #footer-nav a, #hero .content p, .featured-event .info, .featured-event h1 strong, .upcoming h2, .events .date p, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers li p, #partners p, .distance p, .event-nav a {
   font-family: 'intro_regularregular', 'futura', 'helvetica', sans-serif; }
 
 .font-black, .post h4 {
@@ -2144,7 +2144,7 @@ p.wp-caption-text {
     clear: both; }
   .event-nav .next-post, .event-nav .prev-post {
     width: 28%; }
-    @media screen and (max-width: 40em) {
+    @media screen and (max-width: 43.75em) {
       .event-nav .next-post, .event-nav .prev-post {
         width: 50%; } }
   .event-nav .prev-post {
@@ -2174,10 +2174,12 @@ p.wp-caption-text {
     content: "";
     display: table;
     clear: both; }
-  @media screen and (max-width: 40em) {
+  @media screen and (max-width: 43.75em) {
     .post .social-share {
+      clear: both;
       margin: 0 auto; } }
   .post .social-share li {
+    position: relative;
     float: left;
     margin-bottom: 0;
     width: 70px;
@@ -2189,10 +2191,21 @@ p.wp-caption-text {
     text-align: left;
     width: 100%;
     background-position: center; }
-  .post .social-share span {
-    color: #888888;
-    display: block;
-    padding: 20px 8px 20px 0;
-    line-height: 1;
-    font-size: 0.75em;
-    text-transform: uppercase; }
+  .post .social-share .twitter {
+    background-size: 40%; }
+  .post .social-share .facebook {
+    background-size: 20%; }
+  .post .social-share .google-plus {
+    background-size: 40%; }
+  .post .social-share .copy-link a {
+    background-size: 35%; }
+  .post .social-share .copy-link span {
+    padding: 10px 24px;
+    border: 1px solid #ebebeb; }
+  .post .social-share .copy-link input {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    background-color: transparent;
+    border: 1px solid #cccccc;
+    padding: 4px; }

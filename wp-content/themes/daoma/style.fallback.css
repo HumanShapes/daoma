@@ -113,7 +113,7 @@ Version: 2.0
   background-image: url(png/label-arrow.png);
   background-repeat: no-repeat; }
 
-.icon-link, .post .social-share .copy-link {
+.icon-link, .post .social-share .copy-link a {
   background-image: url(png/link.png);
   background-repeat: no-repeat; }
 
@@ -573,7 +573,7 @@ svg:not(:root) {
 .font-sans, h4, h5, body, .post h3, #hero h1, #about h1, .featured-event h1, .classification h5, .distance strong {
   font-family: 'intro_lightregular', 'futura', 'helvetica', sans-serif; }
 
-.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, #footer-nav a, #hero .content p, .featured-event .info, .featured-event h1 strong, .upcoming h2, .events .date p, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers li p, #partners p, .distance p, .event-nav a, .post .social-share span {
+.font-display, h1, h2, h3, h4, h5, h6, strong, #main-nav ul, #footer-nav a, #hero .content p, .featured-event .info, .featured-event h1 strong, .upcoming h2, .events .date p, .events .content h3, .creative-class h3, .past-speakers .wrapper h2, .past-speakers .director h2, .past-speakers li p, #partners p, .distance p, .event-nav a {
   font-family: 'intro_regularregular', 'futura', 'helvetica', sans-serif; }
 
 .font-black, .post h4 {
@@ -2142,7 +2142,7 @@ p.wp-caption-text {
     clear: both; }
   .event-nav .next-post, .event-nav .prev-post {
     width: 28%; }
-    @media screen and (max-width: 40em) {
+    @media screen and (max-width: 43.75em) {
       .event-nav .next-post, .event-nav .prev-post {
         width: 50%; } }
   .event-nav .prev-post {
@@ -2172,10 +2172,12 @@ p.wp-caption-text {
     content: "";
     display: table;
     clear: both; }
-  @media screen and (max-width: 40em) {
+  @media screen and (max-width: 43.75em) {
     .post .social-share {
+      clear: both;
       margin: 0 auto; } }
   .post .social-share li {
+    position: relative;
     float: left;
     margin-bottom: 0;
     width: 70px;
@@ -2187,10 +2189,21 @@ p.wp-caption-text {
     text-align: left;
     width: 100%;
     background-position: center; }
-  .post .social-share span {
-    color: #888888;
-    display: block;
-    padding: 20px 8px 20px 0;
-    line-height: 1;
-    font-size: 0.75em;
-    text-transform: uppercase; }
+  .post .social-share .twitter {
+    background-size: 40%; }
+  .post .social-share .facebook {
+    background-size: 20%; }
+  .post .social-share .google-plus {
+    background-size: 40%; }
+  .post .social-share .copy-link a {
+    background-size: 35%; }
+  .post .social-share .copy-link span {
+    padding: 10px 24px;
+    border: 1px solid #ebebeb; }
+  .post .social-share .copy-link input {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    background-color: transparent;
+    border: 1px solid #cccccc;
+    padding: 4px; }

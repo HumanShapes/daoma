@@ -121,6 +121,13 @@ var DAOMA = {
 
     Cities.shift();// Pull off first city
     Cities.push(new_city); // put first city at end
+  },
+  copyClipboard: function(){
+    var cpLink = $('.copy-link');
+    var cpLink_url = cpLink.attr('href');
+    cpLink.on('click', function(){
+
+    });
   }
 };
 
