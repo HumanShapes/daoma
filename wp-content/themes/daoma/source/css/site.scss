@@ -929,6 +929,7 @@ footer{
 }
 .creative-class{
   @include transition(opacity .4s linear);
+  -webkit-backface-visibility: hidden;
   background-color: rgba($grey, .6);
   padding: 60px 0;
   border-top: 1px solid $grey2;

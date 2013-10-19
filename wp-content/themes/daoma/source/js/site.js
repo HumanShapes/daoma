@@ -129,6 +129,7 @@ var DAOMA = {
 
     });
   }
+
 };
 
 // When DOM is ready
@@ -136,6 +137,13 @@ $(document).ready(function() {
   // Build daOMA object
   DAOMA.construct();
   DAOMA.init();
+  var creativeClass = $('.creative-class');
+  if(hasTouch){
+    creativeClass.on('click', function(){
+      this.css('background-color', '#fff');
+      this.children('.content').fadeTo(0);
+    });
+  }
 });
 
 // Functions that can be delayed after the whole page has been downloaded
