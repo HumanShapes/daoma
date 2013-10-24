@@ -47,10 +47,6 @@
           <li><a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&via=da_OMA" class="twitter">Twitter</a></li>
           <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" class="facebook">Facebook</a></li>
           <li><a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" class="google-plus">Google+</a></li>
-<<<<<<< HEAD
-          <li><a href="<?php the_permalink(); ?>" class="copy-link" data-clipboard-text="<?php the_permalink(); ?>" title="Copy URL">Copy URL</a></li>
-=======
->>>>>>> 2c327e752a7e1149b7993c51a63a17639886b47c
         </ul>
       </nav>
     </article>
