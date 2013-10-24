@@ -1414,7 +1414,7 @@ footer {
   background: #ec008c; }
   #about-feature .content-wrap {
     position: relative;
-    background: url(images/about-lrgCity.jpg) no-repeat;
+    background: url(images/about-lrgCity.jpg) no-repeat center center;
     background-size: cover;
     max-height: 740px;
     overflow: hidden; }
