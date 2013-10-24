@@ -36,10 +36,10 @@
 
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 
-    <meta property="og:title" content="<?php the_title(); ?>"/>
-    <meta property="og:image" content="<?php bloginfo( 'template_directory' ); ?>/images/daoma-fb.png"/>
-    <meta property="og:site_name" content="bloginfo( 'name' );"/>
-    <meta property="og:description" content="<?php echo $site_description; ?>"/>
+    <meta property="og:title" content="<?php if(is_home() || is_front_page()) : bloginfo( 'name' ); else : the_title(); endif; ?>">
+    <meta property="og:image" content="<?php bloginfo( 'template_directory' ); ?>/images/daoma-fb.png">
+    <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>">
+    <meta property="og:description" content="<?php echo $site_description; ?>">
 
     <script>
       var config = {
