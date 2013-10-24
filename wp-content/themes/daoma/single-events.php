@@ -35,20 +35,22 @@
       <?php } ?>
       <?php the_content(); ?>
       <?php
-        $prevPostID = $post->ID - 1;
-        $nextPostID = $post->ID + 1;
-        $prevPostCity = get_post_meta($prevPostID, 'hs_daoma_speaker_city', true);
-        $nextPostCity = get_post_meta($nextPostID, 'hs_daoma_speaker_city', true);
+        $prevPost = get_previous_post();
+        $nextPost = get_next_post();
+        $prevPostCity = get_post_meta($prevPost->ID, 'hs_daoma_speaker_city', true);
+        $nextPostCity = get_post_meta($nextPost->ID, 'hs_daoma_speaker_city', true);
         ?>
       <nav class="event-nav" role="navigation">
         <div class="prev-post"><?php previous_post_link('%link', '< ' . $prevPostCity); ?></div>
         <div class="next-post"><?php next_post_link('%link', $nextPostCity . ' >'); ?></div>
         <ul class="social-share">
-          <!-- <li><span>Share</span></li> -->
           <li><a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&via=da_OMA" class="twitter">Twitter</a></li>
           <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" class="facebook">Facebook</a></li>
           <li><a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" class="google-plus">Google+</a></li>
+<<<<<<< HEAD
           <li><a href="<?php the_permalink(); ?>" class="copy-link" data-clipboard-text="<?php the_permalink(); ?>" title="Copy URL">Copy URL</a></li>
+=======
+>>>>>>> 2c327e752a7e1149b7993c51a63a17639886b47c
         </ul>
       </nav>
     </article>

@@ -1421,13 +1421,11 @@ p.wp-caption-text{
 }
 .post .social-share{
   @include clearfix;
-  // width: 44%;
-  width: 280px;
+  width: 210px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
   @media screen and (max-width: em(700)){
-    // width: 100%;
     clear: both;
     margin: 0 auto;
   }
