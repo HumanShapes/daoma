@@ -48,10 +48,7 @@
           <li><a href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>&via=da_OMA" class="twitter">Twitter</a></li>
           <li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" class="facebook">Facebook</a></li>
           <li><a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" class="google-plus">Google+</a></li>
-          <li class="copy-link">
-            <a href="#">Copy URL</a>
-
-          </li>
+          <li><a href="<?php the_permalink(); ?>" class="copy-link" data-clipboard-text="<?php the_permalink(); ?>" title="Copy URL">Copy URL</a></li>
         </ul>
       </nav>
     </article>

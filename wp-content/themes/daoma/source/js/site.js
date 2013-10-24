@@ -121,16 +121,10 @@ var DAOMA = {
 
     Cities.shift();// Pull off first city
     Cities.push(new_city); // put first city at end
-  },
-  copyClipboard: function(){
-    var cpLink = $('.copy-link');
-    var cpLink_url = cpLink.attr('href');
-    cpLink.on('click', function(){
-
-    });
   }
 
 };
+
 
 // When DOM is ready
 $(document).ready(function() {
@@ -144,6 +138,25 @@ $(document).ready(function() {
       this.children('.content').fadeTo(0);
     });
   }
+
+  var clip = new ZeroClipboard( $(".copy-link"), {
+    moviePath: "/wp-content/themes/daoma/js/vendor/ZeroClipboard.swf"
+  } );
+
+  clip.on( 'load', function(client) {
+    // alert( "movie is loaded" );
+  } );
+
+  clip.on( 'complete', function(client, args) {
+    this.style.display = "none"; // "this" is the element that was clicked
+    alert("Copied text to clipboard: " + args.text );
+
+  } );
+
+  $('.copy-link').on('click', function(){
+
+  });
+
 });
 
 // Functions that can be delayed after the whole page has been downloaded
