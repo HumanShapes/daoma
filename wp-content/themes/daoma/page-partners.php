@@ -30,6 +30,16 @@
     <h2 class="column">STRATEGIC<br>PARTNERS</h2>
     <div class="content">
       <p>Institutions like Joslyn Art Museum, have been our partner from the beginning. Organizations like the Omaha Public Library, Bemis Center for Contemporary Art, Film Streams and KANEKO are organizations that also hold similar values and appreciation for the importance of architecture, design and creative culture in our community. Our partnerships with these organizations work to promote the programs and services of these organizations while helping them become greater civic advocates for progressive architecture and design in our city and&nbsp;state.</p>
+      <br>
+      <p>Joslyn Art Museum<br>
+        Film Streams<br>
+        Bemis Center for Contemporary Art<br>
+        Omaha Public Library<br>
+        KANEKO<br>
+        Slowdown<br>
+        Blue Sushi<br>
+        Pecha Kucha Night<br>
+        Omaha Creative Institute </p>
     </div>
   </div>
 </section>
@@ -38,8 +48,7 @@
   <div class="wrapper">
     <h2 class="column">PROFESSIONAL<br>PARTNERS</h2>
     <div class="content">
-      <p>Central to daOMA’s mission is providing opportunities for architecture and design professionals to cross boundaries and get to meet professionals from other disciplines. daOMA works to advocate for the importance of these professions and professionals in our communities and the missions of their professional&nbsp;organizations.
-      </p>
+      <p>Central to daOMA’s mission is providing opportunities for architecture and design professionals to cross boundaries and get to meet professionals from other disciplines. daOMA works to advocate for the importance of these professions and professionals in our communities and the missions of their professional&nbsp;organizations. These include IIDA, AIA Omaha, ASLA and AIGA Nebraska.</p>
     </div>
   </div>
 </section>
