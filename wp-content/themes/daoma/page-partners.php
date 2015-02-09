@@ -34,6 +34,7 @@
       <p>Joslyn Art Museum<br>
         Film Streams<br>
         Bemis Center for Contemporary Art<br>
+        Architectural Foundation of&nbsp;Nebraska<br>
         Omaha Public Library<br>
         KANEKO<br>
         Slowdown<br>
@@ -63,7 +64,7 @@
   <div class="wrapper">
     <h2 class="column">SEASON<br>SPONSORS</h2>
     <div class="content">
-      <p>Architectural Foundation of&nbsp;Nebraska<br>
+      <p>
         Oxide Design&nbsp;Co.<br>
         Cody Peterson<br>
         Christopher Kollars</p>
