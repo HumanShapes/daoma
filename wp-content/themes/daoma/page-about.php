@@ -66,22 +66,6 @@
   </div>
 
   <div class="director">
-    <img alt="Bryce Bridges" src="<?php bloginfo( 'template_directory' ); ?>/images/board_bryce.png">
-    <div class="content">
-      <h3>Bryce Bridges</h3>
-      <p>Commercial and editorial portrait photographer Bryce Bridges works on projects with a wide variety of international magazines, agencies and clients, conceived and co-published the critically acclaimed medium magazine, served as Editor-in-Chief of Abode magazine in Doha, Qatar and is currently creative director of the culture incubator/media company FLYOVER.</p>
-    </div>
-  </div>
-
-  <div class="director">
-    <img alt="Drew Davies" src="<?php bloginfo( 'template_directory' ); ?>/images/board_drew.png">
-    <div class="content">
-      <h3>Drew Davies</h3>
-      <p>Founder and design director of Oxide Design Co., a communications and information design firm established in 2001. Drew is the national co-president for AIGA, the professional association for design. He also serves as national design director for AIGA’s Design for Democracy program. DFD is currently involved in implementing nationwide ballot design standards for all elections.</p>
-    </div>
-  </div>
-
-  <div class="director">
     <img alt="Jeffrey Day" src="<?php bloginfo( 'template_directory' ); ?>/images/board_jeff.png">
     <div class="content">
       <h3>Jeffrey L. Day, AIA</h3>
