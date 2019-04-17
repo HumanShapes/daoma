@@ -106,14 +106,6 @@
   </div>
 
   <div class="director">
-    <img alt="Hesse McGraw" src="<?php bloginfo( 'template_directory' ); ?>/images/board_hesse.png">
-    <div class="content">
-      <h3>Hesse McGraw</h3>
-      <p>Hesse McGraw directs the Walter and McBean Galleries and oversees SFAI’s public programs, visiting artists series, and community education programs for youths and adults. From 2008 to 2013 McGraw served as chief curator at the Bemis Center for Contemporary Arts in Omaha, Nebraska, where he developed an exhibition program focused on site-specific, immersive, cross-disciplinary, and socially engaged projects, including major projects with artists Theaster Gates and Michael Jones McKean. McGraw was formerly associate director of Max Protetch gallery in New York, and was the founding director and curator of Paragraph, which operated under the non-profit Charlotte Street Foundation in Kansas City, Missouri. He lectures widely and his writing has been published in Afterall, Art Papers, Outpost, and diverse exhibition catalogues. Recent grants include an Andy Warhol Foundation Curatorial Research Fellowship, an ArtPlace America grant, a Robert Rauschenberg Foundation Artistic Innovation and Collaboration Grant, and an NEA Our Town grant. McGraw holds a BFA from the University of Kansas and completed graduate research at the European Graduate School in Saas-Fee, Switzerland.</p>
-    </div>
-  </div>
-
-  <div class="director">
     <img alt="James Menard" src="<?php bloginfo( 'template_directory' ); ?>/images/board_james.png">
     <div class="content">
       <h3>James Menard</h3>
@@ -126,14 +118,6 @@
     <div class="content">
       <h3>Alan Tipp</h3>
       <p>Design Director at Eyeking, LLC (a New York based sunglass design studio, producer, and distributer of globally licensed eyewear brands). A native to Omaha, Tipp studied Industrial Design and graduated from the University of Kansas with his BFA and currently holds over 40 US & Foreign patents. He’s designed and developed products for The US Marine Corps, The Home Shopping Network, Dicks Sporting Goods, The Sports Authority, Lands End, The Sharper Image, & various other specialty retailers. Tipp now designs sunglass collections out of his Omaha based studio for Eyeking’s most notable licenses; Under Armour, Crocs, & Hobie.</p>
-    </div>
-  </div>
-
-  <div class="director">
-    <img alt="Anne Trumble, MLA, ASLA" src="<?php bloginfo( 'template_directory' ); ?>/images/board_anne.png">
-    <div class="content">
-      <h3>Anne Trumble, MLA, ASLA</h3>
-      <p>Founder and director of the nonprofit research and design collaborative, Emerging Terrain. Originally trained as a landscape architect, Anne discovered a fascination with political and community process while designing and building public landscapes in New York City. Prior to that, she obtained her graduate degree in Vancouver, British Columbia. Although Anne grew up on a farm outside of Omaha, she has traveled, studied, and practiced landscape architecture around the world, but always finds the most interest in the landscapes of Nebraska.</p>
     </div>
   </div>
 
